@@ -1,20 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function TransformationSection() {
   const slides = [
     {
-      before: "/images/transformation/before.png",
-      after: "/images/transformation/after.png",
-      profile:"/images/transformation/profile.png",
-      name: "Jerome Bell",
-      role: "Teacher",
+      before: "/images/transformation/image 72.jpg",
+      after: "/images/transformation/image 73.png",
+      profile: "/images/transformation/Mask.png",
+      name: "Mark Wood",
+      role: "IT Engineer",
       stats: {
         weight: { before: "210 lbs", after: "165 lbs" },
         waist: { before: '50"', after: '42"' },
@@ -23,18 +23,18 @@ export default function TransformationSection() {
       },
     },
     {
-        before: "/images/transformation/before.png",
-        after: "/images/transformation/after.png",
-        profile:"/images/transformation/profile.png",
-        name: "Jerome Bell",
-        role: "Teacher",
-        stats: {
-          weight: { before: "210 lbs", after: "165 lbs" },
-          waist: { before: '50"', after: '42"' },
-          bmi: { before: "31.2 (Obese)", after: "24.5 (Normal)" },
-          duration: { before: "12 Jun, 2025", after: "4 Months" },
-        },
+      before: "/images/transformation/Frame 1000006233.jpg",
+      after: "/images/transformation/Frame 1000006234.png",
+      profile: "/images/transformation/Mask group (1).png",
+      name: "Emily",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "210 lbs", after: "165 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.2 (Obese)", after: "24.5 (Normal)" },
+        duration: { before: "12 Jun, 2025", after: "4 Months" },
       },
+    },
   ];
 
   return (
@@ -106,16 +106,24 @@ export default function TransformationSection() {
                             <h3 className="font-semibold text-gray-800">
                               {slide.name}
                             </h3>
-                            <p className="text-sm text-gray-500">{slide.role}</p>
+                            <p className="text-sm text-gray-500">
+                              {slide.role}
+                            </p>
                           </div>
                         </div>
 
                         <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden table-fixed">
                           <thead className="bg-gray-50">
                             <tr>
-                              <th className="text-left px-3 py-2 w-1/3">Title</th>
-                              <th className="text-left px-3 py-2 w-1/3">Before</th>
-                              <th className="text-left px-3 py-2 w-1/3">After</th>
+                              <th className="text-left px-3 py-2 w-1/3">
+                                Title
+                              </th>
+                              <th className="text-left px-3 py-2 w-1/3">
+                                Before
+                              </th>
+                              <th className="text-left px-3 py-2 w-1/3">
+                                After
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -130,21 +138,27 @@ export default function TransformationSection() {
                             </tr>
                             <tr className="bg-gray-50">
                               <td className="px-3 py-2">Waist</td>
-                              <td className="px-3 py-2">{slide.stats.waist.before}</td>
+                              <td className="px-3 py-2">
+                                {slide.stats.waist.before}
+                              </td>
                               <td className="px-3 py-2 text-primary font-medium">
                                 {slide.stats.waist.after}
                               </td>
                             </tr>
                             <tr>
                               <td className="px-3 py-2">BMI</td>
-                              <td className="px-3 py-2">{slide.stats.bmi.before}</td>
+                              <td className="px-3 py-2">
+                                {slide.stats.bmi.before}
+                              </td>
                               <td className="px-3 py-2 text-primary font-medium">
                                 {slide.stats.bmi.after}
                               </td>
                             </tr>
                             <tr className="bg-gray-50">
                               <td className="px-3 py-2">Duration</td>
-                              <td className="px-3 py-2">{slide.stats.duration.before}</td>
+                              <td className="px-3 py-2">
+                                {slide.stats.duration.before}
+                              </td>
                               <td className="px-3 py-2 text-primary font-medium">
                                 {slide.stats.duration.after}
                               </td>
@@ -173,9 +187,8 @@ export default function TransformationSection() {
           {/* Right: Content */}
           <div className="w-full lg:w-[30%]">
             <h2 className="text-3xl font-bold text-gray-900 leading-snug">
-              See The Real{" "}
-              <span className="text-primary">Transformations</span> <br /> and
-              Lasting Results
+              See The Real <span className="text-primary">Transformations</span>{" "}
+              <br /> and Lasting Results
             </h2>
             <p className="text-gray-600 mt-4">
               Our expert doctor will tailor a treatment program to address your

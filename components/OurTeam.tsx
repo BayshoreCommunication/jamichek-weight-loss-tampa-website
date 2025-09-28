@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function OurTeam() {
   return (
@@ -25,7 +30,7 @@ export default function OurTeam() {
         {/* Card 1 */}
         <div className="flex flex-col md:flex-row rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
           <Image
-            src="/images/team/team1.png"
+            src="/images/team/Image Placeholder.png"
             alt="Dr. Emily Devol Webster"
             width={930}
             height={690}
@@ -38,15 +43,23 @@ export default function OurTeam() {
               </h3>
               <p className="text text-gray-500 mb-3">Medical Director</p>
               <p className="text-sm text-gray-600 mb-4">
-                My team and I provide a safe, whole–body approach to...
+                My team and I provide a safe, whole-body approach to...
               </p>
             </div>
             <div className="flex items-center justify-between">
               <div className="flex gap-4 text-primary text-base">
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaYoutube /></a>
-                <a href="#"><FaLinkedinIn /></a>
+                <a href="#">
+                  <FaFacebookF />
+                </a>
+                <a href="#">
+                  <FaInstagram />
+                </a>
+                <a href="#">
+                  <FaYoutube />
+                </a>
+                <a href="#">
+                  <FaLinkedinIn />
+                </a>
               </div>
               <a
                 href="#"
@@ -72,15 +85,23 @@ export default function OurTeam() {
               <h3 className="font-semibold text-lg text-gray-900">Dana</h3>
               <p className="text-sm text-gray-500 mb-3">Executive Director</p>
               <p className="text-sm text-gray-600 mb-4">
-                My team and I provide a safe, whole–body approach to...
+                My team and I provide a safe, whole-body approach to...
               </p>
             </div>
             <div className="flex items-center justify-between">
               <div className="flex gap-4 text-green-700 text-base">
-                <a href="#"><FaFacebookF /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaYoutube /></a>
-                <a href="#"><FaLinkedinIn /></a>
+                <a href="#">
+                  <FaFacebookF />
+                </a>
+                <a href="#">
+                  <FaInstagram />
+                </a>
+                <a href="#">
+                  <FaYoutube />
+                </a>
+                <a href="#">
+                  <FaLinkedinIn />
+                </a>
               </div>
               <a
                 href="#"

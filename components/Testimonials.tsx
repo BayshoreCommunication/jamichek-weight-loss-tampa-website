@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,42 +10,85 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    name: "Armen Sargsyan",
-    time: "месяц назад",
+    name: "JDM",
+    time: "2 months ago",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "I have been using pageant medical for quite some time. They are extremely professional. The office is efficient and clean. I call ahead to let them know. I’m going to arrive and when I get there, my medicine is ready. Their prices are much better than other Similar facilities in the area. I would highly recommend them.",
     rating: 5,
     image: "",
   },
   {
-    name: "Armen Sargsyan",
-    time: "6 дней назад",
+    name: "Lisa Hernandez",
+    time: "3 months ago",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Numerous medical weight loss facilities exist, yet none surpass this one in terms of exceptional customer service and comprehensive weight loss support.  My experience was outstanding.  I extend my sincere gratitude, particularly to Candace for her phenomenal service and to Dana for her invaluable guidance.",
     rating: 5,
     image: "",
   },
   {
-    name: "Armen Sargsyan",
-    time: "месяц назад",
+    name: "Jenn Howard",
+    time: "4 months ago",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Wonderful experience 👍 Staff is so nice!  I've had great success with their program. They make it easy & painless.  Highly recommended",
     rating: 5,
     image: "",
   },
   {
-    name: "Armen Sargsyan",
-    time: "месяц назад",
+    name: "Sarah Valentine",
+    time: "4 months ago",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Very considerate, professional people. It was nice to come in weekly. I have achieved my weight loss goals. Great behavior modification tips.",
     rating: 5,
     image: "",
   },
   {
-    name: "Armen Sargsyan",
-    time: "месяц назад",
+    name: "Jenny Brito",
+    time: "4 months ago",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Amazing environment! Everybody is friendly from the front desk to the specialists! Great customer service and very knowledgeable!  Keep the good work guys",
+    rating: 5,
+    image: "",
+  },
+];
+
+const testimonialsTwo = [
+  {
+    name: "Keyshla Rivera",
+    time: "5 months ago",
+    review:
+      "The care is 100% , they are very kind and very reliable , I am in a weight loss plan and the process is very effective.thanks to the team of Medical weight loss Tampa",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "Sydney Manna",
+    time: "a month ago",
+    review:
+      "The staff here is amazing! Always so inviting and knowledgeable, which makes achieving your goals that much easier!",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "Jeanne Hardesty",
+    time: "4 months ago",
+    review:
+      "Awesome staff along w/Santana. I recommend anyone that wants to do a weight loss program, to check into it!",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "Victor Arencibia",
+    time: "4 months ago",
+    review:
+      "Very friendly and informative staff. Came here for the weight loss, 45lbs lost over the course of 7 months.",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "Jazzy Is A Baddie",
+    time: "3 months ago",
+    review:
+      "I love the atmosphere and energy at this clinic!! It’s a great place to be and I feel so encouraged!",
     rating: 5,
     image: "",
   },
@@ -74,7 +117,7 @@ export default function Testimonials() {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={24}
-          slidesPerView={1}   // 👈 default for mobile
+          slidesPerView={1} // 👈 default for mobile
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -85,10 +128,10 @@ export default function Testimonials() {
           allowTouchMove={false}
           freeMode={true}
           breakpoints={{
-            640: { slidesPerView: 1 },   // small screens (still 1)
-            768: { slidesPerView: 2 },   // tablets
-            1024: { slidesPerView: 3 },  // laptops
-            1280: { slidesPerView: 3 },  // desktops
+            640: { slidesPerView: 1 }, // small screens (still 1)
+            768: { slidesPerView: 2 }, // tablets
+            1024: { slidesPerView: 3 }, // laptops
+            1280: { slidesPerView: 3 }, // desktops
           }}
           className="pb-16 mb-8"
         >
@@ -140,7 +183,7 @@ export default function Testimonials() {
         <Swiper
           modules={[Autoplay]}
           spaceBetween={24}
-          slidesPerView={1}   // 👈 default for mobile
+          slidesPerView={1} // 👈 default for mobile
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -151,14 +194,14 @@ export default function Testimonials() {
           allowTouchMove={false}
           freeMode={true}
           breakpoints={{
-            640: { slidesPerView: 1 },   // small screens (still 1)
-            768: { slidesPerView: 2 },   // tablets
-            1024: { slidesPerView: 3 },  // laptops
-            1280: { slidesPerView: 3 },  // desktops
+            640: { slidesPerView: 1 }, // small screens (still 1)
+            768: { slidesPerView: 2 }, // tablets
+            1024: { slidesPerView: 3 }, // laptops
+            1280: { slidesPerView: 3 }, // desktops
           }}
           className="pb-16 mb-8"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonialsTwo.map((testimonial, index) => (
             <SwiperSlide key={`second-${index}`}>
               <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition p-6 border border-gray-100 h-full flex flex-col">
                 {/* User Info */}
@@ -201,7 +244,6 @@ export default function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );
