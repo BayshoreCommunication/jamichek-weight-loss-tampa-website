@@ -43,7 +43,7 @@ export default function Hero() {
         {/* Subtext */}
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
           Personalized medically-assisted weight loss solutions designed to help
-          you achieve your goals safely and effectively.
+          you achieve your goals safely and effectively. 
         </p>
 
         {/* CTA Button */}

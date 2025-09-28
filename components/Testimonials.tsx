@@ -102,8 +102,8 @@ export default function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">Testimonials</h2>
           <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
-            Our expert doctor will tailor a treatment program to address your
-            unique needs, ensuring you achieve peak wellness.
+            Our patients’ transformations speak for themselves. Hear how our
+            personalized weight loss and wellness programs have changed lives.
           </p>
           <a
             href="#"

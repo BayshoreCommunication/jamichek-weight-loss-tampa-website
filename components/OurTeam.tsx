@@ -16,8 +16,9 @@ export default function OurTeam() {
         <div>
           <h2 className="text-3xl font-bold text-gray-900">Our Team</h2>
           <p className="text-gray-600 mt-2 max-w-2xl">
-            Our expert doctor will tailor a treatment program to address your
-            unique needs, ensuring you achieve peak wellness.
+            Our dedicated team of healthcare professionals is committed to
+            guiding you every step of the way with personalized care, expertise,
+            and support.
           </p>
         </div>
         <button className="mt-4 md:mt-0 border border-gray-300 rounded-full px-5 py-2 font-medium flex items-center gap-2 transition hover:bg-black hover:text-white">
