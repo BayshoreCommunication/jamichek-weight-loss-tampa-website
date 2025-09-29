@@ -8,17 +8,17 @@ export default function MedicalWeightLoss() {
     {
       title: "Sema",
       desc: "Supporting your journey to lasting health with personalized guidance, advanced therapies, and compassionate care.",
-      img: "/images/medical/image 37.jpg",
+      img: "/images/medical/Frame 1000006283.png",
     },
     {
       title: "Tirzep",
       desc: "Tirzep helps you achieve safe, effective weight loss by supporting appetite control and metabolism, tailored to your personalized weight loss plan.",
-      img: "/images/medical/image 38.jpg",
+      img: "/images/medical/Frame 1000006284.png",
     },
     {
       title: "Retatrutide",
       desc: "Retatrutide supports your weight loss journey by enhancing metabolism and controlling appetite, helping you achieve safe and lasting results under medical supervision.",
-      img: "/images/medical/image 74.jpg",
+      img: "/images/medical/Frame 1000006285.png",
     },
     {
       title: "Nutritional Counseling",
