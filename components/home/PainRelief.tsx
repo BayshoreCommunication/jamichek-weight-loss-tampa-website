@@ -1,5 +1,7 @@
 "use client";
 
+import Reveal from "@/components/motion/Reveal";
+
 export default function PainRelief() {
   return (
     <div className="w-full flex justify-center px-8">
@@ -8,18 +10,24 @@ export default function PainRelief() {
         <div className="bg-black/50 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full md:w-[50%]">
           {/* Text Section */}
           <div className="flex-1 text-white">
-            <h1 className="text-3xl font-bold leading-snug">
+            <Reveal tag="h1" className="text-3xl font-bold leading-snug">
               Get <span className="text-primary">Pain Relief</span> Today With
               Tampa Bays Chiropractor
-            </h1>
-            <p className="mt-4 text-sm md:text-base text-gray-200">
+            </Reveal>
+            <Reveal
+              tag="p"
+              className="mt-4 text-sm md:text-base text-gray-200"
+              delay={0.1}
+            >
               Take the first step toward a healthier, happier you with our
               personalized, medically guided weight loss programs.
-            </p>
-            <button className="mt-6 bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-green-600 transition">
-              Not a Patient Yet? Schedule Today!
-              <span>→</span>
-            </button>
+            </Reveal>
+            <Reveal tag="div" delay={0.2}>
+              <button className="mt-6 bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-green-600 transition">
+                Not a Patient Yet? Schedule Today!
+                <span>→</span>
+              </button>
+            </Reveal>
           </div>
 
           {/* Optional Image / Illustration on right */}

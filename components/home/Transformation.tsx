@@ -1,5 +1,6 @@
 "use client";
 
+import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -44,7 +45,7 @@ export default function TransformationSection() {
           {/* Left: Swiper Card (70%) */}
           <div className="w-full lg:w-[70%]">
             {/* Card Wrapper */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 relative">
+            <Reveal className="bg-white rounded-2xl shadow-xl p-6 relative">
               <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
@@ -181,23 +182,28 @@ export default function TransformationSection() {
                 {/* Pagination */}
                 <div className="custom-pagination flex justify-center gap-2 mt-6 relative z-20"></div>
               </Swiper>
-            </div>
+            </Reveal>
           </div>
 
           {/* Right: Content */}
           <div className="w-full lg:w-[30%]">
-            <h2 className="text-3xl font-bold text-gray-900 leading-snug">
+            <Reveal
+              tag="h2"
+              className="text-3xl font-bold text-gray-900 leading-snug"
+            >
               See The Real <span className="text-primary">Transformations</span>{" "}
               <br /> and Lasting Results
-            </h2>
-            <p className="text-gray-600 mt-4">
+            </Reveal>
+            <Reveal tag="p" className="text-gray-600 mt-4" delay={0.1}>
               Our expert doctor will tailor a treatment program to address your
               unique needs, ensuring you achieve peak wellness.
-            </p>
-            <button className="mt-6 bg-black text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 transition hover:border hover:border-black hover:bg-white hover:text-black">
-              Schedule Today!
-              <span>→</span>
-            </button>
+            </Reveal>
+            <Reveal tag="div" delay={0.2}>
+              <button className="mt-6 bg-black text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 transition hover:border hover:border-black hover:bg-white hover:text-black">
+                Schedule Today!
+                <span>→</span>
+              </button>
+            </Reveal>
           </div>
         </div>
       </div>

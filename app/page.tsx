@@ -1,16 +1,17 @@
-import About from "@/components/About";
-import WhyChoose from "@/components/WhyChoose";
-import MedicalWeight from "@/components/MedicalWeight"
-import Testimonials from "@/components/Testimonials";
-import OurTeam from "@/components/OurTeam";
-import Transformation from "@/components/Transformation"
-import PainRelief from "@/components/PainRelief"
-import Blog from "@/components/Blog"
-import Hero from "@/components/hero";
+import About from "@/components/home/About";
+import Blog from "@/components/home/Blog";
+import Hero from "@/components/home/hero";
+import MedicalWeight from "@/components/home/MedicalWeight";
+import OurTeam from "@/components/home/OurTeam";
+import PainRelief from "@/components/home/PainRelief";
+import Testimonials from "@/components/home/Testimonials";
+import Transformation from "@/components/home/Transformation";
+import WhyChoose from "@/components/home/WhyChoose";
 
 export default function Home() {
   return (
     <>
+      <Hero />
       <WhyChoose />
       <About />
       <MedicalWeight />
@@ -20,5 +21,5 @@ export default function Home() {
       <PainRelief />
       <Blog />
     </>
-  )
+  );
 }

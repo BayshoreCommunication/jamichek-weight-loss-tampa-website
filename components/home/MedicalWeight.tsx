@@ -1,5 +1,6 @@
 "use client";
 
+import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
 
 export default function MedicalWeightLoss() {
@@ -42,44 +43,45 @@ export default function MedicalWeightLoss() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900">
+            <Reveal tag="h2" className="text-3xl font-bold text-gray-900">
               Medical Weight Loss
-            </h2>
-            <p className="text-gray-600 mt-2">
+            </Reveal>
+            <Reveal tag="p" className="text-gray-600 mt-2" delay={0.1}>
               We provide medically guided programs and therapies designed to
               help you achieve your weight loss goals, boost energy, and improve
               overall health.
-            </p>
+            </Reveal>
           </div>
-          <button className="mt-4 md:mt-0 border border-black rounded-full px-6 py-2 font-medium flex items-center gap-2 hover:bg-black hover:text-white transition ">
-            Explore More Services
-            <span>→</span>
-          </button>
+          <Reveal tag="div" delay={0.2}>
+            <button className="mt-4 md:mt-0 border border-black rounded-full px-6 py-2 font-medium flex items-center gap-2 hover:bg-black hover:text-white transition ">
+              Explore More Services
+              <span>→</span>
+            </button>
+          </Reveal>
         </div>
 
         {/* Services Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, idx) => (
-            <div
-              key={idx}
-              className="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 p-6 flex flex-col items-center text-center border border-gray-100 cursor-pointer"
-            >
-              <div className="w-full h-auto relative mb-4 rounded-xl overflow-hidden">
-                <Image
-                  src={service.img}
-                  alt={service.title}
-                  width={1000}
-                  height={800}
-                  className="object-cover object-top rounded-xl group-hover:scale-110 transition-transform duration-300 w-full h-auto"
-                />
+            <Reveal key={idx}>
+              <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 p-6 flex flex-col items-center text-center border border-gray-100 cursor-pointer">
+                <div className="w-full h-auto relative mb-4 rounded-xl overflow-hidden">
+                  <Image
+                    src={service.img}
+                    alt={service.title}
+                    width={1000}
+                    height={800}
+                    className="object-cover object-top rounded-xl group-hover:scale-110 transition-transform duration-300 w-full h-auto"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300">
+                  {service.desc}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors duration-300">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300">
-                {service.desc}
-              </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
