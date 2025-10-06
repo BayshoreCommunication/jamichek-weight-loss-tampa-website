@@ -157,7 +157,7 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Contacts us</h3>
             <ul className="space-y-3 text-sm text-gray-600">
               <li className="flex items-center gap-2">
-                <HiOutlineMail className="text-primary" /> contact@company.com
+                <HiOutlineMail className="text-primary" /> dana@jachimekchiro.com
               </li>
               <li className="flex items-center gap-2">
                 <HiOutlinePhone className="text-primary" /> (414) 687 – 5892
