@@ -1,6 +1,6 @@
 import PainRelief from "@/components/home/PainRelief";
-import BlogSection from "@/components/shared/Blog";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
+import Blogs from "@/components/the-wellness-journal/Blogs";
 import React from "react";
 
 const page = () => {
@@ -13,8 +13,8 @@ const page = () => {
           { label: "The Wellness Journal" }, // current page (no href)
         ]}
       />
-      <BlogSection/>
-      <PainRelief/>
+      <Blogs />
+      <PainRelief />
     </>
   );
 };

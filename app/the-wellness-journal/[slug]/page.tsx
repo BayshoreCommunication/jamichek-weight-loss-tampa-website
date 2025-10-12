@@ -84,9 +84,9 @@ export async function generateMetadata({
       title: blogDetails?.title,
       description: shortDescription,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://hessspinalandmedicalcenters-website.vercel.app/blog/${blogDetails?.slug}`,
+      url: `https://jamichek-weight-loss-tampa-website.vercel.app/blog/${blogDetails?.slug}`,
       type: "article",
-      site_name: "melamedlawpllc.com",
+      site_name: "jamichek-weight-loss-tampa-website.vercel.app/",
     },
   };
 }

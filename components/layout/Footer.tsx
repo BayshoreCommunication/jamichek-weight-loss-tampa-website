@@ -18,11 +18,11 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
+      <div className="max-w-[1640px] mx-auto md:pt-16 py-6 px-8">
         {/* ⭐ Grid 5 Columns */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 justify-center">
           {/* Column 1 */}
-          <div>
+          <div className="col-span-2 lg:max-w-[70%]">
             <div className="flex items-center gap-3">
               <Image
                 src="/images/footer/logo.png"
@@ -32,89 +32,94 @@ export default function Footer() {
                 className="max-w-[150px] w-full h-auto"
               />
             </div>
-            <p className="text-gray-600 mt-4 text-sm leading-relaxed">
+            <p className="text-gray-600 mt-4 text-base leading-relaxed">
               Helping you achieve lasting health and wellness with personalized,
               medically guided weight loss solutions.
             </p>
             {/* Social Icons */}
             <div className="flex gap-4 mt-4 text-primary text-lg">
-              <Link href="">
+              <Link
+                href="https://www.facebook.com/jachimekchiropractic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookF />
               </Link>
-              <Link href="">
+              <Link
+                href="https://twitter.com/jachimekchiro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.instagram.com/jachimekchiropractic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.linkedin.com/company/jachimekchiropractic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn />
               </Link>
-              <Link href="">
+              <Link
+                href="https://www.youtube.com/@jachimekchiropractic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaYoutube />
               </Link>
             </div>
           </div>
 
-          {/* Column 2*/}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <Link href="#" className="hover:text-primary">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary">
-                  Case studies
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary">
-                  Reviews
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-primary">
-                  Updates
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Column 3 */}
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-base text-gray-600 list-none">
               <li>
-                <Link href="#" className="hover:text-primary">
-                  About
+                <Link href="/" className="hover:text-primary">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Contact us
+                <Link href="/team" className="hover:text-primary">
+                  Meet The Team
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Careers
+                <Link
+                  href="/medical-weight-loss"
+                  className="hover:text-primary"
+                >
+                  Medical Weight Loss
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Culture
+                <Link
+                  href="/vitamins-and-peptides"
+                  className="hover:text-primary"
+                >
+                  Vitamins & Peptides
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Blog
+                <Link
+                  href="/regenerative-medicine"
+                  className="hover:text-primary"
+                >
+                  Regenerative Medicine
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/the-wellness-journal"
+                  className="hover:text-primary"
+                >
+                  The Wellness Journal
                 </Link>
               </li>
             </ul>
@@ -123,30 +128,30 @@ export default function Footer() {
           {/* Column 4 */}
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Support</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-base text-gray-600 list-none">
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Getting started
+                <Link href="/contact" className="hover:text-primary">
+                  Contact
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Help center
+                <Link href="/disclaimers" className="hover:text-primary">
+                  Disclaimers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Server status
+                <Link href="/terms-of-service" className="hover:text-primary">
+                  Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Report a bug
+                <Link href="/privacy-policy" className="hover:text-primary">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Chat support
+                <Link href="/cookie-policy" className="hover:text-primary">
+                  Cookie Policy
                 </Link>
               </li>
             </ul>
@@ -154,37 +159,36 @@ export default function Footer() {
 
           {/* Column 5 */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Contacts us</h3>
-            <ul className="space-y-3 text-sm text-gray-600">
+            <h3 className="font-semibold text-gray-900 mb-4">Contact Us</h3>
+            <ul className="space-y-3 text-base text-gray-600">
               <li className="flex items-center gap-2">
-                <HiOutlineMail className="text-primary" /> dana@jachimekchiro.com
+                <HiOutlineMail className="text-primary" />
+                <a
+                  href="mailto:support@jachimekchiro.com"
+                  className="hover:text-primary"
+                >
+                  support@jachimekchiro.com
+                </a>
               </li>
+
               <li className="flex items-center gap-2">
-                <HiOutlinePhone className="text-primary" /> (414) 687 – 5892
+                <HiOutlinePhone className="text-primary" />
+                <a href="tel:8132697546" className="hover:text-primary">
+                  813.269.7546
+                </a>
               </li>
+
               <li className="flex items-start gap-2">
                 <HiOutlineLocationMarker className="text-primary mt-1" />
-                <span>
-                  794 Mcallister St <br /> San Francisco, 94102
-                </span>
+                <span>5111 Ehrlich Rd. Ste 128 Tampa, FL 33624</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
+        <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-center text-base text-gray-600">
           <p>Copyright © 2025 Jachimek Chiropractic & Wellness Center</p>
-          <p>
-            All Rights Reserved |{" "}
-            <Link href="#" className="text-primary hover:underline">
-              Terms and Conditions
-            </Link>{" "}
-            |{" "}
-            <Link href="#" className="text-primary hover:underline">
-              Privacy Policy
-            </Link>
-          </p>
         </div>
       </div>
     </footer>
