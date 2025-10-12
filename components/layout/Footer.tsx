@@ -29,7 +29,7 @@ export default function Footer() {
                 alt="Logo"
                 width={1000}
                 height={700}
-                className="w-full h-auto"
+                className="max-w-[150px] w-full h-auto"
               />
             </div>
             <p className="text-gray-600 mt-4 text-sm leading-relaxed">
