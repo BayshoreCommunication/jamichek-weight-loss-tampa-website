@@ -88,28 +88,28 @@ export default function ContactForm() {
                 htmlFor="firstName"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                First Name
+                Full Name
               </label>
               <input
-                id="firstName"
-                name="firstName"
+                id="name"
+                name="name"
                 type="text"
-                placeholder="First Name"
+                placeholder="Full Name"
                 className="w-full border border-[#EDEDED] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
               />
             </div>
             <div>
-              <label
-                htmlFor="lastName"
+            <label
+                htmlFor="phone"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Last Name
+                Phone
               </label>
               <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                placeholder="Last Name"
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Phone"
                 className="w-full border border-[#EDEDED] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
               />
             </div>
@@ -134,16 +134,16 @@ export default function ContactForm() {
             </div>
             <div>
               <label
-                htmlFor="phone"
+                htmlFor="subject"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Phone
+                Subject
               </label>
               <input
-                id="phone"
-                name="phone"
+                id="subject"
+                name="subject"
                 type="tel"
-                placeholder="Phone"
+                placeholder="Subject"
                 className="w-full border border-[#EDEDED] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
               />
             </div>
