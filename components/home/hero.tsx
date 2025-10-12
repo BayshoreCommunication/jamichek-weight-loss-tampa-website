@@ -12,7 +12,7 @@ export default function Hero() {
   const loopText = ["Lose Weight", "Gain Energy", "Confidence"];
 
   return (
-    <section className="relative py-12 text-center -mt-[60px] md:-mt-[205px]">
+    <section className="relative py-12 text-center -mt-[170px] md:-mt-[205px]">
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/images/hero/bg.png"

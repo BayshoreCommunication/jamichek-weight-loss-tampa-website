@@ -2,6 +2,7 @@
 
 import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
+import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,8 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function TransformationSection() {
   const slides = [
     {
-      before: "/images/transformation/image 72.jpg",
-      after: "/images/transformation/image 73.png",
+      before: "/images/transformation/MarkWood-before.png",
+      after: "/images/transformation/MarkWood-after.png",
       profile: "/images/transformation/Mask.png",
       name: "Mark Wood",
       role: "IT Engineer",
@@ -24,8 +25,8 @@ export default function TransformationSection() {
       },
     },
     {
-      before: "/images/transformation/Frame 1000006233.jpg",
-      after: "/images/transformation/Frame 1000006234.png",
+      before: "/images/transformation/Emily-before.png",
+      after: "/images/transformation/Emily-after.png",
       profile: "/images/transformation/Mask group (1).png",
       name: "Emily",
       role: "Entrepreneur",
@@ -63,30 +64,33 @@ export default function TransformationSection() {
                   <SwiperSlide key={idx}>
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Before/After */}
-                      <div className="flex gap-4">
-                        <div className="flex flex-col items-center">
+                      <div className="flex gap-4 flex-1">
+                        {/* Before */}
+                        <div className="flex flex-col items-center w-full">
                           <span className="text-primary font-semibold mb-2">
                             Before
                           </span>
-                          <div className="w-[150px] h-[200px] relative rounded-lg overflow-hidden">
+                          <div className="rounded-lg overflow-hidden w-full h-[400px] relative">
                             <Image
                               src={slide.before}
                               alt="Before"
                               fill
-                              className="object-cover"
+                              className="object-cover w-full h-full"
                             />
                           </div>
                         </div>
-                        <div className="flex flex-col items-center">
+
+                        {/* After */}
+                        <div className="flex flex-col items-center w-full">
                           <span className="text-primary font-semibold mb-2">
                             After
                           </span>
-                          <div className="w-[150px] h-[200px] relative rounded-lg overflow-hidden">
+                          <div className="rounded-lg overflow-hidden w-full h-[400px] relative">
                             <Image
                               src={slide.after}
                               alt="After"
                               fill
-                              className="object-cover"
+                              className="object-cover w-full h-full"
                             />
                           </div>
                         </div>
@@ -199,10 +203,28 @@ export default function TransformationSection() {
               unique needs, ensuring you achieve peak wellness.
             </Reveal>
             <Reveal tag="div" delay={0.2}>
-              <button className="mt-6 bg-black text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 transition hover:border hover:border-black hover:bg-white hover:text-black">
+              <Link
+                href="/https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+                target="_blank"
+                className="inline-flex gap-2 items-center px-6 py-3 mt-4 bg-black text-white text-sm font-medium rounded-full hover:bg-primary transition"
+              >
                 Schedule Today!
-                <span>→</span>
-              </button>
+                <div className="bg-white shrink-0  rounded-full w-5 h-5 flex items-center justify-center text-black">
+                  <svg
+                    className="w-4 h-4 "
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </Link>
             </Reveal>
           </div>
         </div>
