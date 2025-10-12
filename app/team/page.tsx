@@ -10,7 +10,6 @@ const page = () => {
     <>
       <BreadcrumbSection
         title="Nice To Meet You, Greater Carrollwood Tampa"
-        title2="Chiropractors & Team"
         items={[
           { label: "Home", href: "/" },
           { label: "Meet The Team" }, // current page (no href)
