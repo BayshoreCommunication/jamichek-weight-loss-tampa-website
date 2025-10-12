@@ -4,27 +4,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 
-import { Albert_Sans } from 'next/font/google';
+import { Albert_Sans } from "next/font/google";
 
 const albertSans = Albert_Sans({
-  subsets: ['latin'], // Or other desired subsets
-  display: 'swap', // Recommended for font loading optimization
+  subsets: ["latin"], // Or other desired subsets
+  display: "swap", // Recommended for font loading optimization
   // You can also specify weights if you are not using a variable font
-  weight: ['400', '700'],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Medical Weight Loss",
   description: "Medical Weight Loss website",
-  // metadataBase: new URL(""),
+  metadataBase: new URL("https://jamichek-weight-loss-website.vercel.app/"),
   alternates: {
     canonical: "/",
     languages: {
       "en-US": "/en-US",
     },
   },
+
   openGraph: {
-    images: "/", //opengraph-image.png
+    images: "/opengraph-image.png",
   },
 };
 
@@ -34,10 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={albertSans.className}
-    >
+    <html lang="en" className={albertSans.className}>
       <body className="">
         <Providers>
           <Navbar />
