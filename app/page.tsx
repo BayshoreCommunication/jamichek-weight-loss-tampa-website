@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Blog from "@/components/home/Blog";
 import Hero from "@/components/home/hero";
 import MedicalWeight from "@/components/home/MedicalWeight";
+import NewPatientSpecial from "@/components/home/NewPatientSpecial";
 import OurTeam from "@/components/home/OurTeam";
 import PainRelief from "@/components/home/PainRelief";
 import Testimonials from "@/components/home/Testimonials";
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Hero />
       <WhyChoose />
+      <NewPatientSpecial />
       <About />
       <MedicalWeight />
       <Testimonials />
