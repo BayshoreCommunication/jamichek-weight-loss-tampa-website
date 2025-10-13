@@ -46,6 +46,14 @@ const MedicalWeightLossData = [
   },
   {
     id: 6,
+    image: "/images/Medical-Weight-Loss/hormon.png",
+    title: "HRT (Hormone Replacement Therapy)",
+    details:
+      "Hormone Replacement Therapy (HRT) is a medical treatment that helps balance hormone levels in the body, commonly used to relieve symptoms of menopause such as hot flashes, mood swings, and bone loss. It can also support hormonal health in other conditions by supplementing estrogen, progesterone, or testosterone.",
+    bookingLink: "/contact",
+  },
+  {
+    id: 7,
     image: "/images/Medical-Weight-Loss/Chiropractic-Care.png",
     title: "Chiropractic Care",
     details:

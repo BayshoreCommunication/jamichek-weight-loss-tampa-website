@@ -31,6 +31,11 @@ export default function MedicalWeightLoss() {
       img: "/images/medical/image 76.jpg",
     },
     {
+      title: "HRT (Hormone Replacement Therapy)",
+      desc: "Hormone Replacement Therapy (HRT) is a medical treatment that helps balance hormone levels in the body, commonly used to relieve symptoms of menopause such as hot flashes, mood swings, and bone loss. It can also support hormonal health in other conditions by supplementing estrogen, progesterone, or testosterone.",
+      img: "/images/medical/hormon.png",
+    },
+    {
       title: "Chiropractic Care",
       desc: "Expert chiropractic care to relieve pain, improve mobility, and support your overall health and wellness.",
       img: "/images/medical/image 77.jpg",
@@ -62,7 +67,7 @@ export default function MedicalWeightLoss() {
 
         {/* Services Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, idx) => (
+          {services.slice(0, 6).map((service, idx) => (
             <Reveal key={idx}>
               <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 p-6 flex flex-col items-center text-center border border-gray-100 cursor-pointer">
                 <div className="w-full h-auto relative mb-4 rounded-xl overflow-hidden">
@@ -77,7 +82,7 @@ export default function MedicalWeightLoss() {
                 <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300">
+                <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300  line-clamp-3">
                   {service.desc}
                 </p>
               </div>
