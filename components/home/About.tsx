@@ -13,7 +13,7 @@ export default function About() {
             <Image
               src="/images/about/about.jpg"
               alt="Our Team"
-              className="w-auto h-auto object-contain rounded-xl"
+              className="w-auto h-auto object-contain rounded-xl "
               width={1000}
               height={470}
             />
