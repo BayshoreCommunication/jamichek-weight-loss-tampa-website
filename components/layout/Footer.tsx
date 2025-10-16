@@ -174,7 +174,7 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <HiOutlinePhone className="text-primary" />
                 <a href="tel:8132697546" className="hover:text-primary">
-                  813.269.7546
+                 813.269.7546
                 </a>
               </li>
 

@@ -103,7 +103,7 @@ export default function Navbar() {
               className="flex items-center gap-2 px-5 py-2 rounded-full bg-black text-white font-medium hover:bg-primary transition-colors"
             >
               <Phone size={18} />
-              813.960.2225
+              813.269.7546
             </Link>
           </div>
 
