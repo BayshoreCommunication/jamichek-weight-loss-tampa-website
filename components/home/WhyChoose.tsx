@@ -9,6 +9,7 @@ export default function WhyChoose() {
       id: "01",
       title: "Our Purpose",
       text: "To empower every patient with personalized, medically assisted weight loss and wellness solutions that create lasting health and confidence.",
+      href: "/our-purpose",
       icon: (
         <Image
           src="/images/whychoose/icon1.png"
@@ -23,6 +24,7 @@ export default function WhyChoose() {
       id: "02",
       title: "Meet the Team",
       text: "Our team of experienced medical professionals is dedicated to guiding you on your weight loss and wellness journey with personalized care, expertise, and compassion.",
+      href: "/meet-the-team",
       icon: (
         <Image
           src="/images/whychoose/icon2.png"
@@ -37,6 +39,7 @@ export default function WhyChoose() {
       id: "03",
       title: "Our Services",
       text: "At Medical Weight Loss Tampa, we offer a range of medically guided programs and therapies designed to help you lose weight safely, boost energy, and improve overall wellness.",
+      href: "/our-services",
       icon: (
         <Image
           src="/images/whychoose/icon3.png"
@@ -57,8 +60,9 @@ export default function WhyChoose() {
         <Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
-              <div
+              <Link
                 key={card.id}
+                href={card.href}
                 className="group bg-white rounded-2xl shadow-md p-8 flex items-center justify-center md:items-start flex-col text-center md:text-left hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer h-full"
               >
                 <span className="text-gray-400 font-semibold mb-4">
@@ -73,7 +77,7 @@ export default function WhyChoose() {
                 <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors duration-300">
                   {card.text}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </Reveal>
