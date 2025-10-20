@@ -92,7 +92,7 @@ const VitaminsPeptidesPage = () => {
                   <h3 className="text-xl lg:text-3xl font-semibold mt-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-base mt-2 mb-6">
+                  <p className="text-gray-600 text-base mt-2 mb-6 ">
                     {service.details}
                   </p>
 
