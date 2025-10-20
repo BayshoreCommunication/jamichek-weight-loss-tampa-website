@@ -38,7 +38,7 @@ export default function Blogs() {
         </div>
       </Reveal>
 
-      <div className="flex flex-col md:flex-row md:items-center justify-center mb-10">
+      {/* <div className="flex flex-col md:flex-row md:items-center justify-center mb-10">
         <Stagger>
           <Reveal tag="div" y={16} opacityFrom={0}>
             <div>
@@ -48,7 +48,7 @@ export default function Blogs() {
             </div>
           </Reveal>
         </Stagger>
-      </div>
+      </div> */}
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
         {blogs.map((blog, index) => (

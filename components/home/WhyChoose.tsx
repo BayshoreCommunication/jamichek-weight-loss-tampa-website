@@ -24,7 +24,7 @@ export default function WhyChoose() {
       id: "02",
       title: "Meet the Team",
       text: "Our team of experienced medical professionals is dedicated to guiding you on your weight loss and wellness journey with personalized care, expertise, and compassion.",
-      href: "/meet-the-team",
+      href: "/team",
       icon: (
         <Image
           src="/images/whychoose/icon2.png"
@@ -102,7 +102,7 @@ export default function WhyChoose() {
           </Reveal>
           <Reveal tag="div" delay={0.2}>
             <Link
-              href="#"
+              href="/our-services"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white font-medium hover:bg-green-800 transition"
             >
               Explore More <ArrowRight size={18} />

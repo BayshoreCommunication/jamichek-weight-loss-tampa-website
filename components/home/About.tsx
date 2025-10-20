@@ -51,7 +51,7 @@ export default function About() {
             <Reveal tag="div" delay={0.15}>
               <button className="bg-black text-white px-6 py-3 rounded-full w-fit transition mb-8 hover:bg-white hover:border hover:border-black hover:text-black">
                 <Link
-                  href="/"
+                  href="/team"
                   className="inline-flex items-center gap-2 text-white font-medium transition hover:text-black"
                 >
                   Explore More <ArrowRight size={18} />

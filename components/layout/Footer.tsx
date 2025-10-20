@@ -39,7 +39,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-4 text-primary text-lg">
               <Link
-                href="https://www.facebook.com/jachimekchiropractic"
+                href="https://www.facebook.com/MedicalWeightLossTampa"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ export default function Footer() {
                 <FaTwitter />
               </Link>
               <Link
-                href="https://www.instagram.com/jachimekchiropractic"
+                href="https://www.instagram.com/medicalweightlosstampa?igsh=M2dmeGVicW9zbGFo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -158,11 +158,6 @@ export default function Footer() {
               <li>
                 <Link href="/privacy-policy" className="hover:text-primary">
                   Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookie-policy" className="hover:text-primary">
-                  Cookie Policy
                 </Link>
               </li>
             </ul>

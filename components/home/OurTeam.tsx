@@ -89,27 +89,6 @@ export default function OurTeam() {
 
                   <div className="flex  items-center justify-between mt-4 lg:mt-6">
                     <div className="flex gap-4 ">
-                      <Link
-                        href={member.socialsMedia.facebook}
-                        target="_blank"
-                        className="text-black/80 hover:text-blue-800 p-2 rounded-full bg-[#F2F4F7] text-xl"
-                      >
-                        <TbBrandFacebook />
-                      </Link>
-                      <Link
-                        href={member.socialsMedia.instagram}
-                        target="_blank"
-                        className="text-black/80 hover:text-pink-800 p-2 rounded-full bg-[#F2F4F7] text-xl"
-                      >
-                        <FiInstagram />
-                      </Link>
-                      <Link
-                        href={member.socialsMedia.x}
-                        target="_blank"
-                        className="text-black/80 hover:text-black p-2 rounded-full bg-[#F2F4F7] text-xl"
-                      >
-                        <FaXTwitter />
-                      </Link>
                     </div>
                     <div>
                       <button
@@ -157,7 +136,7 @@ export default function OurTeam() {
                     {selectedMember.designation}
                   </p>
 
-                  <div className="flex gap-4 mt-6">
+                  {/* <div className="flex gap-4 mt-6">
                     <Link
                       href={selectedMember.socialsMedia.facebook}
                       target="_blank"
@@ -179,7 +158,7 @@ export default function OurTeam() {
                     >
                       <FaXTwitter />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

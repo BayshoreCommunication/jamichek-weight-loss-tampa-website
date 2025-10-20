@@ -1,7 +1,7 @@
 "use client";
 
 import Reveal from "@/components/motion/Reveal";
-
+import Link from "next/link";
 export default function PainRelief() {
   return (
     <div className="w-full flex justify-center px-8">
@@ -24,9 +24,11 @@ export default function PainRelief() {
             </Reveal>
             <Reveal tag="div" delay={0.2}>
               <button className="mt-6 bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-green-600 transition">
+                <Link href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+            target="_blank">
                 Not a Patient Yet? Schedule Today!
                 <span>→</span>
-              </button>
+                </Link>              </button>
             </Reveal>
           </div>
 

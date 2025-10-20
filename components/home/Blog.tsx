@@ -11,21 +11,21 @@ const blogs = [
     title: "What Happens to Your Gut with Age",
     desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
     img: "/images/blog/img1.png",
-    link: "#",
+    slug: "what-happens-to-your-gut-with-age",
   },
   {
     id: 2,
     title: "What Is the FODMAP Diet?",
-    desc: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    desc: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
     img: "/images/blog/img2.png",
-    link: "#",
+    slug: "what-is-the-fodmap-diet",
   },
   {
     id: 3,
     title: "Myths and Facts About Going Gluten-Free",
     desc: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
     img: "/images/blog/img3.png",
-    link: "#",
+    slug: "myths-and-facts-about-going-gluten-free",
   },
 ];
 
@@ -51,7 +51,10 @@ export default function BlogSection() {
       <div className="grid gap-8 md:grid-cols-3">
         {blogs.map((blog) => (
           <Reveal key={blog.id}>
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300">
+            <Link
+              href={`/the-wellness-journal/${blog.slug}`}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300 cursor-pointer block"
+            >
               {/* Image */}
               <div className="w-full h-auto relative">
                 <Image
@@ -70,11 +73,9 @@ export default function BlogSection() {
                   <ArrowUpRight size={18} />
                 </h3>
                 <p className="text-gray-600 text-sm">{blog.desc}</p>
-                <Link href={blog.link} className="text-primary font-medium">
-                  Read More
-                </Link>
+                <span className="text-primary font-medium">Read More</span>
               </div>
-            </div>
+            </Link>
           </Reveal>
         ))}
       </div>

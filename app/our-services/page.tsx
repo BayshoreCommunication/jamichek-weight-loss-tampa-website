@@ -7,7 +7,7 @@ import VitaminsPeptidesPage from "@/components/vitamins-peptides/VitaminsPeptide
 const page = () => {
   return (
     <>
-        <BreadcrumbSection
+      <BreadcrumbSection
         title="Transform Your Body with Medical Weight Loss Tampa"
         items={[
           { label: "Home", href: "/" },
@@ -19,8 +19,6 @@ const page = () => {
       <TransformationSection />
       <PainRelief />
     </>
-    
-  )
-}
-
-export default page
+  );
+};
+export default page;

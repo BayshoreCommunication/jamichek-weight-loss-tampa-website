@@ -2,6 +2,7 @@
 
 import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MedicalWeightLoss() {
   const services = [
@@ -9,36 +10,43 @@ export default function MedicalWeightLoss() {
       title: "Sema",
       desc: "Supporting your journey to lasting health with personalized guidance, advanced therapies, and compassionate care.",
       img: "/images/medical/Frame 1000006283.png",
+      href: "/medical-weight-loss",
     },
     {
       title: "Tirzep",
       desc: "Tirzep helps you achieve safe, effective weight loss by supporting appetite control and metabolism, tailored to your personalized weight loss plan.",
       img: "/images/medical/Frame 1000006284.png",
+      href: "/medical-weight-loss",
     },
     {
       title: "Retatrutide",
       desc: "Retatrutide supports your weight loss journey by enhancing metabolism and controlling appetite, helping you achieve safe and lasting results under medical supervision.",
       img: "/images/medical/Frame 1000006285.png",
+      href: "/medical-weight-loss",
     },
     {
       title: "Nutritional Counseling",
       desc: "Personalized nutritional guidance designed to support your weight loss goals, boost energy, and create lasting healthy habits.",
       img: "/images/medical/image 75.jpg",
+      href: "/medical-weight-loss",
     },
     {
       title: "Personalized Support",
       desc: "Dedicated guidance every step of the way to ensure your weight loss journey is safe, effective, and tailored to your unique needs",
       img: "/images/medical/image 76.jpg",
+      href: "/medical-weight-loss",
     },
     {
       title: "HRT (Hormone Replacement Therapy)",
       desc: "Hormone Replacement Therapy (HRT) is a medical treatment that helps balance hormone levels in the body, commonly used to relieve symptoms of menopause such as hot flashes, mood swings, and bone loss. It can also support hormonal health in other conditions by supplementing estrogen, progesterone, or testosterone.",
       img: "/images/medical/hormon.png",
+      href: "/medical-weight-loss",
     },
     {
       title: "Chiropractic Care",
       desc: "Expert chiropractic care to relieve pain, improve mobility, and support your overall health and wellness.",
       img: "/images/medical/image 77.jpg",
+      href: "/regenerative-medicine",
     },
   ];
 
@@ -69,7 +77,10 @@ export default function MedicalWeightLoss() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((service, idx) => (
             <Reveal key={idx}>
-              <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 p-6 flex flex-col items-center text-center border border-gray-100 cursor-pointer">
+              <Link
+                href="/our-services"
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 p-6 flex flex-col items-center text-center border border-gray-100 cursor-pointer"
+              >
                 <div className="w-full h-auto relative mb-4 rounded-xl overflow-hidden">
                   <Image
                     src={service.img}
@@ -85,7 +96,7 @@ export default function MedicalWeightLoss() {
                 <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300  line-clamp-3">
                   {service.desc}
                 </p>
-              </div>
+              </Link>
             </Reveal>
           ))}
         </div>
