@@ -45,13 +45,13 @@ export default function Footer() {
               >
                 <FaFacebookF />
               </Link>
-              <Link
+              {/* <Link
                 href="https://twitter.com/jachimekchiro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTwitter />
-              </Link>
+              </Link> */}
               <Link
                 href="https://www.instagram.com/medicalweightlosstampa?igsh=M2dmeGVicW9zbGFo"
                 target="_blank"
@@ -59,20 +59,20 @@ export default function Footer() {
               >
                 <FaInstagram />
               </Link>
-              <Link
+              {/* <Link
                 href="https://www.linkedin.com/company/jachimekchiropractic"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://www.youtube.com/@jachimekchiropractic"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaYoutube />
-              </Link>
+              </Link> */}
             </div>
           </div>
 

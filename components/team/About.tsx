@@ -62,7 +62,7 @@ export default function About() {
             </div>
 
             <a
-              href="#"
+              href="https://share.google/gvEBvr3N2B1QK82KM"
               className="text-green-600 hover:underline text-sm mt-2 md:mt-0"
             >
               View all Google Reviews here

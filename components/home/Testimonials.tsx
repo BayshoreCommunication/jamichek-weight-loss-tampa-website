@@ -106,7 +106,7 @@ export default function Testimonials() {
             personalized weight loss and wellness programs have changed lives.
           </p>
           <a
-            href="#"
+            href="https://share.google/gvEBvr3N2B1QK82KM"
             className="inline-block mt-4 text-primary font-medium hover:underline"
           >
             View all Google Reviews here
