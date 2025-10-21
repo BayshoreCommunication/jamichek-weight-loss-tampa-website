@@ -21,7 +21,7 @@ export default function Home() {
       <OurTeam />
       <Transformation />
       <PainRelief />
-      <Blog />
+      {/* <Blog /> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ import React from "react";
 const page = async () => {
   const blogPostData = await GetAllPostData();
 
-  console.log("blog post data", blogPostData);
+  // console.log("blog post data", blogPostData);
 
   return (
     <>
