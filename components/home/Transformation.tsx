@@ -203,9 +203,10 @@ export default function TransformationSection() {
               unique needs, ensuring you achieve peak wellness.
             </Reveal>
             <Reveal tag="div" delay={0.2}>
-              <Link
-                href="/https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+              <a
+                href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex gap-2 items-center px-6 py-3 mt-4 bg-black text-white text-sm font-medium rounded-full hover:bg-primary transition"
               >
                 Schedule Today!
@@ -224,7 +225,7 @@ export default function TransformationSection() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
             </Reveal>
           </div>
         </div>
