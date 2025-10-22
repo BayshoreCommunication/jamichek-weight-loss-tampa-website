@@ -24,7 +24,7 @@ export default function Faq() {
         </div>
 
         <div>
-          <p className="font-semibold text-gray-900 mb-2">
+          <p className="font-semibold text-gray-900 mb-2 ">
             Are you accepting new patients?
           </p>
           <p>
