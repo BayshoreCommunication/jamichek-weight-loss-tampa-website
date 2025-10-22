@@ -33,12 +33,14 @@ export default function Faq() {
             and take advantage of our new patient special! We also treat Auto
             Accidents, Workman&apos;s Comp, and Slip &amp; Fall cases.
           </p>
+          <div className="mt-4 text-primary">
           <Link
             href="https://go.carecredit.com/consumer/home?sitecode=CCCALDS2X"
             target="_blank"
           >
             <span className="underline">Credit Link</span>
           </Link>
+          </div>
         </div>
       </div>
     </section>
