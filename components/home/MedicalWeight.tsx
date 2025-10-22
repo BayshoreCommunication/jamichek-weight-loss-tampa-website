@@ -66,10 +66,12 @@ export default function MedicalWeightLoss() {
             </Reveal>
           </div>
           <Reveal tag="div" delay={0.2}>
+            <Link href="/our-services">
             <button className="mt-4 md:mt-0 border border-black rounded-full px-6 py-2 font-medium flex items-center gap-2 hover:bg-black hover:text-white transition ">
               Explore More Services
               <span>→</span>
             </button>
+            </Link>
           </Reveal>
         </div>
 
