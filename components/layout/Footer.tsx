@@ -101,14 +101,14 @@ export default function Footer() {
                   Our Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/medical-weight-loss"
                   className="hover:text-primary"
                 >
                   Medical Weight Loss
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/vitamins-and-peptides"

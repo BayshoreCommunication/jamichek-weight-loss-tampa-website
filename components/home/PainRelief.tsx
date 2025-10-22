@@ -24,9 +24,9 @@ export default function PainRelief() {
             </Reveal>
             <Reveal tag="div" delay={0.2}>
               <button className="mt-6 bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-green-600 transition">
-                <Link href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+                <Link href="https://jamichek-weight-loss-website.vercel.app/"
             target="_blank">
-                Not a Patient Yet? Schedule Today!
+                Click Here To Learn More
                 <span>→</span>
                 </Link>              </button>
             </Reveal>
