@@ -8,6 +8,7 @@ import PainRelief from "@/components/home/PainRelief";
 import Testimonials from "@/components/home/Testimonials";
 import Transformation from "@/components/home/Transformation";
 import WhyChoose from "@/components/home/WhyChoose";
+import Faq from "@/components/shared/Faq";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <OurTeam />
       <Transformation />
       <PainRelief />
+      <Faq/>
       {/* <Blog /> */}
     </>
   );
