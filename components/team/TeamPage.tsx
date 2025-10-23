@@ -11,27 +11,27 @@ const teammatesData = [
   {
     id: 1,
     image: "/images/team/Emily.png",
-    name: `Dr. Emily Devol Webster "`,
+    name: `Dr. Emily Devol Webster`,
     designation: "Medical Director",
     details: `Dr. Emily Devol Webster always knew she wanted to help people and began manifesting her career as a physician from the age of 14. She attended Ohio University Heritage College of Osteopathic Medicine in 2011, followed by Rowan University for residency training, to pursue her dreams. The morning of her medical school graduation, Emily received a phone call that would change her life forever- she was diagnosed with breast cancer. Three days later Emily had a bilateral mastectomy- a procedure where both breasts are removed at the same time. She wrestled through 9 surgeries, dozens of treatments, multiple reconstructions, and a handful of complications while undertaking residency. While undergoing cancer treatment as a medical resident, Dr. Devol Webster even testified before the New Jersey State Assembly, leading to instrumental expansion of the New Jersey State paid family and disability laws.  Through her own personal experiences as a patient, Dr. Devol Webster realized her true passion. Since then, she has dedicated her life to helping men and women achieve their wellness and aesthetic goals through the art and science of modern medicine. Through years of training and practice she has been appointed a National Speaker and KOL for top aesthetic companies, her office has been named as a Center of Excellence training facility, she has been awarded Tampa Top Doc in Cosmetic Surgery 4 years in a row, and has continued to train internationally with top medical providers in the body sculpting and aesthetic field. She uses her experience to empower and teach others to live their life to the fullest. Today, Emily is married to a loving and supportive husband, and has a beautiful 5-year-old daughter that's just as sweet, lively, and captivating as her mommy. Dr. Devol Webster is passionate about continuing education, so that she may provide the most innovative and cutting edge technologies in the field of cosmetic body sculpting, aesthetic medicine, and bio-hacking. In the words of Dr. Devol Webster, "wellness has completely transformed my life and I want to share my experience and expertise with others because I believe we all deserve to not only look, but feel our best." `,
-    socialsMedia: {
-      facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
-      x: "https://x.com",
-    },
+    // socialsMedia: {
+    //   facebook: "https://facebook.com",
+    //   instagram: "https://instagram.com",
+    //   x: "https://x.com",
+    // },
   },
   {
     id: 2,
     image: "/images/team/Dana.png",
-    name: `Dana Osnos"`,
+    name: `Dana Osnos`,
     designation: "Executive Director",
     details:
       "Dana was born in Pasadena, California, and raised in Cleveland, Ohio, before moving to Florida at the age of 10. Growing up, she developed a love for writing and communication, which led her to study Journalism in high school in Tampa. During this time, she was actively involved in clubs such as Quill & Scroll and the National Honor Society, where she honed her leadership and storytelling skills. Her professional journey began in the food and beverage industry, where she worked as a corporate trainer for Applebee's. In this role, she traveled across Florida, training staff and assisting with the successful launch of new locations. This experience not only strengthened her skills in mentorship and team-building but also deepened her passion for helping others succeed. In 2018, Dana made a career shift into the health and wellness industry, driven by a strong desire to help individuals live happier, healthier, and pain-free lives. Through this transition, she has continued to focus on personal development and making a meaningful impact in the lives of those she serves. Beyond her professional endeavors, Dana is a devoted mother to three amazing children—Elijah, Nevaeh, and Madison—who inspire her every day. She enjoys attending sporting events, spending quality time with family, engaging in community outreach, and expanding her knowledge of American Sign Language (ASL). Dedicated to continuous growth, she strives to uplift those around her and leave a lasting positive impact both at home and in her community. ",
-    socialsMedia: {
-      facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
-      x: "https://x.com",
-    },
+    // socialsMedia: {
+    //   facebook: "https://facebook.com",
+    //   instagram: "https://instagram.com",
+    //   x: "https://x.com",
+    // },
   },
 ];
 
@@ -85,7 +85,7 @@ const TeamPage = () => {
                     </p>
 
                     <div className="flex  items-center justify-between mt-4 lg:mt-6">
-                      <div className="flex gap-4 ">
+                      {/* <div className="flex gap-4 ">
                         <Link
                           href={member.socialsMedia.facebook}
                           target="_blank"
@@ -107,7 +107,7 @@ const TeamPage = () => {
                         >
                           <FaXTwitter />
                         </Link>
-                      </div>
+                      </div> */}
                       <div>
                         <button
                           onClick={() => setSelectedMember(member)}
@@ -154,7 +154,7 @@ const TeamPage = () => {
                       {selectedMember.designation}
                     </p>
 
-                    <div className="flex gap-4 mt-6">
+                    {/* <div className="flex gap-4 mt-6">
                       <Link
                         href={selectedMember.socialsMedia.facebook}
                         target="_blank"
@@ -176,7 +176,7 @@ const TeamPage = () => {
                       >
                         <FaXTwitter />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

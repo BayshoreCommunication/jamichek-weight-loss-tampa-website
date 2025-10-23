@@ -87,13 +87,13 @@ export default function OurTeam() {
                     {member.details}
                   </p>
 
-                  <div className="flex  items-center justify-between mt-4 lg:mt-6">
+                  <div className="flex  items-center  mt-4 lg:mt-6">
                     <div className="flex gap-4 ">
                     </div>
                     <div>
                       <button
                         onClick={() => setSelectedMember(member)}
-                        className="underline text-primary text-medium"
+                        className="underline text-primary text-medium "
                       >
                         Read More
                       </button>
