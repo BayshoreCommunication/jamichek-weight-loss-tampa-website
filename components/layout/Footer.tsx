@@ -2,13 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import {
   HiOutlineLocationMarker,
   HiOutlineMail,
@@ -180,13 +174,20 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <HiOutlinePhone className="text-primary" />
                 <a href="tel:8132697546" className="hover:text-primary">
-                 813.269.7546
+                  813.269.7546
                 </a>
               </li>
 
               <li className="flex items-start gap-2">
                 <HiOutlineLocationMarker className="text-primary mt-1" />
-                <span>5111 Ehrlich Rd. Ste 128 Tampa, FL 33624</span>
+                <a
+                  href="https://www.google.com/maps/dir//5111+Ehrlich+Rd+Ste+128,+Tampa,+FL+33624,+United+States/@28.0857723,-82.5372913,17.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88c2c1ddd73750a1:0xdb88558beba9d695!2m2!1d-82.5346904!2d28.0856448?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  5111 Ehrlich Rd. Ste 128 Tampa, FL 33624
+                </a>
               </li>
             </ul>
           </div>
