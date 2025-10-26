@@ -24,11 +24,11 @@ export default function PainRelief() {
             </Reveal>
             <Reveal tag="div" delay={0.2}>
               <button className="mt-6 bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-green-600 transition">
-                <Link href="https://jamichek-weight-loss-website.vercel.app/"
-            target="_blank">
-                Click Here To Learn More
-                <span>→</span>
-                </Link>              </button>
+                <Link href="https://www.jachimekchiro.com" target="_blank">
+                  Click Here To Learn More
+                  <span>→</span>
+                </Link>{" "}
+              </button>
             </Reveal>
           </div>
 

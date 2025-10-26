@@ -80,9 +80,9 @@ export async function generateMetadata({
       title: blogDetails?.title,
       description: shortDescription,
       images: blogDetails?.featuredImage?.image?.url,
-      url: `https://jamichek-weight-loss-tampa-website.vercel.app/blog/${blogDetails?.slug}`,
+      url: `https://www.medicalweightlosstampa.com/blog/${blogDetails?.slug}`,
       type: "article",
-      site_name: "jamichek-weight-loss-tampa-website.vercel.app/",
+      site_name: ".medicalweightlosstampa.com",
     },
   };
 }
