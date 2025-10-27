@@ -22,7 +22,7 @@ const teammatesData = [
   },
   {
     id: 2,
-    image: "/images/team/Dana.png",
+    image: "/images/team/Dana1.png",
     name: `Dana Osnos`,
     designation: "Executive Director",
     details:
