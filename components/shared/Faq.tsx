@@ -34,12 +34,24 @@ export default function Faq() {
             Accidents, Workman&apos;s Comp, and Slip &amp; Fall cases.
           </p>
           <div className="mt-4 text-primary">
-          <Link
+            {/* <Link
             href="https://go.carecredit.com/consumer/home?sitecode=CCCALDS2X"
             target="_blank"
           >
             <span className="underline">Credit Link</span>
-          </Link>
+          </Link> */}
+            <a
+              href="https://www.carecredit.com/go/682RKH/?dtc=DS9X&sitecode=CCLBADS9X"
+              target="_blank"
+              className="flex justify-center items-center"
+            >
+              <img
+                width="275"
+                style={{ maxWidth: "100%" }}
+                src="https://www.carecredit.com/sites/pc/image/flexible-financing-prequal-apply-pay-420x150.png"
+                alt="Care Credit"
+              />
+            </a>
           </div>
         </div>
       </div>
