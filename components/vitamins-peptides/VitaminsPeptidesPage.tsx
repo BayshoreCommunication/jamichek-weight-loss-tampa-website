@@ -52,6 +52,14 @@ const MedicalWeightLossData = [
       "Accelerate your fat-burning potential with Lipo-Mino with L-Carnitine—a targeted injectable formula designed to support efficient weight loss. This powerful combination of amino acids and L-Carnitine helps transport fatty acids into your cells’ mitochondria, where they are converted into energy. By enhancing your body’s natural ability to burn fat for fuel, this treatment can increase energy, improve exercise performance, and promote lean muscle retention. Ideal for breaking through weight loss plateaus or boosting metabolism, Lipo-Mino with L-Carnitine is a safe, effective, and science-backed addition to your medically supervised wellness plan.",
     bookingLink: "/contact",
   },
+  {
+    id: 7,
+    image: "/images/Vitamins-&-Peptides/new-image/olympia.png",
+    title: "Olympia Biotin Injection",
+    details:
+      "Enhance your wellness from within with the Olympia Biotin Injection (0.5 mg/mL), a medical-grade formula designed to support healthy hair, skin, and nails while improving overall metabolic function. Biotin, also known as Vitamin B7, is an essential nutrient that helps your body convert food into energy and supports cellular growth and repair.This injection is ideal for individuals looking to strengthen brittle nails, encourage fuller hair, or improve skin texture. It also supports nervous system health and aids in maintaining a balanced metabolism.Formulated for office use only** and administered under professional supervision, the Olympia Biotin Injection ensures optimal absorption and effectiveness. Experience the benefits of targeted Biotin therapy that promotes natural beauty and vitality from the inside out.",
+    bookingLink: "/contact",
+  },
 ];
 
 const VitaminsPeptidesPage = () => {
