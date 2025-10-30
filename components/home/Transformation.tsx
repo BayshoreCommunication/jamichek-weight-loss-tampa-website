@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function TransformationSection() {
   const slides = [
+    // slide 1
     {
       before: "/images/transformation/MarkWood-before.png",
       after: "/images/transformation/MarkWood-after.png",
@@ -24,6 +25,7 @@ export default function TransformationSection() {
         duration: { before: "12 Jun, 2025", after: "4 Months" },
       },
     },
+    // slide 2
     {
       before: "/images/transformation/Emily-before.png",
       after: "/images/transformation/Emily-after.png",
@@ -35,6 +37,90 @@ export default function TransformationSection() {
         waist: { before: '50"', after: '42"' },
         bmi: { before: "31.2 (Obese)", after: "24.5 (Normal)" },
         duration: { before: "12 Jun, 2025", after: "4 Months" },
+      },
+    },
+    // slide 3
+    {
+      before: "/images/transformation/ashley-before.png",
+      after: "/images/transformation/ashley-after.png",
+      profile: "/images/transformation/ashley.png",
+      name: "Ashley",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "273 lbs", after: "205 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "36.9", after: "32.4" },
+        duration: { before: "January 2025", after: "Current" },
+      },
+    },
+    // slide 4
+    {
+      before: "/images/transformation/margarita-before.png",
+      after: "/images/transformation/margarita-after.png",
+      profile: "/images/transformation/margarita-before.png",
+      name: "Margarita",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "166 lbs", after: "118 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "29.3", after: "22.0" },
+        duration: { before: "April 2025", after: "Current" },
+      },
+    },
+    // slide 5
+    {
+      before: "/images/transformation/yunet-before.png",
+      after: "/images/transformation/yunet-after.png",
+      profile: "/images/transformation/yunet-before.png",
+      name: "Yunet",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "203 lbs", after: "150 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "35.0", after: "27.7" },
+        duration: { before: "April 2025", after: "Current" },
+      },
+    },
+    // slide 6
+    {
+      before: "/images/transformation/candace-before.png",
+      after: "/images/transformation/candace-after.png",
+      profile: "/images/transformation/candace-before.png",
+      name: "Candace",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "214 lbs", after: "163 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "35.7", after: "26.8" },
+        duration: { before: "June 2024", after: "August 2025" },
+      },
+    },
+    // slide 7
+    {
+      before: "/images/transformation/chris-before.png",
+      after: "/images/transformation/chris-after.png",
+      profile: "/images/transformation/chris-after.png",
+      name: "Chris R",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "257 lbs", after: "192 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "36.2", after: "29.2" },
+        duration: { before: "July 2024", after: "Current" },
+      },
+    },
+    // slide 8
+    {
+      before: "/images/transformation/victor-before1.png",
+      after: "/images/transformation/victor-after.png",
+      profile: "/images/transformation/victor-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
       },
     },
   ];
@@ -75,7 +161,7 @@ export default function TransformationSection() {
                               src={slide.before}
                               alt="Before"
                               fill
-                              className="object-cover w-full h-full"
+                              className="object-cover object-center w-full h-full"
                             />
                           </div>
                         </div>
@@ -90,7 +176,7 @@ export default function TransformationSection() {
                               src={slide.after}
                               alt="After"
                               fill
-                              className="object-cover w-full h-full"
+                              className="object-cover object-center w-full h-full"
                             />
                           </div>
                         </div>
@@ -104,16 +190,16 @@ export default function TransformationSection() {
                               src={slide.profile}
                               alt={slide.name}
                               fill
-                              className="object-cover w-full h-auto"
+                              className="object-cover object-top w-full h-auto"
                             />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-800">
                               {slide.name}
                             </h3>
-                            <p className="text-sm text-gray-500">
+                            {/* <p className="text-sm text-gray-500">
                               {slide.role}
-                            </p>
+                            </p> */}
                           </div>
                         </div>
 
