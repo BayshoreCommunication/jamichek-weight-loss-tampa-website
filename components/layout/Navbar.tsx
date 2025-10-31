@@ -135,10 +135,10 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="tel:8139602225"
+              href="tel:813.269.7546"
               className="bg-black text-white px-5 py-2 rounded-full text-center hover:bg-primary transition-colors"
             >
-              Call: 813.960.2225
+              Call: 813.269.7546
             </Link>
           </div>
         )}
