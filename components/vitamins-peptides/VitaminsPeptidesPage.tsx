@@ -71,7 +71,7 @@ const MedicalWeightLossData = [
   {
     id: 9,
     image: "/images/Vitamins-&-Peptides/new-image/nad.png",
-    title: "Olympia NAD+ Injection",
+    title: "Olympia NAD+ Injection ",
     details:
       "Revive your energy and restore cellular vitality with Olympia NAD+ Injection (100 mg/mL), a premium coenzyme therapy designed to enhance overall wellness from the inside out. NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy production, DNA repair, and metabolic efficiency, making it one of the body’s most powerful anti-aging and restorative molecules.This treatment helps boost mental focus, increase stamina, and support the body’s natural detoxification process. It also aids in reducing fatigue, improving cognitive function, and promoting recovery after physical or mental stress. Administered under professional supervision, Olympia NAD+ Injection ensures optimal absorption and effectiveness. It’s an ideal choice for individuals seeking enhanced vitality, sharper mental clarity, and long-term cellular rejuvenation. Reenergize your body and refresh your mind with the science of NAD+ therapy.",
     bookingLink: "/contact",
