@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default function Faq() {
   return (
@@ -34,22 +35,19 @@ export default function Faq() {
             Accidents, Workman&apos;s Comp, and Slip &amp; Fall cases.
           </p>
           <div className="mt-4 text-primary">
-            {/* <Link
-            href="https://go.carecredit.com/consumer/home?sitecode=CCCALDS2X"
-            target="_blank"
-          >
-            <span className="underline">Credit Link</span>
-          </Link> */}
             <a
               href="https://www.carecredit.com/go/682RKH/?dtc=DS9X&sitecode=CCLBADS9X"
               target="_blank"
               className="flex justify-center items-center"
+              rel="noopener noreferrer"
             >
-              <img
-                width="275"
-                style={{ maxWidth: "100%" }}
+              <Image
+                width={275}
+                height={98}
                 src="https://www.carecredit.com/sites/pc/image/flexible-financing-prequal-apply-pay-420x150.png"
                 alt="Care Credit"
+                style={{ maxWidth: "100%", height: "auto" }}
+                priority
               />
             </a>
           </div>
