@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const MedicalWeightLossData = [
   {
-    id: 1,
+    id: 1 ,
     image: "/images/Vitamins-&-Peptides/new-image/Nad-1.png",
     title: "NAD+",
     details:
