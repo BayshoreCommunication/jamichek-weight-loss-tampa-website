@@ -112,7 +112,7 @@ const MedicalWeightLossData = [
   },
   {
     id: 14,
-    image: "/images/Vitamins-&-Peptides/new-image/glp-s.png",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-s.jpg",
     title: "Alpha BioMed GLP-1 S",
     details:
       "Support your weight management and metabolic health with Alpha BioMed GLP-1 S (20 mg/vial), a scientifically formulated peptide therapy that promotes appetite control, balanced blood sugar, and sustained energy. GLP-1 (Glucagon-Like Peptide-1) works naturally within the body to regulate insulin release, slow gastric emptying, and enhance feelings of fullness — helping reduce calorie intake and support healthy weight loss.This treatment is ideal for individuals seeking gentle yet effective metabolic support, improved energy balance, and reduced cravings. It also helps stabilize blood sugar levels and encourages cardiovascular health by improving insulin sensitivity and reducing inflammation. Administered under professional supervision, Alpha BioMed GLP-1 S delivers safe, consistent, and measurable results. Experience a steady path to better health, increased vitality, and long-term metabolic balance with this clinically advanced therapy.",
