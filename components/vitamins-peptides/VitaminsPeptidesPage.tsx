@@ -13,6 +13,14 @@ const MedicalWeightLossData = [
   //   bookingLink: "/contact",
   // },
   {
+    id: 9,
+    image: "/images/Vitamins-&-Peptides/new-image/nad.png",
+    title: "NAD+ Injection ",
+    details:
+      "Revive your energy and restore cellular vitality with NAD+ Injection (100 mg/mL), a premium coenzyme therapy designed to enhance overall wellness from the inside out. NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy production, DNA repair, and metabolic efficiency, making it one of the body’s most powerful anti-aging and restorative molecules.This treatment helps boost mental focus, increase stamina, and support the body’s natural detoxification process. It also aids in reducing fatigue, improving cognitive function, and promoting recovery after physical or mental stress. Administered under professional supervision, NAD+ Injection ensures optimal absorption and effectiveness. It’s an ideal choice for individuals seeking enhanced vitality, sharper mental clarity, and long-term cellular rejuvenation. Reenergize your body and refresh your mind with the science of NAD+ therapy.",
+    bookingLink: "/contact",
+  },
+  {
     id: 2,
     image: "/images/Vitamins-&-Peptides/new-image/Biotin-1.png",
     title: "Biotin",
@@ -68,14 +76,7 @@ const MedicalWeightLossData = [
       "Revitalize and protect your body from the inside out with Glutathione Injection (200 mg/mL), a powerful antioxidant therapy that supports detoxification, brightens skin, and enhances cellular health. Glutathione, known as the “master antioxidant,” helps neutralize harmful free radicals, strengthen the immune system, and promote healthy liver function.This treatment is ideal for individuals seeking improved skin tone, reduced oxidative stress, and overall wellness enhancement. By replenishing glutathione levels, it supports cellular repair, promotes clearer and brighter skin, and aids in reducing inflammation caused by stress and environmental factors. Administered under professional supervision for optimal safety and absorption, Glutathione Injection offers a clean, restorative boost to your health and vitality. Refresh your system and reveal a more radiant, balanced you with this essential antioxidant therapy. ",
     bookingLink: "/contact",
   },
-  {
-    id: 9,
-    image: "/images/Vitamins-&-Peptides/new-image/nad.png",
-    title: "NAD+ Injection ",
-    details:
-      "Revive your energy and restore cellular vitality with NAD+ Injection (100 mg/mL), a premium coenzyme therapy designed to enhance overall wellness from the inside out. NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy production, DNA repair, and metabolic efficiency, making it one of the body’s most powerful anti-aging and restorative molecules.This treatment helps boost mental focus, increase stamina, and support the body’s natural detoxification process. It also aids in reducing fatigue, improving cognitive function, and promoting recovery after physical or mental stress. Administered under professional supervision, NAD+ Injection ensures optimal absorption and effectiveness. It’s an ideal choice for individuals seeking enhanced vitality, sharper mental clarity, and long-term cellular rejuvenation. Reenergize your body and refresh your mind with the science of NAD+ therapy.",
-    bookingLink: "/contact",
-  },
+
   {
     id: 10,
     image: "/images/Vitamins-&-Peptides/new-image/ascorbic.png",
