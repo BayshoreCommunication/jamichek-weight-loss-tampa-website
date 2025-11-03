@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const MedicalWeightLossData = [
-  {
-    id: 1 ,
-    image: "/images/Vitamins-&-Peptides/new-image/Nad-1.png",
-    title: "NAD+",
-    details:
-      "Rejuvenate your body at the cellular level with NAD+ (Nicotinamide Adenine Dinucleotide) therapy, a cutting-edge treatment that targets aging and fatigue from within. This powerful coenzyme plays a crucial role in cellular energy production, DNA repair, and optimizing metabolic function. By restoring NAD+ levels, we help boost mental clarity, increase physical energy, support detoxification, and promote overall vitality. Ideal for those seeking enhanced cognitive function, anti-aging benefits, or recovery support, our NAD+ IV therapy is administered under medical supervision for maximum safety and effectiveness. Renew your energy and revitalize your health with this innovative approach to wellness.",
-    bookingLink: "/contact",
-  },
+  // {
+  //   id: 1 ,
+  //   image: "/images/Vitamins-&-Peptides/new-image/Nad-1.png",
+  //   title: "NAD+",
+  //   details:
+  //     "Rejuvenate your body at the cellular level with NAD+ (Nicotinamide Adenine Dinucleotide) therapy, a cutting-edge treatment that targets aging and fatigue from within. This powerful coenzyme plays a crucial role in cellular energy production, DNA repair, and optimizing metabolic function. By restoring NAD+ levels, we help boost mental clarity, increase physical energy, support detoxification, and promote overall vitality. Ideal for those seeking enhanced cognitive function, anti-aging benefits, or recovery support, our NAD+ IV therapy is administered under medical supervision for maximum safety and effectiveness. Renew your energy and revitalize your health with this innovative approach to wellness.",
+  //   bookingLink: "/contact",
+  // },
   {
     id: 2,
     image: "/images/Vitamins-&-Peptides/new-image/Biotin-1.png",
@@ -55,41 +55,41 @@ const MedicalWeightLossData = [
   {
     id: 7,
     image: "/images/Vitamins-&-Peptides/new-image/olympia.png",
-    title: "Olympia Biotin Injection",
+    title: "Biotin Injection",
     details:
-      "Enhance your wellness from within with the Olympia Biotin Injection (0.5 mg/mL), a medical-grade formula designed to support healthy hair, skin, and nails while improving overall metabolic function. Biotin, also known as Vitamin B7, is an essential nutrient that helps your body convert food into energy and supports cellular growth and repair. This injection is ideal for individuals looking to strengthen brittle nails, encourage fuller hair, or improve skin texture. It also supports nervous system health and aids in maintaining a balanced metabolism. Formulated for office use only and administered under professional supervision, the Olympia Biotin Injection ensures optimal absorption and effectiveness. Experience the benefits of targeted Biotin therapy that promotes natural beauty and vitality from the inside out.",
+      "Enhance your wellness from within with the Biotin Injection (0.5 mg/mL), a medical-grade formula designed to support healthy hair, skin, and nails while improving overall metabolic function. Biotin, also known as Vitamin B7, is an essential nutrient that helps your body convert food into energy and supports cellular growth and repair. This injection is ideal for individuals looking to strengthen brittle nails, encourage fuller hair, or improve skin texture. It also supports nervous system health and aids in maintaining a balanced metabolism. Formulated for office use only and administered under professional supervision, the Biotin Injection ensures optimal absorption and effectiveness. Experience the benefits of targeted Biotin therapy that promotes natural beauty and vitality from the inside out.",
     bookingLink: "/contact",
   },
   {
     id: 8,
     image: "/images/Vitamins-&-Peptides/new-image/glutathione.png",
-    title: "Olympia Glutathione Injection",
+    title: "Glutathione Injection",
     details:
-      "Revitalize and protect your body from the inside out with Olympia Glutathione Injection (200 mg/mL), a powerful antioxidant therapy that supports detoxification, brightens skin, and enhances cellular health. Glutathione, known as the “master antioxidant,” helps neutralize harmful free radicals, strengthen the immune system, and promote healthy liver function.This treatment is ideal for individuals seeking improved skin tone, reduced oxidative stress, and overall wellness enhancement. By replenishing glutathione levels, it supports cellular repair, promotes clearer and brighter skin, and aids in reducing inflammation caused by stress and environmental factors. Administered under professional supervision for optimal safety and absorption, Olympia Glutathione Injection offers a clean, restorative boost to your health and vitality. Refresh your system and reveal a more radiant, balanced you with this essential antioxidant therapy. ",
+      "Revitalize and protect your body from the inside out with Glutathione Injection (200 mg/mL), a powerful antioxidant therapy that supports detoxification, brightens skin, and enhances cellular health. Glutathione, known as the “master antioxidant,” helps neutralize harmful free radicals, strengthen the immune system, and promote healthy liver function.This treatment is ideal for individuals seeking improved skin tone, reduced oxidative stress, and overall wellness enhancement. By replenishing glutathione levels, it supports cellular repair, promotes clearer and brighter skin, and aids in reducing inflammation caused by stress and environmental factors. Administered under professional supervision for optimal safety and absorption, Glutathione Injection offers a clean, restorative boost to your health and vitality. Refresh your system and reveal a more radiant, balanced you with this essential antioxidant therapy. ",
     bookingLink: "/contact",
   },
   {
     id: 9,
     image: "/images/Vitamins-&-Peptides/new-image/nad.png",
-    title: "Olympia NAD+ Injection ",
+    title: "NAD+ Injection ",
     details:
-      "Revive your energy and restore cellular vitality with Olympia NAD+ Injection (100 mg/mL), a premium coenzyme therapy designed to enhance overall wellness from the inside out. NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy production, DNA repair, and metabolic efficiency, making it one of the body’s most powerful anti-aging and restorative molecules.This treatment helps boost mental focus, increase stamina, and support the body’s natural detoxification process. It also aids in reducing fatigue, improving cognitive function, and promoting recovery after physical or mental stress. Administered under professional supervision, Olympia NAD+ Injection ensures optimal absorption and effectiveness. It’s an ideal choice for individuals seeking enhanced vitality, sharper mental clarity, and long-term cellular rejuvenation. Reenergize your body and refresh your mind with the science of NAD+ therapy.",
+      "Revive your energy and restore cellular vitality with NAD+ Injection (100 mg/mL), a premium coenzyme therapy designed to enhance overall wellness from the inside out. NAD+ (Nicotinamide Adenine Dinucleotide) is essential for cellular energy production, DNA repair, and metabolic efficiency, making it one of the body’s most powerful anti-aging and restorative molecules.This treatment helps boost mental focus, increase stamina, and support the body’s natural detoxification process. It also aids in reducing fatigue, improving cognitive function, and promoting recovery after physical or mental stress. Administered under professional supervision, NAD+ Injection ensures optimal absorption and effectiveness. It’s an ideal choice for individuals seeking enhanced vitality, sharper mental clarity, and long-term cellular rejuvenation. Reenergize your body and refresh your mind with the science of NAD+ therapy.",
     bookingLink: "/contact",
   },
   {
     id: 10,
     image: "/images/Vitamins-&-Peptides/new-image/ascorbic.png",
-    title: "Olympia Preserved Ascorbic Acid Injection (500 mg/mL)",
+    title: "Preserved Ascorbic Acid Injection (500 mg/mL)",
     details:
-      "Strengthen your immune system and rejuvenate your body with Olympia Preserved Ascorbic Acid Injection (500 mg/mL), a concentrated Vitamin C therapy designed to boost wellness, energy, and cellular protection. Ascorbic acid is a potent antioxidant that helps combat oxidative stress, support collagen production, and promote faster recovery from illness or fatigue.This therapy enhances immune defense, improves skin health, and supports the body’s natural detoxification processes. It’s especially beneficial for those seeking enhanced energy, stronger immunity, or improved skin tone and elasticity. Administered by medical professionals, Olympia Preserved Ascorbic Acid Injection ensures safe and effective nutrient delivery for optimal results. Restore your vitality, brighten your skin, and protect your cells with this essential antioxidant boost.",
+      "Strengthen your immune system and rejuvenate your body with Preserved Ascorbic Acid Injection (500 mg/mL), a concentrated Vitamin C therapy designed to boost wellness, energy, and cellular protection. Ascorbic acid is a potent antioxidant that helps combat oxidative stress, support collagen production, and promote faster recovery from illness or fatigue.This therapy enhances immune defense, improves skin health, and supports the body’s natural detoxification processes. It’s especially beneficial for those seeking enhanced energy, stronger immunity, or improved skin tone and elasticity. Administered by medical professionals,Preserved Ascorbic Acid Injection ensures safe and effective nutrient delivery for optimal results. Restore your vitality, brighten your skin, and protect your cells with this essential antioxidant boost.",
     bookingLink: "/contact",
   },
   {
     id: 11,
     image: "/images/Vitamins-&-Peptides/new-image/micc.png",
-    title: "Olympia MICC Injection",
+    title: "MICC Injection",
     details:
-      "Boost your metabolism and support your weight management goals with the Olympia MICC Injection, a specially formulated blend of Methionine, Inositol, Choline, and Cyanocobalamin (Vitamin B12). This combination of lipotropic nutrients helps the body break down and metabolize fat more efficiently while supporting liver health and energy production.The MICC Injection works to convert fat into energy, reduce fat accumulation, and enhance overall metabolic function. It’s ideal for individuals seeking to complement their weight loss program, improve energy levels, and promote healthy liver detoxification. Administered under professional supervision for safety and effectiveness, Olympia MICC Injection provides a natural, science-based boost to your body’s fat-burning and energy systems. Experience improved focus, vitality, and metabolic balance with this trusted wellness solution.",
+      "Boost your metabolism and support your weight management goals with the MICC Injection, a specially formulated blend of Methionine, Inositol, Choline, and Cyanocobalamin (Vitamin B12). This combination of lipotropic nutrients helps the body break down and metabolize fat more efficiently while supporting liver health and energy production.The MICC Injection works to convert fat into energy, reduce fat accumulation, and enhance overall metabolic function. It’s ideal for individuals seeking to complement their weight loss program, improve energy levels, and promote healthy liver detoxification. Administered under professional supervision for safety and effectiveness, MICC Injection provides a natural, science-based boost to your body’s fat-burning and energy systems. Experience improved focus, vitality, and metabolic balance with this trusted wellness solution.",
     bookingLink: "/contact",
   },
   {
@@ -104,26 +104,26 @@ const MedicalWeightLossData = [
   },
   {
     id: 13,
-    image: "/images/Vitamins-&-Peptides/new-image/glp-r.png",
-    title: "Alpha BioMed GLP-1 R",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-s.jpg",
+    title: "GLP-1 Sema",
     details:
-      "Achieve sustainable weight management and metabolic balance with Alpha BioMed GLP-1 R (12 mg/vial), a clinically advanced peptide therapy that supports appetite control, glucose regulation, and long-term fat reduction. GLP-1 (Glucagon-Like Peptide-1) works by mimicking a natural hormone in the body that helps regulate blood sugar levels, slow digestion, and promote a feeling of fullness.This treatment is ideal for individuals looking to manage weight, reduce cravings, and improve overall metabolic health. It also helps stabilize energy levels and support cardiovascular wellness by improving insulin sensitivity and reducing inflammation. Administered under professional supervision for safety and precision, Alpha BioMed GLP-1 R offers a science-backed approach to achieving healthier weight goals and enhanced well-being. Transform your health from within with the power of peptide-based metabolic support.",
+      "Support your weight management and metabolic health with GLP-1 S (20 mg/vial), a scientifically formulated peptide therapy that promotes appetite control, balanced blood sugar, and sustained energy. GLP-1 (Glucagon-Like Peptide-1) works naturally within the body to regulate insulin release, slow gastric emptying, and enhance feelings of fullness — helping reduce calorie intake and support healthy weight loss.This treatment is ideal for individuals seeking gentle yet effective metabolic support, improved energy balance, and reduced cravings. It also helps stabilize blood sugar levels and encourages cardiovascular health by improving insulin sensitivity and reducing inflammation. Administered under professional supervision, GLP-1 S delivers safe, consistent, and measurable results. Experience a steady path to better health, increased vitality, and long-term metabolic balance with this clinically advanced therapy.",
     bookingLink: "/contact",
   },
   {
     id: 14,
-    image: "/images/Vitamins-&-Peptides/new-image/glp-s.jpg",
-    title: "Alpha BioMed GLP-1 S",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-t.png",
+    title: "GLP-1 Tirz",
     details:
-      "Support your weight management and metabolic health with Alpha BioMed GLP-1 S (20 mg/vial), a scientifically formulated peptide therapy that promotes appetite control, balanced blood sugar, and sustained energy. GLP-1 (Glucagon-Like Peptide-1) works naturally within the body to regulate insulin release, slow gastric emptying, and enhance feelings of fullness — helping reduce calorie intake and support healthy weight loss.This treatment is ideal for individuals seeking gentle yet effective metabolic support, improved energy balance, and reduced cravings. It also helps stabilize blood sugar levels and encourages cardiovascular health by improving insulin sensitivity and reducing inflammation. Administered under professional supervision, Alpha BioMed GLP-1 S delivers safe, consistent, and measurable results. Experience a steady path to better health, increased vitality, and long-term metabolic balance with this clinically advanced therapy.",
+      "Take control of your metabolism and achieve lasting results with GLP-1 T (60 mg/vial), an advanced peptide therapy designed to enhance weight management, appetite regulation, and blood sugar control. GLP-1 (Glucagon-Like Peptide-1) helps regulate insulin release, slow digestion, and promote a natural feeling of fullness, supporting healthy weight loss and improved metabolic balance.This treatment is ideal for individuals seeking to reduce cravings, maintain steady energy levels, and improve overall metabolic health. It also aids in lowering blood sugar fluctuations and supporting cardiovascular wellness through enhanced insulin sensitivity. Administered under professional supervision, GLP-1 T offers a clinically proven, hormone-based solution for effective weight management and long-term vitality. Experience balanced energy, improved focus, and a healthier body through optimized metabolic support.",
     bookingLink: "/contact",
   },
   {
     id: 15,
-    image: "/images/Vitamins-&-Peptides/new-image/glp-t.png",
-    title: "Alpha BioMed GLP-1 T",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-r.png",
+    title: "GLP-1 Reta",
     details:
-      "Take control of your metabolism and achieve lasting results with Alpha BioMed GLP-1 T (60 mg/vial), an advanced peptide therapy designed to enhance weight management, appetite regulation, and blood sugar control. GLP-1 (Glucagon-Like Peptide-1) helps regulate insulin release, slow digestion, and promote a natural feeling of fullness, supporting healthy weight loss and improved metabolic balance.This treatment is ideal for individuals seeking to reduce cravings, maintain steady energy levels, and improve overall metabolic health. It also aids in lowering blood sugar fluctuations and supporting cardiovascular wellness through enhanced insulin sensitivity. Administered under professional supervision, Alpha BioMed GLP-1 T offers a clinically proven, hormone-based solution for effective weight management and long-term vitality. Experience balanced energy, improved focus, and a healthier body through optimized metabolic support.",
+      "Achieve sustainable weight management and metabolic balance with GLP-1 R (12 mg/vial), a clinically advanced peptide therapy that supports appetite control, glucose regulation, and long-term fat reduction. GLP-1 (Glucagon-Like Peptide-1) works by mimicking a natural hormone in the body that helps regulate blood sugar levels, slow digestion, and promote a feeling of fullness.This treatment is ideal for individuals looking to manage weight, reduce cravings, and improve overall metabolic health. It also helps stabilize energy levels and support cardiovascular wellness by improving insulin sensitivity and reducing inflammation. Administered under professional supervision for safety and precision, GLP-1 R offers a science-backed approach to achieving healthier weight goals and enhanced well-being. Transform your health from within with the power of peptide-based metabolic support.",
     bookingLink: "/contact",
   },
 ];
