@@ -23,8 +23,7 @@ const PRPInjections = () => {
                 />
                 <div className="max-w-4xl mx-auto text-start">
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
-                    Welcome to Medical Weight Loss - Tampa Weight Loss Center
-                    Tampa
+                  Welcome to Medical Weight Loss Tampa – Your Trusted Weight Loss Center
                   </h3>
                   <p className="text-gray-600 text-base mb-6">
                     PRP Injections for Natural Healing and Pain Relief
