@@ -50,3 +50,22 @@
 .animate-slideDown {
   animation: slideDown 0.7s ease forwards;
 }
+:root {
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+/* Body default */
+body {
+  font-family: var(--font-body);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

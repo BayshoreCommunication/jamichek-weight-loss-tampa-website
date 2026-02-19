@@ -55,7 +55,7 @@ export default function Hero() {
 
         {/* H4 scroll reveal (slightly delayed) */}
         <Reveal
-          tag="h4"
+          tag="p"
           className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm md:text-xl"
           delay={0.15}
         >
