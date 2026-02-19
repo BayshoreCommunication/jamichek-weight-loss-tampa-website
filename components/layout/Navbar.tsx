@@ -57,7 +57,7 @@ export default function Navbar() {
               width={isSticky ? 100 : 200}
               height={isSticky ? 100 : 200}
               className={`transition-all duration-500 ${
-                isSticky ? "w-[100px]" : "w-[200px]"
+                isSticky ? "w-[150px]" : "w-[200px]"
               }`}
             />
           </div>
