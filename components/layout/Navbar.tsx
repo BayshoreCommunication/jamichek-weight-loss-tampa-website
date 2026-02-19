@@ -80,7 +80,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex space-x-6 items-center text-lg text-gray-800 font-medium bg-gray-200 px-8 py-2 rounded-full">
+          <nav className="hidden md:flex space-x-6 items-center text-sm text-gray-800 font-medium bg-gray-200 px-8 py-2 rounded-full">
             {navItems.map((item) => (
               <Link
                 key={item.href}
