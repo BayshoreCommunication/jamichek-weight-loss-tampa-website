@@ -70,7 +70,7 @@ export default function Hero() {
             target="_blank"
             className="px-6 py-3 rounded-full bg-[#4E741E] text-white font-medium hover:bg-[#4E741E]/90 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 justify-center gap-2 w-[350px] mx-auto text-base"
           >
-            <span className="">Not a patient yet? Book Now!</span>
+            <span>Not a patient yet? Book Now!</span>
             <div className="bg-white rounded-full p-1">
               <IoIosArrowForward className="text-[#4E741E] size-4" />
             </div>
