@@ -27,7 +27,7 @@ export default function Hero() {
         {/* H1 scroll reveal */}
         <Reveal tag="h1" className="text-3xl md:text-5xl font-bold mt-2">
           {/* rotating slot (unchanged) */}
-          <span className="inline-grid align-baseline mr-3 overflow-hidden">
+          <span className="inline-grid align-baseline mr-3 ">
             {loopText.map((text, index) => {
               const per = 5;
               const totalCycle = per * loopText.length;
@@ -68,9 +68,9 @@ export default function Hero() {
           <Link
             href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
             target="_blank"
-            className="px-6 py-3 rounded-full bg-[#4E741E] text-white font-medium hover:bg-[#4E741E]/90 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 w-[300px] mx-auto text-base"
+            className="px-6 py-3 rounded-full bg-[#4E741E] text-white font-medium hover:bg-[#4E741E]/90 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 justify-center gap-2 w-[350px] mx-auto text-base"
           >
-            <span>Not a patient yet? Book Now!</span>
+            <span className="">Not a patient yet? Book Now!</span>
             <div className="bg-white rounded-full p-1">
               <IoIosArrowForward className="text-[#4E741E] size-4" />
             </div>
