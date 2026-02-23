@@ -195,7 +195,10 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-center text-base text-gray-600">
-          <p>Copyright © 2025 Jachimek Chiropractic & Wellness Center</p>
+          <p>
+            Copyright © {new Date().getFullYear()} Jachimek Chiropractic &
+            Wellness Center
+          </p>
         </div>
       </div>
     </footer>

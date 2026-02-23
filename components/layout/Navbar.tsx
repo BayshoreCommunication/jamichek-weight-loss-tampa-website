@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Top Banner */}
-      <div className="bg-black text-white text-center text-sm py-3">
+      <div className="bg-black text-white text-center text-sm py-3 z-50 relative">
         <span className="font-medium">$47 New Patient Special</span>
       </div>
 
