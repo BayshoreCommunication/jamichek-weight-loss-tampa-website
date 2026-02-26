@@ -1,9 +1,10 @@
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+import Script from "next/script";
+import Footer from "../components/layout/Footer";
+import Navbar from "../components/layout/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
-import localFont from "next/font/local";
 
 // TAN ANGLETON (Headline)
 const tanAngleton = localFont({
@@ -40,6 +41,7 @@ export default function RootLayout({
       lang="en"
       className={`${tanAngleton.variable} ${canvaSans.variable}`}
     >
+    <Script src="https://cdn.userway.org/widget.js" data-account="Ns4hfOuAF8" data-position="3" strategy="afterInteractive" />
       <body>
         <Providers>
           <Navbar />
