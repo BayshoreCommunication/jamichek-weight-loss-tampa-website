@@ -10,6 +10,7 @@ import { Providers } from "./providers";
 const tanAngleton = localFont({
   src: "./fonts/TAN - Angleton Regular.ttf",
   variable: "--font-heading",
+  display: "swap",
 });
 
 // CANVA SANS (Body + Subheadline)
@@ -22,14 +23,16 @@ const canvaSans = localFont({
     },
   ],
   variable: "--font-body",
+  display: "swap",
 });
 
-// ✅ METADATA
-
+// ✅ FIXED METADATA + OG IMAGE
 export const metadata: Metadata = {
   title: "Medical Weight Loss Tampa",
   description: "Medical Weight Loss Tampa website",
+
   metadataBase: new URL("https://www.medicalweightlosstampa.com"),
+
   alternates: {
     canonical: "/",
     languages: {
@@ -38,7 +41,27 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    images: "/opengraph-image.png",
+    title: "Medical Weight Loss Tampa",
+    description: "Medical Weight Loss Tampa website",
+    url: "https://www.medicalweightlosstampa.com",
+    siteName: "Medical Weight Loss Tampa",
+    images: [
+      {
+        url: "https://www.medicalweightlosstampa.com/opengraph-image.png", // ✅ MUST be absolute URL
+        width: 1200,
+        height: 630,
+        alt: "Medical Weight Loss Tampa",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Medical Weight Loss Tampa",
+    description: "Medical Weight Loss Tampa website",
+    images: ["https://www.medicalweightlosstampa.com/opengraph-image.png"],
   },
 };
 
@@ -50,7 +73,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${tanAngleton.variable} ${canvaSans.variable}`}>
       <body>
-        {/* ✅ Script MUST be inside body */}
         <Script
           src="https://cdn.userway.org/widget.js"
           data-account="Ns4hfOuAF8"
