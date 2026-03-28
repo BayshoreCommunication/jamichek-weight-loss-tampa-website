@@ -25,12 +25,11 @@ const canvaSans = localFont({
 });
 
 // ✅ METADATA
+
 export const metadata: Metadata = {
   title: "Medical Weight Loss Tampa",
   description: "Medical Weight Loss Tampa website",
-
   metadataBase: new URL("https://www.medicalweightlosstampa.com"),
-
   alternates: {
     canonical: "/",
     languages: {
@@ -39,20 +38,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Medical Weight Loss Tampa",
-    description: "Medical Weight Loss Tampa website",
-    url: "https://www.medicalweightlosstampa.com",
-    siteName: "Medical Weight Loss Tampa",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Medical Weight Loss Tampa",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
+    images: "/opengraph-image.png",
   },
 };
 
