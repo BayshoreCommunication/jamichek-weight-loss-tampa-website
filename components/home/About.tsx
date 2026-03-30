@@ -11,9 +11,9 @@ export default function About() {
           {/* Left Image */}
           <Reveal className="rounded-xl overflow-hidden">
             <Image
-              src="/images/about/about.jpg"
+              src="/images/about/about.jpeg"
               alt="Our Team"
-              className="w-auto h-auto object-contain rounded-xl "
+              className="w-[700px] h-auto object-contain rounded-xl "
               width={1000}
               height={470}
             />

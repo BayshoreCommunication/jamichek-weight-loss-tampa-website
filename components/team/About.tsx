@@ -8,11 +8,11 @@ export default function About() {
         {/* ===== Image Top ===== */}
         <div className="mb-10 flex justify-center">
           <Image
-            src="/images/about/about.jpg"
+            src="/images/about/about.jpeg"
             alt="Medical Weight Loss Tampa Team"
             width={1000}
             height={800}
-            className="rounded-2xl shadow-md w-[900px] h-auto object-cover"
+            className="rounded-2xl shadow-md w-[700px] h-auto object-cover"
             priority
           />
         </div>
