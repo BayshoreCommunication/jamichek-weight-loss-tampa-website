@@ -86,8 +86,8 @@ h6 {
 .contact-swal-confirm-button {
   background-color: #131b2a !important;
   color: #ffffff !important;
-  border: 1px solid #131b2a !important;
-  border-radius: 9999px !important;
+  /* border: 1px solid #131b2a !important; */
+  border-radius: 8px !important;
   padding: 0.65rem 1.5rem !important;
 }
 
