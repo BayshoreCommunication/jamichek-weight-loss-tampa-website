@@ -9,7 +9,9 @@
 .reveal {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
   will-change: opacity, transform;
 }
 
@@ -68,4 +70,44 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
+}
+/* SweetAlert fix */
+.swal2-container {
+  z-index: 9999 !important;
+}
+
+/* optional button fix */
+.swal2-confirm {
+  background-color: #131b2a !important;
+  color: #fff !important;
+}
+
+/* CHANGED: dedicated SweetAlert confirm button style for contact form success popup */
+.contact-swal-confirm-button {
+  background-color: #131b2a !important;
+  color: #ffffff !important;
+  border: 1px solid #131b2a !important;
+  border-radius: 9999px !important;
+  padding: 0.65rem 1.5rem !important;
+}
+
+/* CHANGED: keep a visible hover state instead of showing color only on hover */
+.contact-swal-confirm-button:hover {
+  background-color: #0b1220 !important;
+  border-color: #0b1220 !important;
+}
+
+/* CHANGED: preserve the filled background on focus as well */
+.contact-swal-confirm-button:focus {
+  background-color: #131b2a !important;
+  box-shadow: 0 0 0 3px rgba(19, 27, 42, 0.2) !important;
+}
+
+/* reusable input */
+.input {
+  width: 100%;
+  border: 1px solid #ededed;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
 }
