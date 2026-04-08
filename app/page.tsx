@@ -1,10 +1,12 @@
 import About from "@/components/home/About";
 import Blog from "@/components/home/Blog";
+import Empower from "@/components/home/Empower";
 import Hero from "@/components/home/hero";
 import MedicalWeight from "@/components/home/MedicalWeight";
 import NewPatientSpecial from "@/components/home/NewPatientSpecial";
 import OurTeam from "@/components/home/OurTeam";
 import PainRelief from "@/components/home/PainRelief";
+import PeptideConsultation from "@/components/home/PeptideConsultation";
 import Testimonials from "@/components/home/Testimonials";
 import Transformation from "@/components/home/Transformation";
 import WhyChoose from "@/components/home/WhyChoose";
@@ -16,13 +18,15 @@ export default function Home() {
       <Hero />
       <WhyChoose />
       <NewPatientSpecial />
+      <Empower />
+      <PeptideConsultation />
       <About />
       <MedicalWeight />
       <Testimonials />
       <OurTeam />
       <Transformation />
       <PainRelief />
-      <Faq/>
+      <Faq />
       {/* <Blog /> */}
     </>
   );
