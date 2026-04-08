@@ -19,7 +19,7 @@ export default function Home() {
       <WhyChoose />
       <NewPatientSpecial />
       <Empower />
-      <PeptideConsultation />
+      {/* <PeptideConsultation /> */}
       <About />
       <MedicalWeight />
       <Testimonials />
