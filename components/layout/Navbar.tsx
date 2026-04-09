@@ -27,6 +27,7 @@ export default function Navbar() {
     { href: "/vitamins-peptides", label: "Vitamins & Peptides" },
     { href: "/regenerative-medicine", label: "Regenerative Medicine" },
     { href: "/the-wellness-journal", label: "The Wellness Journal" },
+    { href: "/peptides", label: "Peptides" },
   ];
 
   return (

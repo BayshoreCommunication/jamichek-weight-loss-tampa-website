@@ -6,7 +6,7 @@ import MedicalWeight from "@/components/home/MedicalWeight";
 import NewPatientSpecial from "@/components/home/NewPatientSpecial";
 import OurTeam from "@/components/home/OurTeam";
 import PainRelief from "@/components/home/PainRelief";
-import PeptideConsultation from "@/components/home/PeptideConsultation";
+import PeptideConsultation from "@/components/peptides/PeptideConsultation";
 import Testimonials from "@/components/home/Testimonials";
 import Transformation from "@/components/home/Transformation";
 import WhyChoose from "@/components/home/WhyChoose";

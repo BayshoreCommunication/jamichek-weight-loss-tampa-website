@@ -123,6 +123,146 @@ export default function TransformationSection() {
         duration: { before: "November 2024", after: "July 2025" },
       },
     },
+    // slide 9
+    {
+      before: "/images/transformation/image9-before.png",
+      after: "/images/transformation/image9-after.png",
+      profile: "/images/transformation/image9-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 10
+    {
+      before: "/images/transformation/image10-before.png",
+      after: "/images/transformation/image10-after.png",
+      profile: "/images/transformation/image10-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 11
+    {
+      before: "/images/transformation/image11-before.png",
+      after: "/images/transformation/image11-after.png",
+      profile: "/images/transformation/image11-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 12
+    {
+      before: "/images/transformation/image12-before.png",
+      after: "/images/transformation/image12-after.png",
+      profile: "/images/transformation/image12-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 13
+    {
+      before: "/images/transformation/image13-before.png",
+      after: "/images/transformation/image13-after.png",
+      profile: "/images/transformation/image13-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 14
+    {
+      before: "/images/transformation/image14-before.png",
+      after: "/images/transformation/image14-after.png",
+      profile: "/images/transformation/image14-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 15
+    {
+      before: "/images/transformation/image15-before.png",
+      after: "/images/transformation/image15-after.png",
+      profile: "/images/transformation/image15-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 16
+    {
+      before: "/images/transformation/image16-before.png",
+      after: "/images/transformation/image16-after.png",
+      profile: "/images/transformation/image16-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 17
+    {
+      before: "/images/transformation/image17-before.png",
+      after: "/images/transformation/image17-after.png",
+      profile: "/images/transformation/image17-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
+    // slide 18
+    {
+      before: "/images/transformation/victor-before1.png",
+      after: "/images/transformation/victor-after.png",
+      profile: "/images/transformation/victor-after.png",
+      name: "Victor A.",
+      role: "Entrepreneur",
+      stats: {
+        weight: { before: "232 lbs", after: "185 lbs" },
+        waist: { before: '50"', after: '42"' },
+        bmi: { before: "31.5", after: "25.2" },
+        duration: { before: "November 2024", after: "July 2025" },
+      },
+    },
   ];
 
   return (

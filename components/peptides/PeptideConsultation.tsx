@@ -63,9 +63,10 @@ export default function PeptideConsultation() {
     const phoneInput = form.elements.namedItem(
       "phone",
     ) as HTMLInputElement | null;
-    const subjectInput = form.elements.namedItem(
-      "subject",
-    ) as HTMLSelectElement | null;
+    const subjectInput = form.elements.namedItem("subject") as
+      | HTMLInputElement
+      | HTMLSelectElement
+      | null;
     const messageInput = form.elements.namedItem(
       "message",
     ) as HTMLTextAreaElement | null;
@@ -137,124 +138,126 @@ export default function PeptideConsultation() {
   return (
     <section className="w-full flex justify-center bg-white">
       <div className="w-full max-w-[1640px] px-8 pb-8 md:pb-16">
-        <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] items-start">
-          <div className="space-y-6">
-            <Reveal className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#2f8b73] via-[#4E741E] to-[#1f4d43] p-[1px] shadow-[0_24px_60px_-30px_rgba(31,77,67,0.45)]">
-              <div className="relative grid overflow-hidden rounded-[31px] bg-[#f8fbf8] lg:grid-cols-[1.02fr_0.98fr]">
-                <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-white/25 blur-3xl" />
-                <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
+        <Reveal className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#2f8b73] via-[#4f9f83] to-[#1f4d43] p-[1px] shadow-[0_28px_80px_-38px_rgba(31,77,67,0.5)] ">
+          <div className="relative overflow-hidden rounded-[35px] bg-[#f7fbf8] px-6 py-8 sm:px-8 md:px-10 md:py-10">
+            <div className="absolute -left-20 top-6 h-44 w-44 rounded-full bg-[#7fd0b7]/20 blur-3xl" />
+            <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-primary/10 blur-3xl" />
+            <div className="absolute bottom-0 left-1/3 h-40 w-40 rounded-full bg-[#dff5ec] blur-3xl" />
 
-                <div className="relative p-6 sm:p-8 md:p-10">
-                  <Reveal
-                    tag="span"
-                    className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary"
-                    y={12}
-                    opacityFrom={0}
-                  >
-                    Peptides
-                  </Reveal>
+            <div className="relative grid items-center gap-8 lg:grid-cols-[1.02fr_0.98fr] ">
+              <div className="max-w-2xl">
+                <Reveal
+                  tag="span"
+                  className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary"
+                  y={12}
+                  opacityFrom={0}
+                >
+                  Peptide Consultation
+                </Reveal>
 
-                  <Reveal
-                    tag="h2"
-                    className="mt-5 max-w-2xl text-3xl font-bold text-gray-900 md:text-4xl"
-                    delay={0.05}
-                  >
-                    Start your wellness journey with peptide support built
-                    around you.
-                  </Reveal>
+                <Reveal
+                  tag="h2"
+                  className="mt-5 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl leading-relaxed"
+                  delay={0.05}
+                >
+                  Start your wellness journey.
+                </Reveal>
 
-                  <Reveal
-                    tag="p"
-                    className="mt-4 max-w-2xl text-sm leading-7 text-gray-600 md:text-base"
-                    delay={0.1}
-                  >
-                    Our Tampa team uses carefully selected peptide and cellular
-                    wellness therapies to complement recovery, body-composition
-                    goals, and long-term energy with medical oversight at every
-                    step.
-                  </Reveal>
+                {/* <Reveal
+                  tag="p"
+                  className="mt-4 max-w-xl text-sm leading-7 text-gray-600 md:text-base"
+                  delay={0.1}
+                >
+                  Jamichek Wellness helps patients in Tampa explore peptide
+                  support with clinician-led planning, progress tracking, and a
+                  care path tailored to recovery, metabolism, and long-term
+                  vitality.
+                </Reveal> */}
 
-                  <div className="mt-6 space-y-3">
-                    {quickPoints.map((point, index) => (
-                      <Reveal
-                        key={point}
-                        className="flex items-start gap-3 text-sm text-gray-700 md:text-base"
-                        delay={0.12 + index * 0.05}
-                      >
-                        <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                        <span>{point}</span>
-                      </Reveal>
-                    ))}
-                  </div>
-
-                  <Reveal
-                    className="mt-8 flex flex-col gap-3 sm:flex-row"
-                    delay={0.28}
-                  >
-                    <Link
-                      href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-primary"
+                <div className="mt-6 space-y-3">
+                  {quickPoints.map((point, index) => (
+                    <Reveal
+                      key={point}
+                      className="flex items-start gap-3 text-sm text-gray-700 md:text-base"
+                      delay={0.12 + index * 0.05}
                     >
-                      Book an Appointment
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-
-                    <Link
-                      href="/vitamins-peptides"
-                      className="inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-medium text-gray-900 transition hover:border-primary hover:text-primary"
-                    >
-                      Explore Peptide Services
-                    </Link>
-                  </Reveal>
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>{point}</span>
+                    </Reveal>
+                  ))}
                 </div>
 
-                <div className="relative flex items-center justify-center px-6 pb-6 sm:px-8 sm:pb-8 lg:px-10 lg:py-10">
-                  <div className="relative h-[320px] w-full max-w-[520px]">
-                    <Reveal
-                      className="absolute left-0 top-10 w-[44%] rotate-[-10deg] rounded-[28px] border border-white/80 bg-white p-3 shadow-2xl sm:w-[38%]"
-                      delay={0.08}
-                    >
-                      <Image
-                        src="/images/Vitamins-&-Peptides/new-image/glp-s.png"
-                        alt="Peptide therapy vial"
-                        width={500}
-                        height={500}
-                        className="h-auto w-full rounded-[20px] object-cover"
-                      />
-                    </Reveal>
+                <Reveal
+                  className="mt-8 flex flex-col gap-3 sm:flex-row"
+                  delay={0.28}
+                >
+                  <Link
+                    href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-primary"
+                  >
+                    Book an Appointment
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
 
-                    <Reveal
-                      className="absolute right-0 top-0 w-[70%] rounded-[32px] border border-white/80 bg-white p-4 shadow-2xl"
-                      delay={0.14}
-                    >
-                      <Image
-                        src="/images/Vitamins-&-Peptides/new-image/nad.png"
-                        alt="NAD+ wellness support"
-                        width={760}
-                        height={760}
-                        className="h-auto w-full rounded-[26px] object-cover"
-                      />
-                    </Reveal>
-
-                    <Reveal
-                      className="absolute bottom-0 right-4 max-w-[250px] rounded-[24px] border border-primary/10 bg-white/95 p-4 shadow-xl backdrop-blur"
-                      delay={0.2}
-                    >
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-                        Provider-led care
-                      </p>
-                      <p className="mt-2 text-sm leading-6 text-gray-600">
-                        Your protocol is reviewed and adjusted based on your
-                        goals, response, and overall wellness plan.
-                      </p>
-                    </Reveal>
-                  </div>
-                </div>
+                  <Link
+                    href="#peptide-consultation-form"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-medium text-gray-900 transition hover:border-primary hover:text-primary"
+                  >
+                    Request Consultation
+                  </Link>
+                </Reveal>
               </div>
-            </Reveal>
 
+              <div className="relative min-h-[260px] sm:min-h-[320px] lg:min-h-[360px]">
+                {/* <Reveal
+                  className="absolute left-0 top-1/2 w-[42%] max-w-[210px] -translate-y-1/2 rotate-[-12deg] rounded-[28px] border border-white/80 bg-white p-3 shadow-[0_24px_60px_-30px_rgba(15,23,42,0.35)]"
+                  delay={0.1}
+                >
+                  <Image
+                    src="/images/Vitamins-&-Peptides/new-image/glp-s.png"
+                    alt="Peptide therapy vial"
+                    width={500}
+                    height={500}
+                    className="h-auto w-full rounded-[22px] object-cover"
+                  />
+                </Reveal> */}
+
+                <div className="absolute right-[8%] top-[8%] h-[72%] w-[72%] rounded-full bg-gradient-to-br from-[#dff5ec] via-white to-[#d6efe5]" />
+
+                <Reveal
+                  className="absolute  top-0 w-[66%] max-w-[340px]"
+                  delay={0.16}
+                >
+                  <Image
+                    src="/images/Vitamins-&-Peptides/new-image/nad.png"
+                    alt="NAD+ wellness support"
+                    width={760}
+                    height={760}
+                    className="h-auto w-full object-contain drop-shadow-[0_30px_45px_rgba(15,23,42,0.18)]"
+                  />
+                </Reveal>
+
+                <Reveal
+                  className="absolute bottom-2 right-[18rem] max-w-[260px] rounded-[24px] border border-primary/10 bg-white/95 p-4 shadow-xl backdrop-blur"
+                  delay={0.22}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                    Personalized care
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-gray-600">
+                    Consultation, progress check-ins, and treatment guidance
+                    built around your goals and response.
+                  </p>
+                </Reveal>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <div className="mt-8 grid gap-8 lg:grid-cols-[1.08fr_0.92fr] items-start">
+          <div className="space-y-6">
             <div className="grid gap-6 xl:grid-cols-[1.02fr_0.98fr]">
               <Reveal className="rounded-[30px] bg-white p-8 shadow-sm ring-1 ring-black/5">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
@@ -328,7 +331,10 @@ export default function PeptideConsultation() {
           </div>
 
           <Reveal className="lg:sticky lg:top-24">
-            <div className="rounded-[32px] border border-black/5 bg-white p-6 shadow-[0_20px_60px_-35px_rgba(15,23,42,0.4)] sm:p-8">
+            <div
+              id="peptide-consultation-form"
+              className="rounded-[32px] border border-black/5 bg-white p-6 shadow-[0_20px_60px_-35px_rgba(15,23,42,0.4)] sm:p-8"
+            >
               <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
                 Quick Consultation Form
               </span>
@@ -363,6 +369,12 @@ export default function PeptideConsultation() {
                 onSubmit={handleSubmit}
                 className="mt-6 space-y-4"
               >
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="General peptide consultation"
+                  readOnly
+                />
                 <div>
                   <label className="mb-1 block text-sm font-medium text-gray-700">
                     Full Name
