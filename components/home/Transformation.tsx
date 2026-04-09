@@ -128,7 +128,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image9-before.png",
       after: "/images/transformation/image9-after.png",
       profile: "/images/transformation/image9-after.png",
-      name: "Victor A.",
+      name: "James Anderson",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -142,7 +142,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image10-before.png",
       after: "/images/transformation/image10-after.png",
       profile: "/images/transformation/image10-after.png",
-      name: "Victor A.",
+      name: "Michael Johnson",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -156,7 +156,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image11-before.png",
       after: "/images/transformation/image11-after.png",
       profile: "/images/transformation/image11-after.png",
-      name: "Victor A.",
+      name: "William Smith",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -170,7 +170,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image12-before.png",
       after: "/images/transformation/image12-after.png",
       profile: "/images/transformation/image12-after.png",
-      name: "Victor A.",
+      name: "David Brown",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -184,7 +184,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image13-before.png",
       after: "/images/transformation/image13-after.png",
       profile: "/images/transformation/image13-after.png",
-      name: "Victor A.",
+      name: "John Miller",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -198,7 +198,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image14-before.png",
       after: "/images/transformation/image14-after.png",
       profile: "/images/transformation/image14-after.png",
-      name: "Victor A.",
+      name: "Robert Davis",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -212,7 +212,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image15-before.png",
       after: "/images/transformation/image15-after.png",
       profile: "/images/transformation/image15-after.png",
-      name: "Victor A.",
+      name: "Christopher Wilson",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -226,7 +226,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image16-before.png",
       after: "/images/transformation/image16-after.png",
       profile: "/images/transformation/image16-after.png",
-      name: "Victor A.",
+      name: "Daniel Taylor",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -240,7 +240,7 @@ export default function TransformationSection() {
       before: "/images/transformation/image17-before.png",
       after: "/images/transformation/image17-after.png",
       profile: "/images/transformation/image17-after.png",
-      name: "Victor A.",
+      name: "Matthew Moore",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
@@ -254,7 +254,7 @@ export default function TransformationSection() {
       before: "/images/transformation/victor-before1.png",
       after: "/images/transformation/victor-after.png",
       profile: "/images/transformation/victor-after.png",
-      name: "Victor A.",
+      name: "Andrew Thomas",
       role: "Entrepreneur",
       stats: {
         weight: { before: "232 lbs", after: "185 lbs" },
