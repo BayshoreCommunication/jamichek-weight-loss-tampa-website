@@ -330,9 +330,9 @@ export default function PeptideConsultation() {
             </div>
             <div>
               <p>
-                "Peptides discussed are for educational purposes only and are
-                not FDA-approved to diagnose, treat, cure, or prevent any
-                medical condition"
+                Peptides discussed are for educational purposes only and are not
+                FDA-approved to diagnose, treat, cure, or prevent any medical
+                condition
               </p>
             </div>
           </div>
