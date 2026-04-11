@@ -42,7 +42,7 @@ export const empowerTreatments: EmpowerTreatment[] = [
   {
     slug: "evolve",
     section: "featured",
-    title: "Evolve",
+    title: "EvolveX",
     badge: "Body Contouring",
     summary:
       "It uses radiofrequency energy and electromagnetic stimulation to reshape targeted areas and improve overall body appearance without surgery.",
