@@ -9,13 +9,13 @@ export default function MedicalWeightLoss() {
     {
       title: "Empower RF",
       desc: "It works by delivering controlled heat energy to boost collagen production, making the skin firmer, smoother, and more youthful.",
-      img: "/images/empower/empowerr.jpeg",
+      img: "/images/empower/empower.jpeg",
       href: "/medical-weight-loss",
     },
     {
       title: "Evolve ",
       desc: "It uses a combination of radio frequency energy and electromagnetic stimulation to reshape and improve overall body appearance without surgery.",
-      img: "/images/empower/evolvee.jpeg",
+      img: "/images/empower/evolve.png",
       href: "/medical-weight-loss",
     },
   ];

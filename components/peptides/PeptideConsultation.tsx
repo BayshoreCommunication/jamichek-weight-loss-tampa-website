@@ -275,7 +275,7 @@ export default function PeptideConsultation() {
                   supervised care.
                 </p>
                 <p className="mt-4 text-sm leading-7 text-gray-600 md:text-base">
-                  At Jamichek, the process starts with your goals, symptoms, and
+                  At MWLT, the process starts with your goals, symptoms, and
                   health history. From there, we may recommend peptide support
                   alongside weight-loss treatment, nutrition guidance, hormone
                   care, or other therapies when it makes clinical sense.
