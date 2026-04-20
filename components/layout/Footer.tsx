@@ -33,7 +33,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-4 text-primary text-lg">
               <Link
-                href="https://www.facebook.com/MedicalWeightLossTampa"
+                href="https://www.facebook.com/profile.php?id=61557782790709"
                 target="_blank"
                 rel="noopener noreferrer"
               >
