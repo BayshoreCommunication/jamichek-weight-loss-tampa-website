@@ -1,11 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import Reveal from "../motion/Reveal";
 import Image from "next/image";
-import Link from "next/link";
-import { TbBrandFacebook } from "react-icons/tb";
-import { FiInstagram } from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
+import { useState } from "react";
+import Reveal from "../motion/Reveal";
 
 const teammatesData = [
   {
@@ -27,6 +23,19 @@ const teammatesData = [
     designation: "Executive Director",
     details:
       "Dana was born in Pasadena, California, and raised in Cleveland, Ohio, before moving to Florida at the age of 10. Growing up, she developed a love for writing and communication, which led her to study Journalism in high school in Tampa. During this time, she was actively involved in clubs such as Quill & Scroll and the National Honor Society, where she honed her leadership and storytelling skills. Her professional journey began in the food and beverage industry, where she worked as a corporate trainer for Applebee's. In this role, she traveled across Florida, training staff and assisting with the successful launch of new locations. This experience not only strengthened her skills in mentorship and team-building but also deepened her passion for helping others succeed. In 2018, Dana made a career shift into the health and wellness industry, driven by a strong desire to help individuals live happier, healthier, and pain-free lives. Through this transition, she has continued to focus on personal development and making a meaningful impact in the lives of those she serves. Beyond her professional endeavors, Dana is a devoted mother to three amazing children—Elijah, Nevaeh, and Madison—who inspire her every day. She enjoys attending sporting events, spending quality time with family, engaging in community outreach, and expanding her knowledge of American Sign Language (ASL). Dedicated to continuous growth, she strives to uplift those around her and leave a lasting positive impact both at home and in her community. ",
+    // socialsMedia: {
+    //   facebook: "https://facebook.com",
+    //   instagram: "https://instagram.com",
+    //   x: "https://x.com",
+    // },
+  },
+  {
+    id: 2,
+    image: "/images/team/Paste image.png",
+    name: `Ashley Almeyda`,
+    designation: "Patient Care Director",
+    details:
+      "A Tampa native, she brings over a decade of experience in hospitality, events, and operations, with a strong background in client-focused roles and leadership. Her career began in Las Vegas, where she spent several years in the fast-paced world of event sales and management, gaining valuable experience before advancing into executive-level support and operational leadership roles.She later transitioned into the wellness field, where she found her true passion. Inspired by her own personal wellness journey, she is dedicated to helping others feel confident, healthy, and empowered in their everyday lives. Through her work, she strives to create a positive and supportive experience for every individual she serves.Outside of her professional life, she is a proud mother to her baby, Arie, who inspires her daily to grow, stay balanced, and lead with purpose. She brings that same level of care, dedication, and positivity into every aspect of her life and work.",
     // socialsMedia: {
     //   facebook: "https://facebook.com",
     //   instagram: "https://instagram.com",

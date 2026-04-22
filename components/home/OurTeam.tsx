@@ -2,11 +2,7 @@
 
 import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { TbBrandFacebook } from "react-icons/tb";
-import { FiInstagram } from "react-icons/fi";
-import { FaXTwitter } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 const teammatesData = [
   {
     id: 1,
@@ -39,12 +35,27 @@ type Teammate = (typeof teammatesData)[number];
 
 export default function OurTeam() {
   const [selectedMember, setSelectedMember] = useState<Teammate | null>(null);
+
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedMember(null);
+      }
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, []);
+
   return (
-    <section className="max-w-[1640px] mx-auto px-8 md:my-16 my-8">
+    <section
+      aria-labelledby="our-team-heading"
+      className="max-w-[1640px] mx-auto px-8 md:my-16 my-8"
+    >
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10">
         <div>
-          <Reveal tag="h2" className="text-3xl font-bold text-gray-900">
+          <Reveal tag="h2" id="our-team-heading" className="text-3xl font-bold text-gray-900">
             Our Team
           </Reveal>
           <Reveal tag="p" className="text-gray-600 mt-2 max-w-2xl" delay={0.1}>
@@ -54,7 +65,10 @@ export default function OurTeam() {
           </Reveal>
         </div>
         <Reveal tag="div" delay={0.2}>
-          <button className="mt-4 md:mt-0 border border-gray-300 rounded-full px-5 py-2 font-medium flex items-center gap-2 transition hover:bg-black hover:text-white">
+          <button
+            type="button"
+            className="mt-4 md:mt-0 border border-gray-300 rounded-full px-5 py-2 font-medium flex items-center gap-2 transition hover:bg-black hover:text-white"
+          >
             Explore Team Members →
           </button>
         </Reveal>
@@ -92,7 +106,10 @@ export default function OurTeam() {
                     </div>
                     <div>
                       <button
+                        type="button"
                         onClick={() => setSelectedMember(member)}
+                        aria-haspopup="dialog"
+                        aria-label={`Read more about ${member.name}`}
                         className="underline text-primary text-medium "
                       >
                         Read More
@@ -109,10 +126,17 @@ export default function OurTeam() {
       {/* Modal */}
       {selectedMember && (
         <div className=" fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 px-4  ">
-          <div className="bg-white rounded-2xl max-w-6xl w-full p-5 lg:p-8 relative shadow-xl my-10  overflow-scroll lg:overflow-auto max-h-[90vh]">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="team-member-modal-heading"
+            className="bg-white rounded-2xl max-w-6xl w-full p-5 lg:p-8 relative shadow-xl my-10  overflow-scroll lg:overflow-auto max-h-[90vh]"
+          >
             {/* Close Button */}
             <button
+              type="button"
               onClick={() => setSelectedMember(null)}
+              aria-label="Close team member details"
               className="absolute top-1 right-2 md:top-2 md:right-2 lg:top-4 lg:right-4 text-gray-600 hover:text-red-500 text-2xl lg:text-3xl"
             >
               &times;
@@ -129,7 +153,10 @@ export default function OurTeam() {
                   className="rounded-2xl object-cover"
                 />
                 <div>
-                  <h3 className="text-xl lg:text-3xl font-semibold text-gray-800 uppercase">
+                  <h3
+                    id="team-member-modal-heading"
+                    className="text-xl lg:text-3xl font-semibold text-gray-800 uppercase"
+                  >
                     {selectedMember.name}
                   </h3>
                   <p className="text-primary font-medium mt-1">

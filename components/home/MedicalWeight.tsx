@@ -51,12 +51,18 @@ export default function MedicalWeightLoss() {
   ];
 
   return (
-    <div className="w-full flex justify-center">
+    <section
+      aria-labelledby="medical-weight-heading"
+      className="w-full flex justify-center"
+    >
       <div className="w-full max-w-[1640px] md:my-16 my-8 px-8">
-        {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">
           <div>
-            <Reveal tag="h2" className="text-3xl font-bold text-gray-900">
+            <Reveal
+              tag="h2"
+              id="medical-weight-heading"
+              className="text-3xl font-bold text-gray-900"
+            >
               Medical Weight Loss
             </Reveal>
             <Reveal tag="p" className="text-gray-600 mt-2" delay={0.1}>
@@ -66,16 +72,15 @@ export default function MedicalWeightLoss() {
             </Reveal>
           </div>
           <Reveal tag="div" delay={0.2}>
-            <Link href="/our-services">
-            <button className="mt-4 md:mt-0 border border-black rounded-full px-6 py-2 font-medium flex items-center gap-2 hover:bg-black hover:text-white transition ">
-              Explore More Services
-              <span>→</span>
-            </button>
+            <Link
+              href="/our-services"
+              className="mt-4 md:mt-0 border border-black rounded-full px-6 py-2 font-medium inline-flex items-center gap-2 hover:bg-black hover:text-white transition"
+            >
+              Explore More Services <span aria-hidden="true">-&gt;</span>
             </Link>
           </Reveal>
         </div>
 
-        {/* Services Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((service, idx) => (
             <Reveal key={idx}>
@@ -95,7 +100,7 @@ export default function MedicalWeightLoss() {
                 <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300  line-clamp-3">
+                <p className="text-gray-600 text-sm mt-2 w-[300px] group-hover:text-gray-700 transition-colors duration-300 line-clamp-3">
                   {service.desc}
                 </p>
               </Link>
@@ -103,6 +108,6 @@ export default function MedicalWeightLoss() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

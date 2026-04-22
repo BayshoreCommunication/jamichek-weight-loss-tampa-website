@@ -2,7 +2,6 @@
 
 import Reveal from "@/components/motion/Reveal";
 import Image from "next/image";
-import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,7 +10,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function TransformationSection() {
   const slides = [
-    // slide 1
     {
       before: "/images/transformation/MarkWood-before.png",
       after: "/images/transformation/MarkWood-after.png",
@@ -25,7 +23,6 @@ export default function TransformationSection() {
         duration: { before: "12 Jun, 2025", after: "4 Months" },
       },
     },
-    // slide 2
     {
       before: "/images/transformation/Emily-before.png",
       after: "/images/transformation/Emily-after.png",
@@ -39,7 +36,6 @@ export default function TransformationSection() {
         duration: { before: "12 Jun, 2025", after: "4 Months" },
       },
     },
-    // slide 3
     {
       before: "/images/transformation/ashley-before.png",
       after: "/images/transformation/ashley-after.png",
@@ -53,7 +49,6 @@ export default function TransformationSection() {
         duration: { before: "January 2025", after: "Current" },
       },
     },
-    // slide 4
     {
       before: "/images/transformation/margarita-before.png",
       after: "/images/transformation/margarita-after.png",
@@ -67,7 +62,6 @@ export default function TransformationSection() {
         duration: { before: "April 2025", after: "Current" },
       },
     },
-    // slide 5
     {
       before: "/images/transformation/yunet-before.png",
       after: "/images/transformation/yunet-after.png",
@@ -81,7 +75,6 @@ export default function TransformationSection() {
         duration: { before: "April 2025", after: "Current" },
       },
     },
-    // slide 6
     {
       before: "/images/transformation/candace-before.png",
       after: "/images/transformation/candace-after.png",
@@ -95,7 +88,6 @@ export default function TransformationSection() {
         duration: { before: "June 2024", after: "August 2025" },
       },
     },
-    // slide 7
     {
       before: "/images/transformation/chris-before.png",
       after: "/images/transformation/chris-after.png",
@@ -109,7 +101,6 @@ export default function TransformationSection() {
         duration: { before: "July 2024", after: "Current" },
       },
     },
-    // slide 8
     {
       before: "/images/transformation/victor-before1.png",
       after: "/images/transformation/victor-after.png",
@@ -126,12 +117,13 @@ export default function TransformationSection() {
   ];
 
   return (
-    <div className="w-full flex justify-center bg-gray-50">
+    <section
+      aria-labelledby="transformations-heading"
+      className="w-full flex justify-center bg-gray-50"
+    >
       <div className="w-full max-w-[1640px] md:my-16 my-8 px-8">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Left: Swiper Card (70%) */}
           <div className="w-full lg:w-[70%]">
-            {/* Card Wrapper */}
             <Reveal className="bg-white rounded-2xl shadow-xl p-6 relative">
               <Swiper
                 modules={[Navigation, Pagination]}
@@ -149,32 +141,25 @@ export default function TransformationSection() {
                 {slides.map((slide, idx) => (
                   <SwiperSlide key={idx}>
                     <div className="flex flex-col md:flex-row gap-6">
-                      {/* Before/After */}
                       <div className="flex gap-4 flex-1">
-                        {/* Before */}
                         <div className="flex flex-col items-center w-full">
-                          <span className="text-primary font-semibold mb-2">
-                            Before
-                          </span>
+                          <span className="text-primary font-semibold mb-2">Before</span>
                           <div className="rounded-lg overflow-hidden w-full h-[400px] relative">
                             <Image
                               src={slide.before}
-                              alt="Before"
+                              alt={`${slide.name} before transformation`}
                               fill
                               className="object-cover object-center w-full h-full"
                             />
                           </div>
                         </div>
 
-                        {/* After */}
                         <div className="flex flex-col items-center w-full">
-                          <span className="text-primary font-semibold mb-2">
-                            After
-                          </span>
+                          <span className="text-primary font-semibold mb-2">After</span>
                           <div className="rounded-lg overflow-hidden w-full h-[400px] relative">
                             <Image
                               src={slide.after}
-                              alt="After"
+                              alt={`${slide.name} after transformation`}
                               fill
                               className="object-cover object-center w-full h-full"
                             />
@@ -182,7 +167,6 @@ export default function TransformationSection() {
                         </div>
                       </div>
 
-                      {/* User Info & Stats */}
                       <div className="flex-1 flex flex-col justify-center">
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-12 h-12 relative rounded-full overflow-hidden">
@@ -194,65 +178,39 @@ export default function TransformationSection() {
                             />
                           </div>
                           <div>
-                            <h3 className="font-semibold text-gray-800">
-                              {slide.name}
-                            </h3>
-                            {/* <p className="text-sm text-gray-500">
-                              {slide.role}
-                            </p> */}
+                            <h3 className="font-semibold text-gray-800">{slide.name}</h3>
                           </div>
                         </div>
 
                         <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden table-fixed">
+                          <caption className="sr-only">Transformation metrics for {slide.name}</caption>
                           <thead className="bg-gray-50">
                             <tr>
-                              <th className="text-left px-3 py-2 w-1/3">
-                                Title
-                              </th>
-                              <th className="text-left px-3 py-2 w-1/3">
-                                Before
-                              </th>
-                              <th className="text-left px-3 py-2 w-1/3">
-                                After
-                              </th>
+                              <th className="text-left px-3 py-2 w-1/3">Title</th>
+                              <th className="text-left px-3 py-2 w-1/3">Before</th>
+                              <th className="text-left px-3 py-2 w-1/3">After</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <td className="px-3 py-2">Weight</td>
-                              <td className="px-3 py-2 text-gray-700">
-                                {slide.stats.weight.before}
-                              </td>
-                              <td className="px-3 py-2 text-primary font-medium">
-                                {slide.stats.weight.after}
-                              </td>
+                              <td className="px-3 py-2 text-gray-700">{slide.stats.weight.before}</td>
+                              <td className="px-3 py-2 text-primary font-medium">{slide.stats.weight.after}</td>
                             </tr>
                             <tr className="bg-gray-50">
                               <td className="px-3 py-2">Waist</td>
-                              <td className="px-3 py-2">
-                                {slide.stats.waist.before}
-                              </td>
-                              <td className="px-3 py-2 text-primary font-medium">
-                                {slide.stats.waist.after}
-                              </td>
+                              <td className="px-3 py-2">{slide.stats.waist.before}</td>
+                              <td className="px-3 py-2 text-primary font-medium">{slide.stats.waist.after}</td>
                             </tr>
                             <tr>
                               <td className="px-3 py-2">BMI</td>
-                              <td className="px-3 py-2">
-                                {slide.stats.bmi.before}
-                              </td>
-                              <td className="px-3 py-2 text-primary font-medium">
-                                {slide.stats.bmi.after}
-                              </td>
+                              <td className="px-3 py-2">{slide.stats.bmi.before}</td>
+                              <td className="px-3 py-2 text-primary font-medium">{slide.stats.bmi.after}</td>
                             </tr>
                             <tr className="bg-gray-50">
                               <td className="px-3 py-2">Duration</td>
-                              <td className="px-3 py-2">
-                                {slide.stats.duration.before}
-                              </td>
-                              <td className="px-3 py-2 text-primary font-medium">
-                                {slide.stats.duration.after}
-                              </td>
+                              <td className="px-3 py-2">{slide.stats.duration.before}</td>
+                              <td className="px-3 py-2 text-primary font-medium">{slide.stats.duration.after}</td>
                             </tr>
                           </tbody>
                         </table>
@@ -261,28 +219,34 @@ export default function TransformationSection() {
                   </SwiperSlide>
                 ))}
 
-                {/* Navigation */}
-                <div className="prev-btn absolute top-1/2 left-0 transform -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-black text-white rounded-full cursor-pointer z-20">
-                  ‹
-                </div>
-                <div className="next-btn absolute top-1/2 right-0 transform -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-black text-white rounded-full cursor-pointer z-20">
-                  ›
-                </div>
+                <button
+                  type="button"
+                  aria-label="Previous transformation"
+                  className="prev-btn absolute top-1/2 left-0 transform -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-black text-white rounded-full cursor-pointer z-20"
+                >
+                  &lt;
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next transformation"
+                  className="next-btn absolute top-1/2 right-0 transform -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-black text-white rounded-full cursor-pointer z-20"
+                >
+                  &gt;
+                </button>
 
-                {/* Pagination */}
                 <div className="custom-pagination flex justify-center gap-2 mt-6 relative z-20"></div>
               </Swiper>
             </Reveal>
           </div>
 
-          {/* Right: Content */}
           <div className="w-full lg:w-[30%]">
             <Reveal
               tag="h2"
+              id="transformations-heading"
               className="text-3xl font-bold text-gray-900 leading-snug"
             >
-              See The Real <span className="text-primary">Transformations</span>{" "}
-              <br /> and Lasting Results
+              See The Real <span className="text-primary">Transformations</span> <br />
+              and Lasting Results
             </Reveal>
             <Reveal tag="p" className="text-gray-600 mt-4" delay={0.1}>
               Our expert doctor will tailor a treatment program to address your
@@ -296,9 +260,9 @@ export default function TransformationSection() {
                 className="inline-flex gap-2 items-center px-6 py-3 mt-4 bg-black text-white text-sm font-medium rounded-full hover:bg-primary transition"
               >
                 Schedule Today!
-                <div className="bg-white shrink-0  rounded-full w-5 h-5 flex items-center justify-center text-black">
+                <div className="bg-white shrink-0 rounded-full w-5 h-5 flex items-center justify-center text-black">
                   <svg
-                    className="w-4 h-4 "
+                    className="w-4 h-4"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
@@ -317,17 +281,16 @@ export default function TransformationSection() {
         </div>
       </div>
 
-      {/* Pagination Styling */}
       <style jsx global>{`
         .custom-pagination .swiper-pagination-bullet {
           background: #000 !important;
           opacity: 0.5;
         }
         .custom-pagination .swiper-pagination-bullet-active {
-          background: #16a34a !important; /* Tailwind primary */
+          background: #16a34a !important;
           opacity: 1;
         }
       `}</style>
-    </div>
+    </section>
   );
 }

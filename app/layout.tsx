@@ -1,9 +1,9 @@
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+import Footer from "../components/layout/Footer";
+import Navbar from "../components/layout/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
-import localFont from "next/font/local";
 
 // TAN ANGLETON (Headline)
 const tanAngleton = localFont({
@@ -36,10 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${tanAngleton.variable} ${canvaSans.variable}`}
-    >
+    <html lang="en" className={`${tanAngleton.variable} ${canvaSans.variable}`}>
       <body>
         <Providers>
           <Navbar />

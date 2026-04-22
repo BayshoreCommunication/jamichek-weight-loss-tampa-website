@@ -4,7 +4,6 @@ import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
 import About from "@/components/team/About";
 
 import TeamPage from "@/components/team/TeamPage";
-import React from "react";
 
 const page = () => {
   return (
@@ -16,7 +15,7 @@ const page = () => {
           { label: "Meet The Team" }, // current page (no href)
         ]}
       />
-      <About/>
+      <About />
       <TeamPage />
       <Testimonials />
       <PainRelief />

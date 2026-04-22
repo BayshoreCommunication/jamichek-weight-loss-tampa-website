@@ -120,6 +120,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/empower" className="hover:text-primary">
+                  Empower Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/skincare" className="hover:text-primary">
+                  Skincare
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/the-wellness-journal"
                   className="hover:text-primary"

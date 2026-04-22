@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 interface BreadcrumbItem {
   label: string;
@@ -25,47 +25,45 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
 }) => {
   return (
     <section
-      className={`relative lg:-mt-80 pt-16 lg:pt-80 pb-16 text-center bg-[#f6fff0] ${
+      className={`relative lg:-mt-80 pt-16 lg:pt-80 pb-14 text-center bg-[#f6fff0] ${
         className || ""
       }`}
     >
-      <div className="max-w-5xl mx-auto px-10">
-        {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold mt-4 text-gray-900">
-          {title}
-          {highlight && (
-            <span className="text-[#4E741E] px-3">{highlight}</span>
-          )}
-          {title2}
-        </h1>
-
+      <div className="max-w-4xl mx-auto px-6 sm:px-10">
         {/* Breadcrumb Navigation */}
         <nav
           aria-label="Breadcrumb"
-          className="mt-6 text-base lg:text-lg text-gray-700"
+          className="text-sm text-gray-500 leading-relaxed"
         >
-          <ol className="flex items-center justify-center gap-2 flex-wrap">
+          <ol className="flex items-center justify-center gap-1.5 flex-wrap leading-relaxed">
             {items.map((item, index) => (
-              <li key={index} className="flex items-center">
+              <li key={index} className="flex items-center leading-relaxed">
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="hover:text-primary underline-offset-2 hover:underline transition-colors font-semibold"
+                    className="hover:text-primary transition-colors font-medium leading-relaxed"
                   >
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="font-semibold text-primary underline">
+                  <span className="font-semibold text-primary">
                     {item.label}
                   </span>
                 )}
                 {index < items.length - 1 && (
-                  <span className="mx-2 text-gray-400">/</span>
+                  <span className="ml-1.5 text-gray-300">/</span>
                 )}
               </li>
             ))}
           </ol>
         </nav>
+
+        {/* Title */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 leading-snug tracking-tight">
+          {title}
+          {highlight && <span className="text-primary px-2">{highlight}</span>}
+          {title2}
+        </h1>
       </div>
     </section>
   );

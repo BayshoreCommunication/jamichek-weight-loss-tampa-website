@@ -53,7 +53,10 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="max-w-[1640px] mx-auto px-8 md:my-16 my-8">
+    <section
+      aria-labelledby="why-choose-heading"
+      className="max-w-[1640px] mx-auto px-8 md:my-16 my-8"
+    >
       {/* Grid with custom 70/30 split */}
       <div className="grid grid-cols-1 lg:grid-cols-[70%_30%]  items-start gap-6">
         {/* Left: Cards */}
@@ -86,6 +89,7 @@ export default function WhyChoose() {
         <div>
           <Reveal
             tag="h2"
+            id="why-choose-heading"
             className="text-3xl font-bold text-gray-900 leading-snug mb-4"
           >
             Why Choose Our <span className="text-primary">Weight Loss</span>{" "}

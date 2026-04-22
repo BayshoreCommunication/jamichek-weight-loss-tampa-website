@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="bg-gray-50">
-      <section className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
+    <section aria-labelledby="about-heading" className="bg-gray-50">
+      <div className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
         <div className="grid lg:grid-cols-2 items-center gap-10 md:gap-6">
           {/* Left Image */}
           <Reveal className="rounded-xl overflow-hidden">
@@ -21,7 +21,11 @@ export default function About() {
 
           {/* Right Content */}
           <div className="flex flex-col">
-            <Reveal tag="h2" className="text-3xl  font-bold text-black mb-4">
+            <Reveal
+              tag="h2"
+              id="about-heading"
+              className="text-3xl  font-bold text-black mb-4"
+            >
               About Us
             </Reveal>
             <Reveal
@@ -49,14 +53,12 @@ export default function About() {
 
             {/* Explore More button */}
             <Reveal tag="div" delay={0.15}>
-              <button className="bg-black text-white px-6 py-3 rounded-full w-fit transition mb-8 hover:bg-white hover:border hover:border-black hover:text-black">
-                <Link
-                  href="/team"
-                  className="inline-flex items-center gap-2 text-white font-medium transition hover:text-black"
-                >
-                  Explore More <ArrowRight size={18} />
-                </Link>
-              </button>
+              <Link
+                href="/team"
+                className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full w-fit transition mb-8 hover:bg-white hover:border hover:border-black hover:text-black font-medium"
+              >
+                Explore More <ArrowRight size={18} />
+              </Link>
             </Reveal>
 
             {/* Google Reviews */}
@@ -88,7 +90,7 @@ export default function About() {
             </Reveal>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 }
