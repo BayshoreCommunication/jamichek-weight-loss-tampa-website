@@ -41,11 +41,22 @@ const treatments = [
   },
   {
     link: "/empower/evolvex",
-    image: "/images/product-image/empower.jpeg",
+    image: "/images/empower/evolve.jpeg",
     name: "EvolveX",
     subtitle: "Bipolar RF + EMS Combined",
     description:
       "Combines bipolar radiofrequency (RF) and electrical muscle stimulation (EMS) within one system. Each modality can be used independently or combined, allowing fully tailored care plans.",
+    badge: "Multi-Modality",
+    color: "bg-amber-50 border-amber-100",
+    badgeColor: "bg-amber-100 text-amber-700",
+  },
+  {
+    link: "/empower/evolvex",
+    image: "/images/empower/empower.jpeg",
+    name: "Empower RF",
+    subtitle: "Bipolar RF + EMS Combined",
+    description:
+      "Empower RF is a non-surgical treatment that uses controlled radiofrequency energy to warm targeted tissue and encourage a stronger collagen response. This results in tighter, smoother skin and improved body contours. It can be used on the face and body to address sagging skin, wrinkles, and cellulite.",
     badge: "Multi-Modality",
     color: "bg-amber-50 border-amber-100",
     badgeColor: "bg-amber-100 text-amber-700",

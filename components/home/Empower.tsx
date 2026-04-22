@@ -1,10 +1,7 @@
 "use client";
 
 import Reveal from "@/components/motion/Reveal";
-import {
-  evolveTreatments,
-  featuredEmpowerTreatments,
-} from "@/lib/empowerTreatments";
+import { evolveTreatments } from "@/lib/empowerTreatments";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -56,7 +53,7 @@ export default function Empower() {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-[1640px] md:my-16 my-8 px-8">
-        <div className="grid gap-6 sm:grid-cols-2 items-stretch">
+        {/* <div className="grid gap-6 sm:grid-cols-2 items-stretch">
           {featuredEmpowerTreatments.map((service) => (
             <Reveal key={service.slug}>
               <TreatmentCard
@@ -68,7 +65,7 @@ export default function Empower() {
               />
             </Reveal>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-10 rounded-[32px] bg-[#f8fbf8] p-6 md:p-8 shadow-sm ring-1 ring-black/5">
           <Reveal>
