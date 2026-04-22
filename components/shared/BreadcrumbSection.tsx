@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import React from "react";
 
@@ -25,41 +23,35 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
 }) => {
   return (
     <section
-      className={`relative lg:-mt-80 pt-16 lg:pt-80 pb-14 text-center bg-[#f6fff0] ${
-        className || ""
-      }`}
+      className={`relative lg:-mt-80 pt-16 lg:pt-80 pb-14 text-center bg-[#f6fff0] ${className ?? ""}`}
     >
-      <div className="max-w-4xl mx-auto px-6 sm:px-10">
-        {/* Breadcrumb Navigation */}
+      <div className="max-w-5xl mx-auto px-6 sm:px-10">
+        {/* Breadcrumb trail */}
         <nav
           aria-label="Breadcrumb"
-          className="text-sm text-gray-500 leading-relaxed"
+          className="flex items-center justify-center gap-2 flex-wrap text-sm text-gray-500"
         >
-          <ol className="flex items-center justify-center gap-1.5 flex-wrap leading-relaxed">
-            {items.map((item, index) => (
-              <li key={index} className="flex items-center leading-relaxed">
-                {item.href ? (
-                  <Link
-                    href={item.href}
-                    className="hover:text-primary transition-colors font-medium leading-relaxed"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <span className="font-semibold text-primary">
-                    {item.label}
-                  </span>
-                )}
-                {index < items.length - 1 && (
-                  <span className="ml-1.5 text-gray-300">/</span>
-                )}
-              </li>
-            ))}
-          </ol>
+          {items.map((item, index) => (
+            <React.Fragment key={index}>
+              {index > 0 && (
+                <span className="text-gray-300 select-none">/</span>
+              )}
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <span className="font-semibold text-primary">{item.label}</span>
+              )}
+            </React.Fragment>
+          ))}
         </nav>
 
-        {/* Title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 leading-snug tracking-tight">
+        {/* Page title */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-normal tracking-tight">
           {title}
           {highlight && <span className="text-primary px-2">{highlight}</span>}
           {title2}

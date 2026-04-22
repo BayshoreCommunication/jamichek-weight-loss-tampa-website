@@ -33,7 +33,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-4 text-primary text-lg">
               <Link
-                href="https://www.facebook.com/MedicalWeightLossTampa"
+                href="https://www.facebook.com/profile.php?id=61557782790709"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -205,7 +205,10 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-center text-base text-gray-600">
-          <p>Copyright © 2025 Jachimek Chiropractic & Wellness Center</p>
+          <p>
+            Copyright © {new Date().getFullYear()} Jachimek Chiropractic &
+            Wellness Center
+          </p>
         </div>
       </div>
     </footer>

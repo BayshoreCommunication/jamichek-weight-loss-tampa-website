@@ -1,4 +1,6 @@
 import About from "@/components/home/About";
+import Blog from "@/components/home/Blog";
+import Empower from "@/components/home/Empower";
 import Hero from "@/components/home/hero";
 import MedicalWeight from "@/components/home/MedicalWeight";
 import NewPatientSpecial from "@/components/home/NewPatientSpecial";
@@ -22,6 +24,7 @@ export default function Home() {
         <Hero />
         <WhyChoose />
         <NewPatientSpecial />
+        <Empower />
         <About />
         <MedicalWeight />
         <Testimonials />
@@ -29,9 +32,8 @@ export default function Home() {
         <Transformation />
         <PainRelief />
         <Faq />
+        {/* <Blog /> */}
       </main>
-
-      {/* <Blog /> */}
     </>
   );
 }

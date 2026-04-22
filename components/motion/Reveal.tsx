@@ -32,6 +32,7 @@ type RevealProps = {
   tag?: MotionTag;
   children: ReactNode;
   className?: string;
+  id?: string;
 
   /** Animation config */
   x?: number; // default 0
@@ -50,6 +51,7 @@ export default function Reveal({
   tag = "div",
   children,
   className,
+  id,
   x = 0,
   y = 24,
   opacityFrom = 0,
@@ -74,6 +76,7 @@ export default function Reveal({
   return (
     <Cmp
       className={className}
+      id={id}
       variants={variants}
       initial="hidden"
       whileInView="visible"

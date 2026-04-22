@@ -71,9 +71,3 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
-
-@layer base {
-  h1 {
-    line-height: 1.25;
-  }
-}

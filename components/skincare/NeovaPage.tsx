@@ -1,6 +1,7 @@
 "use client";
 
 import { CheckCircle, MapPin, ShoppingBag } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../motion/Reveal";
 
@@ -13,6 +14,8 @@ const products = [
     highlights: ["DNA Repair Enzymes", "Anti-aging", "Brightening"],
     color: "bg-blue-50 border-blue-100",
     badge: "bg-blue-100 text-blue-800",
+    image:
+      "/images/product-image/neova-dna-total-repair-serums-front_V2_600x.jpg", // Replace with actual image path
   },
   {
     name: "SILC SHEER 2.0 SPF 40",
@@ -26,6 +29,8 @@ const products = [
     ],
     color: "bg-orange-50 border-orange-100",
     badge: "bg-orange-100 text-orange-800",
+    image:
+      "/images/product-image/neova-silc-sheer-2.0-sunscreens-front_V2_600x.jpg",
   },
   {
     name: "Copper Peptide Moisturizer",
@@ -35,6 +40,8 @@ const products = [
     highlights: ["Copper Peptides", "Collagen Boost", "Deep Hydration"],
     color: "bg-amber-50 border-amber-100",
     badge: "bg-amber-100 text-amber-800",
+    image:
+      "/images/product-image/neova-night-therapy-moisturizers-front_V2_600x.jpg",
   },
 ];
 
@@ -59,7 +66,7 @@ const NeovaPage = () => {
                 <span className="w-2 h-2 rounded-full bg-primary"></span>
                 Now Available At Our Clinic
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-loose">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 !leading-normal">
                 We Now Carry <span className="text-primary">NEOVA</span>{" "}
                 SmartSkincare
               </h2>
@@ -93,20 +100,31 @@ const NeovaPage = () => {
               </div>
             </Reveal>
 
-            {/* Promo image placeholder */}
             <Reveal tag="div" y={20} opacityFrom={0}>
               <div className="relative">
-                <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl aspect-square flex flex-col items-center justify-center p-10 border border-gray-200">
-                  <div className="text-center">
-                    <div className="text-5xl font-black text-gray-800 tracking-widest">
+                {/* Box with background image + overlay content */}
+                <div className="relative rounded-3xl overflow-hidden aspect-square flex flex-col items-center justify-center p-10">
+                  {/* Background image */}
+                  <Image
+                    src="/images/product-image/banner.png"
+                    alt="NEOVA SmartSkincare"
+                    fill
+                    className="object-cover object-center"
+                  />
+                  {/* Dark overlay for readability */}
+                  <div className="absolute inset-0 bg-black/30" />
+
+                  {/* Content on top */}
+                  <div className="relative z-10 text-center">
+                    <div className="text-5xl font-black text-white tracking-widest drop-shadow">
                       NEOVA<span className="text-primary">+</span>
                     </div>
-                    <div className="text-sm font-semibold tracking-[0.3em] text-gray-500 mt-1 uppercase">
+                    <div className="text-sm font-semibold tracking-[0.3em] text-white/80 mt-1 uppercase">
                       SmartSkincare
                     </div>
                     <div className="mt-8 space-y-3 text-left">
-                      <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-3">
-                        <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-xs font-bold text-orange-700">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-sm flex items-center gap-3">
+                        <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-xs font-bold text-orange-700 shrink-0">
                           SPF 40
                         </div>
                         <div>
@@ -118,8 +136,8 @@ const NeovaPage = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="bg-white rounded-xl p-4 shadow-sm flex items-center gap-3">
-                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-xs font-bold text-blue-700">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-sm flex items-center gap-3">
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-xs font-bold text-blue-700 shrink-0">
                           DNA
                         </div>
                         <div>
@@ -132,12 +150,10 @@ const NeovaPage = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-xs text-gray-400 mt-4">
-                      {/* Replace this div with actual Neova product image */}
-                      [Add product image here]
-                    </p>
                   </div>
                 </div>
+
+                {/* Medical Grade badge */}
                 <div className="absolute -top-4 -right-4 bg-primary text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg">
                   Medical Grade
                 </div>
@@ -191,7 +207,13 @@ const NeovaPage = () => {
                   {/* Image placeholder */}
                   <div className="bg-white/70 rounded-2xl aspect-square flex items-center justify-center mb-6 text-gray-400 text-sm">
                     {/* Replace with actual product image */}
-                    [Product image: {product.name}]
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-contain"
+                      width={500}
+                      height={500}
+                    />
                   </div>
                   <span
                     className={`text-xs font-semibold px-3 py-1 rounded-full self-start mb-3 ${product.badge}`}
@@ -248,9 +270,9 @@ const NeovaPage = () => {
                 The Science Behind NEOVA
               </h2>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                NEOVA's patented DNA Repair Enzymes work at the cellular level
-                to identify and remove DNA damage caused by UV exposure — the
-                root cause of photoaging. Combined with Copper Peptides that
+                NEOVA&apos;s patented DNA Repair Enzymes work at the cellular
+                level to identify and remove DNA damage caused by UV exposure —
+                the root cause of photoaging. Combined with Copper Peptides that
                 stimulate collagen production, NEOVA delivers results that go
                 far beyond surface-level skincare.
               </p>

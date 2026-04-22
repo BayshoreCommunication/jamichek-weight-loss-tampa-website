@@ -69,8 +69,12 @@ export default function ContactForm() {
         Swal.fire({
           icon: "success",
           title: "Message Sent!",
-          text: "Thank you for reaching out. We’ll get back to you soon.",
-          confirmButtonColor: "#131b2a",
+          text: "Thank you for reaching out. We'll get back to you soon.",
+          // CHANGED: use an explicit class so the OK button shows its background immediately
+          customClass: {
+            confirmButton: "contact-swal-confirm-button",
+          },
+          buttonsStyling: false,
         });
         form.reset();
         setFormErrors({});

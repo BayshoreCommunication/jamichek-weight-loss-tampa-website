@@ -1,12 +1,14 @@
 "use client";
 
+import { ArrowRight, Clock } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../motion/Reveal";
-import { ArrowRight, Clock } from "lucide-react";
 
 const treatments = [
   {
-    href: "/empower/morpheus8",
+    href: "/images/product-image/tone.jpeg",
+    image: "/images/product-image/more8.jpeg",
     name: "Morpheus8",
     subtitle: "RF Microneedling",
     description:
@@ -16,7 +18,8 @@ const treatments = [
     badgeColor: "bg-rose-100 text-rose-700",
   },
   {
-    href: "/empower/vtone",
+    link: "/empower/vtone",
+    image: "/images/product-image/vtone.jpeg",
     name: "VTone",
     subtitle: "Pelvic Floor Rehabilitation",
     description:
@@ -26,7 +29,8 @@ const treatments = [
     badgeColor: "bg-purple-100 text-purple-700",
   },
   {
-    href: "/empower/evolve-tone",
+    link: "/empower/evolve-tone",
+    image: "/images/product-image/tone.png",
     name: "Evolve Tone",
     subtitle: "Body Toning & Muscle Strengthening",
     description:
@@ -36,7 +40,8 @@ const treatments = [
     badgeColor: "bg-blue-100 text-blue-700",
   },
   {
-    href: "/empower/evolvex",
+    link: "/empower/evolvex",
+    image: "/images/product-image/empower.jpeg",
     name: "EvolveX",
     subtitle: "Bipolar RF + EMS Combined",
     description:
@@ -109,16 +114,21 @@ const EmpowerHub = () => {
             {treatments.map((t, i) => (
               <Reveal key={i} tag="div" y={20} opacityFrom={0}>
                 <Link
-                  href={t.href}
+                  href="/contact"
                   className={`group block rounded-3xl border p-8 h-full hover:shadow-lg transition-all ${t.color}`}
                 >
-                  {/* Image placeholder */}
-                  <div className="bg-white/60 rounded-2xl aspect-video flex items-center justify-center text-gray-400 text-sm mb-6">
-                    {/* Replace with treatment image */}
-                    [Add {t.name} image here]
+                  <div className="relative rounded-2xl aspect-video overflow-hidden mb-6 bg-white flex items-center justify-center">
+                    <Image
+                      src={t.image}
+                      alt={t.name}
+                      fill
+                      className="object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
 
-                  <span className={`text-xs font-semibold px-3 py-1 rounded-full ${t.badgeColor}`}>
+                  <span
+                    className={`text-xs font-semibold px-3 py-1 rounded-full ${t.badgeColor}`}
+                  >
                     {t.badge}
                   </span>
                   <h3 className="text-2xl font-bold text-gray-900 mt-3">
@@ -171,8 +181,12 @@ const EmpowerHub = () => {
               <Reveal key={i} tag="div" y={20} opacityFrom={0}>
                 <div className="bg-white rounded-3xl p-8 text-center shadow-sm">
                   <div className="text-4xl mb-4">{item.icon}</div>
-                  <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
-                  <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="text-lg font-bold text-gray-900">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-gray-600 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </Reveal>
             ))}

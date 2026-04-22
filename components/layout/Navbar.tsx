@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -20,6 +20,7 @@ const navItems = [
   { href: "/medical-weight-loss", label: "Medical Weight Loss" },
   { href: "/vitamins-peptides", label: "Vitamins & Peptides" },
   { href: "/regenerative-medicine", label: "Regenerative Medicine" },
+  { href: "/empower", label: "Empower" },
   { href: "/skincare", label: "Skincare" },
   { href: "/the-wellness-journal", label: "The Wellness Journal" },
 ];
@@ -56,7 +57,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Top Banner */}
-      <div className="bg-black text-white text-center text-sm py-3">
+      <div className="bg-black text-white text-center text-sm py-3 z-50 relative overflow-x-hidden">
         <span className="font-medium">$47 New Patient Special</span>
       </div>
 
@@ -69,42 +70,23 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`max-w-[1640px] mx-auto px-8 py-4 flex justify-between relative z-50 transition-all duration-700 ${
+          className={`max-w-[1640px] mx-auto px-8 py-4 flex justify-between relative z-50 transition-all duration-700 gap-10 items-center ${
             isSticky ? "items-center" : "items-start"
           } ${mobileOpen ? "items-start" : "items-start"}`}
         >
           {/* Logo - Desktop */}
-          <div className="hidden md:flex items-center justify-center transition-all duration-500 w-[200px]">
+          <div className="">
             <Image
               src="/images/hero/logo.png"
               alt="Logo"
               width={isSticky ? 100 : 200}
               height={isSticky ? 100 : 200}
-              className={`transition-all duration-500 ${
-                isSticky ? "w-[150px]" : "w-[200px]"
-              }`}
-            />
-          </div>
-
-          {/* Logo - Mobile */}
-          <div
-            className={`md:hidden flex items-center justify-center left-1/2 transform -translate-x-1/2 transition-opacity duration-300 ${
-              mobileOpen ? "opacity-0 absolute" : "relative opacity-100 top-0"
-            }`}
-          >
-            <Image
-              src="/images/hero/logo.png"
-              alt="Logo"
-              width={isSticky ? 80 : 140}
-              height={isSticky ? 80 : 140}
-              className={`transition-all duration-500 ${
-                isSticky ? "w-[80px]" : "w-[160px]"
-              }`}
+              className={`transition-all duration-500 w-[150px] lg:w-[200px] `}
             />
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-5 items-center text-sm text-gray-800 font-medium bg-gray-200 px-8 py-2 rounded-full">
+          <nav className="hidden lg:flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-gray-800 font-medium bg-gray-200 px-8 py-3 rounded-2xl">
             {navItems.slice(0, 5).map((item) => (
               <Link
                 key={item.href}
@@ -120,7 +102,7 @@ export default function Navbar() {
             ))}
 
             {/* Empower Dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            {/* <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setEmpowerOpen((prev) => !prev)}
                 className={`flex items-center gap-1 transition-colors whitespace-nowrap ${
@@ -153,7 +135,7 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             {navItems.slice(5).map((item) => (
               <Link
@@ -171,7 +153,7 @@ export default function Navbar() {
           </nav>
 
           {/* Phone button (desktop) */}
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <Link
               href="tel:8132697546"
               className="flex items-center gap-2 px-5 py-2 rounded-full bg-black text-white font-medium hover:bg-primary transition-colors"
@@ -183,7 +165,7 @@ export default function Navbar() {
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden flex items-center ml-auto"
+            className="lg:hidden flex items-center ml-auto"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -192,7 +174,7 @@ export default function Navbar() {
 
         {/* Mobile Nav */}
         {mobileOpen && (
-          <div className="md:hidden bg-white px-8 py-4 flex flex-col space-y-4 text-gray-800 font-medium border-t shadow-sm">
+          <div className="lg:hidden bg-white px-8 py-4 flex flex-col space-y-4 text-gray-800 font-medium border-t shadow-sm">
             {navItems.slice(0, 5).map((item) => (
               <Link
                 key={item.href}
@@ -209,7 +191,7 @@ export default function Navbar() {
             ))}
 
             {/* Mobile Empower Accordion */}
-            <div>
+            {/* <div>
               <button
                 onClick={() => setMobileEmpowerOpen((prev) => !prev)}
                 className={`flex items-center gap-1 w-full transition-colors ${
@@ -247,7 +229,7 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             {navItems.slice(5).map((item) => (
               <Link
