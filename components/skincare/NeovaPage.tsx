@@ -82,7 +82,7 @@ const NeovaPage = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link
-                  href="https://www.neova.com/?ref=reviva"
+                  href="https://www.neova.com/?ref=MedicalWeightLossTampa"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
@@ -244,7 +244,7 @@ const NeovaPage = () => {
           <Reveal tag="div" y={16} opacityFrom={0}>
             <div className="text-center mt-12">
               <Link
-                href="https://www.neova.com/?ref=reviva"
+                href="https://www.neova.com/?ref=MedicalWeightLossTampa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-all shadow-lg text-lg"
@@ -307,7 +307,7 @@ const NeovaPage = () => {
                 </p>
                 <div className="space-y-4">
                   <Link
-                    href="https://www.neova.com/?ref=reviva"
+                    href="https://www.neova.com/?ref=MedicalWeightLossTampa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-primary/10 rounded-2xl hover:bg-primary/20 transition group"
