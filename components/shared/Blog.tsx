@@ -9,22 +9,25 @@ import Stagger from "../motion/Stagger";
 
 const blogs = [
   {
-    title: "Top Balance Exercises for Seniors at Home",
-    slug: "brand-positioning-what-space-will-you-own-in-your-customers-mind-during-your-business-transformation",
-    date: "May 24, 2022",
-    image: "/images/blog/blog1.png",
+    title: "Common Myths About Weight Loss Shots and What Patients Should Know",
+    slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
+    date: "May 10, 2026",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-s.png",
+    desc: "Learn the facts behind common weight loss shot myths, including safety, muscle health, and long-term success.",
   },
   {
     title: "Stroke (CVA) Rehab: What to Expect in Physical Therapy",
     slug: "stroke-cva-rehab-what-to-expect-in-physical-therapy",
     date: "May 24, 2022",
     image: "/images/blog/blog2.png",
+    desc: "Understand the rehab process for stroke recovery through physical therapy.",
   },
   {
     title: "How to Relieve Lower Back Pain Without Surgery",
     slug: "how-to-relieve-lower-back-pain-without-surgery",
     date: "May 24, 2022",
     image: "/images/blog/blog3.png",
+    desc: "Discover practical non-surgical ways to reduce lower back pain and improve mobility.",
   },
 ];
 
@@ -84,6 +87,11 @@ export default function BlogSection() {
                 <h3 className="text-lg font-semibold text-gray-900 mt-2">
                   {blog.title}
                 </h3>
+                {blog.desc && (
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-3">
+                    {blog.desc}
+                  </p>
+                )}
               </div>
 
               <span className="text-primary text-sm font-medium hover:underline mt-4">

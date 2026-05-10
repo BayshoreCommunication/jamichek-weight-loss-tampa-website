@@ -31,6 +31,13 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Common Myths About Weight Loss Shots and What Patients Should Know",
+    slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
+    date: "2026-05-10",
+    image: "/images/Vitamins-&-Peptides/new-image/glp-s.png",
+    body: "Learn the truth behind common myths about weight loss injections, from safety to long-term results.",
+  },
+  {
     title: "Top Balance Exercises for Seniors at Home",
     slug: "top-balance-exercises-for-seniors-at-home",
     date: "2022-05-24", // ✅ use ISO date format
@@ -87,8 +94,12 @@ const formatPostDate = (input?: BlogItem["date"]) => {
 };
 
 export default function Blogs({ blogPost }: BlogsProps) {
-  const posts: BlogItem[] =
-    blogPost?.data?.filter((b: BlogItem) => b.published) || fallbackBlogs;
+  const publishedPosts = blogPost?.data?.filter((b: BlogItem) => b.published) || [];
+  const mergedPosts: BlogItem[] = [
+    fallbackBlogs[0],
+    ...publishedPosts.filter((blog) => blog.slug !== fallbackBlogs[0].slug),
+  ];
+  const posts: BlogItem[] = mergedPosts.length ? mergedPosts : fallbackBlogs;
 
   return (
     <section className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
@@ -114,17 +125,19 @@ export default function Blogs({ blogPost }: BlogsProps) {
             >
               {/* Blog Image */}
               <div className="w-full p-4 lg:p-6">
-                <Image
-                  src={
-                    blog.image ||
-                    blog?.featuredImage?.image?.url ||
-                    "/images/placeholder.jpg"
-                  }
-                  alt={blog.altText || blog.title}
-                  width={1000}
-                  height={667}
-                  className="object-cover rounded-xl w-full h-auto"
-                />
+                <div className="relative h-56 w-full overflow-hidden rounded-xl">
+                  <Image
+                    src={
+                      blog.image ||
+                      blog?.featuredImage?.image?.url ||
+                      "/images/placeholder.jpg"
+                    }
+                    alt={blog.altText || blog.title}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               {/* Blog Content */}

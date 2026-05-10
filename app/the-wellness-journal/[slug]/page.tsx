@@ -1,11 +1,12 @@
-import BlogSection from "@/components/shared/Blog";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
+import CommonMythsAboutWeightLoss, {
+  commonMythsAboutWeightLossMeta,
+} from "@/components/static-blogs/blogs/common-myths-about-weight-loss";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import parse from "html-react-parser";
 import GetAllPostData from "../../../lib/GetPostData";
-import { log } from "console";
 import PainRelief from "@/components/home/PainRelief";
 
 const css = `
@@ -67,6 +68,21 @@ export async function generateMetadata({
   );
 
   if (!blogDetails) {
+    if (params.slug === commonMythsAboutWeightLossMeta.slug) {
+      return {
+        title: commonMythsAboutWeightLossMeta.title,
+        description: commonMythsAboutWeightLossMeta.description,
+        openGraph: {
+          title: commonMythsAboutWeightLossMeta.title,
+          description: commonMythsAboutWeightLossMeta.description,
+          images: commonMythsAboutWeightLossMeta.image,
+          url: `https://www.medicalweightlosstampa.com/the-wellness-journal/${commonMythsAboutWeightLossMeta.slug}`,
+          type: "article",
+          site_name: "medicalweightlosstampa.com",
+        },
+      };
+    }
+
     return {
       title: "Blog not found",
       description: "No blog post available.",
@@ -99,6 +115,18 @@ const page = async ({ params }: { params: { slug: string } }) => {
   const blogDetails = blogPostData?.data?.filter(
     (blogs: any) => blogs.slug === params.slug
   );
+  const isStaticBlog = params.slug === commonMythsAboutWeightLossMeta.slug;
+  const hasDynamicBlog = blogDetails && blogDetails.length > 0;
+  const shouldRenderStatic = isStaticBlog && !hasDynamicBlog;
+
+  const recentBlogs = [
+    commonMythsAboutWeightLossMeta,
+    ...(blogPostData?.data?.filter((pub: any) => pub.published === true) || []),
+  ].filter(
+    (item: any, index: number, self: any[]) =>
+      item.slug !== params.slug &&
+      index === self.findIndex((post) => post.slug === item.slug)
+  );
 
   const postDate = (date: string) => {
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
@@ -111,7 +139,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
   // console.log("check data", blogDetails);
 
-  if (!blogDetails || blogDetails.length === 0) {
+  if (!shouldRenderStatic && (!blogDetails || blogDetails.length === 0)) {
     return (
       <>
         <style>{css}</style>
@@ -136,7 +164,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <style>{css}</style>
+      {!shouldRenderStatic && <style>{css}</style>}
       <BreadcrumbSection
         title="Transform Your Body with Medical Weight Loss Tampa"
         items={[
@@ -145,54 +173,67 @@ const page = async ({ params }: { params: { slug: string } }) => {
         ]}
       />
 
+      <section className="px-8 pt-12 pb-8 md:pt-16 md:pb-16">
       <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
-        {blogDetails?.map((blogs: any, index: number) => (
-          <div key={index} className="col-span-2">
-            <div className="flex items-center justify-between">
-              <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                {blogs?.category || "Blog Post"}
-              </p>
-              {/* <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                {postDate(blogs?.createdAt)}
-              </p> */}
-            </div>
-
+        {shouldRenderStatic ? (
+          <div className="col-span-2">
             <Image
               width={1000}
               height={300}
-              src={blogs?.featuredImage?.image?.url}
-              alt={blogs?.featuredImage?.altText}
-              className="w-full h-auto bg-center bg-cover rounded-2xl"
+              src={commonMythsAboutWeightLossMeta.image}
+              alt={commonMythsAboutWeightLossMeta.altText}
+              className="h-[240px] w-full rounded-2xl object-cover object-center md:h-[360px]"
             />
             <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-              {postDate(blogs?.createdAt)}
+              {postDate(commonMythsAboutWeightLossMeta.publishedAt)}
             </p>
-            <h2
-              className={`mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639] my-8`}
-            >
-              {blogs?.title}
+            <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639] my-8">
+              {commonMythsAboutWeightLossMeta.title}
             </h2>
-            <div className="mt-2 text-md">{parse(blogs?.body)}</div>
+            <CommonMythsAboutWeightLoss />
           </div>
-        ))}
+        ) : (
+          blogDetails?.map((blogs: any, index: number) => (
+            <div key={index} className="col-span-2">
+              <div className="flex items-center justify-between">
+                <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                  {blogs?.category || "Blog Post"}
+                </p>
+              </div>
+
+              <Image
+                width={1000}
+                height={300}
+                src={blogs?.featuredImage?.image?.url}
+                alt={blogs?.featuredImage?.altText}
+                className="w-full h-auto bg-center bg-cover rounded-2xl"
+              />
+              <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                {postDate(blogs?.createdAt)}
+              </p>
+              <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639] my-8">
+                {blogs?.title}
+              </h2>
+              <div className="mt-2 text-md">{parse(blogs?.body)}</div>
+            </div>
+          ))
+        )}
 
         <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
           <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
             Recent Blogs
           </h2>
-          {blogPostData?.data
-            ?.filter((pub: any, no: number) => pub.published === true)
-            ?.map((blogs: any, index: number) => (
+          {recentBlogs?.map((blogs: any, index: number) => (
               <Link
                 className="flex items-start gap-2 ps-3 py-3 drop-shadow-lg bg-white my-3"
                 key={index}
-                href={`/blog/${blogs?.slug}`}
+                href={`/the-wellness-journal/${blogs?.slug}`}
               >
                 <Image
                   width={180}
                   height={180}
-                  src={blogs?.featuredImage?.image?.url}
-                  alt={blogs?.featuredImage?.altText}
+                  src={blogs?.featuredImage?.image?.url || blogs?.image}
+                  alt={blogs?.featuredImage?.altText || blogs?.altText || blogs?.title}
                   className="w-[100px] h-auto bg-center bg-cover"
                 />
                 <div>
@@ -204,6 +245,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
             ))}
         </div>
       </div>
+      </section>
 
       <PainRelief />
     </>
