@@ -87,8 +87,7 @@ const sections = [
         body: "We care about your safety, so we do medical check-ups. This includes looking at your family history and your current health to make sure you are a good fit. We monitor your blood work and heart health regularly.",
       },
     ],
-    note:
-      "The Food and Drug Administration maintains strict oversight on the safety profiles of these medications to ensure they meet rigorous clinical standards for weight management.",
+    note: "The Food and Drug Administration maintains strict oversight on the safety profiles of these medications to ensure they meet rigorous clinical standards for weight management.",
     source: "Food and Drug Administration",
   },
   {
@@ -105,13 +104,11 @@ const sections = [
         body: "Selection of a local medical team provides peace of mind. You have a place to go and people to talk to if you have questions. We provide the accountability and encouragement that a computer screen cannot offer. We are your neighbors in Tampa, and we are invested in your success.",
       },
     ],
-    note:
-      "The United States Department of Health and Human Services reports that chronic diseases related to obesity are among the most preventable health challenges in the nation when addressed early.",
+    note: "The United States Department of Health and Human Services reports that chronic diseases related to obesity are among the most preventable health challenges in the nation when addressed early.",
     source: "United States Department of Health and Human Services",
   },
   {
-    title:
-      '5. Myth: You Can Never Reach a "New Normal" Without Injections',
+    title: '5. Myth: You Can Never Reach a "New Normal" Without Injections',
     intro:
       "Many patients believe that once they start, their body will always depend on the medication to function. We understand the desire for biological independence.",
     blocks: [
@@ -124,8 +121,7 @@ const sections = [
         body: "When you are getting treatment, we help you build habits around stress, sleep, hydration, nutrition, and movement. Medication gives you a chance to start doing these things, so treatment becomes a way to change your lifestyle for good.",
       },
     ],
-    note:
-      "Programs overseen by the Centers for Medicare & Medicaid Services emphasize the importance of medically supervised weight management to reduce overall long-term healthcare costs.",
+    note: "Programs overseen by the Centers for Medicare & Medicaid Services emphasize the importance of medically supervised weight management to reduce overall long-term healthcare costs.",
     source: "Centers for Medicare & Medicaid Services",
   },
 ];
@@ -273,7 +269,7 @@ export default function CommonMythsAboutWeightLoss() {
         </div>
       </section>
 
-      <section className="mt-10 overflow-hidden border border-[#D6E4F0]">
+      {/* <section className="mt-10 overflow-hidden border border-[#D6E4F0]">
         <div className="grid grid-cols-1 md:grid-cols-[160px_1fr]">
           <div className="bg-[#D6E4F0] px-4 py-3 font-bold text-[#1F4E79]">
             Meta Title
@@ -290,7 +286,7 @@ export default function CommonMythsAboutWeightLoss() {
             weight loss shot treatments.
           </div>
         </div>
-      </section>
+      </section> */}
 
       <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555]">
         Disclaimer: This article offers general information and is not a
