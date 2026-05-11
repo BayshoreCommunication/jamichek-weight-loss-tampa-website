@@ -177,13 +177,16 @@ const page = async ({ params }: { params: { slug: string } }) => {
       <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
         {shouldRenderStatic ? (
           <div className="col-span-2">
-            <Image
-              width={1000}
-              height={300}
-              src={commonMythsAboutWeightLossMeta.image}
-              alt={commonMythsAboutWeightLossMeta.altText}
-              className="h-[240px] w-full rounded-2xl object-cover object-center md:h-[360px]"
-            />
+            <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
+              {/* Static blog detail page feature image comes from commonMythsAboutWeightLossMeta.image. */}
+              <Image
+                fill
+                src={commonMythsAboutWeightLossMeta.image}
+                alt={commonMythsAboutWeightLossMeta.altText}
+                sizes="(min-width: 640px) 66vw, 100vw"
+                className="object-cover object-center"
+              />
+            </div>
             <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
               {postDate(commonMythsAboutWeightLossMeta.publishedAt)}
             </p>
@@ -201,6 +204,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 </p>
               </div>
 
+              {/* Dynamic blog detail page feature image comes from the CMS featuredImage field. */}
               <Image
                 width={1000}
                 height={300}
@@ -229,12 +233,13 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 key={index}
                 href={`/the-wellness-journal/${blogs?.slug}`}
               >
+                {/* Recent blog thumbnail uses CMS featuredImage first, then static blog image. */}
                 <Image
                   width={180}
                   height={180}
                   src={blogs?.featuredImage?.image?.url || blogs?.image}
                   alt={blogs?.featuredImage?.altText || blogs?.altText || blogs?.title}
-                  className="w-[100px] h-auto bg-center bg-cover"
+                  className="h-[67px] w-[100px] object-cover"
                 />
                 <div>
                   <div className="text-md font-bold text-black text-left line-clamp-2">

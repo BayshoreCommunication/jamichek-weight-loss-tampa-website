@@ -34,7 +34,8 @@ const fallbackBlogs: BlogItem[] = [
     title: "Common Myths About Weight Loss Shots and What Patients Should Know",
     slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
     date: "2026-05-10",
-    image: "/images/Vitamins-&-Peptides/new-image/glp-s.png",
+    // Feature image for the static Common Myths blog card on the blog listing page.
+    image: "/images/static-blogs/common-myths-about-weight-loss.jpg",
     body: "Learn the truth behind common myths about weight loss injections, from safety to long-term results.",
   },
   {
@@ -94,7 +95,8 @@ const formatPostDate = (input?: BlogItem["date"]) => {
 };
 
 export default function Blogs({ blogPost }: BlogsProps) {
-  const publishedPosts = blogPost?.data?.filter((b: BlogItem) => b.published) || [];
+  const publishedPosts =
+    blogPost?.data?.filter((b: BlogItem) => b.published) || [];
   const mergedPosts: BlogItem[] = [
     fallbackBlogs[0],
     ...publishedPosts.filter((blog) => blog.slug !== fallbackBlogs[0].slug),
@@ -126,6 +128,7 @@ export default function Blogs({ blogPost }: BlogsProps) {
               {/* Blog Image */}
               <div className="w-full p-4 lg:p-6">
                 <div className="relative h-56 w-full overflow-hidden rounded-xl">
+                  {/* Blog listing feature image: static image first, CMS featuredImage second, placeholder last. */}
                   <Image
                     src={
                       blog.image ||
@@ -145,7 +148,7 @@ export default function Blogs({ blogPost }: BlogsProps) {
                 <div>
                   <p className="text-xs font-medium text-gray-500 uppercase flex items-center gap-2">
                     {formatPostDate(
-                      blog.date ?? blog.createdAt ?? blog.publishedAt
+                      blog.date ?? blog.createdAt ?? blog.publishedAt,
                     )}
                   </p>
                   <h3 className="text-lg font-semibold text-gray-900 mt-2">
