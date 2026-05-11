@@ -64,7 +64,7 @@ export async function generateMetadata({
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.find(
-    (blogs: any) => blogs.slug === params.slug
+    (blogs: any) => blogs.slug === params.slug,
   );
 
   if (!blogDetails) {
@@ -113,7 +113,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
   const blogPostData = await GetAllPostData();
 
   const blogDetails = blogPostData?.data?.filter(
-    (blogs: any) => blogs.slug === params.slug
+    (blogs: any) => blogs.slug === params.slug,
   );
   const isStaticBlog = params.slug === commonMythsAboutWeightLossMeta.slug;
   const hasDynamicBlog = blogDetails && blogDetails.length > 0;
@@ -125,7 +125,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
   ].filter(
     (item: any, index: number, self: any[]) =>
       item.slug !== params.slug &&
-      index === self.findIndex((post) => post.slug === item.slug)
+      index === self.findIndex((post) => post.slug === item.slug),
   );
 
   const postDate = (date: string) => {
@@ -174,60 +174,60 @@ const page = async ({ params }: { params: { slug: string } }) => {
       />
 
       <section className="px-8 pt-12 pb-8 md:pt-16 md:pb-16">
-      <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
-        {shouldRenderStatic ? (
-          <div className="col-span-2">
-            <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
-              {/* Static blog detail page feature image comes from commonMythsAboutWeightLossMeta.image. */}
-              <Image
-                fill
-                src={commonMythsAboutWeightLossMeta.image}
-                alt={commonMythsAboutWeightLossMeta.altText}
-                sizes="(min-width: 640px) 66vw, 100vw"
-                className="object-cover object-center"
-              />
-            </div>
-            <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-              {postDate(commonMythsAboutWeightLossMeta.publishedAt)}
-            </p>
-            <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639] my-8">
-              {commonMythsAboutWeightLossMeta.title}
-            </h2>
-            <CommonMythsAboutWeightLoss />
-          </div>
-        ) : (
-          blogDetails?.map((blogs: any, index: number) => (
-            <div key={index} className="col-span-2">
-              <div className="flex items-center justify-between">
-                <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                  {blogs?.category || "Blog Post"}
-                </p>
+        <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
+          {shouldRenderStatic ? (
+            <div className="col-span-2">
+              <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
+                {/* Static blog detail page feature image comes from commonMythsAboutWeightLossMeta.image. */}
+                <Image
+                  fill
+                  src={commonMythsAboutWeightLossMeta.image}
+                  alt={commonMythsAboutWeightLossMeta.altText}
+                  sizes="(min-width: 640px) 66vw, 100vw"
+                  className="object-cover object-center"
+                />
               </div>
-
-              {/* Dynamic blog detail page feature image comes from the CMS featuredImage field. */}
-              <Image
-                width={1000}
-                height={300}
-                src={blogs?.featuredImage?.image?.url}
-                alt={blogs?.featuredImage?.altText}
-                className="w-full h-auto bg-center bg-cover rounded-2xl"
-              />
               <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                {postDate(blogs?.createdAt)}
+                {postDate(commonMythsAboutWeightLossMeta.publishedAt)}
               </p>
-              <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold tracking-normal text-left text-[#1B2639] my-8">
-                {blogs?.title}
+              <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.80] tracking-normal text-left text-[#1B2639] my-8">
+                {commonMythsAboutWeightLossMeta.title}
               </h2>
-              <div className="mt-2 text-md">{parse(blogs?.body)}</div>
+              <CommonMythsAboutWeightLoss />
             </div>
-          ))
-        )}
+          ) : (
+            blogDetails?.map((blogs: any, index: number) => (
+              <div key={index} className="col-span-2">
+                <div className="flex items-center justify-between">
+                  <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                    {blogs?.category || "Blog Post"}
+                  </p>
+                </div>
 
-        <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
-          <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
-            Recent Blogs
-          </h2>
-          {recentBlogs?.map((blogs: any, index: number) => (
+                {/* Dynamic blog detail page feature image comes from the CMS featuredImage field. */}
+                <Image
+                  width={1000}
+                  height={300}
+                  src={blogs?.featuredImage?.image?.url}
+                  alt={blogs?.featuredImage?.altText}
+                  className="w-full h-auto bg-center bg-cover rounded-2xl"
+                />
+                <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
+                  {postDate(blogs?.createdAt)}
+                </p>
+                <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.50] tracking-normal text-left text-[#1B2639] my-8">
+                  {blogs?.title}
+                </h2>
+                <div className="mt-2 text-md">{parse(blogs?.body)}</div>
+              </div>
+            ))
+          )}
+
+          <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
+            <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
+              Recent Blogs
+            </h2>
+            {recentBlogs?.map((blogs: any, index: number) => (
               <Link
                 className="flex items-start gap-2 ps-3 py-3 drop-shadow-lg bg-white my-3"
                 key={index}
@@ -238,7 +238,11 @@ const page = async ({ params }: { params: { slug: string } }) => {
                   width={180}
                   height={180}
                   src={blogs?.featuredImage?.image?.url || blogs?.image}
-                  alt={blogs?.featuredImage?.altText || blogs?.altText || blogs?.title}
+                  alt={
+                    blogs?.featuredImage?.altText ||
+                    blogs?.altText ||
+                    blogs?.title
+                  }
                   className="h-[67px] w-[100px] object-cover"
                 />
                 <div>
@@ -248,8 +252,8 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 </div>
               </Link>
             ))}
+          </div>
         </div>
-      </div>
       </section>
 
       <PainRelief />
