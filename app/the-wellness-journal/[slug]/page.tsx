@@ -2,6 +2,9 @@ import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
 import CommonMythsAboutWeightLoss, {
   commonMythsAboutWeightLossMeta,
 } from "@/components/static-blogs/blogs/common-myths-about-weight-loss";
+import MusclePainReliefForActiveAdults, {
+  musclePainReliefForActiveAdultsMeta,
+} from "@/components/static-blogs/blogs/muscle-pain-relief-for-active-adults";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -40,6 +43,49 @@ ul {
 
 `;
 
+type StaticBlogMeta = {
+  title: string;
+  slug: string;
+  description: string;
+  image: string;
+  altText: string;
+  imageTitle?: string;
+  imageDescription?: string;
+  caption?: string;
+  category?: string;
+  publishedAt: string;
+};
+
+type StaticBlogEntry = {
+  meta: StaticBlogMeta;
+  Component: React.ComponentType;
+};
+
+const staticBlogs: StaticBlogEntry[] = [
+  {
+    meta: commonMythsAboutWeightLossMeta,
+    Component: CommonMythsAboutWeightLoss,
+  },
+  {
+    meta: musclePainReliefForActiveAdultsMeta,
+    Component: MusclePainReliefForActiveAdults,
+  },
+];
+
+const getPostTime = (post: any) => {
+  const value = post?.date ?? post?.createdAt ?? post?.publishedAt;
+  if (!value) return 0;
+
+  const parsed =
+    value instanceof Date
+      ? value
+      : typeof value === "number"
+        ? new Date(value > 1e12 ? value : value * 1000)
+        : new Date(String(value).trim().replace(" ", "T"));
+
+  return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+};
+
 function extractTextFromHtml(htmlString: string): string {
   // Use regex to strip HTML tags and extract plain text
   const plainText = htmlString.replace(/<\/?[^>]+(>|$)/g, "");
@@ -67,16 +113,18 @@ export async function generateMetadata({
     (blogs: any) => blogs.slug === params.slug,
   );
 
+  const staticBlog = staticBlogs.find((blog) => blog.meta.slug === params.slug);
+
   if (!blogDetails) {
-    if (params.slug === commonMythsAboutWeightLossMeta.slug) {
+    if (staticBlog) {
       return {
-        title: commonMythsAboutWeightLossMeta.title,
-        description: commonMythsAboutWeightLossMeta.description,
+        title: staticBlog.meta.title,
+        description: staticBlog.meta.description,
         openGraph: {
-          title: commonMythsAboutWeightLossMeta.title,
-          description: commonMythsAboutWeightLossMeta.description,
-          images: commonMythsAboutWeightLossMeta.image,
-          url: `https://www.medicalweightlosstampa.com/the-wellness-journal/${commonMythsAboutWeightLossMeta.slug}`,
+          title: staticBlog.meta.title,
+          description: staticBlog.meta.description,
+          images: staticBlog.meta.image,
+          url: `https://www.medicalweightlosstampa.com/the-wellness-journal/${staticBlog.meta.slug}`,
           type: "article",
           site_name: "medicalweightlosstampa.com",
         },
@@ -115,18 +163,21 @@ const page = async ({ params }: { params: { slug: string } }) => {
   const blogDetails = blogPostData?.data?.filter(
     (blogs: any) => blogs.slug === params.slug,
   );
-  const isStaticBlog = params.slug === commonMythsAboutWeightLossMeta.slug;
+  const staticBlog = staticBlogs.find((blog) => blog.meta.slug === params.slug);
+  const StaticBlogContent = staticBlog?.Component;
   const hasDynamicBlog = blogDetails && blogDetails.length > 0;
-  const shouldRenderStatic = isStaticBlog && !hasDynamicBlog;
+  const shouldRenderStatic = Boolean(staticBlog && !hasDynamicBlog);
 
   const recentBlogs = [
-    commonMythsAboutWeightLossMeta,
+    ...staticBlogs.map((blog) => blog.meta),
     ...(blogPostData?.data?.filter((pub: any) => pub.published === true) || []),
-  ].filter(
-    (item: any, index: number, self: any[]) =>
-      item.slug !== params.slug &&
-      index === self.findIndex((post) => post.slug === item.slug),
-  );
+  ]
+    .filter(
+      (item: any, index: number, self: any[]) =>
+        item.slug !== params.slug &&
+        index === self.findIndex((post) => post.slug === item.slug),
+    )
+    .sort((a: any, b: any) => getPostTime(b) - getPostTime(a));
 
   const postDate = (date: string) => {
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
@@ -175,25 +226,46 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
       <section className="px-8 pt-12 pb-8 md:pt-16 md:pb-16">
         <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
-          {shouldRenderStatic ? (
+          {shouldRenderStatic && staticBlog && StaticBlogContent ? (
             <div className="col-span-2">
-              <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
-                {/* Static blog detail page feature image comes from commonMythsAboutWeightLossMeta.image. */}
-                <Image
-                  fill
-                  src={commonMythsAboutWeightLossMeta.image}
-                  alt={commonMythsAboutWeightLossMeta.altText}
-                  sizes="(min-width: 640px) 66vw, 100vw"
-                  className="object-cover object-center"
-                />
-              </div>
+              <figure>
+                <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
+                  {/* Static blog detail page feature image comes from the matching static blog meta image. */}
+                  <Image
+                    fill
+                    src={staticBlog.meta.image}
+                    alt={staticBlog.meta.altText}
+                    title={staticBlog.meta.imageTitle}
+                    aria-describedby={
+                      staticBlog.meta.imageDescription
+                        ? `${staticBlog.meta.slug}-image-description`
+                        : undefined
+                    }
+                    sizes="(min-width: 640px) 66vw, 100vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+                {staticBlog.meta.caption ? (
+                  <figcaption className="mt-3 text-sm italic leading-6 text-[#595959]">
+                    {staticBlog.meta.caption}
+                  </figcaption>
+                ) : null}
+                {staticBlog.meta.imageDescription ? (
+                  <p
+                    id={`${staticBlog.meta.slug}-image-description`}
+                    className="sr-only"
+                  >
+                    {staticBlog.meta.imageDescription}
+                  </p>
+                ) : null}
+              </figure>
               <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
-                {postDate(commonMythsAboutWeightLossMeta.publishedAt)}
+                {postDate(staticBlog.meta.publishedAt)}
               </p>
               <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.80] tracking-normal text-left text-[#1B2639] my-8">
-                {commonMythsAboutWeightLossMeta.title}
+                {staticBlog.meta.title}
               </h2>
-              <CommonMythsAboutWeightLoss />
+              <StaticBlogContent />
             </div>
           ) : (
             blogDetails?.map((blogs: any, index: number) => (

@@ -18,6 +18,9 @@ export type BlogItem = {
   createdAt?: string | number | Date;
   publishedAt?: string | number | Date;
   image?: string;
+  imageTitle?: string;
+  imageDescription?: string;
+  caption?: string;
   body?: string | React.ReactNode;
   altText?: string;
   featuredImage?: BlogFeaturedImage;
@@ -37,6 +40,22 @@ const fallbackBlogs: BlogItem[] = [
     // Feature image for the static Common Myths blog card on the blog listing page.
     image: "/images/static-blogs/common-myths-about-weight-loss.jpg",
     body: "Learn the truth behind common myths about weight loss injections, from safety to long-term results.",
+  },
+  {
+    title:
+      "Muscle Pain Relief for Active Adults: Safe Recovery Strategies That Work",
+    slug: "muscle-pain-relief-for-active-adults",
+    date: "2026-05-14",
+    image:
+      "/images/static-blogs/Muscle Pain Relief for Active Adults_ Safe Recovery Strategies That Work.webp",
+    altText:
+      "Active adults using foam rollers and stretching exercises for muscle pain relief and recovery",
+    imageTitle: "Muscle Pain Relief and Recovery Strategies for Adults",
+    imageDescription:
+      "Active adults performing stretching and foam rolling exercises to support muscle pain relief, improve mobility, and promote safe post-workout recovery as part of a healthy fitness and wellness routine.",
+    caption:
+      "Adults practicing stretching and recovery exercises for muscle pain relief",
+    body: "Explore safe recovery strategies for active adults, including sleep, hydration, protein intake, active recovery, and expert care for chronic muscle tightness.",
   },
   {
     title: "Top Balance Exercises for Seniors at Home",
@@ -94,13 +113,29 @@ const formatPostDate = (input?: BlogItem["date"]) => {
   });
 };
 
+const getPostTime = (blog: BlogItem) => {
+  const value = blog.date ?? blog.createdAt ?? blog.publishedAt;
+  if (!value) return 0;
+
+  const parsed =
+    value instanceof Date
+      ? value
+      : typeof value === "number"
+        ? new Date(value > 1e12 ? value : value * 1000)
+        : new Date(value.trim().replace(" ", "T"));
+
+  return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+};
+
 export default function Blogs({ blogPost }: BlogsProps) {
   const publishedPosts =
     blogPost?.data?.filter((b: BlogItem) => b.published) || [];
+  const staticPosts = fallbackBlogs.slice(0, 2);
+  const staticSlugs = new Set(staticPosts.map((blog) => blog.slug));
   const mergedPosts: BlogItem[] = [
-    fallbackBlogs[0],
-    ...publishedPosts.filter((blog) => blog.slug !== fallbackBlogs[0].slug),
-  ];
+    ...staticPosts,
+    ...publishedPosts.filter((blog) => !staticSlugs.has(blog.slug)),
+  ].sort((a, b) => getPostTime(b) - getPostTime(a));
   const posts: BlogItem[] = mergedPosts.length ? mergedPosts : fallbackBlogs;
 
   return (
