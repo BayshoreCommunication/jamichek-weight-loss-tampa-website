@@ -466,7 +466,7 @@ export default function MusclePainReliefForActiveAdults() {
 
           <div className="mt-7">
             <h3 className="text-xl font-bold text-[#2E75B6]">
-              Fruit and Drink That's Best for Muscle Recovery and Relax
+              Fruit and Drink That&apos;s Best for Muscle Recovery and Relax
             </h3>
             <div className="mt-2 space-y-4 text-[17px] leading-8">
               <p>
@@ -486,8 +486,8 @@ export default function MusclePainReliefForActiveAdults() {
 
           <div className="mt-7 bg-[#1F4E79] px-6 py-5 text-white">
             <p className="text-[17px] leading-8">
-              More for you: Tampa's Registered Dietitian Weight Loss Program vs.
-              Online Diet Plans: What's Better?
+              More for you: Tampa&apos;s Registered Dietitian Weight Loss Program
+              vs. Online Diet Plans: What&apos;s Better?
             </p>
           </div>
         </section>
