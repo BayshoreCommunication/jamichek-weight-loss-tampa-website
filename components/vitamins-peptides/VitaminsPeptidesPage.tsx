@@ -54,7 +54,8 @@ const MedicalWeightLossData = [
   },
   {
     id: 6,
-    image: "/images/Vitamins-&-Peptides/new-image/Lipo mino injection-1.png",
+    image:
+      "/images/Vitamins-&-Peptides/new-image-final/Lipo-Mino-Mix-C Injection.jpeg",
     title: "Lipo-Mino with L-Carnitine",
     details:
       "Accelerate your fat-burning potential with Lipo-Mino with L-Carnitine—a targeted injectable formula designed to support efficient weight loss. This powerful combination of amino acids and L-Carnitine helps transport fatty acids into your cells’ mitochondria, where they are converted into energy. By enhancing your body’s natural ability to burn fat for fuel, this treatment can increase energy, improve exercise performance, and promote lean muscle retention. Ideal for breaking through weight loss plateaus or boosting metabolism, Lipo-Mino with L-Carnitine is a safe, effective, and science-backed addition to your medically supervised wellness plan.",
@@ -89,7 +90,7 @@ const MedicalWeightLossData = [
   },
   {
     id: 11,
-    image: "/images/Vitamins-&-Peptides/new-image/micc.png",
+    image: "/images/Vitamins-&-Peptides/new-image-final/MICC inj.jpeg",
     title: "MICC Injection",
     details:
       "Boost your metabolism and support your weight management goals with the MICC Injection, a specially formulated blend of Methionine, Inositol, Choline, and Cyanocobalamin (Vitamin B12). This combination of lipotropic nutrients helps the body break down and metabolize fat more efficiently while supporting liver health and energy production.The MICC Injection works to convert fat into energy, reduce fat accumulation, and enhance overall metabolic function. It’s ideal for individuals seeking to complement their weight loss program, improve energy levels, and promote healthy liver detoxification. Administered under professional supervision for safety and effectiveness, MICC Injection provides a natural, science-based boost to your body’s fat-burning and energy systems. Experience improved focus, vitality, and metabolic balance with this trusted wellness solution.",
