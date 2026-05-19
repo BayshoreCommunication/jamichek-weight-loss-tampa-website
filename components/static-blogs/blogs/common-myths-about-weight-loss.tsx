@@ -3,7 +3,7 @@ export const commonMythsAboutWeightLossMeta = {
   slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
   description:
     "Curious about weight loss injections? Explore common myths, real medical facts, and what patients should understand before starting weight loss shot treatments.",
-  image: "/images/static-blogs/common-myths-about-weight-loss.jpg",
+  image: "/images/static-blogs/common-myths-about-weight-loss.webp",
   altText: "GLP-1 weight loss shot information",
   category: "Medical Weight Loss",
   publishedAt: "2026-05-10",
