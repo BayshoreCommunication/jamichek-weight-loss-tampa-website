@@ -38,7 +38,7 @@ const fallbackBlogs: BlogItem[] = [
     slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
     date: "2026-05-10",
     // Feature image for the static Common Myths blog card on the blog listing page.
-    image: "/images/static-blogs/common-myths-about-weight-loss.jpg",
+    image: "/images/static-blogs/common-myths-about-weight-loss.webp",
     body: "Learn the truth behind common myths about weight loss injections, from safety to long-term results.",
   },
   {
@@ -56,6 +56,22 @@ const fallbackBlogs: BlogItem[] = [
     caption:
       "Adults practicing stretching and recovery exercises for muscle pain relief",
     body: "Explore safe recovery strategies for active adults, including sleep, hydration, protein intake, active recovery, and expert care for chronic muscle tightness.",
+  },
+  {
+    title:
+      "Understanding Arthritis Medication: Options for Managing Pain and Inflammation Safely",
+    slug: "understanding-arthritis-medication",
+    date: "2026-05-23",
+    image:
+      "/images/static-blogs/arthritis-medication-pain-management-consultation.webp",
+    altText:
+      "Doctor explaining arthritis medication options to patient experiencing hand pain and inflammation",
+    imageTitle: "Arthritis Medication Options for Pain and Inflammation Relief",
+    imageDescription:
+      "Medical consultation focused on arthritis treatment options, pain management, and reducing joint inflammation through safe medication and personalized care plans.",
+    caption:
+      "Doctor discussing arthritis medication and treatment options to help manage joint pain and inflammation safely.",
+    body: "Learn how arthritis medication works, what is safest for pain and inflammation, and how weight management can support better joint health.",
   },
   {
     title: "Top Balance Exercises for Seniors at Home",
@@ -130,7 +146,7 @@ const getPostTime = (blog: BlogItem) => {
 export default function Blogs({ blogPost }: BlogsProps) {
   const publishedPosts =
     blogPost?.data?.filter((b: BlogItem) => b.published) || [];
-  const staticPosts = fallbackBlogs.slice(0, 2);
+  const staticPosts = fallbackBlogs.slice(0, 3);
   const staticSlugs = new Set(staticPosts.map((blog) => blog.slug));
   const mergedPosts: BlogItem[] = [
     ...staticPosts,

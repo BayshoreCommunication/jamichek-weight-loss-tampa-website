@@ -5,6 +5,9 @@ import CommonMythsAboutWeightLoss, {
 import MusclePainReliefForActiveAdults, {
   musclePainReliefForActiveAdultsMeta,
 } from "@/components/static-blogs/blogs/muscle-pain-relief-for-active-adults";
+import UnderstandingArthritisMedication, {
+  understandingArthritisMedicationMeta,
+} from "@/components/static-blogs/blogs/understanding-arthritis-medication";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -45,6 +48,7 @@ ul {
 
 type StaticBlogMeta = {
   title: string;
+  metaTitle?: string;
   slug: string;
   description: string;
   image: string;
@@ -69,6 +73,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: musclePainReliefForActiveAdultsMeta,
     Component: MusclePainReliefForActiveAdults,
+  },
+  {
+    meta: understandingArthritisMedicationMeta,
+    Component: UnderstandingArthritisMedication,
   },
 ];
 
@@ -117,16 +125,34 @@ export async function generateMetadata({
 
   if (!blogDetails) {
     if (staticBlog) {
+      const title = staticBlog.meta.metaTitle || staticBlog.meta.title;
+      const url = `/the-wellness-journal/${staticBlog.meta.slug}`;
+
       return {
-        title: staticBlog.meta.title,
+        title,
         description: staticBlog.meta.description,
+        alternates: {
+          canonical: url,
+        },
         openGraph: {
-          title: staticBlog.meta.title,
+          title,
           description: staticBlog.meta.description,
-          images: staticBlog.meta.image,
-          url: `https://www.medicalweightlosstampa.com/the-wellness-journal/${staticBlog.meta.slug}`,
+          images: [
+            {
+              url: staticBlog.meta.image,
+              alt: staticBlog.meta.altText,
+            },
+          ],
+          url,
           type: "article",
-          site_name: "medicalweightlosstampa.com",
+          siteName: "medicalweightlosstampa.com",
+          publishedTime: staticBlog.meta.publishedAt,
+        },
+        twitter: {
+          card: "summary_large_image",
+          title,
+          description: staticBlog.meta.description,
+          images: [staticBlog.meta.image],
         },
       };
     }
