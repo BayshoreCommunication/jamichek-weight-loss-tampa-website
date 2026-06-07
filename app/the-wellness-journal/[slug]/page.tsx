@@ -5,6 +5,9 @@ import CommonMythsAboutWeightLoss, {
 import MusclePainReliefForActiveAdults, {
   musclePainReliefForActiveAdultsMeta,
 } from "@/components/static-blogs/blogs/muscle-pain-relief-for-active-adults";
+import TheScienceBehindRegenerativeMedicineTherapy, {
+  regenerativeMedicineTherapyMeta,
+} from "@/components/static-blogs/blogs/the-science-behind-regenerative-medicine-therapy";
 import UnderstandingArthritisMedication, {
   understandingArthritisMedicationMeta,
 } from "@/components/static-blogs/blogs/understanding-arthritis-medication";
@@ -58,6 +61,7 @@ type StaticBlogMeta = {
   caption?: string;
   category?: string;
   publishedAt: string;
+  canonicalUrl?: string;
 };
 
 type StaticBlogEntry = {
@@ -73,6 +77,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: musclePainReliefForActiveAdultsMeta,
     Component: MusclePainReliefForActiveAdults,
+  },
+  {
+    meta: regenerativeMedicineTherapyMeta,
+    Component: TheScienceBehindRegenerativeMedicineTherapy,
   },
   {
     meta: understandingArthritisMedicationMeta,
@@ -126,7 +134,9 @@ export async function generateMetadata({
   if (!blogDetails) {
     if (staticBlog) {
       const title = staticBlog.meta.metaTitle || staticBlog.meta.title;
-      const url = `/the-wellness-journal/${staticBlog.meta.slug}`;
+      const url =
+        staticBlog.meta.canonicalUrl ||
+        `https://www.medicalweightlosstampa.com/the-wellness-journal/${staticBlog.meta.slug}`;
 
       return {
         title,

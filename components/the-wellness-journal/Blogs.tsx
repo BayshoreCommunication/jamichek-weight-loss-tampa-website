@@ -74,6 +74,22 @@ const fallbackBlogs: BlogItem[] = [
     body: "Learn how arthritis medication works, what is safest for pain and inflammation, and how weight management can support better joint health.",
   },
   {
+    title:
+      "The Science Behind Regenerative Medicine Therapy: How the Body Repairs Itself",
+    slug: "the-science-behind-regenerative-medicine-therapy",
+    date: "2026-06-07",
+    image:
+      "/images/static-blogs/regenerative-medicine-therapy-natural-healing.webp",
+    altText:
+      "Woman representing regenerative medicine therapy with visuals for stem cell therapy, PRP, exosomes, prolotherapy, and natural healing.",
+    imageTitle: "The Science Behind Regenerative Medicine Therapy and Healing",
+    imageDescription:
+      "Educational healthcare graphic explaining regenerative medicine therapies that support the body's natural healing processes. The image highlights stem cell therapy, PRP therapy, exosome therapy, prolotherapy, inflammation reduction, tissue repair, collagen production, metabolic support, and cellular regeneration for improved recovery and wellness.",
+    caption:
+      "Explore how regenerative medicine therapies such as stem cell therapy, PRP, exosomes, and prolotherapy support natural healing, tissue repair, and overall wellness.",
+    body: "Understand how regenerative medicine therapy supports natural healing, tissue repair, inflammation control, cellular regeneration, and metabolic wellness.",
+  },
+  {
     title: "Top Balance Exercises for Seniors at Home",
     slug: "top-balance-exercises-for-seniors-at-home",
     date: "2022-05-24", // ✅ use ISO date format
@@ -146,7 +162,7 @@ const getPostTime = (blog: BlogItem) => {
 export default function Blogs({ blogPost }: BlogsProps) {
   const publishedPosts =
     blogPost?.data?.filter((b: BlogItem) => b.published) || [];
-  const staticPosts = fallbackBlogs.slice(0, 3);
+  const staticPosts = fallbackBlogs.slice(0, 4);
   const staticSlugs = new Set(staticPosts.map((blog) => blog.slug));
   const mergedPosts: BlogItem[] = [
     ...staticPosts,
