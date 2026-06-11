@@ -75,7 +75,8 @@ const therapyTypes = [
     therapy: "Stem Cell Therapy",
     source: "Patient or donor cells",
     mechanism: "Supports cell regeneration and inflammatory balance",
-    useCases: "Joints, connective tissue, autoimmune research, metabolic health support",
+    useCases:
+      "Joints, connective tissue, autoimmune research, metabolic health support",
   },
   {
     therapy: "PRP Therapy",
@@ -87,13 +88,15 @@ const therapyTypes = [
     therapy: "Exosome Therapy",
     source: "Cell-secreted vesicles",
     mechanism: "Restores cell-to-cell signaling",
-    useCases: "Tissue repair research, inflammation support, cellular communication",
+    useCases:
+      "Tissue repair research, inflammation support, cellular communication",
   },
   {
     therapy: "Prolotherapy",
     source: "Dextrose solution",
     mechanism: "Triggers controlled collagen-building repair",
-    useCases: "Chronic joint pain, ligament pain, instability, soft tissue support",
+    useCases:
+      "Chronic joint pain, ligament pain, instability, soft tissue support",
   },
 ];
 
@@ -239,7 +242,7 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
 
       <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD]">
         <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
-          Key Takeaways
+          <h2>Key Takeaways</h2>
         </div>
         <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
@@ -252,19 +255,21 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
       </section>
 
       <section className="mt-12">
-        <SectionHeading numeral="I" title="What Is Regenerative Medicine Therapy?" />
+        <SectionHeading
+          numeral="I"
+          title="What Is Regenerative Medicine Therapy?"
+        />
         <div className="mt-4 space-y-5 text-[17px] leading-8">
           <p>
             Regenerative medicine therapy gives damaged tissue the cellular
             signals, growth factors, and repair materials it needs to heal more
-            correctly. Injury, age, chronic illness, and persistent
-            inflammation can deplete those signals or interrupt the repair
-            process.
+            correctly. Injury, age, chronic illness, and persistent inflammation
+            can deplete those signals or interrupt the repair process.
           </p>
           <p>
             Traditional medicine often focuses on symptom management.
-            Regenerative approaches try to close the gap between the damage
-            that exists and the body&apos;s ability to repair it. NIH describes
+            Regenerative approaches try to close the gap between the damage that
+            exists and the body&apos;s ability to repair it. NIH describes
             regenerative medicine as a field that uses stem cells, tissue
             engineering, and related technologies to repair or replace damaged
             cells, tissues, and organs. Source:{" "}
@@ -277,7 +282,10 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
       </section>
 
       <section className="mt-12">
-        <SectionHeading numeral="II" title="How Does the Body Heal on Its Own?" />
+        <SectionHeading
+          numeral="II"
+          title="How Does the Body Heal on Its Own?"
+        />
         <p className="mt-4 text-[17px] leading-8">
           The body runs a four-stage healing process every time tissue is
           damaged. These stages overlap, but each one has a distinct job. When
@@ -355,16 +363,19 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
           </div>
 
           <div className="hidden md:grid md:grid-cols-[1.1fr_1.1fr_1.5fr_1.5fr]">
-            {["Therapy", "Biological Source", "Primary Mechanism", "Common Use Cases"].map(
-              (heading) => (
-                <div
-                  key={heading}
-                  className="border-b border-r border-white/30 bg-[#2E75B6] px-4 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white last:border-r-0"
-                >
-                  {heading}
-                </div>
-              ),
-            )}
+            {[
+              "Therapy",
+              "Biological Source",
+              "Primary Mechanism",
+              "Common Use Cases",
+            ].map((heading) => (
+              <div
+                key={heading}
+                className="border-b border-r border-white/30 bg-[#2E75B6] px-4 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white last:border-r-0"
+              >
+                {heading}
+              </div>
+            ))}
             {therapyTypes.map((row, index) => (
               <div key={row.therapy} className="contents">
                 <div
@@ -401,7 +412,10 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
 
           <div className="space-y-4 p-4 md:hidden">
             {therapyTypes.map((row) => (
-              <div key={row.therapy} className="border border-[#D6E4F0] bg-white p-4">
+              <div
+                key={row.therapy}
+                className="border border-[#D6E4F0] bg-white p-4"
+              >
                 <h3 className="text-lg font-bold text-[#1F4E79]">
                   {row.therapy}
                 </h3>
@@ -455,9 +469,9 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
             </h3>
             <p className="mt-2 text-[17px] leading-8">
               Prolotherapy uses a small dextrose injection to create a
-              controlled local repair response. The goal is short-term,
-              targeted inflammation that stimulates collagen production, not
-              chronic low-grade inflammation that keeps tissue irritated.
+              controlled local repair response. The goal is short-term, targeted
+              inflammation that stimulates collagen production, not chronic
+              low-grade inflammation that keeps tissue irritated.
             </p>
           </div>
         </div>
@@ -476,10 +490,10 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
             surface.
           </p>
           <p>
-            When inflammation never fully switches off, mitochondria may
-            produce energy less efficiently and insulin resistance can keep the
-            body in storage mode. Diet and exercise still matter, but they may
-            struggle when the cells themselves are not responding well.
+            When inflammation never fully switches off, mitochondria may produce
+            energy less efficiently and insulin resistance can keep the body in
+            storage mode. Diet and exercise still matter, but they may struggle
+            when the cells themselves are not responding well.
           </p>
           <p>
             Medical Weight Loss Tampa sees this pattern regularly. A patient
@@ -491,7 +505,7 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
 
         <section className="mt-7 border border-[#D6E4F0] bg-[#F2F8FD]">
           <div className="bg-[#2E75B6] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
-            What Research Points To
+            <h3>What Research Points To</h3>
           </div>
           <div className="px-6 py-6">
             <BulletList items={metabolicBenefits} />
@@ -530,9 +544,7 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
         </div>
 
         <div className="mt-6 border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-6 py-5">
-          <h3 className="text-xl font-bold text-[#1F4E79]">
-            Before You Start
-          </h3>
+          <h3 className="text-xl font-bold text-[#1F4E79]">Before You Start</h3>
           <div className="mt-3 text-[#1F4E79]">
             <BulletList items={expectationPoints} />
           </div>
@@ -576,11 +588,11 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
           Want to Find Out If Regenerative Medicine Is Right for You?
         </h2>
         <p className="mt-4 text-[17px] leading-8 text-white/95">
-          Medical Weight Loss Tampa combines regenerative medicine
-          conversations with proven weight loss programs customized to your
-          biology. If you have been doing the work and not seeing results, an
-          underlying cellular or inflammatory issue may be part of the story.
-          Our licensed medical team can help evaluate what is happening.
+          Medical Weight Loss Tampa combines regenerative medicine conversations
+          with proven weight loss programs customized to your biology. If you
+          have been doing the work and not seeing results, an underlying
+          cellular or inflammatory issue may be part of the story. Our licensed
+          medical team can help evaluate what is happening.
         </p>
         <p className="mt-4 text-lg font-bold text-[#D6E4F0]">
           Schedule your consultation at medicalweightlosstampa.com
