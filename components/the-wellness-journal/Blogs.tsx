@@ -34,6 +34,20 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "PRP Injection for Joint Pain and Long-Term Relief",
+    slug: "prp-injection-joint-pain-long-term-relief",
+    date: "2026-06-15",
+    image: "/images/static-blogs/prp-injection-joint-pain-long-term-relief.webp",
+    altText:
+      "PRP injection therapy for joint pain providing non-surgical treatment and long-term relief through regenerative healing.",
+    imageTitle: "PRP Injection for Joint Pain and Long-Term Relief",
+    imageDescription:
+      "Educational graphic showcasing platelet-rich plasma (PRP) injection therapy as a non-surgical treatment for joint pain. Highlights regenerative healing benefits, reduced discomfort, faster recovery, and long-term pain relief using the body's natural healing processes.",
+    caption:
+      "PRP injection therapy offers a non-surgical solution for joint pain relief and regenerative healing with lasting results.",
+    body: "Discover how PRP injections treat joint pain without surgery. Tampa's Medical Weight Loss clinic offers personalized platelet-rich plasma therapy for lasting relief.",
+  },
+  {
     title: "Common Myths About Weight Loss Shots and What Patients Should Know",
     slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
     date: "2026-05-10",
@@ -162,7 +176,7 @@ const getPostTime = (blog: BlogItem) => {
 export default function Blogs({ blogPost }: BlogsProps) {
   const publishedPosts =
     blogPost?.data?.filter((b: BlogItem) => b.published) || [];
-  const staticPosts = fallbackBlogs.slice(0, 4);
+  const staticPosts = fallbackBlogs.slice(0, 5);
   const staticSlugs = new Set(staticPosts.map((blog) => blog.slug));
   const mergedPosts: BlogItem[] = [
     ...staticPosts,

@@ -11,6 +11,9 @@ import TheScienceBehindRegenerativeMedicineTherapy, {
 import UnderstandingArthritisMedication, {
   understandingArthritisMedicationMeta,
 } from "@/components/static-blogs/blogs/understanding-arthritis-medication";
+import PRPInjectionJointPain, {
+  prpInjectionJointPainMeta,
+} from "@/components/static-blogs/blogs/prp-injection-joint-pain-long-term-relief";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -85,6 +88,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: understandingArthritisMedicationMeta,
     Component: UnderstandingArthritisMedication,
+  },
+  {
+    meta: prpInjectionJointPainMeta,
+    Component: PRPInjectionJointPain,
   },
 ];
 
