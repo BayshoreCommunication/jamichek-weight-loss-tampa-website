@@ -218,7 +218,7 @@ const BulletList = ({ items }: { items: string[] }) => (
 
 const QuoteBlock = ({ text, author }: { text: string; author: string }) => (
   <div className="border-l-4 border-[#2E75B6] bg-[#F2F8FD] px-6 py-5 italic my-8 rounded-r-lg">
-    <p className="text-lg leading-relaxed text-[#1F4E79]">"{text}"</p>
+    <p className="text-lg leading-relaxed text-[#1F4E79]">&ldquo;{text}&rdquo;</p>
     <p className="mt-2 text-sm font-bold text-[#595959] not-italic">
       — {author}
     </p>
@@ -356,7 +356,7 @@ export default function PRPInjectionJointPain() {
               matches under open skies. Through the Flatwoods, feet pound dirt
               paths any time of day. Weekend rhythms shift toward water when
               kayaks glide down the Hillsborough River. That level of activity
-              accelerates joint wear. At Medical Weight Loss Tampa's PRP
+              accelerates joint wear. At Medical Weight Loss Tampa&apos;s PRP
               program, protocols are personalized to the specific joint and
               severity of your condition.
             </p>
@@ -411,7 +411,7 @@ export default function PRPInjectionJointPain() {
             <p>
               We create your follow-up schedule built around your progress at
               Medical Weight Loss Tampa. Many patients maintain relief for 12
-              months or longer before needing any additional treatment. That's
+              months or longer before needing any additional treatment. That&apos;s
               a very different value proposition than a cortisone shot every 8
               weeks.
             </p>
@@ -663,7 +663,7 @@ export default function PRPInjectionJointPain() {
           <div className="mt-4 space-y-5 text-[17px] leading-8">
             <p>
               The procedure is far less intimidating than most patients expect,
-              and that's not marketing talk. Your blood draw is small, much like
+              and that&apos;s not marketing talk. Your blood draw is small, much like
               a routine lab test. The sample goes into a centrifuge for 10–15
               minutes to separate and concentrate the plasma.
             </p>
@@ -681,7 +681,7 @@ export default function PRPInjectionJointPain() {
             <p>
               Your aftercare choices matter as much as the injection itself. If
               you carry excess weight that places mechanical stress on your
-              joints, combining PRP with Medical Weight Loss Tampa's weight
+              joints, combining PRP with Medical Weight Loss Tampa&apos;s weight
               management program can significantly improve outcomes. Each dose
               works better under lighter loads.
             </p>
