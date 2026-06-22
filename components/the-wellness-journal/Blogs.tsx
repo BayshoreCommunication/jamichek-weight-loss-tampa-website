@@ -34,6 +34,20 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Are Anti-Aging Treatments Right for You? Signs Your Body Needs Support",
+    slug: "are-anti-aging-treatments-right-for-you",
+    date: "2026-06-22",
+    image: "/images/static-blogs/anti-aging-treatments-signs-your-body-needs-support.webp",
+    altText:
+      "Confident middle-aged woman with wellness and longevity icons illustrating anti-aging treatments, hormone balance, and healthy aging support.",
+    imageTitle: "Are Anti-Aging Treatments Right for You? Signs to Know",
+    imageDescription:
+      "Educational wellness graphic exploring anti-aging treatments and the signs your body may benefit from additional support. The image highlights hormone balance, mental clarity, cellular energy, regenerative medicine, healthy weight management, and longevity-focused therapies designed to promote vitality, wellness, and healthy aging.",
+    caption:
+      "Learn the common signs that may indicate a need for anti-aging support, including low energy, hormonal changes, reduced mental clarity, and overall wellness concerns.",
+    body: "Brain fog and exhaustion aren't just \"getting older.\" Spot the silent signs your body is crashing and how Tampa’s top clinic reverses it fast.",
+  },
+  {
     title: "PRP Injection for Joint Pain and Long-Term Relief",
     slug: "prp-injection-joint-pain-long-term-relief",
     date: "2026-06-15",
@@ -176,7 +190,7 @@ const getPostTime = (blog: BlogItem) => {
 export default function Blogs({ blogPost }: BlogsProps) {
   const publishedPosts =
     blogPost?.data?.filter((b: BlogItem) => b.published) || [];
-  const staticPosts = fallbackBlogs.slice(0, 5);
+  const staticPosts = fallbackBlogs.slice(0, 6);
   const staticSlugs = new Set(staticPosts.map((blog) => blog.slug));
   const mergedPosts: BlogItem[] = [
     ...staticPosts,

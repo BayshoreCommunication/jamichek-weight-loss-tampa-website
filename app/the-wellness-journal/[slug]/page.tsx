@@ -14,6 +14,9 @@ import UnderstandingArthritisMedication, {
 import PRPInjectionJointPain, {
   prpInjectionJointPainMeta,
 } from "@/components/static-blogs/blogs/prp-injection-joint-pain-long-term-relief";
+import AreAntiAgingTreatmentsRightForYou, {
+  areAntiAgingTreatmentsRightForYouMeta,
+} from "@/components/static-blogs/blogs/are-anti-aging-treatments-right-for-you";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -92,6 +95,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: prpInjectionJointPainMeta,
     Component: PRPInjectionJointPain,
+  },
+  {
+    meta: areAntiAgingTreatmentsRightForYouMeta,
+    Component: AreAntiAgingTreatmentsRightForYou,
   },
 ];
 
