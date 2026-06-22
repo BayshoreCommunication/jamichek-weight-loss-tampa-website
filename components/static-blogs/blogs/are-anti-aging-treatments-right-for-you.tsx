@@ -277,7 +277,7 @@ export default function AreAntiAgingTreatmentsRightForYou() {
               After age 30, a man’s testosterone slips away about 1% or 2% yearly. When women move into perimenopause, their estrogen lurches sideways without warning. The endpoint remains the same, though.
             </p>
             <p>
-              Most people miss the root issue entirely. Hormone treatment early on shifts focus from symptoms to what's underneath. Solutions emerge when you look closer at options like vitamins mixed with peptides sourced locally near Tampa clinics.
+              Most people miss the root issue entirely. Hormone treatment early on shifts focus from symptoms to what&apos;s underneath. Solutions emerge when you look closer at options like vitamins mixed with peptides sourced locally near Tampa clinics.
             </p>
           </div>
 
@@ -402,7 +402,7 @@ export default function AreAntiAgingTreatmentsRightForYou() {
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
             <p>
-              Cellular aging does not wait until 60. According to <ExternalLink href={sourceLinks.healthlineLongevity}>Healthline's longevity research</ExternalLink>, biological aging markers begin shifting in your late 20s and early 30s. The decline is gradual at first. But it picks up speed fast.
+              Cellular aging does not wait until 60. According to <ExternalLink href={sourceLinks.healthlineLongevity}>Healthline&apos;s longevity research</ExternalLink>, biological aging markers begin shifting in your late 20s and early 30s. The decline is gradual at first. But it picks up speed fast.
             </p>
             <p>
               The goal of starting early is prevention. You protect your energy, your hormones, and your cellular health before the curve steepens.
