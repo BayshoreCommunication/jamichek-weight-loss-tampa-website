@@ -263,7 +263,7 @@ export default function PRPInjectionJointPain() {
 
       <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD]">
         <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
-          Key Points
+          <h2>Key Points</h2>
         </div>
         <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
@@ -706,7 +706,7 @@ export default function PRPInjectionJointPain() {
 
       <section className="mt-12 border-2 border-dashed border-[#2E75B6] bg-[#F2F8FD] p-8 rounded-2xl text-center">
         <h3 className="text-2xl font-bold text-[#1F4E79]">
-          Free 15 Minute Discovery Call
+          <h2>Free 15 Minute Discovery Call</h2>
         </h3>
         <p className="mt-3 text-[17px] leading-8 text-[#595959] max-w-2xl mx-auto">
           Start by talking about your joint pain. Find out whether PRP might

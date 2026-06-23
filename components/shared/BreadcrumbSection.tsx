@@ -12,6 +12,7 @@ interface BreadcrumbSectionProps {
   highlight?: string;
   items: BreadcrumbItem[];
   className?: string;
+  titleTag?: "h1" | "p";
 }
 
 const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
@@ -20,6 +21,7 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
   highlight,
   items,
   className,
+  titleTag = "h1",
 }) => {
   return (
     <section
@@ -51,11 +53,19 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
         </nav>
 
         {/* Page title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-normal tracking-tight">
-          {title}
-          {highlight && <span className="text-primary px-2">{highlight}</span>}
-          {title2}
-        </h1>
+        {titleTag === "p" ? (
+          <p className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-normal tracking-tight">
+            {title}
+            {highlight && <span className="text-primary px-2">{highlight}</span>}
+            {title2}
+          </p>
+        ) : (
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-gray-900 !leading-normal tracking-tight">
+            {title}
+            {highlight && <span className="text-primary px-2">{highlight}</span>}
+            {title2}
+          </h1>
+        )}
       </div>
     </section>
   );

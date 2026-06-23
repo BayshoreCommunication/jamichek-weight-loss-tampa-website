@@ -1,5 +1,6 @@
 export const commonMythsAboutWeightLossMeta = {
   title: "Common Myths About Weight Loss Shots and What Patients Should Know",
+  metaTitle: "Weight Loss Injection Myths and Facts Patients Should Know",
   slug: "common-myths-about-weight-loss-shots-and-what-patients-should-know",
   description:
     "Curious about weight loss injections? Explore common myths, real medical facts, and what patients should understand before starting weight loss shot treatments.",
@@ -7,6 +8,8 @@ export const commonMythsAboutWeightLossMeta = {
   altText: "GLP-1 weight loss shot information",
   category: "Medical Weight Loss",
   publishedAt: "2026-05-10",
+  canonicalUrl:
+    "https://www.medicalweightlosstampa.com/the-wellness-journal/common-myths-about-weight-loss-shots-and-what-patients-should-know",
 };
 
 const overviewRows = [

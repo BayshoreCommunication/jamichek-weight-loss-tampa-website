@@ -246,6 +246,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
         <style>{css}</style>
         <BreadcrumbSection
           title="Transform Your Body with Medical Weight Loss Tampa"
+          titleTag="p"
           items={[
             { label: "Home", href: "/" },
             { label: "The Wellness Journal" }, // current page (no href)
@@ -268,6 +269,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
       {!shouldRenderStatic && <style>{css}</style>}
       <BreadcrumbSection
         title="Transform Your Body with Medical Weight Loss Tampa"
+        titleTag="p"
         items={[
           { label: "Home", href: "/" },
           { label: "The Wellness Journal" }, // current page (no href)
@@ -312,9 +314,9 @@ const page = async ({ params }: { params: { slug: string } }) => {
               <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                 {postDate(staticBlog.meta.publishedAt)}
               </p>
-              <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.80] tracking-normal text-left text-[#1B2639] my-8">
+              <h1 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.80] tracking-normal text-left text-[#1B2639] my-8">
                 {staticBlog.meta.title}
-              </h2>
+              </h1>
               <StaticBlogContent />
             </div>
           ) : (
@@ -337,9 +339,9 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                   {postDate(blogs?.createdAt)}
                 </p>
-                <h2 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.50] tracking-normal text-left text-[#1B2639] my-8">
+                <h1 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.50] tracking-normal text-left text-[#1B2639] my-8">
                   {blogs?.title}
-                </h2>
+                </h1>
                 <div className="mt-2 text-md">{parse(blogs?.body)}</div>
               </div>
             ))

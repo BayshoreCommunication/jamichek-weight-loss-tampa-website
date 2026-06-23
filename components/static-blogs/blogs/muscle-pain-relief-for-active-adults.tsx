@@ -1,5 +1,6 @@
 export const musclePainReliefForActiveAdultsMeta = {
   title: "Muscle Pain Relief for Active Adults: Safe Recovery Strategies That Work",
+  metaTitle: "Safe Muscle Pain Relief & Recovery for Active Adults",
   slug: "muscle-pain-relief-for-active-adults",
   description:
     "Is poor recovery stalling your fitness? Investigate how protein synthesis and active rest combat inflammation for adults over 50. Get the facts now.",
@@ -13,6 +14,8 @@ export const musclePainReliefForActiveAdultsMeta = {
   caption: "Adults practicing stretching and recovery exercises for muscle pain relief",
   category: "Recovery & Wellness",
   publishedAt: "2026-05-14",
+  canonicalUrl:
+    "https://www.medicalweightlosstampa.com/the-wellness-journal/muscle-pain-relief-for-active-adults",
 };
 
 const keyTakeaways = [
@@ -249,9 +252,9 @@ export default function MusclePainReliefForActiveAdults() {
       </div>
 
       <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD]">
-        <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
+        <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Takeaways
-        </div>
+        </h2>
         <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">

@@ -17,6 +17,8 @@ export const understandingArthritisMedicationMeta = {
     "Doctor discussing arthritis medication and treatment options to help manage joint pain and inflammation safely.",
   category: "Pain Relief & Arthritis Care",
   publishedAt: "2026-05-23",
+  canonicalUrl:
+    "https://www.medicalweightlosstampa.com/the-wellness-journal/understanding-arthritis-medication",
 };
 
 const sourceLinks = {
@@ -290,9 +292,9 @@ export default function UnderstandingArthritisMedication() {
       </div>
 
       <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD]">
-        <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
+        <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Takeaways
-        </div>
+        </h2>
         <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">
