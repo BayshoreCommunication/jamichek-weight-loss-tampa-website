@@ -260,7 +260,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
             </p>
             <p>
               Here is what Attorney Vongsyprasom presents in cases like these.
-              First, a spouse's sworn affidavit about daily life changes. Second,
+              First, a spouse’s sworn affidavit about daily life changes. Second,
               social media history showing an active person who became withdrawn.
               Third, testimony from friends who watched the shift happen. The
               relationship becomes a mirror of the suffering.
@@ -321,7 +321,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
             <p>
               To a jury in Polk County or Pinellas County, a person who cannot
               quiet their own mind is a person who is truly suffering. That
-              resonates. Attorney Vongsyprasom pairs a licensed psychologist's
+              resonates. Attorney Vongsyprasom pairs a licensed psychologist’s
               evaluation with your testimony to make that loop visible on paper.
               She knows that jurors remember stories. She makes yours impossible
               to forget.
@@ -377,7 +377,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
 
           <p className="mt-6 text-[17px] leading-8 text-gray-700">
             Each layer reinforces the others. A pain journal means nothing
-            without a medical diagnosis to anchor it. A psychologist's report
+            without a medical diagnosis to anchor it. A psychologist’s report
             means more when family members confirm what they witnessed at home.
             Attorney Vongsyprasom builds this layer by layer from day one of
             your case.
