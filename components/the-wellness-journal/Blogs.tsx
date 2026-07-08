@@ -34,6 +34,20 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Chronic Pain Management and the Role of Interventional Therapies",
+    slug: "chronic-pain-management-interventional-therapies",
+    date: "2026-07-08",
+    image: "/images/static-blogs/chronic-pain-management-interventional-therapies.webp",
+    altText:
+      "Doctor performing an interventional pain management procedure on a patient receiving minimally invasive treatment for chronic back pain in a modern medical clinic.",
+    imageTitle: "Chronic Pain Management and the Role of Interventional Therapies",
+    imageDescription:
+      "Professional medical graphic illustrating chronic pain management through interventional therapies. The image features a physician performing a minimally invasive pain management procedure for chronic back pain, highlighting advanced treatment options such as targeted injections, image-guided techniques, and personalized care plans. It emphasizes effective pain relief, improved mobility, reduced reliance on medication, and enhanced quality of life for patients experiencing chronic pain.",
+    caption:
+      "Discover how interventional therapies can help manage chronic pain through targeted, minimally invasive treatments that reduce discomfort, improve mobility, and support long-term pain relief.",
+    body: "Medical records are important evidence to prove pain and suffering in a personal injury claim. Learn how documented symptoms, daily journals, and expert evaluations make invisible injuries visible to a jury.",
+  },
+  {
     title: "Are Anti-Aging Treatments Right for You? Signs Your Body Needs Support",
     slug: "are-anti-aging-treatments-right-for-you",
     date: "2026-06-22",

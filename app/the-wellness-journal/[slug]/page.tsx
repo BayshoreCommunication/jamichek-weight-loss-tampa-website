@@ -17,6 +17,9 @@ import PRPInjectionJointPain, {
 import AreAntiAgingTreatmentsRightForYou, {
   areAntiAgingTreatmentsRightForYouMeta,
 } from "@/components/static-blogs/blogs/are-anti-aging-treatments-right-for-you";
+import ChronicPainManagementInterventionalTherapies, {
+  chronicPainManagementInterventionalTherapiesMeta,
+} from "@/components/static-blogs/blogs/chronic-pain-management-interventional-therapies";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -99,6 +102,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: areAntiAgingTreatmentsRightForYouMeta,
     Component: AreAntiAgingTreatmentsRightForYou,
+  },
+  {
+    meta: chronicPainManagementInterventionalTherapiesMeta,
+    Component: ChronicPainManagementInterventionalTherapies,
   },
 ];
 
