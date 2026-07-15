@@ -52,6 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "prp-injection-joint-pain-long-term-relief",
     "are-anti-aging-treatments-right-for-you",
     "chronic-pain-management-interventional-therapies",
+    "weight-loss-plateau-12-medical-reasons-you-are-stuck",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

@@ -34,6 +34,20 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Weight Loss Plateau: 12 Medical Reasons You're Stuck",
+    slug: "weight-loss-plateau-12-medical-reasons-you-are-stuck",
+    date: "2026-07-15",
+    image: "/images/static-blogs/weight-loss-plateau-12-medical-reasons-you-are-stuck.webp",
+    altText:
+      "Doctor consulting with a patient about a weight loss plateau, explaining medical reasons that may be preventing successful weight loss progress.",
+    imageTitle: "Weight Loss Plateau: 12 Medical Reasons You're Stuck",
+    imageDescription:
+      "Professional medical graphic illustrating a healthcare provider consulting with a patient experiencing a weight loss plateau. The image highlights how underlying medical conditions, hormonal imbalances, metabolic disorders, medications, and lifestyle factors can impact weight loss progress. It emphasizes the importance of a comprehensive medical evaluation, personalized treatment plans, and evidence-based weight management strategies to help patients overcome barriers and achieve long-term health goals.",
+    caption:
+      "Learn the medical reasons behind a weight loss plateau and discover personalized treatment strategies to help you safely restart your weight loss journey.",
+    body: "Stop starving yourself because your diet is not the issue. Learn the 12 hidden medical traps causing your weight loss plateau and the Tampa fix today.",
+  },
+  {
     title: "Chronic Pain Management and the Role of Interventional Therapies",
     slug: "chronic-pain-management-interventional-therapies",
     date: "2026-07-08",

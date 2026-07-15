@@ -20,6 +20,9 @@ import AreAntiAgingTreatmentsRightForYou, {
 import ChronicPainManagementInterventionalTherapies, {
   chronicPainManagementInterventionalTherapiesMeta,
 } from "@/components/static-blogs/blogs/chronic-pain-management-interventional-therapies";
+import WeightLossPlateau12MedicalReasonsYoureStuck, {
+  weightLossPlateau12MedicalReasonsYoureStuckMeta,
+} from "@/components/static-blogs/blogs/Weight Loss Plateau 12 Medical Reasons You're Stuck";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -106,6 +109,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: chronicPainManagementInterventionalTherapiesMeta,
     Component: ChronicPainManagementInterventionalTherapies,
+  },
+  {
+    meta: weightLossPlateau12MedicalReasonsYoureStuckMeta,
+    Component: WeightLossPlateau12MedicalReasonsYoureStuck,
   },
 ];
 
