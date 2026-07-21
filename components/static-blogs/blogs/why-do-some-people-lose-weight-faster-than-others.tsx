@@ -337,7 +337,7 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
               When rest is inadequate, levels of cortisol climb while appetite-stimulating chemicals surge. As a result, shedding body fat becomes far more difficult. Stored energy gets prioritized over release due to elevated stress signals. With limited nightly recovery time, the brain produces more ghrelin - driving food cravings. Fat cells respond less to breakdown cues under these conditions.
             </p>
             <p className="text-justify" style={{ textAlign: "justify" }}>
-              Short sleep also raises ghrelin, the hunger hormone. Lower leptin levels then make you feel less full. <ExternalLink href="https://clinicaltrials.gov/study/NCT07494084">NIH backed sleep research</ExternalLink> links this directly to insulin resistance. Tampa's busy work culture often cuts sleep short. Traffic, heat, and long hours add daily stress too. Many residents skip rest to fit everything in. This quietly stalls progress even with a clean diet. Late night snacking often follows a poor night of sleep. Tired bodies crave quick energy from sugar and carbs. Managing stress is part of a complete weight loss plan.
+              Short sleep also raises ghrelin, the hunger hormone. Lower leptin levels then make you feel less full. <ExternalLink href="https://clinicaltrials.gov/study/NCT07494084">NIH backed sleep research</ExternalLink> links this directly to insulin resistance. Tampa&apos;s busy work culture often cuts sleep short. Traffic, heat, and long hours add daily stress too. Many residents skip rest to fit everything in. This quietly stalls progress even with a clean diet. Late night snacking often follows a poor night of sleep. Tired bodies crave quick energy from sugar and carbs. Managing stress is part of a complete weight loss plan.
             </p>
             <p className="text-justify" style={{ textAlign: "justify" }}>
               Simple changes like consistent bedtimes help more than expected. Limiting screens before bed lowers evening cortisol too. Our team builds stress and sleep support into every program.
@@ -366,10 +366,10 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
             <p className="text-justify" style={{ textAlign: "justify" }}>
-              <InternalLink href="/the-wellness-journal/what-to-ask-your-doctor-before-starting-a-glp-1-or-peptide-weight-loss-program">Because GLP-1 drugs</InternalLink> influence fullness signals, they alter eating patterns over time. With consistent monitoring, progress tends to accelerate compared to unsupervised efforts. Sema and Tirzepatide reduce hunger signals directly. Retatrutide goes further by targeting three hormone pathways at once. Florida's adult obesity rate sits near 30 percent <ExternalLink href="https://www.cdc.gov/obesity/data-and-statistics/adult-obesity-prevalence-maps.html">per CDC data</ExternalLink>.
+              <InternalLink href="/the-wellness-journal/what-to-ask-your-doctor-before-starting-a-glp-1-or-peptide-weight-loss-program">Because GLP-1 drugs</InternalLink> influence fullness signals, they alter eating patterns over time. With consistent monitoring, progress tends to accelerate compared to unsupervised efforts. Sema and Tirzepatide reduce hunger signals directly. Retatrutide goes further by targeting three hormone pathways at once. Florida&apos;s adult obesity rate sits near 30 percent <ExternalLink href="https://www.cdc.gov/obesity/data-and-statistics/adult-obesity-prevalence-maps.html">per CDC data</ExternalLink>.
             </p>
             <p className="text-justify" style={{ textAlign: "justify" }}>
-              Many residents try diets alone first without lasting success. Medication changes the biology behind hunger and fullness. This is not a shortcut, though. Careful monitoring keeps side effects manageable and safe. Dosing increases slowly under a provider's watch. Bloodwork tracks how your body responds over time. Nausea and fatigue are common early on for some patients. These effects usually fade as the body adjusts.
+              Many residents try diets alone first without lasting success. Medication changes the biology behind hunger and fullness. This is not a shortcut, though. Careful monitoring keeps side effects manageable and safe. Dosing increases slowly under a provider&apos;s watch. Bloodwork tracks how your body responds over time. Nausea and fatigue are common early on for some patients. These effects usually fade as the body adjusts.
             </p>
             <p className="text-justify" style={{ textAlign: "justify" }}>
               <InternalLink href="/medical-weight-loss">Medical Weight Loss Tampa</InternalLink> offers semaglutide, tirzepatide, and retatrutide under supervision. Each medication fits a different metabolic picture. No single option works best for every patient. Your provider weighs your labs, history, and goals before choosing.
@@ -405,7 +405,7 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
             {/* Quote 1 */}
             <div className="mt-8 border-l-[8px] border-[#0d7a8a] bg-[#f0f7ff] px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#0d7a8a] italic font-medium">
-                “Every patient's biology is different. We build plans around real data, not guesswork. That is how lasting results happen.”
+                “Every patient&apos;s biology is different. We build plans around real data, not guesswork. That is how lasting results happen.”
               </blockquote>
               <p className="mt-2 text-sm text-[#595959] font-bold">
                 — Dr. Emily Devol Webster, Medical Director, Medical Weight Loss Tampa
