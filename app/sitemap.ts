@@ -53,6 +53,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "are-anti-aging-treatments-right-for-you",
     "chronic-pain-management-interventional-therapies",
     "weight-loss-plateau-12-medical-reasons-you-are-stuck",
+    "why-do-some-people-lose-weight-faster-than-others",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

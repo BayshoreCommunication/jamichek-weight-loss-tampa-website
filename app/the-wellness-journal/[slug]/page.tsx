@@ -23,6 +23,9 @@ import ChronicPainManagementInterventionalTherapies, {
 import WeightLossPlateau12MedicalReasonsYoureStuck, {
   weightLossPlateau12MedicalReasonsYoureStuckMeta,
 } from "@/components/static-blogs/blogs/Weight Loss Plateau 12 Medical Reasons You're Stuck";
+import WhyDoSomePeopleLoseWeightFasterThanOthers, {
+  whyDoSomePeopleLoseWeightFasterThanOthersMeta,
+} from "@/components/static-blogs/blogs/why-do-some-people-lose-weight-faster-than-others";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -113,6 +116,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: weightLossPlateau12MedicalReasonsYoureStuckMeta,
     Component: WeightLossPlateau12MedicalReasonsYoureStuck,
+  },
+  {
+    meta: whyDoSomePeopleLoseWeightFasterThanOthersMeta,
+    Component: WhyDoSomePeopleLoseWeightFasterThanOthers,
   },
 ];
 

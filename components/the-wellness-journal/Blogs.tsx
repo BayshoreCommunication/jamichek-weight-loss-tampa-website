@@ -34,6 +34,20 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Why Do Some People Lose Weight Faster Than Others?",
+    slug: "why-do-some-people-lose-weight-faster-than-others",
+    date: "2026-07-21",
+    image: "/images/static-blogs/why-do-some-people-lose-weight-faster-than-others.webp",
+    altText:
+      "Medical weight loss graphic showing genetics, metabolism, hormones, GLP-1 therapy, healthy nutrition, and wellness tools explaining why some people lose weight faster than others.",
+    imageTitle: "Why Do Some People Lose Weight Faster Than Others?",
+    imageDescription:
+      "Professional medical weight loss graphic illustrating the factors that influence how quickly people lose weight. The image highlights genetics, metabolism, hormones, GLP-1 therapy, healthy nutrition, and lifestyle habits, showing how personalized weight loss programs and medical guidance can help individuals achieve safe, sustainable, and effective results.",
+    caption:
+      "Discover why some people lose weight faster than others and learn how genetics, metabolism, hormones, GLP-1 therapy, and personalized wellness plans influence successful weight loss.",
+    body: "Genetics, metabolism, hormones, and sleep decide how fast you lose weight. See how Tampa's medical weight loss plans reveal the real secrets of weight loss",
+  },
+  {
     title: "Weight Loss Plateau: 12 Medical Reasons You're Stuck",
     slug: "weight-loss-plateau-12-medical-reasons-you-are-stuck",
     date: "2026-07-15",

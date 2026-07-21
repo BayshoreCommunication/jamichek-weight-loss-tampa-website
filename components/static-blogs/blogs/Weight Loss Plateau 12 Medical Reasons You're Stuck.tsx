@@ -366,7 +366,7 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
               <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
                 Tampa’s medical weight loss experts will run a full clinical evaluation and find your root cause.
               </p>
-              <div className="mt-6 text-white">
+              <div className="mt-6 text-[#EAF4FB]">
                 <ExternalLink href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from=">
                   &gt;&gt; Claim Your $47 New Patient Special Today &lt;&lt;
                 </ExternalLink>
