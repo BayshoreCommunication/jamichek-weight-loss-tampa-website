@@ -135,15 +135,20 @@ const faqSchema = {
 const ExternalLink = ({
   href,
   children,
+  className,
 }: {
   href: string;
   children: ReactNode;
+  className?: string;
 }) => (
   <a
     href={href}
     target="_blank"
     rel="nofollow noopener noreferrer"
-    className="font-semibold text-[#1F4E79] underline decoration-[#2E75B6]/40 underline-offset-4 transition-colors hover:text-[#2E75B6]"
+    className={
+      className ||
+      "font-semibold text-[#1F4E79] underline decoration-[#2E75B6]/40 underline-offset-4 transition-colors hover:text-[#2E75B6]"
+    }
   >
     {children}
   </a>
@@ -152,13 +157,18 @@ const ExternalLink = ({
 const InternalLink = ({
   href,
   children,
+  className,
 }: {
   href: string;
   children: ReactNode;
+  className?: string;
 }) => (
   <a
     href={href}
-    className="font-semibold text-[#1F4E79] underline decoration-[#2E75B6]/40 underline-offset-4 transition-colors hover:text-[#2E75B6]"
+    className={
+      className ||
+      "font-semibold text-[#1F4E79] underline decoration-[#2E75B6]/40 underline-offset-4 transition-colors hover:text-[#2E75B6]"
+    }
   >
     {children}
   </a>
@@ -200,9 +210,9 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
       </div>
 
       <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD] rounded-xl overflow-hidden">
-        <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
+        <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Takeaways
-        </div>
+        </h2>
         <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">
@@ -389,14 +399,17 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
 
             {/* CTA 1 */}
             <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h3 className="text-2xl font-bold text-[#F0C040]">
+              <h2 className="text-2xl font-bold text-[#F0C040]">
                 Ready For Faster Weight Loss Results?
-              </h3>
+              </h2>
               <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
                 Book your consultation with Medical Weight Loss Tampa today.
               </p>
               <div className="mt-6">
-                <ExternalLink href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from=">
+                <ExternalLink
+                  href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
+                  className="inline-block bg-[#F0C040] text-[#1B4F8A] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-white hover:text-[#1B4F8A] no-underline"
+                >
                   &gt;&gt; Book Your Consultation Now &lt;&lt;
                 </ExternalLink>
               </div>
@@ -462,14 +475,17 @@ export default function WhyDoSomePeopleLoseWeightFasterThanOthers() {
 
             {/* CTA 2 */}
             <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h3 className="text-2xl font-bold text-[#F0C040]">
+              <h2 className="text-2xl font-bold text-[#F0C040]">
                 Start Your Personalized Weight Loss Plan Today
-              </h3>
+              </h2>
               <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
                 Schedule your consultation with Medical Weight Loss Tampa now.
               </p>
               <div className="mt-6">
-                <InternalLink href="/contact">
+                <InternalLink
+                  href="/contact"
+                  className="font-semibold text-[#F0C040] underline decoration-[#F0C040]/40 underline-offset-4 transition-colors hover:text-white"
+                >
                   &gt;&gt; Schedule Your Consultation &lt;&lt;
                 </InternalLink>
               </div>
