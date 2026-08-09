@@ -54,6 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "chronic-pain-management-interventional-therapies",
     "weight-loss-plateau-12-medical-reasons-you-are-stuck",
     "why-do-some-people-lose-weight-faster-than-others",
+    "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

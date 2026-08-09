@@ -34,6 +34,23 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title:
+      "Non-Invasive Festoon Treatment: How Tampa Patients Are Clearing Malar Mounds Without Surgery",
+    slug: "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
+    date: "2026-08-09",
+    image:
+      "/images/static-blogs/non-invasive-festoon-treatment-tampa-malar-mounds.webp",
+    altText:
+      "Non-invasive festoon treatment graphic showing a woman receiving a cosmetic treatment beneath the eye area in Tampa.",
+    imageTitle:
+      "Non-Invasive Festoon Treatment: How Tampa Patients Are Clearing Malar Mounds Without Surgery",
+    imageDescription:
+      "Educational wellness aesthetics graphic highlighting non-invasive festoon treatment for the appearance of malar mounds and under-eye contours. The image shows a woman receiving a targeted cosmetic treatment beneath the eye area, along with Tampa’s skyline and key treatment benefits such as a non-surgical approach, quick recovery, smoother under-eye contours, and long-lasting results.",
+    caption:
+      "Explore a non-invasive approach to improving the appearance of festoons and malar mounds while supporting smoother, refreshed-looking under-eye contours",
+    body: "Fix malar mounds with non-invasive festoon treatment in Tampa using Evolve Tite radiofrequency. See why standard fillers & Botox make them explode.",
+  },
+  {
     title: "Why Do Some People Lose Weight Faster Than Others?",
     slug: "why-do-some-people-lose-weight-faster-than-others",
     date: "2026-07-21",

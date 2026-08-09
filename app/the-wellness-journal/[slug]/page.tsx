@@ -26,6 +26,9 @@ import WeightLossPlateau12MedicalReasonsYoureStuck, {
 import WhyDoSomePeopleLoseWeightFasterThanOthers, {
   whyDoSomePeopleLoseWeightFasterThanOthersMeta,
 } from "@/components/static-blogs/blogs/why-do-some-people-lose-weight-faster-than-others";
+import HowTampaPatientsAreClearingMalarMoundsWithoutSurgery, {
+  howTampaPatientsAreClearingMalarMoundsWithoutSurgeryMeta,
+} from "@/components/static-blogs/blogs/how-tampa-patients-are-clearing-malar-mounds-without-surgery";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -120,6 +123,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: whyDoSomePeopleLoseWeightFasterThanOthersMeta,
     Component: WhyDoSomePeopleLoseWeightFasterThanOthers,
+  },
+  {
+    meta: howTampaPatientsAreClearingMalarMoundsWithoutSurgeryMeta,
+    Component: HowTampaPatientsAreClearingMalarMoundsWithoutSurgery,
   },
 ];
 
