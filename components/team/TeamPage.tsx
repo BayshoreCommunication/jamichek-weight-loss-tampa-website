@@ -29,19 +29,19 @@ const teammatesData = [
     //   x: "https://x.com",
     // },
   },
-  {
-    id: 2,
-    image: "/images/team/Paste image.png",
-    name: `Ashley Almeyda`,
-    designation: "Patient Care Director",
-    details:
-      "A Tampa native, she brings over a decade of experience in hospitality, events, and operations, with a strong background in client-focused roles and leadership. Her career began in Las Vegas, where she spent several years in the fast-paced world of event sales and management, gaining valuable experience before advancing into executive-level support and operational leadership roles.She later transitioned into the wellness field, where she found her true passion. Inspired by her own personal wellness journey, she is dedicated to helping others feel confident, healthy, and empowered in their everyday lives. Through her work, she strives to create a positive and supportive experience for every individual she serves.Outside of her professional life, she is a proud mother to her baby, Arie, who inspires her daily to grow, stay balanced, and lead with purpose. She brings that same level of care, dedication, and positivity into every aspect of her life and work.",
-    // socialsMedia: {
-    //   facebook: "https://facebook.com",
-    //   instagram: "https://instagram.com",
-    //   x: "https://x.com",
-    // },
-  },
+  // {
+  //   id: 2,
+  //   image: "/images/team/Paste image.png",
+  //   name: `Ashley Almeyda`,
+  //   designation: "Patient Care Director",
+  //   details:
+  //     "A Tampa native, she brings over a decade of experience in hospitality, events, and operations, with a strong background in client-focused roles and leadership. Her career began in Las Vegas, where she spent several years in the fast-paced world of event sales and management, gaining valuable experience before advancing into executive-level support and operational leadership roles.She later transitioned into the wellness field, where she found her true passion. Inspired by her own personal wellness journey, she is dedicated to helping others feel confident, healthy, and empowered in their everyday lives. Through her work, she strives to create a positive and supportive experience for every individual she serves.Outside of her professional life, she is a proud mother to her baby, Arie, who inspires her daily to grow, stay balanced, and lead with purpose. She brings that same level of care, dedication, and positivity into every aspect of her life and work.",
+  //   socialsMedia: {
+  //     facebook: "https://facebook.com",
+  //     instagram: "https://instagram.com",
+  //     x: "https://x.com",
+  //   },
+  // },
 ];
 
 type Teammate = (typeof teammatesData)[number];
