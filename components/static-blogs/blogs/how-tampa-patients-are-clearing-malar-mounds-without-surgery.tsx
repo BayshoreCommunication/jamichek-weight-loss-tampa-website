@@ -114,17 +114,97 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
+const jsonLdSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.medicalweightlosstampa.com",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Wellness Journal",
+          "item": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Non-Invasive Festoon Treatment: How Tampa Patients Are Clearing Malar Mounds Without Surgery",
+          "item": "https://www.medicalweightlosstampa.com/the-wellness-journal/how-tampa-patients-are-clearing-malar-mounds-without-surgery",
+        },
+      ],
     },
-  })),
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal/how-tampa-patients-are-clearing-malar-mounds-without-surgery",
+      },
+      "headline":
+        "Non-Invasive Festoon Treatment: How Tampa Patients Are Clearing Malar Mounds Without Surgery",
+      "name": "Non-Invasive Festoon Treatment Tampa for Flawless Cheeks",
+      "description":
+        "Fix malar mounds with non-invasive festoon treatment in Tampa using Evolve Tite radiofrequency. See why standard fillers & Botox make them explode.",
+      "url": "https://www.medicalweightlosstampa.com/the-wellness-journal/how-tampa-patients-are-clearing-malar-mounds-without-surgery",
+      "image":
+        "https://www.medicalweightlosstampa.com/images/static-blogs/non-invasive-festoon-treatment-tampa-malar-mounds.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Festoon and Malar Mound Treatment",
+        "description":
+          "An overview of festoons and malar mounds, non-surgical radiofrequency treatment options, treatment severity, and considerations for improving the appearance of under-eye and upper-cheek contours.",
+      },
+      "keywords": [
+        "malar mounds",
+        "festoon treatment Tampa",
+        "malar mound treatment",
+        "non-invasive festoon treatment",
+        "festoons without surgery",
+        "radiofrequency festoon treatment",
+        "RF skin tightening Tampa",
+        "malar bags treatment",
+        "under eye puffiness treatment",
+        "festoon removal without surgery",
+        "non-surgical facial tightening",
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Medical Weight Loss Tampa",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Medical Weight Loss Tampa",
+        "url": "https://www.medicalweightlosstampa.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.medicalweightlosstampa.com/images/hero/logo.png",
+        },
+      },
+      "datePublished": "2026-08-09",
+      "dateModified": "2026-08-09",
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ],
 };
 
 const ExternalLink = ({
@@ -174,7 +254,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
     <article className="mt-8 bg-white text-[#222]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
       />
 
       {/* Header section */}
