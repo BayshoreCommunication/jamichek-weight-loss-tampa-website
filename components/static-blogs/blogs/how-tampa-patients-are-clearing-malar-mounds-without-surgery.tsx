@@ -466,9 +466,9 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
                       <span className="inline-block bg-[#1F4E79] text-white text-xs font-bold px-2.5 py-1 rounded">
                         {stageItem.stage}
                       </span>
-                      <h4 className="mt-2 font-bold text-[#1F4E79]">
+                      <h3 className="mt-2 font-bold text-[#1F4E79]">
                         {stageItem.title}
-                      </h4>
+                      </h3>
                       <p className="mt-1 text-sm text-gray-600">
                         {stageItem.description}
                       </p>
