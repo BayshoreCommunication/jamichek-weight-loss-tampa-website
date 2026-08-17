@@ -55,6 +55,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "weight-loss-plateau-12-medical-reasons-you-are-stuck",
     "why-do-some-people-lose-weight-faster-than-others",
     "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
+    "why-is-belly-fat-harder-to-lose-than-other-fat",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

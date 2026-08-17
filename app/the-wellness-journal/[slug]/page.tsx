@@ -29,6 +29,9 @@ import WhyDoSomePeopleLoseWeightFasterThanOthers, {
 import HowTampaPatientsAreClearingMalarMoundsWithoutSurgery, {
   howTampaPatientsAreClearingMalarMoundsWithoutSurgeryMeta,
 } from "@/components/static-blogs/blogs/how-tampa-patients-are-clearing-malar-mounds-without-surgery";
+import WhyIsBellyFatHarderToLoseThanOtherFat, {
+  whyIsBellyFatHarderToLoseThanOtherFatMeta,
+} from "@/components/static-blogs/blogs/why-is-belly-fat-harder-to-lose-than-other-fat";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -127,6 +130,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: howTampaPatientsAreClearingMalarMoundsWithoutSurgeryMeta,
     Component: HowTampaPatientsAreClearingMalarMoundsWithoutSurgery,
+  },
+  {
+    meta: whyIsBellyFatHarderToLoseThanOtherFatMeta,
+    Component: WhyIsBellyFatHarderToLoseThanOtherFat,
   },
 ];
 

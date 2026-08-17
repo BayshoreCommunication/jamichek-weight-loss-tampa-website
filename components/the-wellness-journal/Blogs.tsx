@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Why Is Belly Fat Harder to Lose Than Other Body Fat?",
+    slug: "why-is-belly-fat-harder-to-lose-than-other-fat",
+    date: "2026-08-17",
+    image:
+      "/images/static-blogs/why-is-belly-fat-harder-to-lose-than-other-fat.webp",
+    altText:
+      "Athletic woman measuring her waistline with a tape measure beside hormone and cortisol health icons.",
+    imageTitle: "Why Is Belly Fat Harder to Lose Than Other Fat Guide",
+    imageDescription:
+      "Discover why stubborn belly fat is harder to lose, exploring the impact of hormones, cortisol levels, and fat cell biology on weight loss and health.",
+    caption:
+      "Learn the biological reasons why belly fat is stubborn and how hormones and cortisol affect weight loss.",
+    body: "Discover why stubborn belly fat is harder to lose, exploring the impact of hormones, cortisol levels, and fat cell biology on weight loss and health.",
+  },
+  {
     title:
       "Non-Invasive Festoon Treatment: How Tampa Patients Are Clearing Malar Mounds Without Surgery",
     slug: "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
