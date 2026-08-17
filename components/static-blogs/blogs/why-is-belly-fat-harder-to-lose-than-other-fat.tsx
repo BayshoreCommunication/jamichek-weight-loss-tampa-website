@@ -153,20 +153,20 @@ const jsonLdSchema = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.medicalweightlosstampa.com",
+          "item": "https://www.jachimekchiro.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "The Wellness Journal",
-          "item": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+          "item": "https://www.jachimekchiro.com/the-wellness-journal",
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Why Is Belly Fat Harder to Lose Than Other Body Fat?",
+          "name": "When Should You See a Chiropractor for Back Pain Symptoms?",
           "item":
-            "https://www.medicalweightlosstampa.com/the-wellness-journal/why-is-belly-fat-harder-to-lose-than-other-fat",
+            "https://www.jachimekchiro.com/the-wellness-journal/when-should-you-see-a-chiropractor-for-back-pain-symptoms",
         },
       ],
     },
@@ -175,46 +175,50 @@ const jsonLdSchema = {
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id":
-          "https://www.medicalweightlosstampa.com/the-wellness-journal/why-is-belly-fat-harder-to-lose-than-other-fat",
+          "https://www.jachimekchiro.com/the-wellness-journal/when-should-you-see-a-chiropractor-for-back-pain-symptoms",
       },
-      "headline": "Why Is Belly Fat Harder to Lose Than Other Body Fat?",
-      "name": "Why Is Belly Fat Harder to Lose Than Other Fat Guide",
+      "headline": "When Should You See a Chiropractor for Back Pain Symptoms?",
+      "name": "When to See a Chiropractor for Back Pain",
       "description":
-        "Discover why stubborn belly fat is harder to lose, exploring the impact of hormones, cortisol levels, and fat cell biology on weight loss and health.",
+        "Learn when back pain needs a chiropractor versus a doctor. Red flags, timelines, and Tampa care from Jachimek Chiropractic.",
       "url":
-        "https://www.medicalweightlosstampa.com/the-wellness-journal/why-is-belly-fat-harder-to-lose-than-other-fat",
+        "https://www.jachimekchiro.com/the-wellness-journal/when-should-you-see-a-chiropractor-for-back-pain-symptoms",
       "image":
-        "https://www.medicalweightlosstampa.com/images/static-blogs/why-is-belly-fat-harder-to-lose-than-other-fat.webp",
+        "https://www.jachimekchiro.com/images/static-blogs/when-to-see-a-chiropractor-for-back-pain-symptoms.jpg",
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+        "@id": "https://www.jachimekchiro.com/the-wellness-journal",
       },
       "about": {
         "@type": "Thing",
-        "name": "Belly Fat and Visceral Fat Loss",
+        "name": "Chiropractic Care for Back Pain",
         "description":
-          "An exploration of why visceral belly fat is difficult to lose, focusing on cortisol, hormonal balance, age factors, and medical weight loss strategies in Tampa.",
+          "An overview of when chiropractic care may be appropriate for back pain, including persistent pain, muscle strain, sciatica, stiffness, injury-related pain, and symptoms that require urgent medical evaluation.",
       },
       "keywords": [
-        "why is belly fat harder to lose",
-        "visceral fat vs subcutaneous fat",
-        "cortisol belly fat",
-        "stubborn belly fat Tampa",
-        "medical weight loss belly fat",
-        "hormones and belly fat",
-        "losing belly fat after 40",
+        "when should you see a chiropractor for back pain",
+        "when to see a chiropractor for back pain",
+        "back pain chiropractor",
+        "chiropractic care for back pain",
+        "chiropractor for back pain",
+        "back pain symptoms",
+        "persistent back pain",
+        "sciatica chiropractor",
+        "chiropractic treatment for back pain",
+        "Tampa chiropractor",
+        "back pain relief Tampa",
       ],
       "author": {
         "@type": "Organization",
-        "name": "Medical Weight Loss Tampa",
+        "name": "Jachimek Chiropractic & Wellness",
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Medical Weight Loss Tampa",
-        "url": "https://www.medicalweightlosstampa.com/",
+        "name": "Jachimek Chiropractic & Wellness",
+        "url": "https://www.jachimekchiro.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.medicalweightlosstampa.com/images/hero/logo.png",
+          "url": "https://www.jachimekchiro.com/images/hero/logo.png",
         },
       },
       "datePublished": "2026-08-17",
@@ -222,14 +226,48 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is chiropractic care safe for older adults with back pain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with techniques adjusted for bone density and mobility. ",
+          },
         },
-      })),
+        {
+          "@type": "Question",
+          "name": "Can chiropractic care help with sleep affected by back pain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes, since reduced nerve irritation improves rest quality. ",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How many chiropractic visits does back pain usually need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most mechanical cases improve within six to twelve visits.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does insurance typically cover chiropractic visits in Florida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Florida plans cover it, especially after auto accidents.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can pregnancy related back pain be treated by a chiropractor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through pregnancy safe techniques and positioning adjustments.",
+          },
+        },
+      ],
     },
   ],
 };
