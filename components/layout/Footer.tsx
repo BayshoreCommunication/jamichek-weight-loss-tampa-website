@@ -47,7 +47,7 @@ export default function Footer() {
                 <FaTwitter />
               </Link> */}
               <Link
-                href="https://www.instagram.com/medicalweightlosstampa?igsh=M2dmeGVicW9zbGFo"
+                href="https://www.instagram.com/tampa_thewellnessreset"
                 target="_blank"
                 rel="noopener noreferrer"
               >
