@@ -138,11 +138,11 @@ const SectionHeading = ({
   title: string;
 }) => (
   <div className="border-t-2 border-[#2E75B6] pt-5">
-    <div className="flex items-start gap-4">
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#1F4E79] text-sm font-bold text-white">
+    <div className="flex items-start gap-3 sm:gap-4">
+      <span className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center bg-[#1F4E79] text-xs sm:text-sm font-bold text-white">
         {numeral}
       </span>
-      <h2 className="text-2xl font-bold leading-snug text-[#1F4E79] md:text-[28px]">
+      <h2 className="text-xl sm:text-2xl font-bold leading-snug text-[#1F4E79] md:text-[28px]">
         {title}
       </h2>
     </div>
@@ -154,16 +154,16 @@ const BulletList = ({ items }: { items: string[] }) => (
     {items.map((item) => (
       <li key={item} className="flex gap-3">
         <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-        <span>{item}</span>
+        <span className="text-left sm:text-justify">{item}</span>
       </li>
     ))}
   </ul>
 );
 
 const QuoteBlock = ({ text, author }: { text: string; author: string }) => (
-  <div className="border-l-4 border-[#2E75B6] bg-[#F2F8FD] px-6 py-5 italic my-8 rounded-r-lg">
-    <p className="text-lg leading-relaxed text-[#1F4E79]">&ldquo;{text}&rdquo;</p>
-    <p className="mt-2 text-sm font-bold text-[#595959] not-italic">
+  <div className="border-l-4 border-[#2E75B6] bg-[#F2F8FD] px-4 sm:px-6 py-5 italic my-8 rounded-r-lg">
+    <p className="text-base sm:text-lg leading-relaxed text-[#1F4E79]">&ldquo;{text}&rdquo;</p>
+    <p className="mt-2 text-xs sm:text-sm font-bold text-[#595959] not-italic">
       — {author}
     </p>
   </div>
@@ -191,7 +191,7 @@ export default function AreAntiAgingTreatmentsRightForYou() {
       </section>
 
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p>
+        <p className="text-left sm:text-justify">
           Yes. When exhaustion sticks around, something deeper could be going on. Hormones shifting without clear reason might mean more than daily stress. Recovery taking longer now? That kind of change often points beyond routine fixes. Real food helps, sure, yet sometimes even that falls short. Movement counts but effort alone won’t always reset the system. Signals like these aren’t laziness or poor choices.
         </p>
       </div>
@@ -200,11 +200,11 @@ export default function AreAntiAgingTreatmentsRightForYou() {
         <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Points
         </div>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span>{point}</span>
+              <span className="text-left sm:text-justify">{point}</span>
             </li>
           ))}
         </ul>
@@ -214,9 +214,9 @@ export default function AreAntiAgingTreatmentsRightForYou() {
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="border border-[#D6E4F0] bg-white px-5 py-6 text-center rounded-xl"
+            className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl"
           >
-            <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+            <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
               {stat.value}
             </div>
             <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -238,13 +238,13 @@ export default function AreAntiAgingTreatmentsRightForYou() {
         <section>
           <SectionHeading numeral="I" title="What Are the Most Common Signs You Need Anti-Aging Support?" />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Most people ignore the early signs. They blame stress. They blame long work hours. They even blame Florida’s heat.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               But some signs go deeper than lifestyle. They point to cellular and hormonal changes happening inside your body right now.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Here are the signs worth taking seriously:
             </p>
             <div className="mt-4">
@@ -267,16 +267,16 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             title="Hormonal Decline in Florida Adults Affects Quality of Life"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Florida living is active and outdoor. But even the most health-conscious adults feel the weight of hormonal decline.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Hormone shifts hit hard from age 35 to 55, says the <ExternalLink href={sourceLinks.niaHormones}>National Institute on Aging</ExternalLink>. Not just estrogen drops, testosterone does too. Mood swings show up alongside tiredness, and weight changes pop in. Bones thin out while skin loses bounce. Each change ties into those falling hormones.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               After age 30, a man’s testosterone slips away about 1% or 2% yearly. When women move into perimenopause, their estrogen lurches sideways without warning. The endpoint remains the same, though.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Most people miss the root issue entirely. Hormone treatment early on shifts focus from symptoms to what&apos;s underneath. Solutions emerge when you look closer at options like vitamins mixed with peptides sourced locally near Tampa clinics.
             </p>
           </div>
@@ -293,36 +293,36 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             title="Can NAD+ Injections and Peptide Therapies be Worth It in 2026?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Short answer: Yes.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Deep within each cell, NAD+ converts nutrients into energy, at the same time repairing DNA flaws. As individuals enter their thirties, levels of this molecule start declining. By middle age, roughly 50% have disappeared, according to <ExternalLink href={sourceLinks.harvardNad}>studies from Harvard</ExternalLink>. In its absence, fatigue emerges slowly, mental clarity dims, and recovery from harm stretches out. Though small, its role remains widespread. And skin starts showing years more than expected.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Some folks notice clearer thoughts after NAD+ treatment. Energy often improves, along with how fast the body bounces back. These changes come as levels that once dropped get restored. On top of that, peptides help the body burn fat more efficiently. Muscle firmness shifts gradually, tied to these adjustments. Hormones settle into a steadier rhythm at the same time.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               They are science-backed options with significant clinical growth over the past three years. See the full range of <InternalLink href={sourceLinks.vitaminsPeptides}>vitamins and peptides at Medical Weight Loss Tampa</InternalLink> and find what fits your wellness goals.
             </p>
           </div>
 
-          <div className="mt-8 border border-[#D6E4F0] bg-[#F8FBFE] p-6 rounded-xl">
-            <h3 className="text-xl font-bold text-[#1F4E79] mb-2">
+          <div className="mt-8 border border-[#D6E4F0] bg-[#F8FBFE] p-4 sm:p-6 rounded-xl">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79] mb-2">
               NAD+ Levels by Age Group
             </h3>
-            <p className="text-sm text-[#595959] mb-6">
+            <p className="text-xs sm:text-sm text-[#595959] mb-6">
               Average cellular NAD+ concentration percentage compared to early adulthood
             </p>
             
             <div className="space-y-4">
               {nadDecline.map((item) => (
                 <div key={item.ageRange} className="space-y-1">
-                  <div className="flex justify-between text-sm font-semibold text-gray-700">
+                  <div className="flex justify-between text-xs sm:text-sm font-semibold text-gray-700">
                     <span>{item.ageRange}</span>
                     <span className="text-[#1F4E79] font-bold">{item.level}%</span>
                   </div>
-                  <div className="w-full bg-[#EAF4FB] h-4 rounded-full overflow-hidden">
+                  <div className="w-full bg-[#EAF4FB] h-3.5 sm:h-4 rounded-full overflow-hidden">
                     <div 
                       className="bg-[#2E75B6] h-full rounded-full transition-all duration-500" 
                       style={{ width: `${item.level}%` }}
@@ -333,17 +333,17 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             </div>
           </div>
 
-          <div className="mt-8 border-2 border-dashed border-[#2E75B6] bg-[#F2F8FD] p-8 rounded-2xl text-center">
-            <h3 className="text-2xl font-bold text-[#1F4E79]">
+          <div className="mt-8 border-2 border-dashed border-[#2E75B6] bg-[#F2F8FD] p-5 sm:p-8 rounded-2xl text-center">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1F4E79]">
               Ready to Find Out What Your Body Needs?
             </h3>
-            <p className="mt-3 text-[17px] leading-8 text-[#595959] max-w-2xl mx-auto">
+            <p className="mt-3 text-base sm:text-[17px] leading-8 text-[#595959] max-w-2xl mx-auto">
               Get a full wellness assessment with Tampa Bay’s top medical team. New patient special for just $47.
             </p>
             <div className="mt-6">
               <a
                 href="/contact"
-                className="inline-block bg-[#1F4E79] hover:bg-[#2E75B6] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-all hover:shadow-lg"
+                className="inline-block bg-[#1F4E79] hover:bg-[#2E75B6] text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-md transition-all hover:shadow-lg text-sm sm:text-base max-w-full"
               >
                 Book Your Assessment
               </a>
@@ -357,16 +357,16 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             title="What Does Regenerative Medicine Do for Aging Bodies in Tampa?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Regenerative medicine targets your body’s own repair systems. It does not mask symptoms.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Among current choices, HUCT therapy stands out alongside PRP injections. While one draws from umbilical tissue, the other relies on concentrated platelets. From a clinical view, they differ in source yet share purpose. Currently, few alternatives match their combined usage patterns.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Recognized by the <ExternalLink href={sourceLinks.mayoClinic}>Mayo Clinic</ExternalLink>, this method supports recovery in joints & tendons, because it harnesses natural components. Skin texture may improve due to renewed activity beneath the surface. Intervention occurs without surgical entry points.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               HUCT goes even further. Learn more about <InternalLink href={sourceLinks.regenerativeMedicine}>regenerative medicine options in Tampa</InternalLink> and see what may be right for your body.
             </p>
           </div>
@@ -383,13 +383,13 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             title="What Is The Right Treatment for You?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Right here, getting a real medical checkup counts above everything else. People do not grow older at the same pace, ever. Because hormones differ, cells behave uniquely, daily habits shift, so does what you aim for.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               What sets true progress apart? Not guesses.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Measurements guide every move at <InternalLink href={sourceLinks.tampaTeam}>Medical Weight Loss Tampa</InternalLink>. Your body, your signs, your targets shape the road forward.
             </p>
           </div>
@@ -401,35 +401,35 @@ export default function AreAntiAgingTreatmentsRightForYou() {
             title="Starting in Your 30s or 40s Is Not Too Early"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Cellular aging does not wait until 60. According to <ExternalLink href={sourceLinks.healthlineLongevity}>Healthline&apos;s longevity research</ExternalLink>, biological aging markers begin shifting in your late 20s and early 30s. The decline is gradual at first. But it picks up speed fast.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               The goal of starting early is prevention. You protect your energy, your hormones, and your cellular health before the curve steepens.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Our survey shows that patients who begin supportive wellness protocols before age 45 report faster results and longer-lasting benefits. Beginning at 35 makes sense. It’s timely, not too soon. Adults in Tampa looking to manage aging well often find that today works better than later.
             </p>
           </div>
         </section>
       </div>
 
-      <section className="mt-12 bg-[#1F4E79] px-6 py-8 text-white md:px-8 rounded-xl text-center">
-        <h2 className="text-2xl font-bold leading-snug">
+      <section className="mt-12 bg-[#1F4E79] px-5 sm:px-6 py-8 text-white md:px-8 rounded-xl text-center">
+        <h2 className="text-xl sm:text-2xl font-bold leading-snug">
           Take the First Step Toward Feeling Like Yourself Again
         </h2>
-        <p className="mt-4 text-[17px] leading-8 text-white/95 max-w-2xl mx-auto">
+        <p className="mt-4 text-base sm:text-[17px] leading-8 text-white/95 max-w-2xl mx-auto">
           Medical Weight Loss Tampa is ready to build your personalized plan. New patients pay just $47 to get started.
         </p>
         <div className="mt-6">
           <a
             href="/contact"
-            className="inline-block bg-[#2E75B6] hover:bg-white hover:text-[#1F4E79] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-all hover:shadow-lg"
+            className="inline-block bg-[#2E75B6] hover:bg-white hover:text-[#1F4E79] text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl shadow-md transition-all hover:shadow-lg text-sm sm:text-base max-w-full"
           >
             Schedule Today for $47
           </a>
         </div>
-        <p className="mt-4 text-base font-bold text-[#D6E4F0]">
+        <p className="mt-4 text-sm sm:text-base font-bold text-[#D6E4F0]">
           Call 813.269.7546 | medicalweightlosstampa.com
         </p>
       </section>

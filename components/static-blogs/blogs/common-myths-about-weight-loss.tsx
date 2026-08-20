@@ -151,14 +151,14 @@ export default function CommonMythsAboutWeightLoss() {
   return (
     <article className="mt-8 bg-white text-[#222]">
       <div className="space-y-6 text-[17px] leading-8">
-        <p>
+        <p className="text-left sm:text-justify">
           People often talk about weight loss shots. You probably saw stories
           about people losing weight in the media and heard people arguing about
           the best way to lose weight. Medical Weight Loss Tampa knows how
           annoying it is to try diet after diet and still not lose weight
           because your body just does not seem to be working with you.
         </p>
-        <p>
+        <p className="text-left sm:text-justify">
           We want to talk about the myths about weight loss shots and what
           patients should know so you can move forward with a clear
           understanding and feel like we are working together with you on your
@@ -167,29 +167,33 @@ export default function CommonMythsAboutWeightLoss() {
       </div>
 
       <section className="mt-10">
-        <h2 className="mb-4 text-2xl font-bold text-[#1F4E79]">
+        <h2 className="mb-4 text-xl sm:text-2xl font-bold text-[#1F4E79]">
           Myth vs Fact: Quick Overview
         </h2>
-        <div className="overflow-hidden border border-[#D6E4F0]">
-          <div className="grid grid-cols-2 bg-[#1F4E79] text-base font-bold text-white">
-            <div className="border-r border-white/30 px-4 py-3">Myth</div>
-            <div className="px-4 py-3">Fact</div>
-          </div>
-          {overviewRows.map((row, index) => (
-            <div
-              key={row.myth}
-              className={`grid grid-cols-1 md:grid-cols-2 ${
-                index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"
-              }`}
-            >
-              <div className="border-b border-[#D6E4F0] px-4 py-4 font-semibold text-[#C0392B] md:border-r">
-                {row.myth}
-              </div>
-              <div className="border-b border-[#D6E4F0] px-4 py-4 text-[#1A526F]">
-                {row.fact}
-              </div>
-            </div>
-          ))}
+        <div className="overflow-x-auto border border-[#D6E4F0] rounded-xl">
+          <table className="w-full text-left border-collapse min-w-[550px]">
+            <thead>
+              <tr className="bg-[#1F4E79] text-sm sm:text-base font-bold text-white">
+                <th className="border-r border-white/30 px-3 sm:px-4 py-3 w-1/2">Myth</th>
+                <th className="px-3 sm:px-4 py-3 w-1/2">Fact</th>
+              </tr>
+            </thead>
+            <tbody>
+              {overviewRows.map((row, index) => (
+                <tr
+                  key={row.myth}
+                  className={index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"}
+                >
+                  <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#C0392B] text-sm sm:text-base">
+                    {row.myth}
+                  </td>
+                  <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-[#1A526F] text-sm sm:text-base">
+                    {row.fact}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -197,43 +201,43 @@ export default function CommonMythsAboutWeightLoss() {
         {sections.map((section) => (
           <section key={section.title}>
             <div className="border-t-2 border-[#2E75B6] pt-5">
-              <h2 className="text-2xl font-bold leading-snug text-[#1F4E79] md:text-[28px]">
+              <h2 className="text-xl sm:text-2xl font-bold leading-snug text-[#1F4E79] md:text-[28px]">
                 {section.title}
               </h2>
-              <p className="mt-4 text-[17px] leading-8">{section.intro}</p>
+              <p className="mt-4 text-[17px] leading-8 text-left sm:text-justify">{section.intro}</p>
             </div>
 
             <div className="mt-6 space-y-5">
               {section.blocks.map((block) => (
                 <div key={block.heading}>
-                  <h3 className="text-xl font-bold text-[#2E75B6]">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#2E75B6]">
                     {block.heading}
                   </h3>
-                  <p className="mt-2 text-[17px] leading-8">{block.body}</p>
+                  <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">{block.body}</p>
                 </div>
               ))}
             </div>
 
             {"stat" in section && section.stat ? (
-              <div className="mt-7 bg-[#1F4E79] px-6 py-6 text-white">
-                <div className="text-5xl font-bold leading-none">
+              <div className="mt-7 bg-[#1F4E79] px-4 sm:px-6 py-6 text-white rounded-xl">
+                <div className="text-4xl sm:text-5xl font-bold leading-none">
                   {section.stat.value}
                 </div>
-                <p className="mt-3 max-w-3xl text-base leading-7 text-[#D6E4F0]">
+                <p className="mt-3 max-w-3xl text-sm sm:text-base leading-7 text-[#D6E4F0]">
                   {section.stat.text} - {section.stat.source}
                 </p>
-                <p className="mt-1 text-sm text-[#A0BDD4]">
+                <p className="mt-1 text-xs text-[#A0BDD4]">
                   Source: {section.stat.source}
                 </p>
               </div>
             ) : null}
 
             {"note" in section && section.note ? (
-              <div className="mt-7 border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-6 py-5">
-                <p className="text-[17px] leading-8 text-[#1F4E79]">
+              <div className="mt-7 border-l-[8px] sm:border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-4 sm:px-6 py-5 rounded-r-lg">
+                <p className="text-base sm:text-[17px] leading-8 text-[#1F4E79] text-left sm:text-justify">
                   {section.note}
                 </p>
-                <p className="mt-2 text-sm text-[#595959]">
+                <p className="mt-2 text-xs sm:text-sm text-[#595959]">
                   Source: {section.source}
                 </p>
               </div>
@@ -242,12 +246,12 @@ export default function CommonMythsAboutWeightLoss() {
         ))}
       </div>
 
-      <section className="mt-12 bg-[#1F4E79] px-6 py-8 text-white md:px-8">
-        <h2 className="text-2xl font-bold leading-snug">
+      <section className="mt-12 bg-[#1F4E79] px-5 sm:px-6 py-8 text-white md:px-8 rounded-xl">
+        <h2 className="text-xl sm:text-2xl font-bold leading-snug">
           Start Your Personalized Weight Loss Plan with Medical Weight Loss
           Tampa
         </h2>
-        <p className="mt-4 text-[17px] leading-8 text-white/95">
+        <p className="mt-4 text-base sm:text-[17px] leading-8 text-white/95 text-left sm:text-justify">
           We want you to know that there is hope for a future. We have a place
           where you can get help and not feel bad about it. Our team is here to
           help you learn about weight loss injections and how they work. If you
@@ -263,35 +267,16 @@ export default function CommonMythsAboutWeightLoss() {
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
             <div key={faq.question}>
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 {faq.question}
               </h3>
-              <p className="mt-2 text-[17px] leading-8">{faq.answer}</p>
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-left sm:text-justify">{faq.answer}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* <section className="mt-10 overflow-hidden border border-[#D6E4F0]">
-        <div className="grid grid-cols-1 md:grid-cols-[160px_1fr]">
-          <div className="bg-[#D6E4F0] px-4 py-3 font-bold text-[#1F4E79]">
-            Meta Title
-          </div>
-          <div className="px-4 py-3 text-[#333]">
-            Weight Loss Injection Myths and Facts Patients Should Know
-          </div>
-          <div className="bg-[#D6E4F0] px-4 py-3 font-bold text-[#1F4E79]">
-            Meta Description
-          </div>
-          <div className="px-4 py-3 text-[#333]">
-            Curious about weight loss injections? Explore common myths, real
-            medical facts, and what patients should understand before starting
-            weight loss shot treatments.
-          </div>
-        </div>
-      </section> */}
-
-      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555]">
+      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-xs sm:text-sm leading-7 text-[#555] text-left sm:text-justify">
         Disclaimer: This article offers general information and is not a
         replacement for professional medical advice. For personalized health
         assessments and weight loss plans, consult Medical Weight Loss Tampa.

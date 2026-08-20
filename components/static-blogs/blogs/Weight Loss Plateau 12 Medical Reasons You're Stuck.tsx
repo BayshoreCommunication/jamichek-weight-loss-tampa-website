@@ -264,7 +264,7 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
       </section>
 
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p className="text-justify" style={{ textAlign: "justify" }}>
+        <p className="text-left sm:text-justify">
           A weight loss plateau is when your body no longer responds to diet and exercise. It’s seldom about effort. Most plateaus are caused by a medical reason. Hormones, metabolism, sleep and medications all play a part. The first thing to do to break through is identify the cause.
         </p>
       </div>
@@ -273,11 +273,11 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
         <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Main Takeaways
         </div>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span>{point}</span>
+              <span className="text-left sm:text-justify">{point}</span>
             </li>
           ))}
         </ul>
@@ -287,9 +287,9 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
         {statsOne.map((stat, i) => (
           <div
             key={i}
-            className="border border-[#D6E4F0] bg-white px-5 py-6 text-center rounded-xl"
+            className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl"
           >
-            <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+            <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
               {stat.value}
             </div>
             <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -308,14 +308,14 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             Do You Know Your Body Fights Back Against Weight Loss?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Our metabolisms are not static machines. When you cut calories, your body does something frustrating. It adapts and lowers your basal metabolic rate (BMR) to conserve energy. This is called <strong className="text-[#1F4E79]">metabolic adaptation</strong> and it’s one of the most common medical reasons people plateau.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Your body reads weight loss as a threat. It slows thyroid output. It reduces leptin levels. Less leptin increases hunger.
             </p>
 
-            <div className="mt-8 border-l-[8px] border-[#0d7a8a] bg-[#f0f7ff] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#0d7a8a] bg-[#f0f7ff] px-4 sm:px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#0d7a8a] italic font-medium">
                 “Metabolic adaptation is real and measurable. The body’s survival mechanisms can reduce energy expenditure by up to 15-20% during weight loss, making medical supervision essential for sustained results.”
               </blockquote>
@@ -331,26 +331,26 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             12 Medical Reasons You Have Hit a Weight Loss Plateau
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Our surveys show that most Tampa patients who come to us frustrated have been doing everything right. The issue is not discipline. It is biology. Here are the 12 most common medical culprits.
             </p>
 
             <div className="mt-8 border border-[#D6E4F0] overflow-hidden rounded-xl">
-              <h3 className="bg-[#1B4F8A] px-5 py-4 text-lg font-bold text-center text-white uppercase tracking-wider">
+              <h3 className="bg-[#1B4F8A] px-4 sm:px-5 py-4 text-base sm:text-lg font-bold text-center text-white uppercase tracking-wider">
                 The 12 Medical Reasons Behind Your Plateau
               </h3>
               <div className="divide-y divide-[#D6E4F0]">
                 {medicalReasons.map((reason, index) => (
                   <div
                     key={reason.id}
-                    className={`px-6 py-4 flex gap-4 items-start ${
+                    className={`px-4 sm:px-6 py-4 flex gap-3 sm:gap-4 items-start ${
                       index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"
                     }`}
                   >
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1B4F8A] text-sm font-bold text-white">
                       {reason.id}
                     </span>
-                    <div className="text-[17px] leading-7">
+                    <div className="text-base sm:text-[17px] leading-7">
                       <strong className="text-[#1F4E79]">{reason.title} :- </strong>
                       <span className="text-gray-700">{reason.desc}</span>
                     </div>
@@ -359,11 +359,11 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
               </div>
             </div>
 
-            <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h3 className="text-2xl font-bold text-[#F0C040]">
+            <div className="mt-8 bg-[#1B4F8A] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#F0C040]">
                 Same Number On The Scale For Weeks?
               </h3>
-              <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#EAF4FB]">
                 Tampa’s medical weight loss experts will run a full clinical evaluation and find your root cause.
               </p>
               <div className="mt-6 text-[#EAF4FB]">
@@ -380,13 +380,13 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             Are Hormones the Hidden Culprit Keeping You Stuck?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Weight loss dances to hormones’ tune. That fact stands firm. <ExternalLink href="https://www.endocrine.org/news-and-advocacy/news-room/2024/hormonal-obesity-study">According to a 2024 Endocrine Society report</ExternalLink>, almost 4 out of 10 stubborn stalls in shedding pounds come from hormone imbalances. Across Florida, sluggish thyroids pop up often. High temps, sticky air, along with pollutants, pile pressure on thyroid health.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Slowed digestion, a dropping heart rate follow when hypothyroidism takes hold. Even careful eating may lead to weight gain if the thyroid does too little. Estrogen dominance behaves similarly. So do low testosterone levels. High cortisol acts much the same way. Fat storage becomes likely with each imbalance present.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Hormone Replacement Therapy (HRT) can be a turning point for many patients. At <InternalLink href="/medical-weight-loss">Medical Weight Loss Tampa</InternalLink>, hormonal assessment is part of every intake process. They do not guess. They test. And they treat the real problem.
             </p>
 
@@ -394,9 +394,9 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
               {statsTwo.map((stat, i) => (
                 <div
                   key={i}
-                  className="border border-[#D6E4F0] bg-white px-5 py-6 text-center rounded-xl"
+                  className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl"
                 >
-                  <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+                  <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
                     {stat.value}
                   </div>
                   <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -416,14 +416,14 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             What Role Do GLP-1 Medications Play in Breaking Plateaus?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               GLP-1 receptor agonists have changed the game. Semaglutide, Tirzepatide, and Retatrutide are not fad solutions. They are clinically validated medications that target the biological mechanisms behind plateaus. <ExternalLink href="https://diabetes.org/blog/weight-management/glp-1-medications-for-weight-loss">Research cited by the American Diabetes Association</ExternalLink> shows people shed roughly 15% to 22% of their mass when using these under care.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               These drugs inhibit appetite. They slow gastric emptying. They regulate blood sugar. And they correct the very metabolic dysfunction that causes plateaus. Sema (semaglutide), Tirzep (tirzepatide), and Retatrutide are all available through <InternalLink href="/medical-weight-loss">the medical weight loss program in Tampa</InternalLink>. Each one is physician-supervised. Each plan is personalized. No cookie-cutter dosing.
             </p>
 
-            <div className="mt-8 border-l-[8px] border-[#27ae60] bg-[#eafaf1] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#27ae60] bg-[#eafaf1] px-4 sm:px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#1b4f8a] italic font-medium">
                 “We see patients weekly who have been struggling alone for months. Once we identify the medical root cause and apply the right protocol, whether that is GLP-1 therapy, HRT, or nutritional recalibration, the body responds. It wants to heal.”
               </blockquote>
@@ -439,13 +439,13 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             Sleep and Stress Are Silently Sabotaging Your Results
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Florida life is busy. Tampa traffic is real. But sometimes, work hits harder, like stress building up and getting in deep. When that happens, your body pushes out cortisol, a chemical tied to storing fat right in the middle. The majority of fats are less prone to change than belly fat. Hard to shift, slow to respond.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Not sleeping makes it worse. Your hunger hormone, ghrelin, increases up to 24% after a bad night’s sleep. Growth hormone drops fat burn so hard. Morning hits and cravings roar while recovery lags behind. Long-term unrest ties straight to weight gain, say experts at <ExternalLink href="https://www.sleepfoundation.org/sleep-deprivation/sleep-deprivation-and-obesity">the National Sleep Foundation</ExternalLink>. This is not willpower.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Most people trying to lose weight neglect the consequences of stress on their bodies. Yet at <InternalLink href="/our-purpose">Medical Weight Loss Tampa</InternalLink>, we look at how cortisol shifts metabolism, poor rest slows progress or when you eat counts just as much as what you eat. Care is shaped around those pieces, fitting them together with treatments that are already part of your health routine. Nothing gets ignored, because small imbalances often hold back big results.
             </p>
 
@@ -454,30 +454,34 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             </h3>
 
             {/* Comparison Table */}
-            <div className="mt-4 overflow-hidden border border-[#D6E4F0] rounded-xl">
-              <div className="grid grid-cols-3 bg-[#1F4E79] text-base font-bold text-white">
-                <div className="border-r border-white/30 px-4 py-3">Approach</div>
-                <div className="border-r border-white/30 px-4 py-3">DIY Diet & Exercise</div>
-                <div className="px-4 py-3">Medical Weight Loss Tampa</div>
-              </div>
-              {comparisonTable.map((row, index) => (
-                <div
-                  key={row.approach}
-                  className={`grid grid-cols-3 ${
-                    index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"
-                  }`}
-                >
-                  <div className="border-b border-[#D6E4F0] px-4 py-4 font-semibold text-[#1F4E79] border-r">
-                    {row.approach}
-                  </div>
-                  <div className="border-b border-[#D6E4F0] px-4 py-4 text-gray-700 border-r">
-                    {row.diy}
-                  </div>
-                  <div className="border-b border-[#D6E4F0] px-4 py-4 text-[#1A526F] font-semibold">
-                    {row.medical}
-                  </div>
-                </div>
-              ))}
+            <div className="mt-4 overflow-x-auto border border-[#D6E4F0] rounded-xl">
+              <table className="w-full text-left border-collapse min-w-[550px]">
+                <thead>
+                  <tr className="bg-[#1F4E79] text-sm sm:text-base font-bold text-white">
+                    <th className="border-r border-white/30 px-3 sm:px-4 py-3">Approach</th>
+                    <th className="border-r border-white/30 px-3 sm:px-4 py-3">DIY Diet & Exercise</th>
+                    <th className="px-3 sm:px-4 py-3">Medical Weight Loss Tampa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonTable.map((row, index) => (
+                    <tr
+                      key={row.approach}
+                      className={index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"}
+                    >
+                      <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#1F4E79] text-sm sm:text-base">
+                        {row.approach}
+                      </td>
+                      <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-sm sm:text-base">
+                        {row.diy}
+                      </td>
+                      <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-[#1A526F] font-semibold text-sm sm:text-base">
+                        {row.medical}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
@@ -487,13 +491,13 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
             Why Medical Weight Loss Tampa Is the Smarter Choice for Florida Patients
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Tampa has options. But not all weight loss clinics run lab panels on Day 1. Not all of them offer GLP-1 medications, HRT, peptide therapy, and nutritional counseling under one roof. Medical Weight Loss Tampa does. We have a 4.9 star rating from 140 Google reviews. Patients lose real weight. One patient lost 45 pounds in 7 months.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Our new patient special is only $47. A full check in, your body reviewed closely, then a roadmap made just for you follows. For <InternalLink href="/the-wellness-journal">anyone hitting a weight loss plateau</InternalLink>, that is an extraordinary value. The <InternalLink href="/team">team page</InternalLink> shows you exactly who you are working with. Experienced medical professionals who have walked the health journey themselves.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Our surveys show that 87% of plateau patients who underwent a full medical evaluation found at least one correctable condition. The fix is out there. You just need the right people to find it. In Tampa Bay, that means <InternalLink href="/">Medical Weight Loss Tampa</InternalLink>.
             </p>
 
@@ -501,9 +505,9 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
               {statsThree.map((stat, i) => (
                 <div
                   key={i}
-                  className="border border-[#D6E4F0] bg-white px-5 py-6 text-center rounded-xl"
+                  className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl"
                 >
-                  <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+                  <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
                     {stat.value}
                   </div>
                   <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -513,11 +517,11 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
               ))}
             </section>
 
-            <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h3 className="text-2xl font-bold text-[#F0C040]">
+            <div className="mt-8 bg-[#1B4F8A] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#F0C040]">
                 Let’s Break Through Your Weight Loss Plateau
               </h3>
-              <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#EAF4FB]">
                 Medical supervision. Proven medications. Real results. Tampa’s top medical weight loss team is waiting for you.
               </p>
               <div className="mt-6">
@@ -538,8 +542,8 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
             <div key={faq.question} className="border-b border-[#D6E4F0] pb-6 last:border-b-0">
-              <h3 className="text-xl font-bold text-[#1F4E79]">{faq.question}</h3>
-              <p className="mt-2 text-[17px] leading-8 text-[#222] text-justify" style={{ textAlign: "justify" }}>
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">{faq.question}</h3>
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#222] text-left sm:text-justify">
                 {faq.answer}
               </p>
             </div>
@@ -548,7 +552,7 @@ export default function WeightLossPlateau12MedicalReasonsYoureStuck() {
       </section>
 
       {/* Disclaimer */}
-      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555] text-justify" style={{ textAlign: "justify" }}>
+      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-xs sm:text-sm leading-7 text-[#555] text-left sm:text-justify">
         <strong className="text-gray-800">Disclaimer: </strong>
         This article provides general information and does not constitute medical advice. Please contact Medical Weight Loss Tampa for a personalized diagnosis and treatment.
       </p>

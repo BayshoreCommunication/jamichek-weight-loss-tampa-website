@@ -281,7 +281,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
 
       {/* Intro paragraph */}
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p className="text-justify italic" style={{ textAlign: "justify" }}>
+        <p className="text-left sm:text-justify italic">
           Non-invasive festoon treatments use radiofrequency energy and a good
           old-fashioned skin tightening approach to shrink down those puffy
           malar mounds. Now, it’s not going to completely erase a real bad Stage
@@ -296,11 +296,11 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
         <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Points
         </h2>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {keyPoints.map((point, index) => (
             <li key={index} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span className="text-justify" style={{ textAlign: "justify" }}>
+              <span className="text-left sm:text-justify">
                 {point}
               </span>
             </li>
@@ -313,9 +313,9 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
         {stats.map((stat, i) => (
           <div
             key={i}
-            className="border border-[#D6E4F0] bg-white px-5 py-6 text-center rounded-xl flex flex-col justify-center"
+            className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl flex flex-col justify-center"
           >
-            <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+            <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
               {stat.value}
             </div>
             <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -335,7 +335,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             What Exactly Are Festoons and Malar Mounds?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               A festoon is not a tired eye bag. It is a chronic pocket of fluid
               and lax tissue that pools in the prezygomatic space, the shelf of
               skin sitting right on top of the cheekbone.{" "}
@@ -347,14 +347,14 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               tissue localized to the infraorbital and malar regions, distinct
               from garden-variety under-eye puffiness.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Malar mounds are the congenital cousins. Same location, same look,
               different origin story. Genetics builds them early. Sun, gravity,
               and fluid retention build festoons later. Either way, the fix has
               to address structure, not just skin surface. That is where creams
               and cold compresses hit a wall fast.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               An oculoplastic practice up in Hartford points out that people
               confuse festoons with malar bags most of the time. The pros mix
               words up, too. Well, the right diagnosis matters a whole lot
@@ -363,18 +363,18 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             </p>
 
             {/* CTA Box 1 */}
-            <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h2 className="text-2xl font-bold text-[#F0C040]">
+            <div className="mt-8 bg-[#1B4F8A] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#F0C040]">
                 Not Sure If It&apos;s a Festoon or Just Puffiness?
               </h2>
-              <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#EAF4FB]">
                 Book a consultation at Medical Weight Loss Tampa and get a real
                 answer, not a guess.
               </p>
               <div className="mt-6">
                 <ExternalLink
                   href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
-                  className="inline-block bg-[#F0C040] text-[#1B4F8A] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-white hover:text-[#1B4F8A] no-underline"
+                  className="inline-block bg-[#F0C040] text-[#1B4F8A] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-white hover:text-[#1B4F8A] no-underline text-sm sm:text-base max-w-full"
                 >
                   &gt;&gt; Claim Your $47 Consultation &lt;&lt;
                 </ExternalLink>
@@ -389,31 +389,31 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             Why Do Festoons Get Worse in Florida?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Heat swells tissue. Salt air and sun accelerate collagen
               breakdown. Humidity keeps skin damp and slack for months at a
               stretch. Tampa Bay checks every box that makes malar mounds
               progress faster than they would in a drier, cooler climate.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Most of our surveys show that folks all around the Tampa Bay area
               notice real flare-ups after a long weekend out on the boat, beach
               trips, or even just driving home from work with the windows rolled
               down. That salt air and UV damage don’t take a vacation.
             </p>
             <ul className="space-y-3 pl-5 list-disc">
-              <li className="text-justify" style={{ textAlign: "justify" }}>
+              <li className="text-left sm:text-justify">
                 <strong className="text-[#1F4E79]">
                   Year-round sunshine
                 </strong>{" "}
                 speeds up the loss of collagen and elastin that holds everything
                 together.
               </li>
-              <li className="text-justify" style={{ textAlign: "justify" }}>
+              <li className="text-left sm:text-justify">
                 <strong className="text-[#1F4E79]">High humidity</strong> makes
                 your body hold onto fluid right in that malar fat pad.
               </li>
-              <li className="text-justify" style={{ textAlign: "justify" }}>
+              <li className="text-left sm:text-justify">
                 <strong className="text-[#1F4E79]">Living near the coast</strong>{" "}
                 means a bit more salt in the air and the diet, which makes that
                 swelling around the eyes look worse.
@@ -428,7 +428,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             What Non-Surgical Options Can Shrink Your Malar Mounds?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Radiofrequency is sitting at the very top of the list for a good
               reason. A 2024 study published in{" "}
               <ExternalLink href="https://www.mdpi.com/journal/bioengineering">
@@ -438,7 +438,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               firmness in the cheek increased at four weeks and kept improving
               through 24 weeks. That is measured tissue change.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Microneedle RF, specifically, has periorbital data behind it. A
               study in{" "}
               <ExternalLink href="https://pmc.ncbi.nlm.nih.gov/">
@@ -456,8 +456,8 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               <div className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
                 Festoon Severity and What Responds to RF
               </div>
-              <div className="p-6 space-y-4">
-                <div className="grid gap-4 md:grid-cols-3">
+              <div className="p-4 sm:p-6 space-y-4">
+                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                   {festoonStages.map((stageItem) => (
                     <div
                       key={stageItem.stage}
@@ -476,7 +476,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
                   ))}
                 </div>
 
-                <div className="mt-6 border-t border-[#D6E4F0] pt-4 text-[17px] leading-8 text-[#1A526F]">
+                <div className="mt-6 border-t border-[#D6E4F0] pt-4 text-base sm:text-[17px] leading-8 text-[#1A526F]">
                   This is the exact category{" "}
                   <InternalLink href="/medical-weight-loss">
                     Medical Weight Loss Tampa
@@ -502,7 +502,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             When Does a Festoon Need Surgery Instead?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Severity is the deciding factor, not preference. A retrospective
               review published on{" "}
               <ExternalLink href="https://pubmed.ncbi.nlm.nih.gov/">
@@ -514,14 +514,14 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               yield unsatisfactory results once a festoon reaches that
               advanced, overhanging stage.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               That is the honest line. RF and microneedling own the
               mild-to-moderate lane. Direct excision and midface lift procedures
               own the severe lane. Anyone promising surgical-grade results from
               a cream or a single laser pass in that advanced stage is selling a
               story, not a treatment.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Most of the festoon cases we see at our Tampa clinic are Stage 1 or
               Stage 2. Patients wait years thinking nothing short of surgery
               will help, when a series of radiofrequency sessions gets them
@@ -529,7 +529,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             </p>
 
             {/* Doctor Quote Box */}
-            <div className="mt-8 border-l-[8px] border-[#0d7a8a] bg-[#f0f7ff] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#0d7a8a] bg-[#f0f7ff] px-4 sm:px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#0d7a8a] italic font-medium">
                 “Most of the festoon cases we see at our Tampa clinic are Stage
                 1 or Stage 2. Patients wait years thinking nothing short of
@@ -550,13 +550,13 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             Will Filler or Botox Fix a Malar Mound?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               The short answer is usually not and sometimes it completely
               backfires on you. This is one of the most common and most expensive
               mistakes people make before they ever get a real diagnosis.
             </p>
             <ol className="space-y-4 pl-5 list-decimal">
-              <li className="text-justify" style={{ textAlign: "justify" }}>
+              <li className="text-left sm:text-justify">
                 <strong className="text-[#1F4E79]">
                   Hyaluronic acid filler loves water.
                 </strong>{" "}
@@ -570,7 +570,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
                 filler with hyaluronidase before any other treatment can even
                 begin.
               </li>
-              <li className="text-justify" style={{ textAlign: "justify" }}>
+              <li className="text-left sm:text-justify">
                 <strong className="text-[#1F4E79]">
                   Botox has a narrower, more legitimate use here.
                 </strong>{" "}
@@ -583,7 +583,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             </ol>
 
             {/* Warning Callout */}
-            <div className="mt-8 border-l-[8px] border-[#D9534F] bg-[#FDF2F2] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#D9534F] bg-[#FDF2F2] px-4 sm:px-6 py-5 rounded-r-lg">
               <strong className="text-[#D9534F] text-lg block mb-1">
                 ⚠ Warning
               </strong>
@@ -603,7 +603,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             A Side-by-Side Comparison of Your Options
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Let us look at how the three real paths stack up so you can decide
               where to start your journey.
             </p>
@@ -612,11 +612,11 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             <div className="mt-6 overflow-x-auto border border-[#D6E4F0] rounded-xl">
               <table className="w-full text-left border-collapse min-w-[600px]">
                 <thead>
-                  <tr className="bg-[#1F4E79] text-white text-base font-bold">
-                    <th className="p-4 border-r border-white/20">Option</th>
-                    <th className="p-4 border-r border-white/20">Downtime</th>
-                    <th className="p-4 border-r border-white/20">Best For</th>
-                    <th className="p-4">Where Tampa Patients Get It</th>
+                  <tr className="bg-[#1F4E79] text-white text-sm sm:text-base font-bold">
+                    <th className="p-3 sm:p-4 border-r border-white/20">Option</th>
+                    <th className="p-3 sm:p-4 border-r border-white/20">Downtime</th>
+                    <th className="p-3 sm:p-4 border-r border-white/20">Best For</th>
+                    <th className="p-3 sm:p-4">Where Tampa Patients Get It</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -627,16 +627,16 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
                         index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"
                       }
                     >
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#1F4E79]">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#1F4E79] text-sm sm:text-base">
                         {row.option}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.downtime}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.bestFor}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] font-semibold text-[#1A526F]">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] font-semibold text-[#1A526F] text-sm sm:text-base">
                         {row.provider}
                       </td>
                     </tr>
@@ -653,7 +653,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             What Is the Cost for This Treatment Around Tampa?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Pricing for radiofrequency skin tightening down here usually runs
               on a per-session basis. Most folks end up booking a small series
               rather than just a single visit if they want results that last.
@@ -661,7 +661,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               provider, not some trick to get more money out of you. The thing
               that really changes is who is actually operating the machine.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Look for a provider under medical direction, not a spa technician
               working off a weekend certification.{" "}
               <InternalLink href="/medical-weight-loss">
@@ -681,7 +681,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               combination, device plus oversight plus aftercare, is what
               separates a real result from a temporary glow.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               If you look at the wider research, like an overview from Orange
               County Plastic Surgery, they point to a 2026 clinical trial showing
               that monopolar radiofrequency hits all the right marks for safety
@@ -691,11 +691,11 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
             </p>
 
             {/* CTA Box 2 */}
-            <div className="mt-8 bg-[#1B4F8A] px-6 py-8 text-center text-white rounded-xl">
-              <h2 className="text-2xl font-bold text-[#F0C040]">
+            <div className="mt-8 bg-[#1B4F8A] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#F0C040]">
                 Ready to Address Your Malar Mounds the Right Way?
               </h2>
-              <p className="mt-2 text-[17px] leading-8 text-[#EAF4FB]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#EAF4FB]">
                 Medical Weight Loss Tampa offers physician-guided Evolve Tite
                 treatment at our Ehrlich Road clinic. New patients start at only
                 $47.
@@ -703,7 +703,7 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               <div className="mt-6">
                 <ExternalLink
                   href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
-                  className="inline-block bg-[#F0C040] text-[#1B4F8A] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-white hover:text-[#1B4F8A] no-underline"
+                  className="inline-block bg-[#F0C040] text-[#1B4F8A] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-white hover:text-[#1B4F8A] no-underline text-sm sm:text-base max-w-full"
                 >
                   &gt;&gt; Book Your Tampa Consultation Now &lt;&lt;
                 </ExternalLink>
@@ -724,13 +724,10 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
               key={faq.question}
               className="border-b border-[#D6E4F0] pb-6 last:border-b-0"
             >
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 {faq.question}
               </h3>
-              <p
-                className="mt-2 text-[17px] leading-8 text-[#222] text-justify"
-                style={{ textAlign: "justify" }}
-              >
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#222] text-left sm:text-justify">
                 {faq.answer}
               </p>
             </div>
@@ -739,8 +736,8 @@ export default function HowTampaPatientsAreClearingMalarMoundsWithoutSurgery() {
       </section>
 
       {/* Disclaimer & Location */}
-      <div className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555] space-y-2">
-        <p className="text-justify" style={{ textAlign: "justify" }}>
+      <div className="mt-8 border-t border-[#CCCCCC] pt-5 text-xs sm:text-sm leading-7 text-[#555] space-y-2">
+        <p className="text-left sm:text-justify">
           <strong className="text-gray-800">Disclaimer: </strong>
           This article is provided for general information only and does not
           constitute medical advice. Individual results from any cosmetic

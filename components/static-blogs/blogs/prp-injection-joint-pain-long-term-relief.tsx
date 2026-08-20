@@ -473,90 +473,47 @@ export default function PRPInjectionJointPain() {
             author="Medical Weight Loss Tampa Clinical Team"
           />
 
-          <section className="mt-8 overflow-hidden border border-[#D6E4F0] rounded-xl">
-            <div className="bg-[#1F4E79] px-5 py-4">
-              <h3 className="text-xl font-bold leading-snug text-white">
+          <section className="mt-8 overflow-x-auto border border-[#D6E4F0] rounded-xl">
+            <div className="bg-[#1F4E79] px-4 sm:px-5 py-4">
+              <h3 className="text-lg sm:text-xl font-bold leading-snug text-white">
                 Treatment Comparison: PRP, Cortisone, and Surgery
               </h3>
-              <p className="mt-2 text-sm text-[#D6E4F0]">
+              <p className="mt-1 text-xs sm:text-sm text-[#D6E4F0]">
                 A detailed breakdown of key differences in mechanism, recovery, and risks.
               </p>
             </div>
 
-            <div className="hidden md:grid md:grid-cols-[1.2fr_1.2fr_1.2fr_1.2fr]">
-              {["Factor", "PRP Injection", "Cortisone Shot", "Joint Surgery"].map(
-                (heading) => (
-                  <div
-                    key={heading}
-                    className="border-b border-r border-white/30 bg-[#2E75B6] px-4 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white last:border-r-0"
+            <table className="w-full text-left border-collapse min-w-[550px]">
+              <thead>
+                <tr className="bg-[#1A526F] text-xs sm:text-sm font-bold text-white">
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">Factor</th>
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">PRP Injection</th>
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">Cortisone Shot</th>
+                  <th className="px-3 sm:px-4 py-3">Joint Surgery</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonRows.map((row, index) => (
+                  <tr
+                    key={row.factor}
+                    className={index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"}
                   >
-                    {heading}
-                  </div>
-                ),
-              )}
-              {comparisonRows.map((row, index) => (
-                <div
-                  key={row.factor}
-                  className={`contents ${
-                    index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                  }`}
-                >
-                  <div
-                    className={`border-b border-r border-[#D6E4F0] px-4 py-4 font-bold text-[#1F4E79] ${
-                      index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                    }`}
-                  >
-                    {row.factor}
-                  </div>
-                  <div
-                    className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm font-semibold text-[#1F4E79] leading-6 ${
-                      index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                    }`}
-                  >
-                    {row.prp}
-                  </div>
-                  <div
-                    className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                      index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                    }`}
-                  >
-                    {row.cortisone}
-                  </div>
-                  <div
-                    className={`border-b border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                      index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                    }`}
-                  >
-                    {row.surgery}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="space-y-4 p-4 md:hidden">
-              {comparisonRows.map((row) => (
-                <div
-                  key={row.factor}
-                  className="border border-[#D6E4F0] bg-white p-4 rounded-lg"
-                >
-                  <h4 className="font-bold text-[#1F4E79]">{row.factor}</h4>
-                  <dl className="mt-2 space-y-1 text-sm leading-6">
-                    <div className="flex justify-between">
-                      <dt className="font-bold text-[#2E75B6]">PRP Injection</dt>
-                      <dd className="font-semibold text-[#1F4E79]">{row.prp}</dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt className="text-[#595959]">Cortisone Shot</dt>
-                      <dd>{row.cortisone}</dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt className="text-[#595959]">Joint Surgery</dt>
-                      <dd>{row.surgery}</dd>
-                    </div>
-                  </dl>
-                </div>
-              ))}
-            </div>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#1F4E79] text-xs sm:text-sm">
+                      {row.factor}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#2E75B6] text-xs sm:text-sm">
+                      {row.prp}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                      {row.cortisone}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                      {row.surgery}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </section>
 
           <div className="mt-8 border border-[#D6E4F0] bg-[#F8FBFE] p-6 rounded-xl">

@@ -352,95 +352,48 @@ export default function TheScienceBehindRegenerativeMedicineTherapy() {
           </p>
         </div>
 
-        <div className="mt-7 overflow-hidden border border-[#D6E4F0]">
+        <div className="mt-7 overflow-hidden border border-[#D6E4F0] rounded-xl">
           <div className="bg-[#1F4E79] px-5 py-4">
-            <h2 className="text-2xl font-bold leading-snug text-white">
+            <h2 className="text-xl sm:text-2xl font-bold leading-snug text-white">
               Regenerative Therapy Comparison
             </h2>
-            <p className="mt-2 text-base text-[#D6E4F0]">
+            <p className="mt-1 text-xs sm:text-sm text-[#D6E4F0]">
               A side-by-side look at source, mechanism, and common use cases.
             </p>
           </div>
 
-          <div className="hidden md:grid md:grid-cols-[1.1fr_1.1fr_1.5fr_1.5fr]">
-            {[
-              "Therapy",
-              "Biological Source",
-              "Primary Mechanism",
-              "Common Use Cases",
-            ].map((heading) => (
-              <div
-                key={heading}
-                className="border-b border-r border-white/30 bg-[#2E75B6] px-4 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white last:border-r-0"
-              >
-                {heading}
-              </div>
-            ))}
-            {therapyTypes.map((row, index) => (
-              <div key={row.therapy} className="contents">
-                <div
-                  className={`border-b border-r border-[#D6E4F0] px-4 py-4 font-bold text-[#1F4E79] ${
-                    index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                  }`}
-                >
-                  {row.therapy}
-                </div>
-                <div
-                  className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                    index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                  }`}
-                >
-                  {row.source}
-                </div>
-                <div
-                  className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                    index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                  }`}
-                >
-                  {row.mechanism}
-                </div>
-                <div
-                  className={`border-b border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                    index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                  }`}
-                >
-                  {row.useCases}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="space-y-4 p-4 md:hidden">
-            {therapyTypes.map((row) => (
-              <div
-                key={row.therapy}
-                className="border border-[#D6E4F0] bg-white p-4"
-              >
-                <h3 className="text-lg font-bold text-[#1F4E79]">
-                  {row.therapy}
-                </h3>
-                <dl className="mt-3 space-y-2 text-sm leading-6">
-                  <div>
-                    <dt className="font-bold text-[#2E75B6]">
-                      Biological Source
-                    </dt>
-                    <dd>{row.source}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-bold text-[#2E75B6]">
-                      Primary Mechanism
-                    </dt>
-                    <dd>{row.mechanism}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-bold text-[#2E75B6]">
-                      Common Use Cases
-                    </dt>
-                    <dd>{row.useCases}</dd>
-                  </div>
-                </dl>
-              </div>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse min-w-[550px]">
+              <thead>
+                <tr className="bg-[#1A526F] text-xs sm:text-sm font-bold text-white">
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">Therapy</th>
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">Biological Source</th>
+                  <th className="border-r border-white/20 px-3 sm:px-4 py-3">Primary Mechanism</th>
+                  <th className="px-3 sm:px-4 py-3">Common Use Cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                {therapyTypes.map((row, index) => (
+                  <tr
+                    key={row.therapy}
+                    className={index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"}
+                  >
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#1F4E79] text-xs sm:text-sm">
+                      {row.therapy}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                      {row.source}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                      {row.mechanism}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-[#1A526F] font-semibold text-xs sm:text-sm">
+                      {row.useCases}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
 

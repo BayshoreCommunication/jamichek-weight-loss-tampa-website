@@ -603,53 +603,39 @@ export default function MusclePainReliefForActiveAdults() {
         </section>
       </div>
 
-      <section className="mt-12 bg-[#1F4E79] px-6 py-8 text-center text-white md:px-8">
-        <h2 className="text-2xl font-bold leading-snug">
+      <section className="mt-12 bg-[#1F4E79] px-5 sm:px-6 py-8 text-center text-white md:px-8 rounded-xl">
+        <h2 className="text-xl sm:text-2xl font-bold leading-snug">
           Pain is Slowing You Down in Tampa?
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-[17px] leading-8 text-white/95">
+        <p className="mx-auto mt-4 max-w-3xl text-base sm:text-[17px] leading-8 text-white/95 text-left sm:text-justify">
           Stop guessing. Our clinical team provides personalized assessments,
           regenerative therapy, and chronic pain management designed specifically
           for active adults.
         </p>
-        <p className="mt-4 text-base font-bold text-[#D6E4F0]">
+        <p className="mt-4 text-sm sm:text-base font-bold text-[#D6E4F0]">
           Call 813.269.7546 | 5111 Ehrlich Rd. Ste 128, Tampa, FL 33624
         </p>
       </section>
 
+      {/* Frequently Asked Questions */}
       <section className="mt-12">
         <h2 className="border-t-2 border-[#2E75B6] pt-5 text-2xl font-bold text-[#1F4E79]">
           Frequently Asked Questions
         </h2>
-        <p className="mt-2 text-base font-semibold text-[#595959]">
-          People Also Ask About Muscle Pain Relief for Active Adults
-        </p>
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
-            <div key={faq.question}>
-              <h3 className="text-xl font-bold text-[#1F4E79]">
-                {faq.question}
-              </h3>
-              <p className="mt-2 text-[17px] leading-8">{faq.answer}</p>
+            <div key={faq.question} className="border-b border-[#D6E4F0] pb-6 last:border-b-0">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">{faq.question}</h3>
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-left sm:text-justify">{faq.answer}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="mt-10 border border-[#D6E4F0] bg-[#F8FBFE] px-5 py-5 text-sm leading-7 text-[#1F4E79]">
-        <p className="font-bold">
-          Medical Weight Loss Tampa | Recovery, Regenerative Therapy & Wellness
-        </p>
-        <p>Serving Active Adults Across Tampa, FL</p>
-        <p>813 269 7546 | Call Today for a Personalized Consultation</p>
-        <p>Address: 5111 Ehrlich Rd. Ste 128, Tampa, FL 33624</p>
-        <p>Website: www.medicalweightlosstampa.com</p>
-      </section>
-
-      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555]">
-        Disclaimer: This article offers general information and is not a
-        replacement for professional medical advice. For personalized health
-        assessments and weight loss plans, consult Medical Weight Loss Tampa.
+      {/* Disclaimer */}
+      <p className="mt-8 border-t border-[#CCCCCC] pt-5 text-xs sm:text-sm leading-7 text-[#555] text-left sm:text-justify">
+        <strong className="text-gray-800">Disclaimer: </strong>
+        This article provides general information and is not a substitute for professional medical advice. Consult Medical Weight Loss Tampa for personalized evaluations and treatment plans.
       </p>
     </article>
   );

@@ -311,10 +311,10 @@ const page = async ({ params }: { params: { slug: string } }) => {
         ]}
       />
 
-      <section className="px-8 pt-12 pb-8 md:pt-16 md:pb-16">
-        <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">
+      <section className="px-4 sm:px-6 md:px-8 pt-8 pb-8 md:pt-16 md:pb-16">
+        <div className="grid gap-8 lg:gap-12 mb-10 grid-cols-1 lg:grid-cols-3 max-w-[1640px] mx-auto">
           {shouldRenderStatic && staticBlog && StaticBlogContent ? (
-            <div className="col-span-2">
+            <div className="lg:col-span-2">
               <figure>
                 <div className="relative aspect-[1000/510] w-full overflow-hidden rounded-2xl">
                   {/* Static blog detail page feature image comes from the matching static blog meta image. */}
@@ -349,14 +349,14 @@ const page = async ({ params }: { params: { slug: string } }) => {
               <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                 {postDate(staticBlog.meta.publishedAt)}
               </p>
-              <h1 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.80] tracking-normal text-left text-[#1B2639] my-8">
+              <h1 className="mb-0 md:mb-4 text-2xl sm:text-3xl md:text-4xl font-bold !leading-[1.4] md:!leading-[1.80] tracking-normal text-left text-[#1B2639] my-6 md:my-8">
                 {staticBlog.meta.title}
               </h1>
               <StaticBlogContent />
             </div>
           ) : (
             blogDetails?.map((blogs: any, index: number) => (
-              <div key={index} className="col-span-2">
+              <div key={index} className="lg:col-span-2">
                 <div className="flex items-center justify-between">
                   <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                     {blogs?.category || "Blog Post"}
@@ -374,7 +374,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                 <p className="text-[.9rem] md:text-[1rem] text-black text-left italic mt-4 ">
                   {postDate(blogs?.createdAt)}
                 </p>
-                <h1 className="mb-0 md:mb-4 text-2xl md:text-4xl font-bold !leading-[1.50] tracking-normal text-left text-[#1B2639] my-8">
+                <h1 className="mb-0 md:mb-4 text-2xl sm:text-3xl md:text-4xl font-bold !leading-[1.4] md:!leading-[1.50] tracking-normal text-left text-[#1B2639] my-6 md:my-8">
                   {blogs?.title}
                 </h1>
                 <div className="mt-2 text-md">{parse(blogs?.body)}</div>
@@ -382,13 +382,13 @@ const page = async ({ params }: { params: { slug: string } }) => {
             ))
           )}
 
-          <div className="col-span-2 sm:col-span-1 h-[100%] md:h-[1000px] overflow-y-scroll overflow-x-hidden  p-3 rounded-lg">
-            <h2 className="font-medium text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
+          <div className="lg:col-span-1 h-auto lg:h-[1000px] lg:overflow-y-auto overflow-x-hidden p-3 rounded-lg">
+            <h2 className="font-medium text-2xl sm:text-3xl md:text-4xl text-black border-b-2 border-gray-500 pb-4 mb-6">
               Recent Blogs
             </h2>
             {recentBlogs?.map((blogs: any, index: number) => (
               <Link
-                className="flex items-start gap-2 ps-3 py-3 drop-shadow-lg bg-white my-3"
+                className="flex items-start gap-3 p-3 drop-shadow-md hover:drop-shadow-lg bg-white my-3 rounded-lg transition-all"
                 key={index}
                 href={`/the-wellness-journal/${blogs?.slug}`}
               >
@@ -402,7 +402,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                     blogs?.altText ||
                     blogs?.title
                   }
-                  className="h-[67px] w-[100px] object-cover"
+                  className="h-[67px] w-[100px] object-cover rounded shrink-0"
                 />
                 <div>
                   <div className="text-md font-bold text-black text-left line-clamp-2">

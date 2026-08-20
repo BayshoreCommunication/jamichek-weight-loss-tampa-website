@@ -346,7 +346,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
 
       {/* Intro paragraph */}
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p className="text-justify italic" style={{ textAlign: "justify" }}>
+        <p className="text-left sm:text-justify italic">
           Belly fat resists diets because visceral fat acts like a hormone gland.
           Not stored energy. It pumps out cortisol and inflammatory signals other
           fat never touches. Fewer fat burning receptors live in the belly too.
@@ -360,11 +360,11 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
         <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           KEY POINTS
         </h2>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {keyPoints.map((point, index) => (
             <li key={index} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span className="text-justify" style={{ textAlign: "justify" }}>
+              <span className="text-left sm:text-justify">
                 {point}
               </span>
             </li>
@@ -374,7 +374,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
 
       {/* Paragraph after Key Points */}
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p className="text-justify" style={{ textAlign: "justify" }}>
+        <p className="text-left sm:text-justify">
           Tampa summers do not make this easier. Humidity. Long work hours.
           Restaurant temptation everywhere. Hillsborough County patients tell us
           the same thing constantly. Arms and legs slim down first. The stomach
@@ -397,28 +397,27 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             Why Does Stubborn Fat Sit Around The Waist?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Visceral fat resists loss because it acts as endocrine tissue. It
               releases hormones that promote storage and block breakdown. Most
               patients never hear this in a typical gym consult.
             </p>
 
-            <h3 className="text-xl font-bold text-[#1F4E79] mt-6">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79] mt-6">
               The short version
             </h3>
             <ul className="space-y-3 pl-5 list-disc">
               {shortVersionPoints.map((point, index) => (
                 <li
                   key={index}
-                  className="text-justify"
-                  style={{ textAlign: "justify" }}
+                  className="text-left sm:text-justify"
                 >
                   {point}
                 </li>
               ))}
             </ul>
 
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               <ExternalLink href="https://www.health.harvard.edu/staying-healthy/abdominal-fat-and-what-to-do-about-it">
                 Harvard Health Publishing
               </ExternalLink>{" "}
@@ -428,13 +427,13 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </p>
 
             {/* Stats Grid */}
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2">
               {stats.map((stat, i) => (
                 <div
                   key={i}
-                  className="border border-[#D6E4F0] bg-[#1F4E79] text-white px-5 py-6 text-center rounded-xl flex flex-col justify-center"
+                  className="border border-[#D6E4F0] bg-[#1F4E79] text-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl flex flex-col justify-center"
                 >
-                  <div className="text-4xl font-bold leading-none text-white">
+                  <div className="text-3xl sm:text-4xl font-bold leading-none text-white">
                     {stat.value}
                   </div>
                   <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#D6E4F0]">
@@ -452,12 +451,12 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             What Role Does Cortisol Play In Belly Fat Storage?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Chronic stress raises cortisol. Elevated cortisol tells the body to
               store waist fat. It happens slowly, without any obvious trigger most
               days.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Persistent high pressure prevents full physical recovery. That
               biological loop hardens stubborn midsection weight, rendering basic
               calorie restriction far less effective over time. Targeted
@@ -470,14 +469,13 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               {cortisolPoints.map((point, index) => (
                 <li
                   key={index}
-                  className="text-justify"
-                  style={{ textAlign: "justify" }}
+                  className="text-left sm:text-justify"
                 >
                   {point}
                 </li>
               ))}
             </ul>
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               <ExternalLink href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4214881/">
                 National Institutes of Health review
               </ExternalLink>{" "}
@@ -486,7 +484,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </p>
 
             {/* Quote 1: Waist circumference */}
-            <div className="mt-8 border-l-[8px] border-[#6b4e9e] bg-[#f0ebf7] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#6b4e9e] bg-[#f0ebf7] px-4 sm:px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#3a3a3a] italic font-medium">
                 “Waist circumference tells us more about metabolic risk than the
                 number on a scale ever will.”
@@ -505,7 +503,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             Does Age Make This Type Of Fat Worse?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Yes. Aging activates stem cells that build fresh fat cells. Not just
               enlarge old ones. Most patients assume it is only about calories. It
               rarely is past 40. This change happens because aging stem cells,
@@ -513,7 +511,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               signals through pathways like LIFR, actively driving new fat cell
               creation deep inside the abdomen rather than simple fat storage.
             </p>
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               At the same time, declining anabolic hormones reduce baseline muscle
               mass, lowering your resting metabolic rate and compounding the
               effect. Because visceral fat cells host a higher density of
@@ -521,22 +519,21 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               new storage straight to the waistline.
             </p>
 
-            <h3 className="text-xl font-bold text-[#1F4E79] mt-6">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79] mt-6">
               What changes after 40
             </h3>
             <ul className="space-y-3 pl-5 list-disc">
               {changesAfter40.map((point, index) => (
                 <li
                   key={index}
-                  className="text-justify"
-                  style={{ textAlign: "justify" }}
+                  className="text-left sm:text-justify"
                 >
                   {point}
                 </li>
               ))}
             </ul>
 
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               Standard calorie restriction or intense cardio cannot override this
               underlying cellular mechanism, which is why sustainable progress
               requires targeted metabolic strategies aimed at hormonal balance
@@ -546,11 +543,11 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </p>
 
             {/* CTA Box 1 */}
-            <div className="mt-8 bg-[#0f6b5c] px-6 py-8 text-center text-white rounded-xl">
-              <h2 className="text-2xl font-bold text-white">
+            <div className="mt-8 bg-[#0f6b5c] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Tired Of Losing Weight Everywhere Except Your Stomach?
               </h2>
-              <p className="mt-2 text-[17px] leading-8 text-[#d8e8e4]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#d8e8e4]">
                 Medical Weight Loss Tampa builds a plan around your hormones. Not
                 just your calories. A $47 consultation includes a full assessment
                 and a personalized treatment path.
@@ -558,7 +555,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               <div className="mt-6">
                 <ExternalLink
                   href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
-                  className="inline-block bg-white text-[#0f6b5c] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-[#d8e8e4] no-underline"
+                  className="inline-block bg-white text-[#0f6b5c] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-[#d8e8e4] no-underline text-sm sm:text-base max-w-full"
                 >
                   Claim Your $47 New Patient Special &rarr;
                 </ExternalLink>
@@ -573,7 +570,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             How Does This Fat Compare To Other Fat Types?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Not all fat behaves the same way. Knowing the difference changes how
               you treat it. One category needs medicine, not just motivation.
             </p>
@@ -582,11 +579,11 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             <div className="mt-6 overflow-x-auto border border-[#D6E4F0] rounded-xl">
               <table className="w-full text-left border-collapse min-w-[600px]">
                 <thead>
-                  <tr className="bg-[#0a4a40] text-white text-base font-bold">
-                    <th className="p-4 border-r border-white/20">Fat Type</th>
-                    <th className="p-4 border-r border-white/20">Location</th>
-                    <th className="p-4 border-r border-white/20">Behavior</th>
-                    <th className="p-4">Response</th>
+                  <tr className="bg-[#0a4a40] text-white text-sm sm:text-base font-bold">
+                    <th className="p-3 sm:p-4 border-r border-white/20">Fat Type</th>
+                    <th className="p-3 sm:p-4 border-r border-white/20">Location</th>
+                    <th className="p-3 sm:p-4 border-r border-white/20">Behavior</th>
+                    <th className="p-3 sm:p-4">Response</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -597,16 +594,16 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
                         index % 2 === 0 ? "bg-[#e8f4f1]" : "bg-white"
                       }
                     >
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#0a4a40]">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#0a4a40] text-sm sm:text-base">
                         {row.fatType}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.location}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.behavior}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.response}
                       </td>
                     </tr>
@@ -623,27 +620,26 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             What Actually Works Against A Stubborn Midsection?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               A combined approach works best. Pair medical support with strength
               training and sleep repair.
             </p>
 
-            <h3 className="text-xl font-bold text-[#1F4E79] mt-6">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79] mt-6">
               What the evidence supports
             </h3>
             <ul className="space-y-3 pl-5 list-disc">
               {evidencePoints.map((point, index) => (
                 <li
                   key={index}
-                  className="text-justify"
-                  style={{ textAlign: "justify" }}
+                  className="text-left sm:text-justify"
                 >
                   {point}
                 </li>
               ))}
             </ul>
 
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               <ExternalLink href="https://www.giftfromwithin.org/menopause/">
                 2025 SURMOUNT postmenopausal analysis
               </ExternalLink>{" "}
@@ -653,7 +649,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </p>
 
             {/* Doctor Quote Box */}
-            <div className="mt-8 border-l-[8px] border-[#0a4a40] bg-[#e8f4f1] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#0a4a40] bg-[#e8f4f1] px-4 sm:px-6 py-5 rounded-r-lg">
               <blockquote className="text-[17px] leading-8 text-[#3a3a3a] italic font-medium">
                 “We stopped telling patients to just eat less and move more years
                 ago. The ones who struggle most almost always have a hormonal
@@ -673,7 +669,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             What Results Are Tampa Bay Patients Actually Seeing?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p className="text-justify" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify">
               Patients on a supervised, hormone aware program see changes within
               months. Not years.
             </p>
@@ -682,12 +678,12 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             <div className="mt-6 overflow-x-auto border border-[#D6E4F0] rounded-xl">
               <table className="w-full text-left border-collapse min-w-[500px]">
                 <thead>
-                  <tr className="bg-[#0a4a40] text-white text-base font-bold">
-                    <th className="p-4 border-r border-white/20">Measure</th>
-                    <th className="p-4 border-r border-white/20 bg-[#c0392b]">
+                  <tr className="bg-[#0a4a40] text-white text-sm sm:text-base font-bold">
+                    <th className="p-3 sm:p-4 border-r border-white/20">Measure</th>
+                    <th className="p-3 sm:p-4 border-r border-white/20 bg-[#c0392b]">
                       Before
                     </th>
-                    <th className="p-4 bg-[#0f6b5c]">After</th>
+                    <th className="p-3 sm:p-4 bg-[#0f6b5c]">After</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -698,13 +694,13 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
                         index % 2 === 0 ? "bg-[#ffffff]" : "bg-[#e8f4f1]"
                       }
                     >
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#3a3a3a]">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] font-semibold text-[#3a3a3a] text-sm sm:text-base">
                         {row.measure}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] border-r border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.before}
                       </td>
-                      <td className="p-4 border-t border-[#D6E4F0] text-gray-700">
+                      <td className="p-3 sm:p-4 border-t border-[#D6E4F0] text-gray-700 text-sm sm:text-base">
                         {row.after}
                       </td>
                     </tr>
@@ -717,7 +713,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               program.
             </p>
 
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               Our internal patient surveys show waist size is what patients care
               about most. Ahead of scale weight, easily. Roughly seven in ten name
               a stubborn stomach as their top concern. Not overall weight. That
@@ -733,7 +729,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               progress than standard scale weight alone.
             </p>
 
-            <p className="text-justify mt-4" style={{ textAlign: "justify" }}>
+            <p className="text-left sm:text-justify mt-4">
               <InternalLink href="/our-services">
                 Tirzepatide and Retatrutide therapy
               </InternalLink>{" "}
@@ -750,11 +746,11 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </p>
 
             {/* Warning Callout */}
-            <div className="mt-8 border-l-[8px] border-[#c0392b] bg-[#fbeaea] px-6 py-5 rounded-r-lg">
+            <div className="mt-8 border-l-[8px] border-[#c0392b] bg-[#fbeaea] px-4 sm:px-6 py-5 rounded-r-lg">
               <strong className="text-[#c0392b] text-lg block mb-1">
                 A Word Of Caution
               </strong>
-              <p className="text-[17px] leading-8 text-[#3a3a3a]">
+              <p className="text-[17px] leading-8 text-[#3a3a3a] text-left sm:text-justify">
                 Crash diets and extreme fasting can raise cortisol further. That
                 worsens storage over time. Rapid, unsupervised weight loss affects
                 blood pressure too. Always lose weight under medical supervision.
@@ -763,11 +759,11 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
             </div>
 
             {/* CTA Box 2 */}
-            <div className="mt-8 bg-[#0f6b5c] px-6 py-8 text-center text-white rounded-xl">
-              <h2 className="text-2xl font-bold text-white">
+            <div className="mt-8 bg-[#0f6b5c] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Ready To Target The Fat That Diet And Exercise Left Behind?
               </h2>
-              <p className="mt-2 text-[17px] leading-8 text-[#d8e8e4]">
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#d8e8e4]">
                 Book your $47 consultation with Medical Weight Loss Tampa today.
                 Serving Tampa, Carrollwood, and Citrus Park at 5111 Ehrlich Rd,
                 Tampa, FL.
@@ -775,7 +771,7 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               <div className="mt-6">
                 <ExternalLink
                   href="https://portal.sked.life/new-patient/time?key=1b956e69d5481378e8b8687477eab43daee76cd6dfbd65f6b9f53c4f13a25331&from="
-                  className="inline-block bg-white text-[#0f6b5c] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-[#d8e8e4] no-underline"
+                  className="inline-block bg-white text-[#0f6b5c] px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:bg-[#d8e8e4] no-underline text-sm sm:text-base max-w-full"
                 >
                   Schedule Your Visit &rarr;
                 </ExternalLink>
@@ -796,13 +792,10 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
               key={faq.question}
               className="border-b border-[#D6E4F0] pb-6 last:border-b-0"
             >
-              <h3 className="text-xl font-bold text-[#0a4a40]">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0a4a40]">
                 {faq.question}
               </h3>
-              <p
-                className="mt-2 text-[17px] leading-8 text-[#3a3a3a] text-justify"
-                style={{ textAlign: "justify" }}
-              >
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#3a3a3a] text-left sm:text-justify">
                 {faq.answer}
               </p>
             </div>
@@ -811,8 +804,8 @@ export default function WhyIsBellyFatHarderToLoseThanOtherFat() {
       </section>
 
       {/* Disclaimer & Location */}
-      <div className="mt-8 border-t border-[#CCCCCC] pt-5 text-sm leading-7 text-[#555] space-y-2">
-        <p className="text-justify" style={{ textAlign: "justify" }}>
+      <div className="mt-8 border-t border-[#CCCCCC] pt-5 text-xs sm:text-sm leading-7 text-[#555] space-y-2">
+        <p className="text-left sm:text-justify">
           <strong className="text-gray-800">Disclaimer: </strong>
           This article is for general education and is not a substitute for
           individualized medical advice. Speak with a licensed provider before

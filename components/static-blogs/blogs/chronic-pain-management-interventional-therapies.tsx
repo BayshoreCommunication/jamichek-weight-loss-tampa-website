@@ -163,11 +163,11 @@ export default function ChronicPainManagementInterventionalTherapies() {
         <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Main Takeaways
         </h2>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {takeaways.map((point) => (
             <li key={point} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span>{point}</span>
+              <span className="text-left sm:text-justify">{point}</span>
             </li>
           ))}
         </ul>
@@ -175,7 +175,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
 
       {/* Intro Part 2 */}
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p>
+        <p className="text-left sm:text-justify">
           Pain doesn’t always bleed. It doesn’t always show up on an X-ray. But it
           shows up every morning when you wake up stiff. It shows up at the
           dinner table when you snap at your spouse. It shows up in the grocery
@@ -183,7 +183,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
           pain and suffering. And in Florida personal injury law, it is very
           much compensable.
         </p>
-        <p>
+        <p className="text-left sm:text-justify">
           The challenge is proving something a jury cannot see. At Tripathi
           Vongsyprasom Law, P.A., Attorney Vongsyprasom knows exactly how to
           build that case. She spent years as staff counsel for GEICO. She knows
@@ -198,20 +198,20 @@ export default function ChronicPainManagementInterventionalTherapies() {
             What Is the Identity Theft of Chronic Pain After an Accident?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Before the accident, you were someone. A runner. A parent who
               coached Little League on Saturday mornings. A person who laughed
               easily. Chronic pain takes that person and slowly replaces them
               with someone you do not recognize.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               This is not dramatic language. This is science. The National
               Institutes of Health says chronic pain can alter the brain’s
               structure over time. It changes the way you process emotion. It
               shrinks the parts of the brain responsible for pleasure and
               decision-making.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               In a Florida personal injury case, proving pain and suffering
               means proving this stolen identity. You’re not the same person you
               used to be. That difference has a dollar value.
@@ -223,9 +223,9 @@ export default function ChronicPainManagementInterventionalTherapies() {
             {stats.map((stat) => (
               <div
                 key={stat.value}
-                className="border border-[#D6E4F0] bg-white px-5 py-6 text-center"
+                className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center"
               >
-                <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+                <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
                   {stat.value}
                 </div>
                 <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -245,20 +245,20 @@ export default function ChronicPainManagementInterventionalTherapies() {
             How Does Relationship Friction Count as Proof of Suffering?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Your marriage was fine before the crash. Now you sleep in separate
               rooms because you toss all night. You have canceled three family
               vacations. Your kids walk on eggshells around you. These are not
               personal failures. They are evidence.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Florida recognizes loss of consortium as a component of non-economic
               damages. Under Florida Statutes Section 768.21, your spouse can
               independently claim the loss of companionship, affection, and
               intimacy that your injury caused. This is powerful testimony in
               front of a jury.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Here is what Attorney Vongsyprasom presents in cases like these.
               First, a spouse’s sworn affidavit about daily life changes. Second,
               social media history showing an active person who became withdrawn.
@@ -272,18 +272,18 @@ export default function ChronicPainManagementInterventionalTherapies() {
             {relationshipPoints.map((point) => (
               <li key={point} className="flex gap-3">
                 <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-                <span>{point}</span>
+                <span className="text-left sm:text-justify">{point}</span>
               </li>
             ))}
           </ul>
 
           {/* CTA Box 1 */}
-          <div className="mt-8 bg-[#1F4E79] px-6 py-6 text-white text-center md:text-left md:flex md:items-center md:justify-between">
+          <div className="mt-8 bg-[#1F4E79] px-5 sm:px-6 py-6 text-white text-center md:text-left md:flex md:items-center md:justify-between">
             <div>
-              <h3 className="text-xl font-bold">
+              <h3 className="text-lg sm:text-xl font-bold">
                 Your Invisible Injuries Are Not Invisible to Us.
               </h3>
-              <p className="mt-2 text-sm text-[#D6E4F0]">
+              <p className="mt-2 text-xs sm:text-sm text-[#D6E4F0]">
                 Attorney Vongsyprasom fights for every Florida injury victim.
               </p>
             </div>
@@ -292,7 +292,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
                 href="https://tripvienlaw.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-block bg-[#2E75B6] hover:bg-[#1A526F] text-white px-6 py-3 font-bold transition-colors"
+                className="inline-block bg-[#2E75B6] hover:bg-[#1A526F] text-white px-5 sm:px-6 py-3 font-bold transition-colors text-sm sm:text-base max-w-full"
               >
                 Schedule Your Free Consultation
               </a>
@@ -306,19 +306,19 @@ export default function ChronicPainManagementInterventionalTherapies() {
             The Mental Loop Problem & Its Importance to a Jury
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Pain is physical. Yet the mental loop it creates is something else
               entirely. You wake up worried about the pain. That worry increases
               your pain. The increased pain worsens your anxiety. The anxiety
               makes sleep impossible. You wake up again. Same loop. Every day.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Clinicians call this the pain-anxiety-depression cycle. It is well
               documented in peer-reviewed pain management research and
               recognized by Florida courts as a legitimate component of suffering
               damages.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               To a jury in Polk County or Pinellas County, a person who cannot
               quiet their own mind is a person who is truly suffering. That
               resonates. Attorney Vongsyprasom pairs a licensed psychologist’s
@@ -335,12 +335,12 @@ export default function ChronicPainManagementInterventionalTherapies() {
             What Evidence Do Florida Courts Actually Accept for Invisible Injuries?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Florida judges and juries have specific expectations. This is where
               many injured people hurt their own cases. They come in with a
               medical record and think that is enough. It is not.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               The strongest personal injury cases in Florida use a layered
               evidence approach. Physical proof, psychological documentation,
               and human testimony all working together. Here is what that
@@ -349,33 +349,37 @@ export default function ChronicPainManagementInterventionalTherapies() {
           </div>
 
           {/* Evidence table grid */}
-          <div className="mt-6 overflow-hidden border border-[#D6E4F0]">
-            <div className="grid grid-cols-3 bg-[#1F4E79] text-base font-bold text-white">
-              <div className="border-r border-white/30 px-4 py-3">Evidence Type</div>
-              <div className="border-r border-white/30 px-4 py-3">What It Proves</div>
-              <div className="px-4 py-3">Florida Courts Accept?</div>
-            </div>
-            {evidenceTable.map((row, index) => (
-              <div
-                key={row.type}
-                className={`grid grid-cols-3 ${
-                  index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"
-                }`}
-              >
-                <div className="border-b border-[#D6E4F0] px-4 py-4 font-semibold text-[#1F4E79] md:border-r">
-                  {row.type}
-                </div>
-                <div className="border-b border-[#D6E4F0] px-4 py-4 text-gray-700 md:border-r">
-                  {row.proves}
-                </div>
-                <div className="border-b border-[#D6E4F0] px-4 py-4 text-[#1A526F]">
-                  {row.accepted}
-                </div>
-              </div>
-            ))}
+          <div className="mt-6 overflow-x-auto border border-[#D6E4F0] rounded-xl">
+            <table className="w-full text-left border-collapse min-w-[550px]">
+              <thead>
+                <tr className="bg-[#1F4E79] text-sm sm:text-base font-bold text-white">
+                  <th className="border-r border-white/30 px-3 sm:px-4 py-3">Evidence Type</th>
+                  <th className="border-r border-white/30 px-3 sm:px-4 py-3">What It Proves</th>
+                  <th className="px-3 sm:px-4 py-3">Florida Courts Accept?</th>
+                </tr>
+              </thead>
+              <tbody>
+                {evidenceTable.map((row, index) => (
+                  <tr
+                    key={row.type}
+                    className={index % 2 === 0 ? "bg-[#F2F8FD]" : "bg-white"}
+                  >
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#1F4E79] text-sm sm:text-base">
+                      {row.type}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-sm sm:text-base">
+                      {row.proves}
+                    </td>
+                    <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-[#1A526F] font-semibold text-sm sm:text-base">
+                      {row.accepted}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
 
-          <p className="mt-6 text-[17px] leading-8 text-gray-700">
+          <p className="mt-6 text-[17px] leading-8 text-gray-700 text-left sm:text-justify">
             Each layer reinforces the others. A pain journal means nothing
             without a medical diagnosis to anchor it. A psychologist’s report
             means more when family members confirm what they witnessed at home.
@@ -393,7 +397,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
             {casesShowPoints.map((point) => (
               <li key={point} className="flex gap-3">
                 <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-                <span>{point}</span>
+                <span className="text-left sm:text-justify">{point}</span>
               </li>
             ))}
           </ul>
@@ -405,13 +409,13 @@ export default function ChronicPainManagementInterventionalTherapies() {
             How Does Attorney Vongsyprasom Change the Outcome of a Pain and Suffering Claim?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Insurance companies in Florida are not passive. They are aggressive.
               Having spent years as staff counsel for GEICO, Attorney
               Vongsyprasom knows exactly how adjusters are trained to minimize
               your claim. She knows the script. She flips it.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               She does not wait for the insurer to build their case. She builds
               yours first. Medical records are organized into a clear narrative.
               Psychological documentation is obtained early. Expert witnesses are
@@ -421,14 +425,14 @@ export default function ChronicPainManagementInterventionalTherapies() {
           </div>
 
           {/* Quote Block */}
-          <div className="mt-8 border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-6 py-5">
-            <blockquote className="text-[17px] leading-8 text-[#1F4E79] italic font-medium">
+          <div className="mt-8 border-l-[8px] sm:border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-4 sm:px-6 py-5">
+            <blockquote className="text-base sm:text-[17px] leading-8 text-[#1F4E79] italic font-medium">
               “Pain you can not see is still pain you should be paid for. My job
               is to translate your feelings into a language understood by a jury
               and respected by a judge. In Florida, invisible suffering has very
               real legal value.”
             </blockquote>
-            <p className="mt-2 text-sm text-[#595959] font-bold">
+            <p className="mt-2 text-xs sm:text-sm text-[#595959] font-bold">
               — Viengphone Vongsyprasom, Personal Injury Attorney, Tripathi
               Vongsyprasom Law P.A.
             </p>
@@ -436,14 +440,14 @@ export default function ChronicPainManagementInterventionalTherapies() {
 
           {/* Closing paragraphs */}
           <div className="mt-8 space-y-6 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               If your auto accident injury case involves chronic pain, emotional
               trauma or the impact on your mental health that changed your life,
               you deserve representation built for that complexity. The nuance
               is often missed by general practitioners. Attorney Vongsyprasom
               does not.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               She serves Florida injury victims from Lakeland to Oldsmar and every
               county in between. If the injury happened on Florida roads, she
               has the experience to take it to trial if the insurer does not pay
@@ -452,11 +456,11 @@ export default function ChronicPainManagementInterventionalTherapies() {
           </div>
 
           {/* CTA Box 2 */}
-          <div className="mt-8 bg-[#1F4E79] px-6 py-8 text-center text-white md:px-8">
-            <h2 className="text-2xl font-bold leading-snug">
+          <div className="mt-8 bg-[#1F4E79] px-5 sm:px-6 py-8 text-center text-white md:px-8">
+            <h2 className="text-xl sm:text-2xl font-bold leading-snug">
               Pain Changed Your Life. Let Attorney Vongsyprasom Change the Outcome.
             </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-[17px] leading-8 text-white/95">
+            <p className="mx-auto mt-4 max-w-3xl text-base sm:text-[17px] leading-8 text-white/95">
               Florida personal injury representation built for complex, invisible
               injuries.
             </p>
@@ -465,7 +469,7 @@ export default function ChronicPainManagementInterventionalTherapies() {
                 href="https://tripvienlaw.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="inline-block bg-[#2E75B6] hover:bg-[#1A526F] text-white px-8 py-4 font-bold transition-colors text-lg"
+                className="inline-block bg-[#2E75B6] hover:bg-[#1A526F] text-white px-6 sm:px-8 py-3.5 sm:py-4 font-bold transition-colors text-base sm:text-lg max-w-full"
               >
                 Schedule Free Consultation
               </a>
@@ -482,8 +486,8 @@ export default function ChronicPainManagementInterventionalTherapies() {
         <div className="mt-6 space-y-6">
           {faqs.map((faq) => (
             <div key={faq.question}>
-              <h3 className="text-xl font-bold text-[#1F4E79]">{faq.question}</h3>
-              <p className="mt-2 text-[17px] leading-8">{faq.answer}</p>
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">{faq.question}</h3>
+              <p className="mt-2 text-base sm:text-[17px] leading-8 text-left sm:text-justify">{faq.answer}</p>
             </div>
           ))}
         </div>

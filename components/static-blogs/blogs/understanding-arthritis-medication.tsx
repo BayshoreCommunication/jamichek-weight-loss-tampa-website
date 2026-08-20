@@ -273,7 +273,7 @@ export default function UnderstandingArthritisMedication() {
       </section>
 
       <div className="mt-8 space-y-6 text-[17px] leading-8">
-        <p>
+        <p className="text-left sm:text-justify">
           Arthritis medication varies based on the type and severity of the
           condition. From NSAIDs and acetaminophen for basic pain relief to
           biologics for autoimmune forms, each option carries trade-offs.
@@ -281,7 +281,7 @@ export default function UnderstandingArthritisMedication() {
           reducing joint stress, improving medication response, and slowing
           disease progression.
         </p>
-        <p>
+        <p className="text-left sm:text-justify">
           Arthritis is not one single problem. It is a whole category of joint
           disorders with different causes, different pain patterns, and
           different treatment needs. That is where most confusion begins. At
@@ -291,27 +291,27 @@ export default function UnderstandingArthritisMedication() {
         </p>
       </div>
 
-      <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD]">
+      <section className="mt-10 border border-[#D6E4F0] bg-[#F2F8FD] rounded-xl overflow-hidden">
         <h2 className="bg-[#1F4E79] px-5 py-3 text-base font-bold uppercase tracking-[0.16em] text-white">
           Key Takeaways
         </h2>
-        <ul className="space-y-3 px-6 py-6 text-[17px] leading-8">
+        <ul className="space-y-3 px-4 sm:px-6 py-6 text-[17px] leading-8">
           {keyTakeaways.map((point) => (
             <li key={point} className="flex gap-3">
               <span className="mt-3 h-2 w-2 shrink-0 bg-[#2E75B6]" />
-              <span>{point}</span>
+              <span className="text-left sm:text-justify">{point}</span>
             </li>
           ))}
         </ul>
       </section>
 
-      <section className="mt-8 grid gap-4 md:grid-cols-3">
+      <section className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {stats.map((stat) => (
           <div
             key={stat.value}
-            className="border border-[#D6E4F0] bg-white px-5 py-6 text-center"
+            className="border border-[#D6E4F0] bg-white px-4 sm:px-5 py-5 sm:py-6 text-center rounded-xl"
           >
-            <div className="text-4xl font-bold leading-none text-[#1F4E79]">
+            <div className="text-3xl sm:text-4xl font-bold leading-none text-[#1F4E79]">
               {stat.value}
             </div>
             <p className="mt-3 text-sm font-semibold uppercase leading-6 text-[#1A526F]">
@@ -325,98 +325,51 @@ export default function UnderstandingArthritisMedication() {
         ))}
       </section>
 
-      <section className="mt-12 overflow-hidden border border-[#D6E4F0]">
-        <div className="bg-[#1F4E79] px-5 py-4">
-          <h2 className="text-2xl font-bold leading-snug text-white">
+      <section className="mt-12 overflow-x-auto border border-[#D6E4F0] rounded-xl">
+        <div className="bg-[#1F4E79] px-4 sm:px-5 py-4">
+          <h2 className="text-xl sm:text-2xl font-bold leading-snug text-white">
             Arthritis Medication Comparison: Types, Uses, and Risks
           </h2>
-          <p className="mt-2 text-base text-[#D6E4F0]">
+          <p className="mt-1 text-xs sm:text-sm text-[#D6E4F0]">
             A practical overview of common arthritis treatment options.
           </p>
         </div>
 
-        <div className="hidden md:grid md:grid-cols-[1.2fr_1fr_1.2fr_1.4fr_1.2fr]">
-          {["Medication Type", "Examples", "Used For", "How It Works", "Key Risk"].map(
-            (heading) => (
-              <div
-                key={heading}
-                className="border-b border-r border-white/30 bg-[#2E75B6] px-4 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white last:border-r-0"
+        <table className="w-full text-left border-collapse min-w-[650px]">
+          <thead>
+            <tr className="bg-[#1A526F] text-xs sm:text-sm font-bold text-white">
+              <th className="border-r border-white/20 px-3 sm:px-4 py-3">Medication Type</th>
+              <th className="border-r border-white/20 px-3 sm:px-4 py-3">Examples</th>
+              <th className="border-r border-white/20 px-3 sm:px-4 py-3">Used For</th>
+              <th className="border-r border-white/20 px-3 sm:px-4 py-3">How It Works</th>
+              <th className="px-3 sm:px-4 py-3">Key Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            {medicationRows.map((row, index) => (
+              <tr
+                key={row.type}
+                className={index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"}
               >
-                {heading}
-              </div>
-            ),
-          )}
-          {medicationRows.map((row, index) => (
-            <div
-              key={row.type}
-              className={`contents ${
-                index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-              }`}
-            >
-              <div
-                className={`border-b border-r border-[#D6E4F0] px-4 py-4 font-bold text-[#1F4E79] ${
-                  index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                }`}
-              >
-                {row.type}
-              </div>
-              <div
-                className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                  index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                }`}
-              >
-                {row.examples}
-              </div>
-              <div
-                className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                  index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                }`}
-              >
-                {row.usedFor}
-              </div>
-              <div
-                className={`border-b border-r border-[#D6E4F0] px-4 py-4 text-sm leading-6 ${
-                  index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                }`}
-              >
-                {row.howItWorks}
-              </div>
-              <div
-                className={`border-b border-[#D6E4F0] px-4 py-4 text-sm font-semibold leading-6 text-[#8A3B12] ${
-                  index % 2 === 0 ? "bg-[#F8FBFE]" : "bg-white"
-                }`}
-              >
-                {row.risk}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="space-y-4 p-4 md:hidden">
-          {medicationRows.map((row) => (
-            <div key={row.type} className="border border-[#D6E4F0] bg-white p-4">
-              <h3 className="text-lg font-bold text-[#1F4E79]">{row.type}</h3>
-              <dl className="mt-3 space-y-2 text-sm leading-6">
-                <div>
-                  <dt className="font-bold text-[#2E75B6]">Examples</dt>
-                  <dd>{row.examples}</dd>
-                </div>
-                <div>
-                  <dt className="font-bold text-[#2E75B6]">Used For</dt>
-                  <dd>{row.usedFor}</dd>
-                </div>
-                <div>
-                  <dt className="font-bold text-[#2E75B6]">How It Works</dt>
-                  <dd>{row.howItWorks}</dd>
-                </div>
-                <div>
-                  <dt className="font-bold text-[#8A3B12]">Key Risk</dt>
-                  <dd>{row.risk}</dd>
-                </div>
-              </dl>
-            </div>
-          ))}
-        </div>
+                <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 font-semibold text-[#1F4E79] text-xs sm:text-sm">
+                  {row.type}
+                </td>
+                <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                  {row.examples}
+                </td>
+                <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                  {row.usedFor}
+                </td>
+                <td className="border-t border-[#D6E4F0] border-r px-3 sm:px-4 py-3.5 text-gray-700 text-xs sm:text-sm">
+                  {row.howItWorks}
+                </td>
+                <td className="border-t border-[#D6E4F0] px-3 sm:px-4 py-3.5 text-[#8A3B12] font-semibold text-xs sm:text-sm">
+                  {row.risk}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </section>
 
       <div className="mt-12 space-y-12">
@@ -426,7 +379,7 @@ export default function UnderstandingArthritisMedication() {
             title="What Is the Most Effective Medication for Arthritis?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Short answer: there is not one medication that is best for
               everyone. The type of arthritis matters more than many people
               expect. Osteoarthritis and rheumatoid arthritis may both affect
@@ -434,12 +387,12 @@ export default function UnderstandingArthritisMedication() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="border border-[#D6E4F0] bg-[#F8FBFE] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <div className="border border-[#D6E4F0] bg-[#F8FBFE] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Osteoarthritis Medication
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Osteoarthritis is mostly about wear and tear. Cartilage breaks
                 down, movement becomes uncomfortable, and pain may feel sharp,
                 dull, or simply persistent. Doctors often start with
@@ -449,11 +402,11 @@ export default function UnderstandingArthritisMedication() {
               </p>
             </div>
 
-            <div className="border border-[#D6E4F0] bg-[#F8FBFE] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] bg-[#F8FBFE] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Rheumatoid Arthritis Medication
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Rheumatoid arthritis is autoimmune, which means the immune
                 system attacks joint tissue. Treatment usually needs to go
                 deeper than symptom relief. DMARDs are often used because they
@@ -463,11 +416,11 @@ export default function UnderstandingArthritisMedication() {
             </div>
           </div>
 
-          <div className="mt-7 border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-6 py-5">
-            <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-7 border-l-[8px] sm:border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-4 sm:px-6 py-5 rounded-r-lg">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
               More Advanced Options
             </h3>
-            <p className="mt-2 text-[17px] leading-8 text-[#1F4E79]">
+            <p className="mt-2 text-[17px] leading-8 text-[#1F4E79] text-left sm:text-justify">
               Biologics, TNF blockers, and JAK inhibitors target specific
               inflammatory pathways. They can be very effective in the right
               case, but the right choice depends on your body, risks, medical
@@ -482,14 +435,14 @@ export default function UnderstandingArthritisMedication() {
             title="Common Categories of Arthritis Medications Safely"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Most people simply want something that works. Arthritis
               medications can help, but each option comes with trade-offs. The
               CDC reports that 53.2 million U.S. adults have diagnosed
               arthritis, which means many people are navigating the same
               decisions about relief, risk, and long-term safety.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Source:{" "}
               <ExternalLink href={sourceLinks.cdcArthritis}>
                 CDC Morbidity and Mortality Weekly Report
@@ -498,12 +451,12 @@ export default function UnderstandingArthritisMedication() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 NSAIDs for Pain and Inflammation
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 NSAIDs such as ibuprofen and naproxen are common because they
                 reduce inflammation, ease pain, and help people move. The part
                 people often skip is that long-term use can raise risks.
@@ -513,11 +466,11 @@ export default function UnderstandingArthritisMedication() {
               </div>
             </div>
 
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Topical vs. Oral Treatment
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Sometimes a pill is not the best starting point. Topical NSAIDs
                 can target a specific knee, elbow, wrist, or hand with less
                 systemic exposure. For localized pain, that can make more
@@ -526,12 +479,12 @@ export default function UnderstandingArthritisMedication() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Corticosteroid Injections
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 During severe flare-ups, corticosteroid injections can feel like
                 a reset button. They are not meant to be overused because
                 repeated injections may weaken cartilage and surrounding tissue.
@@ -541,18 +494,18 @@ export default function UnderstandingArthritisMedication() {
               </div>
             </div>
 
-            <div className="border border-[#E6B8B7] bg-[#FDEDEC] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#8A1F17]">
+            <div className="border border-[#E6B8B7] bg-[#FDEDEC] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#8A1F17]">
                 Biologics and JAK Inhibitors
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 For rheumatoid arthritis, doctors may recommend biologics or
                 JAK inhibitors that go closer to the source of inflammation. The
                 FDA has warned that some JAK inhibitors may increase the risk of
                 serious heart-related events, blood clots, certain cancers, and
                 death.
               </p>
-              <p className="mt-3 text-sm font-semibold text-[#8A1F17]">
+              <p className="mt-3 text-xs sm:text-sm font-semibold text-[#8A1F17]">
                 Source:{" "}
                 <ExternalLink href={sourceLinks.fdaJak}>
                   U.S. Food and Drug Administration
@@ -568,7 +521,7 @@ export default function UnderstandingArthritisMedication() {
             title="Can Arthritis Be Cured Permanently?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               This is the question almost everyone asks. Most forms of
               arthritis cannot be permanently cured. The more realistic goal is
               control, not perfection. With the right plan, many people improve
@@ -576,26 +529,26 @@ export default function UnderstandingArthritisMedication() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="bg-[#1F4E79] px-6 py-6 text-white">
-              <h3 className="text-xl font-bold">The Real Goal</h3>
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <div className="bg-[#1F4E79] p-5 sm:p-6 text-white rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold">The Real Goal</h3>
               <div className="mt-4">
                 <ul className="space-y-3 text-[17px] leading-8">
                   {managementGoals.map((goal) => (
                     <li key={goal} className="flex gap-3">
                       <span className="mt-3 h-2 w-2 shrink-0 bg-[#D6E4F0]" />
-                      <span>{goal}</span>
+                      <span className="text-left sm:text-justify">{goal}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
 
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Functional Improvement Matters
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Can you walk more comfortably? Sleep better? Move without
                 constantly thinking about your joints? That is real progress.
                 Less morning stiffness, easier stairs, and walking without
@@ -604,17 +557,17 @@ export default function UnderstandingArthritisMedication() {
             </div>
           </div>
 
-          <div className="mt-7 border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-6 py-5">
-            <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-7 border-l-[8px] sm:border-l-[18px] border-[#2E75B6] bg-[#EAF4FB] px-4 sm:px-6 py-5 rounded-r-lg">
+            <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
               Weight Loss and Joint Stress
             </h3>
-            <p className="mt-2 text-[17px] leading-8 text-[#1F4E79]">
+            <p className="mt-2 text-[17px] leading-8 text-[#1F4E79] text-left sm:text-justify">
               Weight is often underestimated in arthritis care. Even a modest
               reduction can take pressure off the knees and hips. NIH research
               notes that losing around 10% of body weight can improve knee
               osteoarthritis symptoms in overweight adults.
             </p>
-            <p className="mt-3 text-sm font-semibold text-[#1F4E79]">
+            <p className="mt-3 text-xs sm:text-sm font-semibold text-[#1F4E79]">
               Source:{" "}
               <ExternalLink href={sourceLinks.nihWeightLoss}>
                 National Institutes of Health
@@ -629,7 +582,7 @@ export default function UnderstandingArthritisMedication() {
             title="The Weight Loss Connection to Medication Safety and Effectiveness"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Extra weight does not just sit there quietly. It adds constant
               pressure to joints that are already struggling. Fat tissue can
               also release inflammatory chemicals that worsen joint damage and
@@ -638,12 +591,12 @@ export default function UnderstandingArthritisMedication() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <div className="border border-[#D6E4F0] bg-[#F8FBFE] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2">
+            <div className="border border-[#D6E4F0] bg-[#F8FBFE] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 How Metabolic Health Supports Arthritis Treatment
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 When weight comes down, the whole treatment picture can shift.
                 Lower joint load, lower inflammation, and less cartilage stress
                 may all support better arthritis outcomes.
@@ -653,11 +606,11 @@ export default function UnderstandingArthritisMedication() {
               </div>
             </div>
 
-            <div className="border border-[#D6E4F0] bg-[#F8FBFE] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] bg-[#F8FBFE] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 The Medical Advantage of Supervised Weight Loss
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Trying to lose weight alone can get confusing. Extreme diets,
                 random supplements, and inconsistent plans can make pain and
                 medication decisions harder. Medical supervision keeps the
@@ -676,7 +629,7 @@ export default function UnderstandingArthritisMedication() {
             title="Are There Natural Home Remedies for Rheumatoid Arthritis?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               Natural options can help, but they are support tools, not
               replacements for medication when rheumatoid arthritis requires
               disease control. The goal is to lower inflammation, protect
@@ -684,12 +637,12 @@ export default function UnderstandingArthritisMedication() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+          <div className="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Anti-Inflammatory Nutrition
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Food is not magic, but it can be meaningful when choices are
                 consistent.
               </p>
@@ -698,11 +651,11 @@ export default function UnderstandingArthritisMedication() {
               </div>
             </div>
 
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Movement and Joint Health
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Joints need motion, not extreme workouts. Consistent movement
                 helps maintain synovial fluid and reduce stiffness.
               </p>
@@ -711,11 +664,11 @@ export default function UnderstandingArthritisMedication() {
               </div>
             </div>
 
-            <div className="border border-[#D6E4F0] px-5 py-5">
-              <h3 className="text-xl font-bold text-[#1F4E79]">
+            <div className="border border-[#D6E4F0] p-4 sm:p-5 rounded-xl">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1F4E79]">
                 Complementary Care
               </h3>
-              <p className="mt-2 text-[17px] leading-8">
+              <p className="mt-2 text-[17px] leading-8 text-left sm:text-justify">
                 Sometimes the issue is not just the joint. It is how everything
                 around that joint is moving and compensating.
               </p>
@@ -732,25 +685,37 @@ export default function UnderstandingArthritisMedication() {
             title="Do People Die From Rheumatoid Arthritis?"
           />
           <div className="mt-4 space-y-5 text-[17px] leading-8">
-            <p>
+            <p className="text-left sm:text-justify">
               The question sounds scary, but rheumatoid arthritis can be
               serious when inflammation is not controlled. RA does not only
               affect joints. It can involve the heart, lungs, blood, nerves,
               eyes, and skin, which is why long-term monitoring matters.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               NIAMS notes that rheumatoid arthritis may cause medical problems
               outside the joints, including areas such as the heart and lungs.
               The point is to stay ahead of the disease instead of reacting too
               late.
             </p>
-            <p>
+            <p className="text-left sm:text-justify">
               Source:{" "}
               <ExternalLink href={sourceLinks.niamsRa}>
                 National Institute of Arthritis and Musculoskeletal and Skin
                 Diseases
               </ExternalLink>
               .
+            </p>
+          </div>
+
+          <div className="mt-7 bg-[#1F4E79] p-5 sm:p-6 text-white rounded-xl">
+            <h3 className="text-lg sm:text-xl font-bold text-[#F0C040]">
+              Why Early Care Changes Everything
+            </h3>
+            <p className="mt-3 text-base sm:text-[17px] leading-8 text-[#EAF4FB] text-left sm:text-justify">
+              Ignoring chronic joint pain rarely makes it vanish. Getting a
+              clear diagnosis, protecting cartilage early, and connecting weight
+              management with joint care gives your body a much better chance at
+              lasting comfort.
             </p>
           </div>
 
