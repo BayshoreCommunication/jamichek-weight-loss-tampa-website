@@ -38,15 +38,15 @@ const fallbackBlogs: BlogItem[] = [
     slug: "why-is-belly-fat-harder-to-lose-than-other-fat",
     date: "2026-08-17",
     image:
-      "/images/static-blogs/why-is-belly-fat-harder-to-lose-than-other-fat.webp",
+      "/images/static-blogs/why-is-belly-fat-harder-to-lose-body-fat-guide.webp",
     altText:
-      "Athletic woman measuring her waistline with a tape measure beside hormone and cortisol health icons.",
-    imageTitle: "Why Is Belly Fat Harder to Lose Than Other Fat Guide",
+      "Fit woman in green gym wear measuring her waist with a tape next to text about stubborn belly fat",
+    imageTitle: "Why Is Belly Fat Harder to Lose Than Other Fat?",
     imageDescription:
-      "Discover why stubborn belly fat is harder to lose, exploring the impact of hormones, cortisol levels, and fat cell biology on weight loss and health.",
+      "Understand the science of stubborn belly fat, including how hormones, elevated cortisol levels, and alpha-receptor fat cells make visceral fat harder to burn.",
     caption:
-      "Learn the biological reasons why belly fat is stubborn and how hormones and cortisol affect weight loss.",
-    body: "Discover why stubborn belly fat is harder to lose, exploring the impact of hormones, cortisol levels, and fat cell biology on weight loss and health.",
+      "Discover the key hormonal and biological reasons why losing abdominal belly fat is uniquely challenging.",
+    body: "Understand the science of stubborn belly fat, including how hormones, elevated cortisol levels, and alpha-receptor fat cells make visceral fat harder to burn.",
   },
   {
     title:
