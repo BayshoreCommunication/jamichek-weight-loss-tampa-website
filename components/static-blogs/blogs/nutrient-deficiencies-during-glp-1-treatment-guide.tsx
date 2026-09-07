@@ -22,7 +22,7 @@ export const nutrientDeficienciesDuringGlp1TreatmentGuideMeta = {
 };
 
 const keyTakeaways = [
-  "Deficiency risk climbs with time on therapy, not with how much weight comes off. The two are not the same measure of success.",
+  "Deficiency risk climbs with time on therapy, not with how much weight comes off. The two are not the same measure of success. ",
   "Vitamin D is the most common gap, but iron, B12, thiamine, calcium, and protein all decline through the same mechanism.",
   "Most standard multivitamins are dosed for a normal appetite. A reduced appetite needs a different plan, not a bigger bottle.",
   "Florida sunshine does not cancel this risk. Indoor routines and air conditioning limit UVB exposure even in a warm climate.",
