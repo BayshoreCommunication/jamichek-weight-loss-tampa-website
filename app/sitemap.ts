@@ -56,6 +56,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "why-do-some-people-lose-weight-faster-than-others",
     "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
     "why-is-belly-fat-harder-to-lose-than-other-fat",
+    "nutrient-deficiencies-during-glp-1-treatment-guide",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

@@ -32,6 +32,9 @@ import HowTampaPatientsAreClearingMalarMoundsWithoutSurgery, {
 import WhyIsBellyFatHarderToLoseThanOtherFat, {
   whyIsBellyFatHarderToLoseThanOtherFatMeta,
 } from "@/components/static-blogs/blogs/why-is-belly-fat-harder-to-lose-than-other-fat";
+import NutrientDeficienciesDuringGlp1TreatmentGuide, {
+  nutrientDeficienciesDuringGlp1TreatmentGuideMeta,
+} from "@/components/static-blogs/blogs/nutrient-deficiencies-during-glp-1-treatment-guide";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -134,6 +137,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: whyIsBellyFatHarderToLoseThanOtherFatMeta,
     Component: WhyIsBellyFatHarderToLoseThanOtherFat,
+  },
+  {
+    meta: nutrientDeficienciesDuringGlp1TreatmentGuideMeta,
+    Component: NutrientDeficienciesDuringGlp1TreatmentGuide,
   },
 ];
 

@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "What Nutrient Deficiencies Can Occur During GLP-1 Treatment?",
+    slug: "nutrient-deficiencies-during-glp-1-treatment-guide",
+    date: "2026-09-07",
+    image:
+      "/images/static-blogs/nutrient-deficiencies-during-glp-1-treatment-guide.webp",
+    altText:
+      "GLP-1 injection pen surrounded by vitamin capsules, avocado, fresh salmon, and greens on a kitchen counter.",
+    imageTitle: "Nutrient Deficiencies During GLP-1 Weight Loss Treatment",
+    imageDescription:
+      "Learn which nutrient deficiencies can occur during GLP-1 weight loss treatment and how to maintain balanced nutrition and health.",
+    caption:
+      "Explore common nutrient deficiencies associated with GLP-1 therapy and how to support your body through proper nutrition.",
+    body: "Vitamin D, B12, and iron gaps are common on GLP-1 therapy. See the 2026 data, real target ranges, and how Tampa patients catch deficiencies early.",
+  },
+  {
     title: "Why Is Belly Fat Harder to Lose Than Other Body Fat?",
     slug: "why-is-belly-fat-harder-to-lose-than-other-fat",
     date: "2026-08-17",
