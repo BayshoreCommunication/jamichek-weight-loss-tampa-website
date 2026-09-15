@@ -275,7 +275,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
         <p className="text-left sm:text-justify italic">
           Morpheus8 can improve festoons of mild to moderate severity, which are
           caused by skin laxity, by tightening the skin, as well as stimulate
-          the formation of new collagen. Morpheus8 isn't indicated for
+          the formation of new collagen. Morpheus8 isn&apos;t indicated for
           festoons primarily caused by chronic fluid retention or advanced muscle
           laxity. Eye creams fail here because they treat surface skin, never
           the structural drape underneath.
@@ -306,7 +306,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
           <div className="mt-4 space-y-5 text-[17px] leading-8">
             <p className="text-left sm:text-justify">
               Eye bags are herniated fat. A pocket pushing forward under the lower
-              lid. Firm. Doesn't move when you poke it. Surgery fixes that one,
+              lid. Firm. Doesn&apos;t move when you poke it. Surgery fixes that one,
               plain and simple.
             </p>
             <p className="text-left sm:text-justify">
@@ -354,7 +354,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
               prezygomatic space, a little swamp beneath the cheek that never
               quite drains on its own. Dermal filler gets recommended constantly
               for this area, and constantly makes things worse, since adding
-              volume to tissue that's already sagging just gives gravity more
+              volume to tissue that&apos;s already sagging just gives gravity more
               to work with.
             </p>
             <p className="text-left sm:text-justify">
@@ -368,7 +368,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
             <p className="text-left sm:text-justify">
               Patients at Medical Weight Loss Tampa often arrive having spent
               months convinced they simply bought the wrong brand of cream. They
-              didn't buy wrong. They bought into the wrong category entirely.
+              didn&apos;t buy wrong. They bought into the wrong category entirely.
             </p>
           </div>
         </section>
@@ -396,7 +396,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
             </p>
             <p className="text-left sm:text-justify">
               At the Tampa clinic, Morpheus8 runs under the Empower aesthetic
-              line, delivered on InMode's platform under direct medical
+              line, delivered on InMode&apos;s platform under direct medical
               supervision. Numbing cream goes on first, twenty to thirty minutes
               before treatment begins. What follows is heat and a prickling
               sensation, brief and tolerable for most people, nowhere near the
@@ -529,7 +529,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
               <blockquote className="text-[17px] leading-8 text-[#0d7a8a] italic font-medium">
                 “People bring me a mirror and a folder of before and after
                 photos that have nothing to do with their own anatomy. My job is
-                telling them what they're actually looking at before we ever touch
+                telling them what they&apos;re actually looking at before we ever touch
                 a device.”
               </blockquote>
               <p className="mt-2 text-sm text-[#595959] font-bold">
@@ -548,7 +548,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
               of closing a sale.
             </p>
             <p className="text-left sm:text-justify">
-              Under Dr. Devol Webster's supervision, the{" "}
+              Under Dr. Devol Webster&apos;s supervision, the{" "}
               <InternalLink href="/empower/morpheus8">Empower platform</InternalLink>{" "}
               at Medical Weight Loss Tampa combines Morpheus8 with other InMode
               modalities whenever the anatomy calls for it, rather than
@@ -559,7 +559,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
             {/* CTA Box 1 */}
             <div className="mt-8 bg-[#1B4F8A] px-5 sm:px-6 py-8 text-center text-white rounded-xl">
               <h2 className="text-xl sm:text-2xl font-bold text-[#F0C040]">
-                Tired Of Guessing What's Under Your Eyes?
+                Tired Of Guessing What&apos;s Under Your Eyes?
               </h2>
               <p className="mt-2 text-base sm:text-[17px] leading-8 text-[#EAF4FB]">
                 Get an honest diagnosis before shelling out more cash for creams
@@ -589,7 +589,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
             <p className="text-left sm:text-justify">
               Most protocols call for 3 to 4 treatments, spaced out every 4 to 6
               weeks, to allow the body to renew collagen in between sessions. You
-              can't rush biology any more than you can rush a traffic jam by
+              can&apos;t rush biology any more than you can rush a traffic jam by
               yelling at the road. The natural process of collagen renewal takes
               time regardless of how much or little someone desperately needs it
               by Friday.
@@ -640,7 +640,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
             <p className="text-left sm:text-justify">
               Patients who travel frequently between Florida and drier states
               sometimes notice their festoons look worse within days of coming
-              home. That isn't imagination working overtime. That's physiology
+              home. That isn&apos;t imagination working overtime. That&apos;s physiology
               responding to environment in real time, the way a sponge responds to
               a humid bathroom.
             </p>
@@ -676,7 +676,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
         {/* Section 8 */}
         <section className="border-t-2 border-[#2E75B6] pt-5">
           <h2 className="text-2xl font-bold leading-snug text-[#1F4E79] md:text-[28px]">
-            What If Morpheus8 Isn't Enough Anymore?
+            What If Morpheus8 Isn&apos;t Enough Anymore?
           </h2>
           <div className="mt-4 space-y-5 text-[17px] leading-8">
             <p className="text-left sm:text-justify">
@@ -684,7 +684,7 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
               festoons with heavy fluid content or significant muscle laxity may be
               required to correct severe, long-standing festoons. This procedure
               should be performed by an oculoplastic or facial plastic surgeon.
-              That's not a failure of Morpheus8. That's Morpheus8 doing
+              That&apos;s not a failure of Morpheus8. That&apos;s Morpheus8 doing
               precisely what radiofrequency microneedling was built to do, which
               comes with a ceiling, same as every device that has ever existed on
               this earth.
@@ -693,8 +693,8 @@ export default function CanMorpheus8TreatFestoonsWhenEyeCreamsFail() {
               Medical Weight Loss Tampa refers patients out when the anatomy
               demands it, working alongside the wider Jachimek network to route
               people toward the right specialist rather than the nearest device.
-              A clinic that never refers anyone anywhere isn't being loyal to its
-              patients. It's being loyal to its revenue, and those are two very
+              A clinic that never refers anyone anywhere isn&apos;t being loyal to its
+              patients. It&apos;s being loyal to its revenue, and those are two very
               different loyalties.
             </p>
 
