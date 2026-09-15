@@ -57,6 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "how-tampa-patients-are-clearing-malar-mounds-without-surgery",
     "why-is-belly-fat-harder-to-lose-than-other-fat",
     "nutrient-deficiencies-during-glp-1-treatment-guide",
+    "can-morpheus8-treat-festoons-when-eye-creams-fail",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

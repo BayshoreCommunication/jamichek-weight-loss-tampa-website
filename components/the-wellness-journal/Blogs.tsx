@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Can Morpheus8 Treat Festoons When Eye Creams Fail?",
+    slug: "can-morpheus8-treat-festoons-when-eye-creams-fail",
+    date: "2026-09-15",
+    image:
+      "/images/static-blogs/can-morpheus8-treat-festoons-when-eye-creams-fail.webp",
+    altText:
+      "Woman receiving a Morpheus8 treatment under her eyes at Medical Weight Loss Tampa to treat festoons.",
+    imageTitle: "Can Morpheus8 Treat Festoons When Eye Creams Fail",
+    imageDescription:
+      "Wondering if Morpheus8 can treat festoons when eye creams fail? Discover how this advanced microneedling treatment at Medical Weight Loss Tampa helps achieve tighter looking skin, smoother texture, a firmer appearance, and a more refreshed you.",
+    caption:
+      "Find out how Morpheus8 treatment can help address festoons and revitalize your skin when eye creams fail.",
+    body: "Wondering if Morpheus8 can treat festoons when eye creams fail? Discover how this advanced microneedling treatment at Medical Weight Loss Tampa helps achieve tighter looking skin, smoother texture, a firmer appearance, and a more refreshed you.",
+  },
+  {
     title: "What Nutrient Deficiencies Can Occur During GLP-1 Treatment?",
     slug: "nutrient-deficiencies-during-glp-1-treatment-guide",
     date: "2026-09-07",

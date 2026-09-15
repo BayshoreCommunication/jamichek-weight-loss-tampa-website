@@ -35,6 +35,9 @@ import WhyIsBellyFatHarderToLoseThanOtherFat, {
 import NutrientDeficienciesDuringGlp1TreatmentGuide, {
   nutrientDeficienciesDuringGlp1TreatmentGuideMeta,
 } from "@/components/static-blogs/blogs/nutrient-deficiencies-during-glp-1-treatment-guide";
+import CanMorpheus8TreatFestoonsWhenEyeCreamsFail, {
+  canMorpheus8TreatFestoonsWhenEyeCreamsFailMeta,
+} from "@/components/static-blogs/blogs/can-morpheus8-treat-festoons-when-eye-creams-fail";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -141,6 +144,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: nutrientDeficienciesDuringGlp1TreatmentGuideMeta,
     Component: NutrientDeficienciesDuringGlp1TreatmentGuide,
+  },
+  {
+    meta: canMorpheus8TreatFestoonsWhenEyeCreamsFailMeta,
+    Component: CanMorpheus8TreatFestoonsWhenEyeCreamsFail,
   },
 ];
 
