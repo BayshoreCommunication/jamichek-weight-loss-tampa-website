@@ -38,6 +38,9 @@ import NutrientDeficienciesDuringGlp1TreatmentGuide, {
 import CanMorpheus8TreatFestoonsWhenEyeCreamsFail, {
   canMorpheus8TreatFestoonsWhenEyeCreamsFailMeta,
 } from "@/components/static-blogs/blogs/can-morpheus8-treat-festoons-when-eye-creams-fail";
+import CanHsaOrFsaFundsBeUsedForMedicalWeightLoss, {
+  canHsaOrFsaFundsBeUsedForMedicalWeightLossMeta,
+} from "@/components/static-blogs/blogs/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -148,6 +151,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: canMorpheus8TreatFestoonsWhenEyeCreamsFailMeta,
     Component: CanMorpheus8TreatFestoonsWhenEyeCreamsFail,
+  },
+  {
+    meta: canHsaOrFsaFundsBeUsedForMedicalWeightLossMeta,
+    Component: CanHsaOrFsaFundsBeUsedForMedicalWeightLoss,
   },
 ];
 

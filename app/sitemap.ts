@@ -58,6 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "why-is-belly-fat-harder-to-lose-than-other-fat",
     "nutrient-deficiencies-during-glp-1-treatment-guide",
     "can-morpheus8-treat-festoons-when-eye-creams-fail",
+    "can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

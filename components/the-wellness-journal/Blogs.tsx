@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "Can HSA or FSA Funds Be Used for Medical Weight Loss",
+    slug: "can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
+    date: "2026-10-07",
+    image:
+      "/images/static-blogs/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss.webp",
+    altText:
+      "Piggy bank labeled HSA on wooden blocks marked HSA and FSA next to a stethoscope, prescription pad, and medical weight loss Tampa logo.",
+    imageTitle: "Can HSA or FSA Funds Be Used for Medical Weight Loss",
+    imageDescription:
+      "Learn whether HSA or FSA funds can be used for medical weight loss with Medical Weight Loss Tampa. Understand tax advantages, eligible expenses, what qualifies, and how treatments support your health.",
+    caption:
+      "Find out if you can use your health savings or flexible spending accounts to cover medical weight loss treatments.",
+    body: "The IRS lets HSA/FSA cover weight loss only under one condition. See what qualifies in Tampa, what doesn't, and how to document it right.",
+  },
+  {
     title: "Can Morpheus8 Treat Festoons When Eye Creams Fail?",
     slug: "can-morpheus8-treat-festoons-when-eye-creams-fail",
     date: "2026-09-15",
