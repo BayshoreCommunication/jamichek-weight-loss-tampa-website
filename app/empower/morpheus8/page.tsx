@@ -69,10 +69,31 @@ const morpheus8Data: TreatmentData = {
       stars: 5,
     },
   ],
+  images: {
+    hero: {
+      src: "/images/morpheus8/morpheus8-treatment.jpg",
+      alt: "Morpheus8 radiofrequency microneedling treatment in progress",
+    },
+    treatment: {
+      src: "/images/morpheus8/morpheus8-skin-closeup.jpg",
+      alt: "Close-up of a patient's facial skin at the clinic",
+    },
+    beforeAfter: [
+      {
+        src: "/images/morpheus8/morpheus8-arm-before-after.jpg",
+        alt: "Before and after comparison showing the upper arm",
+        caption: "Upper arm before and after. Individual results may vary.",
+      },
+    ],
+    results: {
+      src: "/images/morpheus8/morpheus8-treatment.jpg",
+      alt: "Morpheus8 device being used on a patient's face",
+    },
+  },
   imagePlaceholders: {
-    hero: "/images/empower/morpheus8/hero.jpg",
-    treatment: "/images/empower/morpheus8/treatment.jpg",
-    beforeAfterCount: 6,
+    hero: "/images/morpheus8/morpheus8-treatment.jpg",
+    treatment: "/images/morpheus8/morpheus8-skin-closeup.jpg",
+    beforeAfterCount: 1,
   },
 };
 

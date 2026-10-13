@@ -28,6 +28,12 @@ export interface TreatmentData {
     points: string[];
   };
   testimonials: Testimonial[];
+  images?: {
+    hero: { src: string; alt: string };
+    treatment: { src: string; alt: string };
+    beforeAfter: { src: string; alt: string; caption: string }[];
+    results: { src: string; alt: string };
+  };
   imagePlaceholders: {
     hero: string;
     treatment: string;
@@ -72,30 +78,28 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
     <>
       {/* ── 1. HERO ── */}
       <section className="relative bg-gray-900 text-white overflow-hidden py-20 px-8">
-        {/* Background image placeholder */}
-        <div className="absolute inset-0 bg-gray-800 opacity-80 z-0" />
-        <div className="absolute inset-0 z-0 flex items-center justify-end opacity-30">
-          <div className="w-1/2 h-full bg-gray-600 flex items-center justify-center text-gray-400 text-sm">
-            {/* Replace with hero background image: {treatment.imagePlaceholders.hero} */}
-          </div>
+        <div className="absolute inset-0 z-0">
+          {treatment.images?.hero ? (
+            <Image
+              src={treatment.images.hero.src}
+              alt={treatment.images.hero.alt}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+          ) : null}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/85 to-gray-900/50" />
         </div>
 
         <div className="relative z-10 max-w-[1640px] mx-auto">
           <div className="max-w-xl">
-            <p className="text-amber-400 font-semibold text-sm tracking-widest uppercase mb-2">
-              Founders Launch — Limited Time
-            </p>
             <h1 className="text-5xl lg:text-7xl font-black uppercase tracking-tight leading-none">
               {treatment.name}
             </h1>
-            <div className="mt-4 space-y-1">
-              <p className="text-2xl lg:text-3xl font-bold text-amber-400">
-                Free Consultation
-              </p>
-              <p className="text-2xl lg:text-3xl font-bold text-amber-400">
-                + Up To $600 Off
-              </p>
-            </div>
+            <p className="mt-4 text-2xl lg:text-3xl font-bold text-amber-400">
+              RF Microneedling
+            </p>
             <p className="mt-4 text-gray-300 text-base leading-relaxed max-w-md">
               {treatment.heroSubline}
             </p>
@@ -109,9 +113,6 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
                 813.269.7546
               </Link>
             </div>
-            <p className="mt-4 text-gray-400 text-sm">
-              Offer valid through June 2026. Call to confirm availability.
-            </p>
           </div>
         </div>
       </section>
@@ -147,12 +148,22 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
       <section className="bg-[#f6fff0] py-16 px-8">
         <div className="max-w-[1640px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image placeholder */}
             <Reveal tag="div" y={20} opacityFrom={0}>
-              <div className="bg-gray-200 rounded-3xl aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
-                {/* Replace with treatment in-session image: {treatment.imagePlaceholders.treatment} */}
-                [Add treatment image here]
-              </div>
+              {treatment.images?.treatment ? (
+                <div className="relative overflow-hidden rounded-3xl aspect-[4/3]">
+                  <Image
+                    src={treatment.images.treatment.src}
+                    alt={treatment.images.treatment.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="bg-gray-200 rounded-3xl aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
+                  [Add treatment image here]
+                </div>
+              )}
             </Reveal>
 
             <Reveal tag="div" y={20} opacityFrom={0}>
@@ -195,17 +206,41 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
               </p>
             </div>
           </Reveal>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {Array.from({
-              length: treatment.imagePlaceholders.beforeAfterCount,
-            }).map((_, i) => (
-              <Reveal key={i} tag="div" y={16} opacityFrom={0}>
-                <div className="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center text-gray-400 text-xs text-center p-4">
-                  {/* Replace with before/after image {i + 1} */}
-                  [Before & After {i + 1}]
-                </div>
-              </Reveal>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {treatment.images?.beforeAfter.length
+              ? treatment.images.beforeAfter.map((item, i) => (
+                  <Reveal
+                    key={item.src}
+                    tag="figure"
+                    y={16}
+                    opacityFrom={0}
+                    className={
+                      treatment.images.beforeAfter.length === 1
+                        ? "mx-auto w-full max-w-sm"
+                        : undefined
+                    }
+                  >
+                    <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/5]">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-contain"
+                      />
+                    </div>
+                    <figcaption className="mt-3 text-center text-sm text-gray-600">
+                      {item.caption}
+                    </figcaption>
+                  </Reveal>
+                ))
+              : Array.from({ length: treatment.imagePlaceholders.beforeAfterCount }).map((_, i) => (
+                  <Reveal key={i} tag="div" y={16} opacityFrom={0}>
+                    <div className="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center text-gray-400 text-xs text-center p-4">
+                      [Before & After {i + 1}]
+                    </div>
+                  </Reveal>
+                ))}
           </div>
         </div>
       </section>
@@ -266,14 +301,24 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
               )}
             </Reveal>
 
-            {/* Video placeholder */}
             <Reveal tag="div" y={20} opacityFrom={0}>
-              <div className="bg-gray-200 rounded-3xl aspect-video flex items-center justify-center text-gray-400 text-sm">
-                {/* Replace with patient testimonial video embed */}
-                [Add patient testimonial video here]
-              </div>
+              {treatment.images?.results ? (
+                <div className="relative overflow-hidden rounded-3xl aspect-video">
+                  <Image
+                    src={treatment.images.results.src}
+                    alt={treatment.images.results.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="bg-gray-200 rounded-3xl aspect-video flex items-center justify-center text-gray-400 text-sm">
+                  [Add patient testimonial video here]
+                </div>
+              )}
               <p className="mt-3 text-center text-sm text-gray-500">
-                Hear from our patients about their experience
+                {treatment.name} treatment in progress
               </p>
             </Reveal>
           </div>
@@ -384,10 +429,21 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
               </div>
             </Reveal>
             <Reveal tag="div" y={20} opacityFrom={0}>
-              <div className="bg-gray-200 rounded-3xl aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
-                {/* Replace with lifestyle/results image */}
-                [Add lifestyle / results image here]
-              </div>
+              {treatment.images?.results ? (
+                <div className="relative overflow-hidden rounded-3xl aspect-[4/3]">
+                  <Image
+                    src={treatment.images.results.src}
+                    alt={treatment.images.results.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="bg-gray-200 rounded-3xl aspect-[4/3] flex items-center justify-center text-gray-400 text-sm">
+                  [Add lifestyle / results image here]
+                </div>
+              )}
             </Reveal>
           </div>
         </div>
@@ -413,16 +469,12 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
       {/* ── 12. CLOSING CTA ── */}
       <section className="bg-gray-900 text-white py-16 px-8 text-center">
         <Reveal tag="div" y={16} opacityFrom={0}>
-          <p className="text-amber-400 font-semibold text-sm tracking-widest uppercase mb-3">
-            Founders Launch — Limited Time
-          </p>
           <h2 className="text-4xl lg:text-5xl font-black uppercase">
             {treatment.name}
           </h2>
-          <p className="text-2xl font-bold text-amber-400 mt-3">
-            Free Consultation + Up To $600 Off
+          <p className="text-gray-300 mt-3 max-w-xl mx-auto">
+            Book a consultation to discuss your goals and find out whether this treatment is right for you.
           </p>
-          <p className="text-gray-400 mt-2 text-sm">Valid through June 2026.</p>
           <div className="mt-8">
             <BookNowBtn label="Book Your Appointment Now" />
           </div>

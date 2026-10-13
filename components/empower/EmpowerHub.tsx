@@ -7,7 +7,7 @@ import Reveal from "../motion/Reveal";
 
 const treatments = [
   {
-    href: "/images/product-image/tone.jpeg",
+    link: "/empower/morpheus8",
     image: "/images/product-image/more8.jpeg",
     name: "Morpheus8",
     subtitle: "RF Microneedling",
@@ -125,7 +125,7 @@ const EmpowerHub = () => {
             {treatments.map((t, i) => (
               <Reveal key={i} tag="div" y={20} opacityFrom={0}>
                 <Link
-                  href="/contact"
+                  href={t.link ?? "/contact"}
                   className={`group block rounded-3xl border p-8 h-full hover:shadow-lg transition-all ${t.color}`}
                 >
                   <div className="relative rounded-2xl aspect-video overflow-hidden mb-6 bg-white flex items-center justify-center">
