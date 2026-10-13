@@ -9,6 +9,7 @@ const tagMap = {
   section: motion.section,
   header: motion.header,
   footer: motion.footer,
+  figure: motion.figure,
   main: motion.main,
   nav: motion.nav,
   h1: motion.h1,

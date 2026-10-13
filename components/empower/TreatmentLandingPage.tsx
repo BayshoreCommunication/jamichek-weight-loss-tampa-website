@@ -73,6 +73,7 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
   const mainTestimonial = treatment.testimonials[0];
   const secondTestimonial = treatment.testimonials[1];
   const thirdTestimonial = treatment.testimonials[2];
+  const beforeAfterImages = treatment.images?.beforeAfter ?? [];
 
   return (
     <>
@@ -207,15 +208,15 @@ const TreatmentLandingPage = ({ treatment }: Props) => {
             </div>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {treatment.images?.beforeAfter.length
-              ? treatment.images.beforeAfter.map((item, i) => (
+            {beforeAfterImages.length
+              ? beforeAfterImages.map((item, i) => (
                   <Reveal
                     key={item.src}
                     tag="figure"
                     y={16}
                     opacityFrom={0}
                     className={
-                      treatment.images.beforeAfter.length === 1
+                      beforeAfterImages.length === 1
                         ? "mx-auto w-full max-w-sm"
                         : undefined
                     }
