@@ -41,6 +41,9 @@ import CanMorpheus8TreatFestoonsWhenEyeCreamsFail, {
 import CanHsaOrFsaFundsBeUsedForMedicalWeightLoss, {
   canHsaOrFsaFundsBeUsedForMedicalWeightLossMeta,
 } from "@/components/static-blogs/blogs/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss";
+import HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp, {
+  howToKnowWhenItsTimeToSeekProfessionalWeightLossHelpMeta,
+} from "@/components/static-blogs/blogs/how-to-know-when-its-time-to-seek-professional-weight-loss-help";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -155,6 +158,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: canHsaOrFsaFundsBeUsedForMedicalWeightLossMeta,
     Component: CanHsaOrFsaFundsBeUsedForMedicalWeightLoss,
+  },
+  {
+    meta: howToKnowWhenItsTimeToSeekProfessionalWeightLossHelpMeta,
+    Component: HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp,
   },
 ];
 

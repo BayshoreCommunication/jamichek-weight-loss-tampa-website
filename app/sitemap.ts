@@ -59,6 +59,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "nutrient-deficiencies-during-glp-1-treatment-guide",
     "can-morpheus8-treat-festoons-when-eye-creams-fail",
     "can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
+    "how-to-know-when-its-time-to-seek-professional-weight-loss-help",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({
