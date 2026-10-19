@@ -180,12 +180,14 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.medicalweightlosstampa.com",
+          item: "https://www.medicalweightlosstampa.com/",
         },
         {
           "@type": "ListItem",
@@ -196,7 +198,8 @@ const jsonLdSchema = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "How to Know When It's Time to Seek Professional Weight Loss Help",
+          name:
+            "How to Know When It's Time to Seek Professional Weight Loss Help",
           item:
             "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help",
         },
@@ -204,6 +207,8 @@ const jsonLdSchema = {
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help#blogposting",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
@@ -213,34 +218,41 @@ const jsonLdSchema = {
         "How to Know When It's Time to Seek Professional Weight Loss Help",
       name: "When to Seek Medical Weight Loss Help in Tampa",
       description:
-        "Learn how to know when it is time to seek professional weight loss help with Medical Weight Loss Tampa. Understand how plateaued progress, health concerns, emotional impacts, and expert guidance can help you achieve sustainable results.",
+        "When metabolism slows down, diets fail. Learn about 5 medical signs that you should be evaluated for doctor assisted weight loss in Tampa.",
       url:
         "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help",
-      image:
-        "https://www.medicalweightlosstampa.com/images/static-blogs/how-to-know-when-its-time-to-seek-professional-weight-loss-help.webp",
+      image: {
+        "@type": "ImageObject",
+        url:
+          "https://www.medicalweightlosstampa.com/images/static-blogs/how-to-know-when-its-time-to-seek-professional-weight-loss-help.webp",
+      },
       isPartOf: {
         "@type": "Blog",
-        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+        "@id":
+          "https://www.medicalweightlosstampa.com/the-wellness-journal#blog",
+        name: "The Wellness Journal",
+        url: "https://www.medicalweightlosstampa.com/the-wellness-journal",
       },
       about: {
         "@type": "Thing",
-        name: "Professional Medical Weight Loss Evaluation",
-        description:
-          "Clinical indicators for physician-assisted weight loss, metabolic adaptation research, Florida obesity benchmarks, and diagnostic lab evaluation in Tampa, Florida.",
+        name: "Professional Medical Weight Loss Evaluation and Treatment",
       },
       keywords: [
-        "when to seek medical weight loss help",
-        "weight loss clinic Tampa",
-        "plateaued weight loss doctor",
-        "metabolic testing Tampa",
-        "physician assisted weight loss",
-        "BMI threshold medical weight loss",
-        "Dr. Emily Devol Webster",
-        "Medical Weight Loss Tampa evaluation",
+        "professional weight loss help",
+        "medical weight loss Tampa",
+        "when to seek medical weight loss",
+        "weight loss plateau",
+        "physician-supervised weight loss",
+        "medical weight loss evaluation",
+        "weight loss treatment Tampa",
+        "personalized weight loss plan",
+        "weight loss health concerns",
+        "medical weight management",
       ],
       author: {
         "@type": "Organization",
-        name: "Medical Weight Loss Tampa",
+        name: "Medical Weight Loss Tampa Clinical Team",
+        url: "https://www.medicalweightlosstampa.com/",
       },
       publisher: {
         "@type": "Organization",
@@ -253,9 +265,14 @@ const jsonLdSchema = {
       },
       datePublished: "2026-10-14",
       dateModified: "2026-10-14",
+      inLanguage: "en-US",
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help#faq",
+      url:
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/how-to-know-when-its-time-to-seek-professional-weight-loss-help",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
@@ -573,9 +590,9 @@ export default function HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp() {
 
             {/* CTA Banner 1 - Table 2 */}
             <div className="mt-8 bg-[#1B3A5C] px-6 sm:px-8 py-8 text-center text-white rounded-2xl shadow-md">
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Get Actual Answers
-              </h3>
+              </h2>
               <p className="mt-3 text-base sm:text-[17px] leading-8 text-[#D9E4EC] max-w-2xl mx-auto">
                 A $47 evaluation includes a full consultation, health
                 assessment, and personalized treatment plan.
@@ -757,9 +774,9 @@ export default function HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp() {
 
             {/* CTA Banner 2 - Table 4 */}
             <div className="mt-8 bg-[#1B3A5C] px-6 sm:px-8 py-8 text-center text-white rounded-2xl shadow-md">
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Ready to Trade hunch for a Plan?
-              </h3>
+              </h2>
               <p className="mt-3 text-base sm:text-[17px] leading-8 text-[#D9E4EC] max-w-2xl mx-auto">
                 Personalized and physician-guided weight loss designed around
                 your labs.

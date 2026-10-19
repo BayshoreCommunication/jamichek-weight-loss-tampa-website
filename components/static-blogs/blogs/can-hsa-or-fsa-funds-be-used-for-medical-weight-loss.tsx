@@ -179,12 +179,14 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.medicalweightlosstampa.com",
+          item: "https://www.medicalweightlosstampa.com/",
         },
         {
           "@type": "ListItem",
@@ -196,12 +198,15 @@ const jsonLdSchema = {
           "@type": "ListItem",
           position: 3,
           name: "Can HSA or FSA Funds Be Used for Medical Weight Loss",
-          item: "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
+          item:
+            "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
         },
       ],
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss#blogposting",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
@@ -211,32 +216,40 @@ const jsonLdSchema = {
       name: "HSA/FSA for Medical Weight Loss? 2026 Rules",
       description:
         "The IRS lets HSA/FSA cover weight loss only under one condition. See what qualifies in Tampa, what doesn't, and how to document it right.",
-      url: "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
-      image:
-        "https://www.medicalweightlosstampa.com/images/static-blogs/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss.webp",
+      url:
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
+      image: {
+        "@type": "ImageObject",
+        url:
+          "https://www.medicalweightlosstampa.com/images/static-blogs/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss.webp",
+      },
       isPartOf: {
         "@type": "Blog",
-        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+        "@id":
+          "https://www.medicalweightlosstampa.com/the-wellness-journal#blog",
+        name: "The Wellness Journal",
+        url: "https://www.medicalweightlosstampa.com/the-wellness-journal",
       },
       about: {
         "@type": "Thing",
-        name: "HSA and FSA for Medical Weight Loss",
-        description:
-          "IRS Section 213(d) qualification guidelines, Letter of Medical Necessity documentation, and GLP-1 coverage using pre-tax HSA and FSA dollars in Tampa, Florida.",
+        name: "HSA and FSA Eligibility for Medical Weight Loss",
       },
       keywords: [
-        "HSA medical weight loss",
-        "FSA weight loss Tampa",
-        "can HSA pay for GLP-1",
-        "Letter of Medical Necessity weight loss",
-        "IRS Section 213(d) obesity",
-        "Wegovy HSA eligible",
-        "Zepbound FSA eligible",
-        "Medical Weight Loss Tampa insurance",
+        "Can HSA funds be used for medical weight loss",
+        "Can FSA funds be used for medical weight loss",
+        "HSA eligible weight loss programs",
+        "FSA eligible weight loss treatments",
+        "HSA for weight loss medication",
+        "FSA for weight loss medication",
+        "Letter of Medical Necessity for weight loss",
+        "medical weight loss Tampa",
+        "qualified medical expenses",
+        "health savings account weight loss",
       ],
       author: {
         "@type": "Organization",
-        name: "Medical Weight Loss Tampa",
+        name: "Medical Weight Loss Tampa Clinical Team",
+        url: "https://www.medicalweightlosstampa.com/",
       },
       publisher: {
         "@type": "Organization",
@@ -249,9 +262,14 @@ const jsonLdSchema = {
       },
       datePublished: "2026-10-07",
       dateModified: "2026-10-07",
+      inLanguage: "en-US",
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss#faq",
+      url:
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
@@ -562,10 +580,10 @@ export default function CanHsaOrFsaFundsBeUsedForMedicalWeightLoss() {
 
             {/* Warning Box */}
             <div className="mt-8 border-2 border-[#D8A400] bg-[#FFF6DA] p-5 sm:p-6 rounded-xl shadow-sm">
-              <h3 className="text-base sm:text-lg font-bold text-[#8A6300] flex items-center gap-2">
+              <h2 className="text-base sm:text-lg font-bold text-[#8A6300] flex items-center gap-2">
                 <span>⚠</span>
                 <span>WHERE PATIENTS GET BURNED</span>
-              </h3>
+              </h2>
               <p className="mt-3 text-[16px] sm:text-[17px] leading-8 text-[#5C4600] text-left sm:text-justify">
                 Paying for a weight loss program with HSA funds before you have a
                 diagnosis on file is the single most common way this goes wrong.
@@ -824,9 +842,9 @@ export default function CanHsaOrFsaFundsBeUsedForMedicalWeightLoss() {
 
             {/* CTA Box */}
             <div className="mt-10 bg-[#1B3A5C] px-6 sm:px-8 py-8 text-center text-white rounded-2xl shadow-md">
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Not sure if your case qualifies?
-              </h3>
+              </h2>
               <p className="mt-3 text-base sm:text-[17px] leading-8 text-[#D9E4EC] max-w-2xl mx-auto">
                 A ten-minute consultation at Medical Weight Loss Tampa can
                 confirm whether your situation meets the IRS diagnosis standard

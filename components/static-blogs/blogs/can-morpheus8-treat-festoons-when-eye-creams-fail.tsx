@@ -113,12 +113,14 @@ const jsonLdSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.medicalweightlosstampa.com",
+          item: "https://www.medicalweightlosstampa.com/",
         },
         {
           "@type": "ListItem",
@@ -130,12 +132,15 @@ const jsonLdSchema = {
           "@type": "ListItem",
           position: 3,
           name: "Can Morpheus8 Treat Festoons When Eye Creams Fail?",
-          item: "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail",
+          item:
+            "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail",
         },
       ],
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail#blogposting",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
@@ -145,32 +150,39 @@ const jsonLdSchema = {
       name: "Morpheus8 for Festoons: Does It Work in Tampa?",
       description:
         "Wondering if Morpheus8 can treat festoons when eye creams fail? Discover how this advanced microneedling treatment at Medical Weight Loss Tampa helps achieve tighter looking skin, smoother texture, a firmer appearance, and a more refreshed you.",
-      url: "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail",
+      url:
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail",
       image:
         "https://www.medicalweightlosstampa.com/images/static-blogs/can-morpheus8-treat-festoons-when-eye-creams-fail.webp",
       isPartOf: {
         "@type": "Blog",
-        "@id": "https://www.medicalweightlosstampa.com/the-wellness-journal",
+        name: "The Wellness Journal",
+        url: "https://www.medicalweightlosstampa.com/the-wellness-journal",
       },
       about: {
         "@type": "Thing",
-        name: "Morpheus8 Festoon Treatment",
-        description:
-          "An in-depth guide on treating festoons, eye bags, and malar mounds with Morpheus8 radiofrequency microneedling versus traditional eye creams.",
+        name: "Morpheus8 Treatment for Festoons",
       },
       keywords: [
-        "Morpheus8 festoons",
-        "Morpheus8 under eye Tampa",
-        "Morpheus8 malar mounds",
-        "eye creams fail festoons",
-        "RF microneedling festoons",
-        "Medical Weight Loss Tampa aesthetics",
-        "Empower InMode Tampa",
-        "Dr. Emily Devol Webster festoons",
+        "Morpheus8 for festoons",
+        "Morpheus8 treatment",
+        "festoons treatment",
+        "festoons",
+        "eye creams",
+        "RF microneedling",
+        "malar mounds",
+        "malar edema",
+        "skin tightening",
+        "collagen remodeling",
+        "Morpheus8 Tampa",
+        "non-surgical festoon treatment",
+        "under eye treatment",
+        "facial skin tightening",
       ],
       author: {
         "@type": "Organization",
         name: "Medical Weight Loss Tampa",
+        url: "https://www.medicalweightlosstampa.com/",
       },
       publisher: {
         "@type": "Organization",
@@ -186,6 +198,8 @@ const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.medicalweightlosstampa.com/the-wellness-journal/can-morpheus8-treat-festoons-when-eye-creams-fail#faq",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
