@@ -44,6 +44,9 @@ import CanHsaOrFsaFundsBeUsedForMedicalWeightLoss, {
 import HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp, {
   howToKnowWhenItsTimeToSeekProfessionalWeightLossHelpMeta,
 } from "@/components/static-blogs/blogs/how-to-know-when-its-time-to-seek-professional-weight-loss-help";
+import HowNutritionalCounselingFitsIntoAMedicalWeightLossProgram, {
+  howNutritionalCounselingFitsIntoAMedicalWeightLossProgramMeta,
+} from "@/components/static-blogs/blogs/how-nutritional-counseling-fits-into-a-medical-weight-loss-program";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -162,6 +165,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: howToKnowWhenItsTimeToSeekProfessionalWeightLossHelpMeta,
     Component: HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp,
+  },
+  {
+    meta: howNutritionalCounselingFitsIntoAMedicalWeightLossProgramMeta,
+    Component: HowNutritionalCounselingFitsIntoAMedicalWeightLossProgram,
   },
 ];
 

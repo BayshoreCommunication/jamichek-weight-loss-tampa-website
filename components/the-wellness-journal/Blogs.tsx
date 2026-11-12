@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "How Nutritional Counseling Fits Into a Medical Weight Loss Program",
+    slug: "how-nutritional-counseling-fits-into-a-medical-weight-loss-program",
+    date: "2026-11-12",
+    image:
+      "/images/static-blogs/nutritional-counseling-medical-weight-loss-guide.webp",
+    altText:
+      "Doctor showing a digital nutrition plan on a tablet to a patient beside fresh fruit and a measuring tape.",
+    imageTitle: "How Nutritional Counseling Fits Medical Weight Loss",
+    imageDescription:
+      "Discover how personalized nutritional counseling supports medical weight loss programs by building healthy eating habits and delivering sustainable, long-term results.",
+    caption:
+      "Learn how personalized nutritional counseling enhances your medical weight loss journey.",
+    body: "See how nutritional counseling fits in a medical weight loss program, from protein targets to weight regain, with Medical Weight Loss Tampa, Florida.",
+  },
+  {
     title: "How to Know When It's Time to Seek Professional Weight Loss Help",
     slug: "how-to-know-when-its-time-to-seek-professional-weight-loss-help",
     date: "2026-10-14",
