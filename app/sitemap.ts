@@ -61,6 +61,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "can-hsa-or-fsa-funds-be-used-for-medical-weight-loss",
     "how-to-know-when-its-time-to-seek-professional-weight-loss-help",
     "how-nutritional-counseling-fits-into-a-medical-weight-loss-program",
+    "how-to-prepare-for-your-medical-weight-loss-appointment-in-tampa",
   ];
 
   const staticBlogRoutes = staticBlogSlugs.map((slug) => ({

@@ -47,6 +47,9 @@ import HowToKnowWhenItsTimeToSeekProfessionalWeightLossHelp, {
 import HowNutritionalCounselingFitsIntoAMedicalWeightLossProgram, {
   howNutritionalCounselingFitsIntoAMedicalWeightLossProgramMeta,
 } from "@/components/static-blogs/blogs/how-nutritional-counseling-fits-into-a-medical-weight-loss-program";
+import HowToPrepareForYourMedicalWeightLossAppointmentInTampa, {
+  howToPrepareForYourMedicalWeightLossAppointmentInTampaMeta,
+} from "@/components/static-blogs/blogs/how-to-prepare-for-your-medical-weight-loss-appointment-in-tampa";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -169,6 +172,10 @@ const staticBlogs: StaticBlogEntry[] = [
   {
     meta: howNutritionalCounselingFitsIntoAMedicalWeightLossProgramMeta,
     Component: HowNutritionalCounselingFitsIntoAMedicalWeightLossProgram,
+  },
+  {
+    meta: howToPrepareForYourMedicalWeightLossAppointmentInTampaMeta,
+    Component: HowToPrepareForYourMedicalWeightLossAppointmentInTampa,
   },
 ];
 

@@ -34,6 +34,21 @@ export type BlogsProps = {
 // ✅ Fallback static data
 const fallbackBlogs: BlogItem[] = [
   {
+    title: "How to Prepare for Your Medical Weight Loss Appointment in Tampa",
+    slug: "how-to-prepare-for-your-medical-weight-loss-appointment-in-tampa",
+    date: "2026-11-16",
+    image:
+      "/images/static-blogs/prepare-for-medical-weight-loss-appointment-tampa.webp",
+    altText:
+      "Female doctor smiling at a patient during a consultation with a pre-appointment checklist on a clipboard",
+    imageTitle: "How to Prepare for Medical Weight Loss Appointment Tampa",
+    imageDescription:
+      "Learn how to prepare for your medical weight loss appointment in Tampa, including gathering health history, listing medications, and setting realistic goals",
+    caption:
+      "Follow this pre-appointment checklist to get the most out of your Tampa medical weight loss visit",
+    body: "Know what to bring, how Florida Blue, AvMed and HSA cards work, and your options beyond GLP-1s before a weight loss visit near Carrollwood.",
+  },
+  {
     title: "How Nutritional Counseling Fits Into a Medical Weight Loss Program",
     slug: "how-nutritional-counseling-fits-into-a-medical-weight-loss-program",
     date: "2026-11-12",
