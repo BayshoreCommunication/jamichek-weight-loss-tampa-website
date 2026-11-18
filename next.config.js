@@ -40,6 +40,11 @@ const nextConfig = {
     ],
   },
   skipTrailingSlashRedirect: true,
+  experimental: {
+    outputFileTracingIncludes: {
+      "/sitemap.xml": ["./.next/app-path-routes-manifest.json"],
+    },
+  },
   // Add headers for PDF files
   async headers() {
     return [
